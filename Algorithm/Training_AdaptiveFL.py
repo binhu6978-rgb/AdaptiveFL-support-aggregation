@@ -14,8 +14,8 @@ import copy
 import numpy as np
 from tqdm import tqdm
 
-from models.Fed import (get_model_list, Aggregation_AdaptiveFL, Aggregation_Support,
-                        split_model, select_clients)
+from models.Fed import (get_model_list, Aggregation_AdaptiveFL, split_model,
+                        select_clients)
 from models.vgg import vgg_16_bn
 from models.resnet import ResNet18_cifar
 from models.resnet import ResNet18_widar
@@ -42,12 +42,57 @@ def _assert_prefix_consistency(net_glob_list):
 def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
     net_glob_list, net_slim_info = get_model_list(args)
 
+    if len(net_glob_list) != 1:
+        raise AssertionError(
+            "All-Large oracle requires exactly one model, got {}".format(
+                len(net_glob_list)))
     full_idx = len(net_glob_list) - 1
     full_profile = net_slim_info[full_idx]
     if float(full_profile[0]) != 1.0 or int(full_profile[1]) != 2:
         raise AssertionError(
             "Expected Full profile (1.0, 2), got {}".format(full_profile))
-    print("Full evaluation model: {}".format(full_profile))
+    if abs(float(full_profile[2]) - 11.424356) > 1e-6:
+        raise AssertionError(
+            "Expected about 11.424356M parameters, got {}M".format(
+                full_profile[2]))
+
+    batch_norm_modules = [
+        module for module in net_glob_list[0].modules()
+        if isinstance(module, nn.modules.batchnorm._BatchNorm)
+    ]
+    bn_track_running_stats = [
+        module.track_running_stats for module in batch_norm_modules
+    ]
+    if not batch_norm_modules or any(bn_track_running_stats):
+        raise AssertionError(
+            "Expected all BatchNorm modules to use track_running_stats=False, got {}".format(
+                bn_track_running_stats))
+
+    print("Experiment: All-Large AdaptiveFL-path Oracle")
+    experiment_config = [
+        ("algorithm", args.algorithm),
+        ("dataset", args.dataset),
+        ("iid", args.iid),
+        ("data_beta", args.data_beta),
+        ("seed", args.seed),
+        ("epochs", args.epochs),
+        ("num_users", args.num_users),
+        ("frac", args.frac),
+        ("local_ep", args.local_ep),
+        ("local_bs", args.local_bs),
+        ("optimizer", args.optimizer),
+        ("lr", args.lr),
+        ("lr_decay", args.lr_decay),
+        ("client_chosen_mode", args.client_chosen_mode),
+        ("depth_saved", args.depth_saved),
+        ("width_ration", args.width_ration),
+        ("len(net_glob_list)", len(net_glob_list)),
+        ("Full profile", full_profile),
+        ("BN module count", len(batch_norm_modules)),
+        ("BN track_running_stats", sorted(set(bn_track_running_stats))),
+    ]
+    for key, value in experiment_config:
+        print("{}: {}".format(key, value))
 
     # training
     total_time = 0
@@ -110,12 +155,8 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
         print(f"hetero_proportion: \t{args.client_hetero_ration}")
         # 需要print 每个客户端的计算资源
 
-        if iter == 0:
-            w_glob_param = Aggregation_AdaptiveFL(
-                w_locals, lens, net_glob_list[-1].state_dict())
-        else:
-            w_glob_param = Aggregation_Support(
-                w_locals, lens, net_glob_list[-1].state_dict(), epsilon=0.2)
+        w_glob_param = Aggregation_AdaptiveFL(
+            w_locals, lens, net_glob_list[-1].state_dict())
 
         for net in net_glob_list:
             net.load_state_dict(split_model(w_glob_param, net.state_dict()))
@@ -123,7 +164,7 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
         print("Full evaluation profile: {}".format(full_profile))
         full_acc.append(test(net_glob_list[full_idx], dataset_test, args))
 
-    result_dir = getattr(args, 'result_dir', 'results/support_v1_eps02_full')
+    result_dir = getattr(args, 'result_dir', 'results/all_large_oracle_300')
     os.makedirs(result_dir, exist_ok=True)
     accuracy_path = os.path.join(result_dir, 'full_accuracy.json')
     result = {
@@ -132,7 +173,9 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
             'depth': int(full_profile[1]),
             'parameters_million': float(full_profile[2]),
         },
-        'epsilon': 0.2,
+        'experiment': 'All-Large AdaptiveFL-path Oracle',
+        'aggregation': 'Aggregation_AdaptiveFL',
+        'bn_track_running_stats': False,
         'rounds': len(full_acc),
         'accuracy': full_acc,
         'cumulative_max_client_train_time_seconds': time_list,

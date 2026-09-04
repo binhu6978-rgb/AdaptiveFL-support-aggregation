@@ -137,7 +137,7 @@ sys.stdout = RedirectStdoutToLog(logging.getLogger())
 import os
 if __name__ == '__main__':
     # parse args
-    run_dir = 'results/support_v1_eps02_full'
+    run_dir = 'results/all_large_oracle_300'
     os.makedirs(run_dir, exist_ok=True)
     stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     # redirect stdout to log file (tee)
@@ -151,10 +151,11 @@ if __name__ == '__main__':
 
     for algorithm in algorithms:
         try:
-            args.epochs = 500
+            args.epochs = 300
             args.num_users = 100
             args.frac = 0.1
             args.local_ep = 5
+            args.local_bs = 50
             args.optimizer = 'sgd'
             args.lr = 0.01
             args.lr_decay = 0.998
@@ -177,7 +178,7 @@ if __name__ == '__main__':
                 args.num_classes = 200
             else:
                 args.num_classes = 10  # 默认值，可根据需要修改
-            log_path = os.path.join(run_dir, 'support_v1_eps02_full_500round.log')
+            log_path = os.path.join(run_dir, 'all_large_oracle_300round.log')
 
             
             logging.basicConfig(level=logging.DEBUG,
@@ -194,10 +195,16 @@ if __name__ == '__main__':
                 int(client_sample_sizes.min()),
                 float(np.median(client_sample_sizes)),
                 int(client_sample_sizes.max())))
+            if (int(client_sample_sizes.min()), float(np.median(client_sample_sizes)),
+                    int(client_sample_sizes.max())) == (500, 500.0, 500):
+                raise AssertionError("IID-like 500/500/500 client split detected; expected cached non-IID split")
             print("Experiment log: {}".format(log_path))
             # plot_client_distribution(dataset_train, dict_users)
 
-            if args.model == 'cnn':
+            if args.algorithm == 'AdaptiveFL':
+                # AdaptiveFL constructs its model pool through get_model_list().
+                net_glob = None
+            elif args.model == 'cnn':
                 if args.dataset == 'femnist':
                     net_glob = CNNFashionMnist(args)
                 elif args.dataset == 'mnist':
@@ -225,8 +232,8 @@ if __name__ == '__main__':
             elif args.algorithm == 'FedProx':
                 FedProx(net_glob, dataset_train, dataset_test, dict_users)
             elif args.algorithm == 'AdaptiveFL':
-                args.depth_saved = [2, 3, 4]
-                args.width_ration = [0.4, 0.66, 1.0]
+                args.depth_saved = [2]
+                args.width_ration = [1.0]
                 experiment_start = time.time()
                 AdaptiveFL(args, dataset_train, dataset_test, dict_users)
                 elapsed = time.time() - experiment_start
