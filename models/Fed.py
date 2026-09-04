@@ -78,6 +78,131 @@ def Aggregation_AdaptiveFL(w, lens, global_model_param):
     return w_avg
 
 
+def Initialize_TemporalSupportMemory(global_model_param):
+    """Create zero temporal memory for floating largest-model tensors."""
+    return OrderedDict(
+        (key, torch.zeros_like(value, dtype=torch.float32))
+        for key, value in global_model_param.items()
+        if value.is_floating_point())
+
+
+def Aggregation_TemporalSupport(w, lens, global_model_param, memory, beta=0.85):
+    """Aggregate AdaptiveFL updates with continuous temporal support smoothing.
+
+    For every floating coordinate with sample-weighted support ``s > 0``, this
+    returns ``theta_t + s*u + (1-s)*m_new`` where ``u`` is the original
+    AdaptiveFL update and ``m_new = beta*m_prev + (1-beta)*u``. Coordinates
+    with zero support remain at ``theta_t`` and retain their previous memory.
+    Fully supported coordinates are explicitly copied from AdaptiveFL so they
+    are strictly independent of temporal memory.
+    """
+    if len(w) != len(lens) or not w:
+        raise ValueError("w and lens must be non-empty and have the same length")
+    if not 0.0 <= beta <= 1.0:
+        raise ValueError("beta must be in [0, 1]")
+
+    total_count = sum(lens)
+    if total_count <= 0:
+        raise ValueError("sum(lens) must be positive")
+
+    theta_ada = Aggregation_AdaptiveFL(w, lens, global_model_param)
+    new_global_param = copy.deepcopy(global_model_param)
+    new_memory = OrderedDict()
+
+    total_coordinates = 0
+    support_sum = 0.0
+    nonzero_coordinates = 0
+    memory_contribution_sq = 0.0
+    current_update_sq = 0.0
+    final_update_sq = 0.0
+
+    for key, global_tensor in global_model_param.items():
+        if not global_tensor.is_floating_point():
+            new_global_param[key] = copy.deepcopy(theta_ada[key])
+            continue
+
+        if key not in memory:
+            raise KeyError("Missing temporal memory for floating tensor: {}".format(key))
+        previous_memory = memory[key]
+        if (tuple(previous_memory.shape) != tuple(global_tensor.shape)
+                or not previous_memory.is_floating_point()):
+            raise ValueError(
+                "Invalid temporal memory for {}: expected floating shape {}, got {}".format(
+                    key, tuple(global_tensor.shape), tuple(previous_memory.shape)))
+
+        base = global_tensor.detach().to(dtype=torch.float32)
+        adaptive_tensor = theta_ada[key].detach().to(
+            device=global_tensor.device, dtype=torch.float32)
+        current_update = adaptive_tensor - base
+
+        # Accumulate integer sample mass first so fully covered coordinates
+        # obtain support exactly equal to one after division.
+        support_mass = global_tensor.new_zeros(
+            global_tensor.size(), dtype=torch.float32)
+        for local_state, client_len in zip(w, lens):
+            local_tensor = local_state[key]
+            if global_tensor.dim() > 1:
+                d1 = local_tensor.shape[0]
+                d2 = local_tensor.shape[1]
+                support_mass[:d1, :d2] += float(client_len)
+            elif global_tensor.dim() == 1:
+                d1 = local_tensor.shape[0]
+                support_mass[:d1] += float(client_len)
+            else:
+                support_mass += float(client_len)
+
+        support = support_mass / float(total_count)
+        observed = support > 0
+        fully_supported = support == 1
+
+        previous_memory_float = previous_memory.detach().to(
+            device=global_tensor.device, dtype=torch.float32)
+        updated_memory = previous_memory_float.clone()
+        updated_memory[observed] = (
+            beta * previous_memory_float[observed]
+            + (1.0 - beta) * current_update[observed])
+
+        final_update = torch.zeros_like(current_update)
+        memory_component = (1.0 - support) * updated_memory
+        final_update[observed] = (
+            support[observed] * current_update[observed]
+            + memory_component[observed])
+
+        result_tensor = base + final_update
+        # This explicit assignment protects the mathematical s=1 identity from
+        # any floating-point cancellation in base + (theta_ada - base).
+        result_tensor[fully_supported] = adaptive_tensor[fully_supported]
+        if beta == 0.0:
+            # With zero beta, all covered coordinates algebraically reduce to
+            # AdaptiveFL; assigning it directly gives exact baseline equality.
+            result_tensor = adaptive_tensor
+
+        if not torch.isfinite(result_tensor).all():
+            raise FloatingPointError("Non-finite TemporalSupport output: {}".format(key))
+        if not torch.isfinite(updated_memory).all():
+            raise FloatingPointError("Non-finite TemporalSupport memory: {}".format(key))
+
+        new_global_param[key] = result_tensor.to(dtype=global_tensor.dtype)
+        new_memory[key] = updated_memory
+
+        total_coordinates += support.numel()
+        support_sum += support.sum().item()
+        nonzero_coordinates += observed.sum().item()
+        memory_contribution_sq += memory_component[observed].pow(2).sum().item()
+        current_update_sq += current_update.pow(2).sum().item()
+        final_update_sq += final_update.pow(2).sum().item()
+
+    diagnostics = {
+        'support_mean': support_sum / total_coordinates if total_coordinates else 0.0,
+        'support_nonzero_ratio': (
+            nonzero_coordinates / total_coordinates if total_coordinates else 0.0),
+        'memory_contribution_l2': math.sqrt(memory_contribution_sq),
+        'current_update_l2': math.sqrt(current_update_sq),
+        'final_update_l2': math.sqrt(final_update_sq),
+    }
+    return new_global_param, new_memory, diagnostics
+
+
 def _support_quantile(histogram, total_count, quantile):
     """Return a nearest-rank quantile from a compact support histogram."""
     target = quantile * total_count
