@@ -3,6 +3,8 @@
 # Python version: 3.6
 import random
 import time
+import json
+import os
 from collections import OrderedDict
 
 import torch
@@ -18,19 +20,39 @@ from models.vgg import vgg_16_bn
 from models.resnet import ResNet18_cifar
 from models.resnet import ResNet18_widar
 from utils.HeteroClients import HeteroClients
-from utils.utils import save_result, my_save_result, get_final_acc
 from models.test import test_img, test
 from models.Update import DatasetSplit, LocalUpdate_AdaptiveFL
 from optimizer.Adabelief import AdaBelief
 
 
+def _assert_prefix_consistency(net_glob_list):
+    largest_state = net_glob_list[-1].state_dict()
+    for model_idx, net in enumerate(net_glob_list):
+        expected_state = split_model(largest_state, net.state_dict())
+        actual_state = net.state_dict()
+        for key in actual_state:
+            if not torch.equal(actual_state[key], expected_state[key]):
+                max_abs_diff = (actual_state[key] - expected_state[key]).abs().max().item()
+                raise AssertionError(
+                    "Round 1 prefix inconsistency: model={}, parameter={}, max_abs_diff={}".format(
+                        model_idx, key, max_abs_diff))
+    print("Round 1 prefix consistency assertion: PASSED")
+
+
 def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
     net_glob_list, net_slim_info = get_model_list(args)
+
+    full_idx = len(net_glob_list) - 1
+    full_profile = net_slim_info[full_idx]
+    if float(full_profile[0]) != 1.0 or int(full_profile[1]) != 2:
+        raise AssertionError(
+            "Expected Full profile (1.0, 2), got {}".format(full_profile))
+    print("Full evaluation model: {}".format(full_profile))
 
     # training
     total_time = 0
     time_list = []
-    acc_list = [[] for _ in net_glob_list]
+    full_acc = []
     clients = HeteroClients(args, net_slim_info)
 
     # 开始训练
@@ -38,6 +60,9 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
 
         print('*' * 80)
         print('Round {:3d}'.format(iter))
+
+        if iter == 1:
+            _assert_prefix_consistency(net_glob_list)
 
         w_locals = []
         lens = []
@@ -92,16 +117,30 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
             w_glob_param = Aggregation_Support(
                 w_locals, lens, net_glob_list[-1].state_dict(), epsilon=0.2)
 
-        for idx, net in enumerate(net_glob_list):
+        for net in net_glob_list:
             net.load_state_dict(split_model(w_glob_param, net.state_dict()))
-            print(net_slim_info[idx])
-            acc_list[idx].append(test(net, dataset_test, args))
 
-    save_result(time_list, 'test_time', args)
-    for id, acc in enumerate(acc_list):
-        file = my_save_result(acc, str(net_slim_info[id]), 'acc', args)
-        # save_result(acc, 'accuracy', args)
-    get_final_acc(file)
+        print("Full evaluation profile: {}".format(full_profile))
+        full_acc.append(test(net_glob_list[full_idx], dataset_test, args))
+
+    result_dir = getattr(args, 'result_dir', 'results/support_v1_eps02_full')
+    os.makedirs(result_dir, exist_ok=True)
+    accuracy_path = os.path.join(result_dir, 'full_accuracy.json')
+    result = {
+        'full_profile': {
+            'width': float(full_profile[0]),
+            'depth': int(full_profile[1]),
+            'parameters_million': float(full_profile[2]),
+        },
+        'epsilon': 0.2,
+        'rounds': len(full_acc),
+        'accuracy': full_acc,
+        'cumulative_max_client_train_time_seconds': time_list,
+    }
+    with open(accuracy_path, 'w', encoding='utf-8') as result_file:
+        json.dump(result, result_file, indent=2)
+    print("Saved Full-only accuracy: {}".format(accuracy_path))
+    return full_acc
 
 
 '''

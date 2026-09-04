@@ -4,12 +4,14 @@
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+import time
+import traceback
 import matplotlib
+import numpy as np
 from tqdm import tqdm
 
 from Algorithm.Training_Decoupled import Decoupled
 from Algorithm.Training_ScaleFL import ScaleFL
-from models.transformer import Transformer
 
 # matplotlib.use('Agg')
 import copy
@@ -135,7 +137,7 @@ sys.stdout = RedirectStdoutToLog(logging.getLogger())
 import os
 if __name__ == '__main__':
     # parse args
-    run_dir = 'result_ori_resnet_finsih'
+    run_dir = 'results/support_v1_eps02_full'
     os.makedirs(run_dir, exist_ok=True)
     stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     # redirect stdout to log file (tee)
@@ -149,11 +151,23 @@ if __name__ == '__main__':
 
     for algorithm in algorithms:
         try:
+            args.epochs = 500
+            args.num_users = 100
+            args.frac = 0.1
+            args.local_ep = 5
+            args.optimizer = 'sgd'
+            args.lr = 0.01
+            args.lr_decay = 0.998
+            args.seed = 1
+            args.generate_data = 0
             args.data_beta = 0.3
+            args.iid = 0
+            args.client_chosen_mode = 'available'
             # args.epochs=5
             args.model = 'resnet'
             args.dataset = 'cifar100'
             args.algorithm = algorithm
+            args.result_dir = run_dir
 
             if args.dataset.lower() == 'cifar10':
                 args.num_classes = 10
@@ -163,21 +177,24 @@ if __name__ == '__main__':
                 args.num_classes = 200
             else:
                 args.num_classes = 10  # 默认值，可根据需要修改
-
-
-
-            log_path = os.path.join(run_dir, "%s_%s_%s_%s_%s.log" % (str(args.data_beta), args.dataset,args.algorithm,args.model,stamp))
+            log_path = os.path.join(run_dir, 'support_v1_eps02_full_500round.log')
 
             
             logging.basicConfig(level=logging.DEBUG,
-                                format='%(asctime)s - %(levelname)s - %(message)s',
-                                filename=log_path,
-                                filemode='a')
+                                 format='%(asctime)s - %(levelname)s - %(message)s',
+                                 filename=log_path,
+                                 filemode='w')
 
 
             set_random_seed(args.seed)
 
             dataset_train, dataset_test, dict_users = get_dataset(args)
+            client_sample_sizes = np.asarray([len(dict_users[idx]) for idx in range(args.num_users)])
+            print("Client sample size: min={}, median={}, max={}".format(
+                int(client_sample_sizes.min()),
+                float(np.median(client_sample_sizes)),
+                int(client_sample_sizes.max())))
+            print("Experiment log: {}".format(log_path))
             # plot_client_distribution(dataset_train, dict_users)
 
             if args.model == 'cnn':
@@ -198,6 +215,7 @@ if __name__ == '__main__':
             elif 'lstm' in args.model:
                 net_glob = CharLSTM()
             elif 'transformer' in args.model:
+                from models.transformer import Transformer
                 net_glob = Transformer(vocab_size=30522, d_model=128, nhead=8, num_encoder_layers=8, max_len=256,
                                     slim_idx=2,
                                     scale=0.5, dropout=0.1)
@@ -209,7 +227,12 @@ if __name__ == '__main__':
             elif args.algorithm == 'AdaptiveFL':
                 args.depth_saved = [2, 3, 4]
                 args.width_ration = [0.4, 0.66, 1.0]
+                experiment_start = time.time()
                 AdaptiveFL(args, dataset_train, dataset_test, dict_users)
+                elapsed = time.time() - experiment_start
+                print("Total experiment wall time (seconds): {:.6f}".format(elapsed))
+                print("Average wall time per round (seconds): {:.6f}".format(
+                    elapsed / args.epochs))
             elif args.algorithm == 'HeteroFL':
                 args.depth_saved = [0]
                 args.width_ration = [0.5, 0.71, 1.0]
@@ -225,5 +248,6 @@ if __name__ == '__main__':
             else:
                 raise "%s algorithm has not achieved".format(args.algorithm)
 
-        except Exception as e:
-            continue  # Continue with the next algorithm even if there's an error
+        except Exception:
+            traceback.print_exc(file=sys.stdout)
+            raise
