@@ -14,7 +14,7 @@ from tqdm import tqdm
 
 from models.Fed import (get_model_list, Aggregation_AdaptiveFL,
                         Aggregation_TemporalSupport,
-                        Initialize_TemporalSupportMemory, split_model,
+                        Initialize_TemporalSupportState, split_model,
                         select_clients)
 from models.vgg import vgg_16_bn
 from models.resnet import ResNet18_cifar
@@ -28,7 +28,7 @@ from optimizer.Adabelief import AdaBelief
 
 def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
     net_glob_list, net_slim_info = get_model_list(args)
-    temporal_memory = Initialize_TemporalSupportMemory(
+    temporal_state = Initialize_TemporalSupportState(
         net_glob_list[-1].state_dict())
 
     # training
@@ -93,14 +93,15 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
             w_glob_param = Aggregation_AdaptiveFL(
                 w_locals, lens, net_glob_list[-1].state_dict())
         else:
-            w_glob_param, temporal_memory, temporal_diagnostics = (
+            w_glob_param, temporal_state, temporal_diagnostics = (
                 Aggregation_TemporalSupport(
                     w_locals, lens, net_glob_list[-1].state_dict(),
-                    memory=temporal_memory, beta=0.85))
+                    state=temporal_state, beta=0.85))
             print(
                 "TemporalSupport diagnostics: support_mean={support_mean:.6f}, "
                 "support_nonzero_ratio={support_nonzero_ratio:.6f}, "
-                "memory_contribution_l2={memory_contribution_l2:.6f}, "
+                "temporal_mean_l2={temporal_mean_l2:.6f}, "
+                "memory_component_l2={memory_component_l2:.6f}, "
                 "current_update_l2={current_update_l2:.6f}, "
                 "final_update_l2={final_update_l2:.6f}".format(
                     **temporal_diagnostics))

@@ -78,23 +78,24 @@ def Aggregation_AdaptiveFL(w, lens, global_model_param):
     return w_avg
 
 
-def Initialize_TemporalSupportMemory(global_model_param):
-    """Create zero temporal memory for floating largest-model tensors."""
-    return OrderedDict(
-        (key, torch.zeros_like(value, dtype=torch.float32))
-        for key, value in global_model_param.items()
-        if value.is_floating_point())
+def Initialize_TemporalSupportState(global_model_param):
+    """Create zero support-weighted evidence state for floating tensors."""
+    def _zeros():
+        return OrderedDict(
+            (key, torch.zeros_like(value, dtype=torch.float32))
+            for key, value in global_model_param.items()
+            if value.is_floating_point())
+
+    return {'numerator': _zeros(), 'mass': _zeros()}
 
 
-def Aggregation_TemporalSupport(w, lens, global_model_param, memory, beta=0.85):
-    """Aggregate AdaptiveFL updates with continuous temporal support smoothing.
+def Aggregation_TemporalSupport(w, lens, global_model_param, state, beta=0.85):
+    """Aggregate AdaptiveFL with support-weighted temporal evidence.
 
-    For every floating coordinate with sample-weighted support ``s > 0``, this
-    returns ``theta_t + s*u + (1-s)*m_new`` where ``u`` is the original
-    AdaptiveFL update and ``m_new = beta*m_prev + (1-beta)*u``. Coordinates
-    with zero support remain at ``theta_t`` and retain their previous memory.
-    Fully supported coordinates are explicitly copied from AdaptiveFL so they
-    are strictly independent of temporal memory.
+    ``state`` stores an evidence numerator ``z`` and evidence mass ``q`` for
+    each floating largest-model coordinate.  Every round ages both by
+    ``beta``; an observed coordinate adds ``s * u`` and ``s`` respectively.
+    A zero-support coordinate never applies historical evidence to the model.
     """
     if len(w) != len(lens) or not w:
         raise ValueError("w and lens must be non-empty and have the same length")
@@ -106,29 +107,46 @@ def Aggregation_TemporalSupport(w, lens, global_model_param, memory, beta=0.85):
         raise ValueError("sum(lens) must be positive")
 
     theta_ada = Aggregation_AdaptiveFL(w, lens, global_model_param)
+    if set(state.keys()) != {'numerator', 'mass'}:
+        raise ValueError("TemporalSupport state must contain numerator and mass")
+    numerator_state = state['numerator']
+    mass_state = state['mass']
     new_global_param = copy.deepcopy(global_model_param)
-    new_memory = OrderedDict()
+    new_numerator = OrderedDict()
+    new_mass = OrderedDict()
 
-    total_coordinates = 0
-    support_sum = 0.0
-    nonzero_coordinates = 0
-    memory_contribution_sq = 0.0
-    current_update_sq = 0.0
-    final_update_sq = 0.0
+    totals = {
+        'coordinates': 0,
+        'support_sum': 0.0,
+        'nonzero_coordinates': 0,
+        'current_update_sq': 0.0,
+        'temporal_mean_sq': 0.0,
+        'memory_component_sq': 0.0,
+        'final_update_sq': 0.0,
+    }
+    bands = ('low', 'medium', 'high', 'full', 'zero')
+    band_totals = {
+        band: {'count': 0.0, 'current_sq': 0.0, 'temporal_sq': 0.0,
+               'final_sq': 0.0, 'mass_sum': 0.0}
+        for band in bands
+    }
 
     for key, global_tensor in global_model_param.items():
         if not global_tensor.is_floating_point():
             new_global_param[key] = copy.deepcopy(theta_ada[key])
             continue
 
-        if key not in memory:
-            raise KeyError("Missing temporal memory for floating tensor: {}".format(key))
-        previous_memory = memory[key]
-        if (tuple(previous_memory.shape) != tuple(global_tensor.shape)
-                or not previous_memory.is_floating_point()):
-            raise ValueError(
-                "Invalid temporal memory for {}: expected floating shape {}, got {}".format(
-                    key, tuple(global_tensor.shape), tuple(previous_memory.shape)))
+        if key not in numerator_state or key not in mass_state:
+            raise KeyError("Missing temporal evidence state for floating tensor: {}".format(key))
+        previous_numerator = numerator_state[key]
+        previous_mass = mass_state[key]
+        for label, tensor in (('numerator', previous_numerator),
+                              ('mass', previous_mass)):
+            if (tuple(tensor.shape) != tuple(global_tensor.shape)
+                    or not tensor.is_floating_point()):
+                raise ValueError(
+                    "Invalid temporal {} for {}: expected floating shape {}, got {}".format(
+                        label, key, tuple(global_tensor.shape), tuple(tensor.shape)))
 
         base = global_tensor.detach().to(dtype=torch.float32)
         adaptive_tensor = theta_ada[key].detach().to(
@@ -155,15 +173,23 @@ def Aggregation_TemporalSupport(w, lens, global_model_param, memory, beta=0.85):
         observed = support > 0
         fully_supported = support == 1
 
-        previous_memory_float = previous_memory.detach().to(
+        previous_numerator_float = previous_numerator.detach().to(
             device=global_tensor.device, dtype=torch.float32)
-        updated_memory = previous_memory_float.clone()
-        updated_memory[observed] = (
-            beta * previous_memory_float[observed]
-            + (1.0 - beta) * current_update[observed])
+        previous_mass_float = previous_mass.detach().to(
+            device=global_tensor.device, dtype=torch.float32)
+        updated_numerator = beta * previous_numerator_float
+        updated_mass = beta * previous_mass_float
+        updated_numerator[observed] += (
+            support[observed] * current_update[observed])
+        updated_mass[observed] += support[observed]
+
+        temporal_mean = torch.zeros_like(current_update)
+        valid_mass = updated_mass > torch.finfo(updated_mass.dtype).eps
+        temporal_mean[valid_mass] = (
+            updated_numerator[valid_mass] / updated_mass[valid_mass])
 
         final_update = torch.zeros_like(current_update)
-        memory_component = (1.0 - support) * updated_memory
+        memory_component = (1.0 - support) * temporal_mean
         final_update[observed] = (
             support[observed] * current_update[observed]
             + memory_component[observed])
@@ -179,28 +205,60 @@ def Aggregation_TemporalSupport(w, lens, global_model_param, memory, beta=0.85):
 
         if not torch.isfinite(result_tensor).all():
             raise FloatingPointError("Non-finite TemporalSupport output: {}".format(key))
-        if not torch.isfinite(updated_memory).all():
-            raise FloatingPointError("Non-finite TemporalSupport memory: {}".format(key))
+        if not torch.isfinite(updated_numerator).all():
+            raise FloatingPointError("Non-finite TemporalSupport numerator: {}".format(key))
+        if not torch.isfinite(updated_mass).all():
+            raise FloatingPointError("Non-finite TemporalSupport mass: {}".format(key))
 
         new_global_param[key] = result_tensor.to(dtype=global_tensor.dtype)
-        new_memory[key] = updated_memory
+        new_numerator[key] = updated_numerator
+        new_mass[key] = updated_mass
 
-        total_coordinates += support.numel()
-        support_sum += support.sum().item()
-        nonzero_coordinates += observed.sum().item()
-        memory_contribution_sq += memory_component[observed].pow(2).sum().item()
-        current_update_sq += current_update.pow(2).sum().item()
-        final_update_sq += final_update.pow(2).sum().item()
+        totals['coordinates'] += support.numel()
+        totals['support_sum'] += support.sum().item()
+        totals['nonzero_coordinates'] += observed.sum().item()
+        totals['current_update_sq'] += current_update.pow(2).sum().item()
+        totals['temporal_mean_sq'] += temporal_mean.pow(2).sum().item()
+        totals['memory_component_sq'] += memory_component[observed].pow(2).sum().item()
+        totals['final_update_sq'] += final_update.pow(2).sum().item()
+
+        masks = {
+            'low': observed & (support < 0.3),
+            'medium': (support >= 0.3) & (support < 0.8),
+            'high': (support >= 0.8) & (support < 1.0),
+            'full': fully_supported,
+            'zero': ~observed,
+        }
+        for band, mask in masks.items():
+            band_totals[band]['count'] += mask.sum().item()
+            band_totals[band]['current_sq'] += current_update[mask].pow(2).sum().item()
+            band_totals[band]['temporal_sq'] += memory_component[mask].pow(2).sum().item()
+            band_totals[band]['final_sq'] += final_update[mask].pow(2).sum().item()
+            band_totals[band]['mass_sum'] += updated_mass[mask].sum().item()
 
     diagnostics = {
-        'support_mean': support_sum / total_coordinates if total_coordinates else 0.0,
+        'support_mean': (totals['support_sum'] / totals['coordinates']
+                         if totals['coordinates'] else 0.0),
         'support_nonzero_ratio': (
-            nonzero_coordinates / total_coordinates if total_coordinates else 0.0),
-        'memory_contribution_l2': math.sqrt(memory_contribution_sq),
-        'current_update_l2': math.sqrt(current_update_sq),
-        'final_update_l2': math.sqrt(final_update_sq),
+            totals['nonzero_coordinates'] / totals['coordinates']
+            if totals['coordinates'] else 0.0),
+        'current_update_l2': math.sqrt(totals['current_update_sq']),
+        'temporal_mean_l2': math.sqrt(totals['temporal_mean_sq']),
+        'memory_component_l2': math.sqrt(totals['memory_component_sq']),
+        'final_update_l2': math.sqrt(totals['final_update_sq']),
+        'support_bands': {
+            band: {
+                'coordinate_count': int(values['count']),
+                'current_update_l2': math.sqrt(values['current_sq']),
+                'temporal_component_l2': math.sqrt(values['temporal_sq']),
+                'final_update_l2': math.sqrt(values['final_sq']),
+                'mean_evidence_mass': (
+                    values['mass_sum'] / values['count'] if values['count'] else 0.0),
+            }
+            for band, values in band_totals.items()
+        },
     }
-    return new_global_param, new_memory, diagnostics
+    return new_global_param, {'numerator': new_numerator, 'mass': new_mass}, diagnostics
 
 
 def _support_quantile(histogram, total_count, quantile):
