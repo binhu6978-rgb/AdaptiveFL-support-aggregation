@@ -23,6 +23,7 @@ from utils.HeteroClients import HeteroClients
 from models.test import test_img, test
 from models.Update import DatasetSplit, LocalUpdate_AdaptiveFL
 from optimizer.Adabelief import AdaBelief
+from utils.cross_scale_consistency import CrossScaleConsistencyDiagnostics
 
 
 def _assert_prefix_consistency(net_glob_list):
@@ -39,21 +40,55 @@ def _assert_prefix_consistency(net_glob_list):
     print("Round 1 prefix consistency assertion: PASSED")
 
 
+def _capture_rng_state():
+    numpy_state = np.random.get_state()
+    return {
+        'python': random.getstate(),
+        'numpy': (
+            numpy_state[0], numpy_state[1].copy(), numpy_state[2],
+            numpy_state[3], numpy_state[4]),
+        'torch_cpu': torch.get_rng_state().clone(),
+        'torch_cuda': [state.clone() for state in torch.cuda.get_rng_state_all()],
+    }
+
+
+def _assert_rng_state_unchanged(before):
+    after = _capture_rng_state()
+    numpy_equal = (
+        before['numpy'][0] == after['numpy'][0]
+        and np.array_equal(before['numpy'][1], after['numpy'][1])
+        and before['numpy'][2:] == after['numpy'][2:])
+    cuda_equal = (
+        len(before['torch_cuda']) == len(after['torch_cuda'])
+        and all(torch.equal(left, right) for left, right in zip(
+            before['torch_cuda'], after['torch_cuda'])))
+    if not (before['python'] == after['python'] and numpy_equal
+            and torch.equal(before['torch_cpu'], after['torch_cpu'])
+            and cuda_equal):
+        raise AssertionError('Diagnostics changed an RNG state')
+
+
 def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
     net_glob_list, net_slim_info = get_model_list(args)
 
-    if len(net_glob_list) != 1:
+    expected_profiles = [
+        (0.4, 2), (0.4, 3), (0.4, 4),
+        (0.66, 2), (0.66, 3), (0.66, 4),
+        (1.0, 2),
+    ]
+    actual_profiles = [
+        (float(profile[0]), int(profile[1]))
+        for profile in net_slim_info
+    ]
+    if len(net_glob_list) != 7 or actual_profiles != expected_profiles:
         raise AssertionError(
-            "All-Small oracle requires exactly one model, got {}".format(
-                len(net_glob_list)))
-    small_idx = 0
-    small_profile = net_slim_info[small_idx]
-    if float(small_profile[0]) != 0.4 or int(small_profile[1]) != 2:
-        raise AssertionError(
-            "Expected Small profile (0.4, 2), got {}".format(small_profile))
+            "Expected seven heterogeneous profiles {}, got {}".format(
+                expected_profiles, actual_profiles))
+    full_idx = actual_profiles.index((1.0, 2))
+    full_profile = net_slim_info[full_idx]
 
     batch_norm_modules = [
-        module for module in net_glob_list[0].modules()
+        module for net in net_glob_list for module in net.modules()
         if isinstance(module, nn.modules.batchnorm._BatchNorm)
     ]
     bn_track_running_stats = [
@@ -64,7 +99,7 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
             "Expected all BatchNorm modules to use track_running_stats=False, got {}".format(
                 bn_track_running_stats))
 
-    print("Experiment: All-Small AdaptiveFL-path Oracle")
+    print("Experiment: Cross-Scale Update Consistency Diagnostic")
     experiment_config = [
         ("algorithm", args.algorithm),
         ("dataset", args.dataset),
@@ -83,18 +118,23 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
         ("depth_saved", args.depth_saved),
         ("width_ration", args.width_ration),
         ("len(net_glob_list)", len(net_glob_list)),
-        ("Small profile", small_profile),
-        ("Small parameter count (million)", float(small_profile[2])),
+        ("profiles", net_slim_info),
+        ("Full evaluation profile", full_profile),
         ("BN module count", len(batch_norm_modules)),
         ("BN track_running_stats", sorted(set(bn_track_running_stats))),
     ]
     for key, value in experiment_config:
         print("{}: {}".format(key, value))
 
+    result_dir = getattr(
+        args, 'result_dir', 'results/cross_scale_consistency_50')
+    diagnostics = CrossScaleConsistencyDiagnostics(
+        net_glob_list[0].state_dict(), net_slim_info, result_dir)
+
     # training
     total_time = 0
     time_list = []
-    small_acc = []
+    full_acc = []
     clients = HeteroClients(args, net_slim_info)
 
     # 开始训练
@@ -122,6 +162,12 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
         else:
             ration_users = np.random.choice(range(len(net_glob_list)), m)  # 模型选择
             idx_users = select_clients(args, ration_users, len(net_glob_list))  # 基于规则的客户端选择
+
+        round_global_state = None
+        if iter >= 1:
+            round_global_state = OrderedDict(
+                (key, value.detach().clone())
+                for key, value in net_glob_list[-1].state_dict().items())
 
         feedback_list = []
         max_time = 0
@@ -152,35 +198,60 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
         print(f"hetero_proportion: \t{args.client_hetero_ration}")
         # 需要print 每个客户端的计算资源
 
+        if iter == 0:
+            print("Round 0 consistency diagnostic: SKIPPED (independent profile initialization)")
+        else:
+            rng_state_before = _capture_rng_state()
+            diagnostics.measure(
+                round_idx=iter,
+                w_locals=w_locals,
+                lens=lens,
+                client_ids=idx_users,
+                model_indices=ration_users,
+                global_model_param=round_global_state)
+            _assert_rng_state_unchanged(rng_state_before)
+            if iter == 1:
+                print("Diagnostic RNG state assertion: PASSED")
+
+            current_global_state = net_glob_list[-1].state_dict()
+            for key, value in current_global_state.items():
+                if not torch.equal(value.detach(), round_global_state[key]):
+                    difference = (value.detach().to(dtype=torch.float32)
+                                  - round_global_state[key].to(
+                                      dtype=torch.float32)).abs().max().item()
+                    raise AssertionError(
+                        "Pre-aggregation global changed during local training/diagnostics: "
+                        "key={}, max_abs_diff={}".format(key, difference))
+
         w_glob_param = Aggregation_AdaptiveFL(
             w_locals, lens, net_glob_list[-1].state_dict())
 
         for net in net_glob_list:
             net.load_state_dict(split_model(w_glob_param, net.state_dict()))
 
-        print("Small evaluation profile: {}".format(small_profile))
-        small_acc.append(test(net_glob_list[small_idx], dataset_test, args))
+        print("Full evaluation profile: {}".format(full_profile))
+        full_acc.append(test(net_glob_list[full_idx], dataset_test, args))
 
-    result_dir = getattr(args, 'result_dir', 'results/all_small_oracle_300')
     os.makedirs(result_dir, exist_ok=True)
-    accuracy_path = os.path.join(result_dir, 'small_accuracy.json')
+    accuracy_path = os.path.join(result_dir, 'full_accuracy.json')
     result = {
-        'small_profile': {
-            'width': float(small_profile[0]),
-            'depth': int(small_profile[1]),
-            'parameters_million': float(small_profile[2]),
+        'full_profile': {
+            'width': float(full_profile[0]),
+            'depth': int(full_profile[1]),
+            'parameters_million': float(full_profile[2]),
         },
-        'experiment': 'All-Small AdaptiveFL-path Oracle',
+        'experiment': 'Cross-Scale Update Consistency Diagnostic',
         'aggregation': 'Aggregation_AdaptiveFL',
         'bn_track_running_stats': False,
-        'rounds': len(small_acc),
-        'accuracy': small_acc,
+        'rounds': len(full_acc),
+        'accuracy': full_acc,
         'cumulative_max_client_train_time_seconds': time_list,
     }
     with open(accuracy_path, 'w', encoding='utf-8') as result_file:
         json.dump(result, result_file, indent=2)
-    print("Saved Small-only accuracy: {}".format(accuracy_path))
-    return small_acc
+    diagnostics.save()
+    print("Saved Full integrity accuracy: {}".format(accuracy_path))
+    return full_acc
 
 
 '''

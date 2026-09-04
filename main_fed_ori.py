@@ -137,7 +137,7 @@ sys.stdout = RedirectStdoutToLog(logging.getLogger())
 import os
 if __name__ == '__main__':
     # parse args
-    run_dir = 'results/all_small_oracle_300'
+    run_dir = 'results/cross_scale_consistency_50'
     os.makedirs(run_dir, exist_ok=True)
     stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     # redirect stdout to log file (tee)
@@ -151,7 +151,7 @@ if __name__ == '__main__':
 
     for algorithm in algorithms:
         try:
-            args.epochs = 300
+            args.epochs = 50
             args.num_users = 100
             args.frac = 0.1
             args.local_ep = 5
@@ -178,7 +178,7 @@ if __name__ == '__main__':
                 args.num_classes = 200
             else:
                 args.num_classes = 10  # 默认值，可根据需要修改
-            log_path = os.path.join(run_dir, 'all_small_oracle_300round.log')
+            log_path = os.path.join(run_dir, 'cross_scale_consistency_50round.log')
 
             
             logging.basicConfig(level=logging.DEBUG,
@@ -232,8 +232,8 @@ if __name__ == '__main__':
             elif args.algorithm == 'FedProx':
                 FedProx(net_glob, dataset_train, dataset_test, dict_users)
             elif args.algorithm == 'AdaptiveFL':
-                args.depth_saved = [2]
-                args.width_ration = [0.4]
+                args.depth_saved = [2, 3, 4]
+                args.width_ration = [0.4, 0.66, 1.0]
                 experiment_start = time.time()
                 AdaptiveFL(args, dataset_train, dataset_test, dict_users)
                 elapsed = time.time() - experiment_start
