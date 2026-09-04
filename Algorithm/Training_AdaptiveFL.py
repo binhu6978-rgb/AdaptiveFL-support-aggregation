@@ -3,6 +3,8 @@
 # Python version: 3.6
 import random
 import time
+import json
+import os
 from collections import OrderedDict
 
 import torch
@@ -34,7 +36,11 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
     # training
     total_time = 0
     time_list = []
-    acc_list = [[] for _ in net_glob_list]
+    full_acc = []
+    temporal_diagnostics_history = [
+        {'round': 0, 'temporal_applied': False,
+         'reason': 'Round 0 uses Aggregation_AdaptiveFL only.'}
+    ]
     clients = HeteroClients(args, net_slim_info)
 
     # 开始训练
@@ -105,17 +111,26 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
                 "current_update_l2={current_update_l2:.6f}, "
                 "final_update_l2={final_update_l2:.6f}".format(
                     **temporal_diagnostics))
+            temporal_diagnostics['round'] = iter
+            temporal_diagnostics['temporal_applied'] = True
+            temporal_diagnostics_history.append(temporal_diagnostics)
 
         for idx, net in enumerate(net_glob_list):
             net.load_state_dict(split_model(w_glob_param, net.state_dict()))
             print(net_slim_info[idx])
-            acc_list[idx].append(test(net, dataset_test, args))
 
-    save_result(time_list, 'test_time', args)
-    for id, acc in enumerate(acc_list):
-        file = my_save_result(acc, str(net_slim_info[id]), 'acc', args)
-        # save_result(acc, 'accuracy', args)
-    get_final_acc(file)
+        full_acc.append(test(net_glob_list[-1], dataset_test, args))
+        print('Full (1.0, 2) accuracy: {:.6f}'.format(full_acc[-1]))
+
+    result_dir = getattr(args, 'result_dir', None)
+    if not result_dir:
+        raise ValueError('AdaptiveFL TemporalSupport experiment requires args.result_dir')
+    os.makedirs(result_dir, exist_ok=True)
+    with open(os.path.join(result_dir, 'full_accuracy.json'), 'w', encoding='utf-8') as handle:
+        json.dump({'profile': [1.0, 2], 'accuracy': full_acc}, handle, indent=2)
+    with open(os.path.join(result_dir, 'temporal_diagnostics.json'), 'w', encoding='utf-8') as handle:
+        json.dump(temporal_diagnostics_history, handle, indent=2)
+    return {'accuracy': full_acc, 'round_time_cumulative': time_list}
 
 
 '''

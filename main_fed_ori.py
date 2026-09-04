@@ -5,6 +5,8 @@ import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 import matplotlib
+import numpy as np
+import traceback
 from tqdm import tqdm
 
 from Algorithm.Training_Decoupled import Decoupled
@@ -130,100 +132,55 @@ class RedirectStdoutToLog:
 
     def flush(self):
         pass
-# 重定向标准输出到日志
-sys.stdout = RedirectStdoutToLog(logging.getLogger())
-import os
 if __name__ == '__main__':
-    # parse args
-    run_dir = 'result_ori_resnet_finsih'
-    os.makedirs(run_dir, exist_ok=True)
-    stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    # redirect stdout to log file (tee)
-
-
     args = args_parser()
-    args.device = torch.device('cuda:{}'.format(args.gpu) if torch.cuda.is_available() and args.gpu != -1 else 'cpu')
+    args.algorithm = 'AdaptiveFL'
+    args.dataset = 'cifar100'
+    args.model = 'resnet'
+    args.num_classes = 100
+    args.data_beta = 0.3
+    args.iid = 0
+    args.generate_data = 0
+    args.epochs = 500
+    args.num_users = 100
+    args.frac = 0.1
+    args.local_ep = 5
+    args.local_bs = 50
+    args.optimizer = 'sgd'
+    args.lr = 0.01
+    args.lr_decay = 0.998
+    args.seed = 1
+    args.client_chosen_mode = 'available'
+    args.depth_saved = [2, 3, 4]
+    args.width_ration = [0.4, 0.66, 1.0]
+    args.result_dir = os.path.join('results', 'temporal_support_v2_beta085_full500')
+    args.device = torch.device(
+        'cuda:{}'.format(args.gpu) if torch.cuda.is_available() and args.gpu != -1 else 'cpu')
 
-    # algorithms = ['AdaptiveFL', 'HeteroFL', 'ScaleFL','FedAvg']
-    algorithms = ['AdaptiveFL']
-
-    for algorithm in algorithms:
-        try:
-            args.data_beta = 0.3
-            # args.epochs=5
-            args.model = 'resnet'
-            args.dataset = 'cifar100'
-            args.algorithm = algorithm
-
-            if args.dataset.lower() == 'cifar10':
-                args.num_classes = 10
-            elif args.dataset.lower() == 'cifar100':
-                args.num_classes = 100
-            elif args.dataset.lower() in ['tinyimagenet', 'tiny_imagenet', 'tiny-imagenet']:
-                args.num_classes = 200
-            else:
-                args.num_classes = 10  # 默认值，可根据需要修改
-
-
-
-            log_path = os.path.join(run_dir, "%s_%s_%s_%s_%s.log" % (str(args.data_beta), args.dataset,args.algorithm,args.model,stamp))
-
-            
-            logging.basicConfig(level=logging.DEBUG,
-                                format='%(asctime)s - %(levelname)s - %(message)s',
-                                filename=log_path,
-                                filemode='a')
-
-
-            set_random_seed(args.seed)
-
-            dataset_train, dataset_test, dict_users = get_dataset(args)
-            # plot_client_distribution(dataset_train, dict_users)
-
-            if args.model == 'cnn':
-                if args.dataset == 'femnist':
-                    net_glob = CNNFashionMnist(args)
-                elif args.dataset == 'mnist':
-                    net_glob = CNNMnist(args)
-                elif args.use_project_head:
-                    net_glob = ModelFedCon(args.model, args.out_dim, args.num_classes)
-                elif 'cifar' in args.dataset:
-                    net_glob = CNNCifar(args)
-            elif 'resnet' in args.model:
-                net_glob = ResNet18_cifar(num_channels=args.num_channels, num_classes=args.num_classes)  # 默认为3通道
-            elif 'mobilenet' in args.model:
-                net_glob = MobileNetV2(args.num_channels, args.num_classes)
-            elif 'vgg' in args.model:
-                net_glob = vgg_16_bn(num_classes=args.num_classes, track_running_stats=True, num_channels=args.num_channels)
-            elif 'lstm' in args.model:
-                net_glob = CharLSTM()
-            elif 'transformer' in args.model:
-                net_glob = Transformer(vocab_size=30522, d_model=128, nhead=8, num_encoder_layers=8, max_len=256,
-                                    slim_idx=2,
-                                    scale=0.5, dropout=0.1)
-            if args.algorithm == 'FedAvg':
-                net_glob.to(args.device)
-                FedAvg(net_glob, dataset_train, dataset_test, dict_users)
-            elif args.algorithm == 'FedProx':
-                FedProx(net_glob, dataset_train, dataset_test, dict_users)
-            elif args.algorithm == 'AdaptiveFL':
-                args.depth_saved = [2, 3, 4]
-                args.width_ration = [0.4, 0.66, 1.0]
-                AdaptiveFL(args, dataset_train, dataset_test, dict_users)
-            elif args.algorithm == 'HeteroFL':
-                args.depth_saved = [0]
-                args.width_ration = [0.5, 0.71, 1.0]
-                HeteroFL(args, dataset_train, dataset_test, dict_users)
-            elif args.algorithm == 'ScaleFL':
-                args.depth_saved = [2, 3, 4]
-                args.width_ration = [0.4, 0.66, 1.0]
-                ScaleFL(args, dataset_train, dataset_test, dict_users)
-            elif args.algorithm == 'Decoupled':
-                args.depth_saved = [8]
-                args.width_ration = [0.4, 0.66, 1.0]
-                Decoupled(args, dataset_train, dataset_test, dict_users)
-            else:
-                raise "%s algorithm has not achieved".format(args.algorithm)
-
-        except Exception as e:
-            continue  # Continue with the next algorithm even if there's an error
+    os.makedirs(args.result_dir, exist_ok=True)
+    log_path = os.path.join(args.result_dir, 'temporal_support_v2_beta085_full500.log')
+    original_stdout = sys.stdout
+    logger = TeeLogger(log_path)
+    sys.stdout = logger
+    started = datetime.now()
+    try:
+        print('TemporalSupport V2 formal experiment')
+        print('beta=0.85; 500 rounds; Full-only evaluation; device={}'.format(args.device))
+        print('profiles=[(0.4,2), (0.4,3), (0.4,4), (0.66,2), (0.66,3), '
+              '(0.66,4), (1.0,2)]; BN track_running_stats=False')
+        set_random_seed(args.seed)
+        dataset_train, dataset_test, dict_users = get_dataset(args)
+        client_sizes = [len(dict_users[index]) for index in range(args.num_users)]
+        print('client sample sizes: min={}, median={}, max={}'.format(
+            min(client_sizes), float(np.median(client_sizes)), max(client_sizes)))
+        result = AdaptiveFL(args, dataset_train, dataset_test, dict_users)
+        elapsed_seconds = (datetime.now() - started).total_seconds()
+        print('completed 500/500 rounds; elapsed_seconds={:.3f}; average_round_seconds={:.3f}'.format(
+            elapsed_seconds, elapsed_seconds / args.epochs))
+        print('recorded_full_accuracy_rounds={}'.format(len(result['accuracy'])))
+    except Exception:
+        traceback.print_exc()
+        raise
+    finally:
+        sys.stdout = original_stdout
+        logger.close()
