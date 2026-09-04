@@ -44,17 +44,13 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
 
     if len(net_glob_list) != 1:
         raise AssertionError(
-            "All-Large oracle requires exactly one model, got {}".format(
+            "All-Small oracle requires exactly one model, got {}".format(
                 len(net_glob_list)))
-    full_idx = len(net_glob_list) - 1
-    full_profile = net_slim_info[full_idx]
-    if float(full_profile[0]) != 1.0 or int(full_profile[1]) != 2:
+    small_idx = 0
+    small_profile = net_slim_info[small_idx]
+    if float(small_profile[0]) != 0.4 or int(small_profile[1]) != 2:
         raise AssertionError(
-            "Expected Full profile (1.0, 2), got {}".format(full_profile))
-    if abs(float(full_profile[2]) - 11.424356) > 1e-6:
-        raise AssertionError(
-            "Expected about 11.424356M parameters, got {}M".format(
-                full_profile[2]))
+            "Expected Small profile (0.4, 2), got {}".format(small_profile))
 
     batch_norm_modules = [
         module for module in net_glob_list[0].modules()
@@ -68,7 +64,7 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
             "Expected all BatchNorm modules to use track_running_stats=False, got {}".format(
                 bn_track_running_stats))
 
-    print("Experiment: All-Large AdaptiveFL-path Oracle")
+    print("Experiment: All-Small AdaptiveFL-path Oracle")
     experiment_config = [
         ("algorithm", args.algorithm),
         ("dataset", args.dataset),
@@ -87,7 +83,8 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
         ("depth_saved", args.depth_saved),
         ("width_ration", args.width_ration),
         ("len(net_glob_list)", len(net_glob_list)),
-        ("Full profile", full_profile),
+        ("Small profile", small_profile),
+        ("Small parameter count (million)", float(small_profile[2])),
         ("BN module count", len(batch_norm_modules)),
         ("BN track_running_stats", sorted(set(bn_track_running_stats))),
     ]
@@ -97,7 +94,7 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
     # training
     total_time = 0
     time_list = []
-    full_acc = []
+    small_acc = []
     clients = HeteroClients(args, net_slim_info)
 
     # 开始训练
@@ -161,29 +158,29 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
         for net in net_glob_list:
             net.load_state_dict(split_model(w_glob_param, net.state_dict()))
 
-        print("Full evaluation profile: {}".format(full_profile))
-        full_acc.append(test(net_glob_list[full_idx], dataset_test, args))
+        print("Small evaluation profile: {}".format(small_profile))
+        small_acc.append(test(net_glob_list[small_idx], dataset_test, args))
 
-    result_dir = getattr(args, 'result_dir', 'results/all_large_oracle_300')
+    result_dir = getattr(args, 'result_dir', 'results/all_small_oracle_300')
     os.makedirs(result_dir, exist_ok=True)
-    accuracy_path = os.path.join(result_dir, 'full_accuracy.json')
+    accuracy_path = os.path.join(result_dir, 'small_accuracy.json')
     result = {
-        'full_profile': {
-            'width': float(full_profile[0]),
-            'depth': int(full_profile[1]),
-            'parameters_million': float(full_profile[2]),
+        'small_profile': {
+            'width': float(small_profile[0]),
+            'depth': int(small_profile[1]),
+            'parameters_million': float(small_profile[2]),
         },
-        'experiment': 'All-Large AdaptiveFL-path Oracle',
+        'experiment': 'All-Small AdaptiveFL-path Oracle',
         'aggregation': 'Aggregation_AdaptiveFL',
         'bn_track_running_stats': False,
-        'rounds': len(full_acc),
-        'accuracy': full_acc,
+        'rounds': len(small_acc),
+        'accuracy': small_acc,
         'cumulative_max_client_train_time_seconds': time_list,
     }
     with open(accuracy_path, 'w', encoding='utf-8') as result_file:
         json.dump(result, result_file, indent=2)
-    print("Saved Full-only accuracy: {}".format(accuracy_path))
-    return full_acc
+    print("Saved Small-only accuracy: {}".format(accuracy_path))
+    return small_acc
 
 
 '''
