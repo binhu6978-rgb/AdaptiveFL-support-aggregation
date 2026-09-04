@@ -11,7 +11,6 @@ from tqdm import tqdm
 
 from Algorithm.Training_Decoupled import Decoupled
 from Algorithm.Training_ScaleFL import ScaleFL
-from models.transformer import Transformer
 
 # matplotlib.use('Agg')
 import copy
