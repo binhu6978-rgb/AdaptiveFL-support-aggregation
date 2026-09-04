@@ -3,6 +3,7 @@
 # Python version: 3.6
 
 import copy
+import math
 import random
 from collections import OrderedDict
 
@@ -73,6 +74,107 @@ def Aggregation_AdaptiveFL(w, lens, global_model_param):
         tmp_v[count[k] > 0] = tmp_v[count[k] > 0].div_(count[k][count[k] > 0])
         tmp_v[count[k] == 0] = global_model_param[k][count[k] == 0]
         w_avg[k] = tmp_v
+
+    return w_avg
+
+
+def _support_quantile(histogram, total_count, quantile):
+    """Return a nearest-rank quantile from a compact support histogram."""
+    target = quantile * total_count
+    cumulative = 0
+    for value, count in sorted(histogram.items()):
+        cumulative += count
+        if cumulative >= target:
+            return value
+    return max(histogram)
+
+
+def Aggregation_Support(w, lens, global_model_param, epsilon=0.2):
+    """Aggregate prefix-shaped client updates with coordinate-wise support shrinkage."""
+    if len(w) != len(lens) or not w:
+        raise ValueError("w and lens must be non-empty and have the same length")
+    if epsilon < 0:
+        raise ValueError("epsilon must be non-negative")
+
+    total_count = sum(lens)
+    if total_count <= 0:
+        raise ValueError("sum(lens) must be positive")
+
+    w_avg = copy.deepcopy(global_model_param)
+    support_histogram = {}
+    total_coordinates = 0
+    support_sum = 0.0
+    min_nonzero = None
+    region_counts = [0, 0, 0]
+    region_update_sq = [0.0, 0.0, 0.0]
+    global_update_sq = 0.0
+
+    for k, v in global_model_param.items():
+        base = v.detach().to(dtype=torch.float32)
+        num = v.new_zeros(v.size(), dtype=torch.float32)
+        support = v.new_zeros(v.size(), dtype=torch.float32)
+
+        for m in range(len(w)):
+            local_tensor = w[m][k].detach().to(device=v.device, dtype=torch.float32)
+            client_weight = float(lens[m]) / float(total_count)
+
+            if v.dim() > 1:
+                d1 = local_tensor.shape[0]
+                d2 = local_tensor.shape[1]
+                theta_start = base[:d1, :d2]
+                num[:d1, :d2] += client_weight * (local_tensor - theta_start)
+                support[:d1, :d2] += client_weight
+            elif v.dim() == 1:
+                d1 = local_tensor.shape[0]
+                theta_start = base[:d1]
+                num[:d1] += client_weight * (local_tensor - theta_start)
+                support[:d1] += client_weight
+            else:
+                raise ValueError("Aggregation_Support only supports 1-D or higher tensors: {}".format(k))
+
+        covered = support > 0
+        aggregate_update = torch.zeros_like(num)
+        aggregate_update[covered] = ((1.0 + epsilon) * num[covered]
+                                     / (support[covered] + epsilon))
+        w_avg[k] = (base + aggregate_update).to(dtype=v.dtype)
+
+        total_coordinates += support.numel()
+        support_sum += support.sum().item()
+        nonzero_support = support[covered]
+        if nonzero_support.numel() > 0:
+            parameter_min = nonzero_support.min().item()
+            min_nonzero = parameter_min if min_nonzero is None else min(min_nonzero, parameter_min)
+
+        unique_support, unique_counts = torch.unique(support, return_counts=True)
+        for value, count in zip(unique_support.tolist(), unique_counts.tolist()):
+            support_histogram[value] = support_histogram.get(value, 0) + count
+
+        region_masks = [support < 0.3,
+                        (support >= 0.3) & (support < 0.8),
+                        support >= 0.8]
+        for idx, mask in enumerate(region_masks):
+            region_counts[idx] += mask.sum().item()
+            region_update_sq[idx] += aggregate_update[mask].pow(2).sum().item()
+        global_update_sq += aggregate_update.pow(2).sum().item()
+
+    support_mean = support_sum / total_coordinates
+    support_p25 = _support_quantile(support_histogram, total_coordinates, 0.25)
+    support_p50 = _support_quantile(support_histogram, total_coordinates, 0.50)
+    support_p75 = _support_quantile(support_histogram, total_coordinates, 0.75)
+    region_ratios = [count / total_coordinates for count in region_counts]
+    region_update_l2 = [math.sqrt(value) for value in region_update_sq]
+
+    print(
+        "Support aggregation diagnostics: "
+        "min_nonzero={:.6f}, mean={:.6f}, P25={:.6f}, P50={:.6f}, P75={:.6f}; "
+        "coordinate_ratio(s<0.3/0.3<=s<0.8/s>=0.8)={:.6f}/{:.6f}/{:.6f}; "
+        "update_l2(s<0.3/0.3<=s<0.8/s>=0.8)={:.6f}/{:.6f}/{:.6f}; "
+        "global_update_l2={:.6f}".format(
+            min_nonzero if min_nonzero is not None else 0.0,
+            support_mean, support_p25, support_p50, support_p75,
+            region_ratios[0], region_ratios[1], region_ratios[2],
+            region_update_l2[0], region_update_l2[1], region_update_l2[2],
+            math.sqrt(global_update_sq)))
 
     return w_avg
 

@@ -12,7 +12,8 @@ import copy
 import numpy as np
 from tqdm import tqdm
 
-from models.Fed import get_model_list, Aggregation_AdaptiveFL, split_model, select_clients
+from models.Fed import (get_model_list, Aggregation_AdaptiveFL, Aggregation_Support,
+                        split_model, select_clients)
 from models.vgg import vgg_16_bn
 from models.resnet import ResNet18_cifar
 from models.resnet import ResNet18_widar
@@ -84,7 +85,12 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
         print(f"hetero_proportion: \t{args.client_hetero_ration}")
         # 需要print 每个客户端的计算资源
 
-        w_glob_param = Aggregation_AdaptiveFL(w_locals, lens, net_glob_list[-1].state_dict())
+        if iter == 0:
+            w_glob_param = Aggregation_AdaptiveFL(
+                w_locals, lens, net_glob_list[-1].state_dict())
+        else:
+            w_glob_param = Aggregation_Support(
+                w_locals, lens, net_glob_list[-1].state_dict(), epsilon=0.2)
 
         for idx, net in enumerate(net_glob_list):
             net.load_state_dict(split_model(w_glob_param, net.state_dict()))
