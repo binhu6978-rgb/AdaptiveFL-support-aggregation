@@ -1,0 +1,28 @@
+{
+  "analysis_type": "exploratory paired trajectory robustness check",
+  "baseline_source": "resut_ori/AdaptiveFL.log",
+  "baseline_validation": {
+    "logged_rounds": 1000,
+    "profiles_per_round": 7,
+    "full_profile_index": 6,
+    "compared_rounds": 500,
+    "peak_0_299": {
+      "accuracy": 36.45,
+      "round": 230
+    },
+    "peak_0_499": {
+      "accuracy": 37.13,
+      "round": 433
+    }
+  },
+  "new_minus_adaptivefl": {
+    "mean_difference": -0.2605800157356263,
+    "median_difference": -0.3500001525878922,
+    "win_round_ratio": 0.244,
+    "tie_round_ratio": 0.0,
+    "early_mean_difference_r0_149": 0.09633336124420154,
+    "middle_mean_difference_r150_299": -0.18440014648437497,
+    "late_mean_difference_r300_499": -0.5853999504089356
+  },
+  "note": "This is a descriptive single-seed paired trajectory check, not a statistical significance test."
+}

@@ -41,7 +41,15 @@ For `0 < s < 1`, `Delta = s * u + (1 - s) * (z_new / q_new)`.  For `s == 0`, `De
 | Support epsilon=0.2 Full (known reference) | 36.66 | 37.00 |
 | TemporalSupport V2 beta=0.85 | 36.18 @ R265 | 36.42 @ R422 |
 
-No verified local AdaptiveFL Full 0-499 accuracy sequence was available, so no paired trajectory robustness check was performed.
+## Exploratory paired trajectory robustness check
+
+`resut_ori/AdaptiveFL.log` contains 1,000 rounds with seven profile evaluations per round.  Taking its seventh value per round gives the Full profile and exactly reproduces the known reference peaks (36.45 @ R230 and 37.13 @ R433), so its first 500 rounds were used as the paired baseline.
+
+- Mean new-minus-AdaptiveFL difference: -0.260580 percentage points; median: -0.350000.
+- Win-round ratio: 0.244 (122/500).
+- Early (R0-149), middle (R150-299), and late (R300-499) mean differences: +0.096333, -0.184400, and -0.585400 percentage points.
+
+This is an **exploratory paired trajectory robustness check**, not a statistical significance test: it describes one matched seed trajectory and does not substitute for multi-seed inference.
 
 ## Temporal diagnostics (mean over R1-R499)
 
