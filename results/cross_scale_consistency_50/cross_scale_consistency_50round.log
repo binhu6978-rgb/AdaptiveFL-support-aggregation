@@ -1,0 +1,1547 @@
+2026-09-04 20:34:19,793 - INFO - Client sample size: min=262, median=491.5, max=757
+2026-09-04 20:34:19,793 - INFO - Experiment log: results/cross_scale_consistency_50\cross_scale_consistency_50round.log
+2026-09-04 20:34:19,914 - INFO - ====================================================================================================
+2026-09-04 20:34:19,915 - INFO - ¡¾model config¡¿  model_name:resnet, width:0.4 , depth:2, param:8.48394MB
+2026-09-04 20:34:19,915 - INFO - ResNet(
+  (conv1): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    (2): ReLU()
+  )
+  (layer1): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(64, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(64, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (layer2): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(96, 51, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(51, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(51, 51, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(51, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(96, 51, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(51, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(51, 51, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(51, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(51, 51, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(51, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (layer3): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(51, 102, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(102, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(102, 102, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(102, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(51, 102, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(102, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(102, 102, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(102, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(102, 102, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(102, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (layer4): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(102, 204, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(204, 204, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(102, 204, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(204, 204, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(204, 204, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (fc): Linear(in_features=204, out_features=100, bias=True)
+)
+2026-09-04 20:34:19,927 - INFO - ====================================================================================================
+2026-09-04 20:34:19,928 - INFO - ¡¾model config¡¿  model_name:resnet, width:0.4 , depth:3, param:10.585424MB
+2026-09-04 20:34:19,928 - INFO - ResNet(
+  (conv1): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    (2): ReLU()
+  )
+  (layer1): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(64, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(64, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (layer2): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(96, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(96, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (layer3): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(128, 102, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(102, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(102, 102, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(102, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(128, 102, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(102, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(102, 102, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(102, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(102, 102, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(102, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (layer4): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(102, 204, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(204, 204, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(102, 204, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(204, 204, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(204, 204, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (fc): Linear(in_features=204, out_features=100, bias=True)
+)
+2026-09-04 20:34:19,948 - INFO - ====================================================================================================
+2026-09-04 20:34:19,949 - INFO - ¡¾model config¡¿  model_name:resnet, width:0.4 , depth:4, param:18.59096MB
+2026-09-04 20:34:19,949 - INFO - ResNet(
+  (conv1): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    (2): ReLU()
+  )
+  (layer1): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(64, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(64, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (layer2): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(96, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(96, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (layer3): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (layer4): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(256, 204, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(204, 204, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(256, 204, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(204, 204, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(204, 204, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (fc): Linear(in_features=204, out_features=100, bias=True)
+)
+2026-09-04 20:34:19,969 - INFO - ====================================================================================================
+2026-09-04 20:34:19,969 - INFO - ¡¾model config¡¿  model_name:resnet, width:0.66 , depth:2, param:20.638484MB
+2026-09-04 20:34:19,969 - INFO - ResNet(
+  (conv1): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    (2): ReLU()
+  )
+  (layer1): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(64, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(64, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (layer2): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(96, 84, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(84, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(84, 84, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(84, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(96, 84, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(84, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(84, 84, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(84, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(84, 84, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(84, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (layer3): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(84, 168, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(168, 168, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(84, 168, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(168, 168, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(168, 168, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (layer4): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(168, 337, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(337, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(337, 337, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(337, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(168, 337, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(337, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(337, 337, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(337, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(337, 337, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(337, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (fc): Linear(in_features=337, out_features=100, bias=True)
+)
+2026-09-04 20:34:19,991 - INFO - ====================================================================================================
+2026-09-04 20:34:19,991 - INFO - ¡¾model config¡¿  model_name:resnet, width:0.66 , depth:3, param:22.112308MB
+2026-09-04 20:34:19,991 - INFO - ResNet(
+  (conv1): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    (2): ReLU()
+  )
+  (layer1): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(64, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(64, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (layer2): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(96, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(96, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (layer3): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(128, 168, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(168, 168, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(128, 168, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(168, 168, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(168, 168, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (layer4): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(168, 337, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(337, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(337, 337, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(337, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(168, 337, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(337, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(337, 337, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(337, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(337, 337, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(337, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (fc): Linear(in_features=337, out_features=100, bias=True)
+)
+2026-09-04 20:34:20,017 - INFO - ====================================================================================================
+2026-09-04 20:34:20,017 - INFO - ¡¾model config¡¿  model_name:resnet, width:0.66 , depth:4, param:27.782324MB
+2026-09-04 20:34:20,017 - INFO - ResNet(
+  (conv1): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    (2): ReLU()
+  )
+  (layer1): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(64, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(64, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (layer2): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(96, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(96, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (layer3): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (layer4): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(256, 337, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(337, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(337, 337, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(337, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(256, 337, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(337, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(337, 337, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(337, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(337, 337, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(337, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (fc): Linear(in_features=337, out_features=100, bias=True)
+)
+2026-09-04 20:34:20,055 - INFO - ====================================================================================================
+2026-09-04 20:34:20,055 - INFO - ¡¾model config¡¿  model_name:resnet, width:1.0 , depth:2, param:45.697424MB
+2026-09-04 20:34:20,055 - INFO - ResNet(
+  (conv1): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    (2): ReLU()
+  )
+  (layer1): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(64, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(64, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (layer2): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(96, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(96, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (layer3): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (layer4): Sequential(
+    (0): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResidualBlock(
+      (left): Sequential(
+        (0): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+      (shortcut): Sequential()
+    )
+  )
+  (fc): Linear(in_features=512, out_features=100, bias=True)
+)
+2026-09-04 20:34:20,056 - INFO - Experiment: Cross-Scale Update Consistency Diagnostic
+2026-09-04 20:34:20,056 - INFO - algorithm: AdaptiveFL
+2026-09-04 20:34:20,056 - INFO - dataset: cifar100
+2026-09-04 20:34:20,056 - INFO - iid: 0
+2026-09-04 20:34:20,056 - INFO - data_beta: 0.3
+2026-09-04 20:34:20,056 - INFO - seed: 1
+2026-09-04 20:34:20,056 - INFO - epochs: 50
+2026-09-04 20:34:20,056 - INFO - num_users: 100
+2026-09-04 20:34:20,056 - INFO - frac: 0.1
+2026-09-04 20:34:20,056 - INFO - local_ep: 5
+2026-09-04 20:34:20,056 - INFO - local_bs: 50
+2026-09-04 20:34:20,056 - INFO - optimizer: sgd
+2026-09-04 20:34:20,056 - INFO - lr: 0.01
+2026-09-04 20:34:20,056 - INFO - lr_decay: 0.998
+2026-09-04 20:34:20,056 - INFO - client_chosen_mode: available
+2026-09-04 20:34:20,056 - INFO - depth_saved: [2, 3, 4]
+2026-09-04 20:34:20,056 - INFO - width_ration: [0.4, 0.66, 1.0]
+2026-09-04 20:34:20,056 - INFO - len(net_glob_list): 7
+2026-09-04 20:34:20,056 - INFO - profiles: [(0.4, 2, 2.120985), (0.4, 3, 2.646356), (0.4, 4, 4.64774), (0.66, 2, 5.159621), (0.66, 3, 5.528077), (0.66, 4, 6.945581), (1.0, 2, 11.424356)]
+2026-09-04 20:34:20,056 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:34:20,056 - INFO - BN module count: 147
+2026-09-04 20:34:20,056 - INFO - BN track_running_stats: [False]
+2026-09-04 20:34:20,057 - INFO - Shared core total coordinates: 2120985
+2026-09-04 20:34:20,060 - INFO - ********************************************************************************
+2026-09-04 20:34:20,060 - INFO - Round   0
+2026-09-04 20:34:27,154 - INFO - this epoch cost time:1.194000005722046
+2026-09-04 20:34:27,154 - INFO - this epoch choose: [48, 76, 94, 97, 8, 56, 47, 63, 97, 57]
+2026-09-04 20:34:27,154 - INFO - this epoch dispatch models: [5 3 4 0 1 3 5 0 0 1]
+2026-09-04 20:34:27,154 - INFO - this epoch received models: [np.int64(5), np.int64(3), np.int64(4), np.int64(0), np.int64(1), np.int64(3), np.int64(5), np.int64(0), np.int64(0), np.int64(1)]
+2026-09-04 20:34:27,154 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:34:27,154 - INFO - Round 0 consistency diagnostic: SKIPPED (independent profile initialization)
+2026-09-04 20:34:27,251 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:34:28,719 - INFO - Testing accuracy: 1.24
+2026-09-04 20:34:28,722 - INFO - ********************************************************************************
+2026-09-04 20:34:28,723 - INFO - Round   1
+2026-09-04 20:34:28,764 - INFO - Round 1 prefix consistency assertion: PASSED
+2026-09-04 20:34:36,499 - INFO - this epoch cost time:1.021000623703003
+2026-09-04 20:34:36,499 - INFO - this epoch choose: [70, 81, 64, 95, 26, 12, 71, 70, 97, 49]
+2026-09-04 20:34:36,499 - INFO - this epoch dispatch models: [4 5 4 6 1 2 4 6 5 2]
+2026-09-04 20:34:36,499 - INFO - this epoch received models: [np.int64(4), np.int64(5), np.int64(4), np.int64(6), np.int64(1), np.int64(2), np.int64(4), np.int64(6), np.int64(5), np.int64(2)]
+2026-09-04 20:34:36,499 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:34:36,678 - INFO - Round 1 consistency:
+2026-09-04 20:34:36,679 - INFO - Pairwise cosine: mean=0.040245, median=0.035344, min=-0.028790, P10=-0.002309, P25=0.019727, negative_ratio=0.133333, ratio(cos < 0.3)=1.000000
+2026-09-04 20:34:36,679 - INFO - LOO cosine: mean=0.107525, median=0.100790, min=0.053516, P10=0.065859, P25=0.077488, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:34:36,679 - INFO - Same-width pairs: mean=0.041613, median=0.044634
+2026-09-04 20:34:36,679 - INFO - Cross-width pairs: mean=0.039628, median=0.032147
+2026-09-04 20:34:36,679 - INFO - Diagnostic input integrity: checksum_before=42107.857362815, checksum_after=42107.857362815, max_abs_diff=0.0
+2026-09-04 20:34:36,680 - INFO - Diagnostic RNG state assertion: PASSED
+2026-09-04 20:34:36,753 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:34:38,235 - INFO - Testing accuracy: 2.99
+2026-09-04 20:34:38,236 - INFO - ********************************************************************************
+2026-09-04 20:34:38,236 - INFO - Round   2
+2026-09-04 20:34:44,735 - INFO - this epoch cost time:0.8199994564056396
+2026-09-04 20:34:44,735 - INFO - this epoch choose: [67, 78, 88, 98, 40, 84, 84, 34, 86, 29]
+2026-09-04 20:34:44,735 - INFO - this epoch dispatch models: [4 3 4 2 4 5 6 2 4 1]
+2026-09-04 20:34:44,735 - INFO - this epoch received models: [np.int64(4), np.int64(3), np.int64(4), np.int64(2), np.int64(4), np.int64(5), np.int64(6), np.int64(2), np.int64(4), np.int64(1)]
+2026-09-04 20:34:44,735 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:34:44,906 - INFO - Round 2 consistency:
+2026-09-04 20:34:44,907 - INFO - Pairwise cosine: mean=0.060229, median=0.048794, min=-0.003953, P10=0.016441, P25=0.029043, negative_ratio=0.044444, ratio(cos < 0.3)=0.977778
+2026-09-04 20:34:44,907 - INFO - LOO cosine: mean=0.145813, median=0.133464, min=0.100788, P10=0.104950, P25=0.107386, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:34:44,907 - INFO - Same-width pairs: mean=0.058978, median=0.052410
+2026-09-04 20:34:44,907 - INFO - Cross-width pairs: mean=0.061063, median=0.047495
+2026-09-04 20:34:44,907 - INFO - Diagnostic input integrity: checksum_before=39748.135499870, checksum_after=39748.135499870, max_abs_diff=0.0
+2026-09-04 20:34:44,986 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:34:46,468 - INFO - Testing accuracy: 4.74
+2026-09-04 20:34:46,470 - INFO - ********************************************************************************
+2026-09-04 20:34:46,470 - INFO - Round   3
+2026-09-04 20:34:55,026 - INFO - this epoch cost time:1.0209991931915283
+2026-09-04 20:34:55,026 - INFO - this epoch choose: [75, 73, 40, 70, 41, 3, 83, 74, 70, 48]
+2026-09-04 20:34:55,026 - INFO - this epoch dispatch models: [1 6 0 6 5 1 1 5 6 1]
+2026-09-04 20:34:55,027 - INFO - this epoch received models: [np.int64(1), np.int64(6), np.int64(0), np.int64(6), np.int64(5), np.int64(1), np.int64(1), np.int64(5), np.int64(6), np.int64(1)]
+2026-09-04 20:34:55,027 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:34:55,190 - INFO - Round 3 consistency:
+2026-09-04 20:34:55,190 - INFO - Pairwise cosine: mean=0.066103, median=0.052347, min=0.007246, P10=0.024565, P25=0.035467, negative_ratio=0.000000, ratio(cos < 0.3)=0.977778
+2026-09-04 20:34:55,190 - INFO - LOO cosine: mean=0.157843, median=0.161068, min=0.114920, P10=0.128527, P25=0.140198, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:34:55,190 - INFO - Same-width pairs: mean=0.103773, median=0.082085
+2026-09-04 20:34:55,190 - INFO - Cross-width pairs: mean=0.049090, median=0.045471
+2026-09-04 20:34:55,190 - INFO - Diagnostic input integrity: checksum_before=38733.234185295, checksum_after=38733.234185295, max_abs_diff=0.0
+2026-09-04 20:34:55,265 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:34:56,734 - INFO - Testing accuracy: 6.89
+2026-09-04 20:34:56,736 - INFO - ********************************************************************************
+2026-09-04 20:34:56,736 - INFO - Round   4
+2026-09-04 20:35:02,985 - INFO - this epoch cost time:0.8650007247924805
+2026-09-04 20:35:02,985 - INFO - this epoch choose: [87, 27, 67, 92, 3, 67, 54, 88, 56, 63]
+2026-09-04 20:35:02,985 - INFO - this epoch dispatch models: [1 0 4 1 0 0 5 3 2 1]
+2026-09-04 20:35:02,985 - INFO - this epoch received models: [np.int64(1), np.int64(0), np.int64(4), np.int64(1), np.int64(0), np.int64(0), np.int64(5), np.int64(3), np.int64(2), np.int64(1)]
+2026-09-04 20:35:02,985 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:35:03,186 - INFO - Round 4 consistency:
+2026-09-04 20:35:03,186 - INFO - Pairwise cosine: mean=0.076804, median=0.069594, min=-0.026989, P10=0.036607, P25=0.044622, negative_ratio=0.044444, ratio(cos < 0.3)=0.977778
+2026-09-04 20:35:03,186 - INFO - LOO cosine: mean=0.176409, median=0.167784, min=0.145394, P10=0.146777, P25=0.157805, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:35:03,186 - INFO - Same-width pairs: mean=0.077279, median=0.073254
+2026-09-04 20:35:03,186 - INFO - Cross-width pairs: mean=0.076261, median=0.061189
+2026-09-04 20:35:03,186 - INFO - Diagnostic input integrity: checksum_before=32440.036677151, checksum_after=32440.036677151, max_abs_diff=0.0
+2026-09-04 20:35:03,296 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:35:04,819 - INFO - Testing accuracy: 7.29
+2026-09-04 20:35:04,821 - INFO - ********************************************************************************
+2026-09-04 20:35:04,821 - INFO - Round   5
+2026-09-04 20:35:12,324 - INFO - this epoch cost time:1.190000295639038
+2026-09-04 20:35:12,324 - INFO - this epoch choose: [70, 77, 62, 77, 83, 28, 97, 69, 58, 2]
+2026-09-04 20:35:12,324 - INFO - this epoch dispatch models: [0 6 3 6 5 1 1 3 4 0]
+2026-09-04 20:35:12,324 - INFO - this epoch received models: [np.int64(0), np.int64(6), np.int64(3), np.int64(6), np.int64(5), np.int64(1), np.int64(1), np.int64(3), np.int64(4), np.int64(0)]
+2026-09-04 20:35:12,324 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:35:12,484 - INFO - Round 5 consistency:
+2026-09-04 20:35:12,484 - INFO - Pairwise cosine: mean=0.093302, median=0.081674, min=-0.007560, P10=0.051311, P25=0.059636, negative_ratio=0.044444, ratio(cos < 0.3)=0.977778
+2026-09-04 20:35:12,484 - INFO - LOO cosine: mean=0.200965, median=0.194583, min=0.163671, P10=0.181317, P25=0.189211, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:35:12,485 - INFO - Same-width pairs: mean=0.145555, median=0.120484
+2026-09-04 20:35:12,485 - INFO - Cross-width pairs: mean=0.072074, median=0.072259
+2026-09-04 20:35:12,485 - INFO - Diagnostic input integrity: checksum_before=36751.553532613, checksum_after=36751.553532613, max_abs_diff=0.0
+2026-09-04 20:35:12,562 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:35:14,041 - INFO - Testing accuracy: 7.92
+2026-09-04 20:35:14,043 - INFO - ********************************************************************************
+2026-09-04 20:35:14,043 - INFO - Round   6
+2026-09-04 20:35:20,992 - INFO - this epoch cost time:0.8829998970031738
+2026-09-04 20:35:20,992 - INFO - this epoch choose: [53, 93, 98, 71, 99, 82, 46, 51, 80, 92]
+2026-09-04 20:35:20,992 - INFO - this epoch dispatch models: [1 3 4 2 4 0 5 3 1 2]
+2026-09-04 20:35:20,992 - INFO - this epoch received models: [np.int64(1), np.int64(3), np.int64(4), np.int64(2), np.int64(4), np.int64(0), np.int64(5), np.int64(3), np.int64(1), np.int64(2)]
+2026-09-04 20:35:20,992 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:35:21,160 - INFO - Round 6 consistency:
+2026-09-04 20:35:21,160 - INFO - Pairwise cosine: mean=0.076755, median=0.076452, min=0.018858, P10=0.038170, P25=0.049377, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:35:21,160 - INFO - LOO cosine: mean=0.178279, median=0.172166, min=0.137190, P10=0.139548, P25=0.155770, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:35:21,160 - INFO - Same-width pairs: mean=0.088016, median=0.083434
+2026-09-04 20:35:21,160 - INFO - Cross-width pairs: mean=0.067746, median=0.062858
+2026-09-04 20:35:21,160 - INFO - Diagnostic input integrity: checksum_before=34654.835641803, checksum_after=34654.835641803, max_abs_diff=0.0
+2026-09-04 20:35:21,236 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:35:22,749 - INFO - Testing accuracy: 10.04
+2026-09-04 20:35:22,751 - INFO - ********************************************************************************
+2026-09-04 20:35:22,751 - INFO - Round   7
+2026-09-04 20:35:28,948 - INFO - this epoch cost time:0.7629995346069336
+2026-09-04 20:35:28,948 - INFO - this epoch choose: [37, 47, 95, 42, 92, 91, 64, 99, 54, 72]
+2026-09-04 20:35:28,948 - INFO - this epoch dispatch models: [0 4 1 2 2 1 0 6 1 3]
+2026-09-04 20:35:28,948 - INFO - this epoch received models: [np.int64(0), np.int64(4), np.int64(1), np.int64(2), np.int64(2), np.int64(1), np.int64(0), np.int64(6), np.int64(1), np.int64(3)]
+2026-09-04 20:35:28,948 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:35:29,113 - INFO - Round 7 consistency:
+2026-09-04 20:35:29,113 - INFO - Pairwise cosine: mean=0.060985, median=0.056275, min=-0.019731, P10=0.030661, P25=0.042539, negative_ratio=0.044444, ratio(cos < 0.3)=1.000000
+2026-09-04 20:35:29,113 - INFO - LOO cosine: mean=0.150904, median=0.151771, min=0.101106, P10=0.101273, P25=0.119231, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:35:29,114 - INFO - Same-width pairs: mean=0.074414, median=0.075535
+2026-09-04 20:35:29,114 - INFO - Cross-width pairs: mean=0.048140, median=0.049769
+2026-09-04 20:35:29,114 - INFO - Diagnostic input integrity: checksum_before=33189.340189683, checksum_after=33189.340189683, max_abs_diff=0.0
+2026-09-04 20:35:29,189 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:35:30,669 - INFO - Testing accuracy: 11.87
+2026-09-04 20:35:30,670 - INFO - ********************************************************************************
+2026-09-04 20:35:30,670 - INFO - Round   8
+2026-09-04 20:35:37,277 - INFO - this epoch cost time:0.8369994163513184
+2026-09-04 20:35:37,277 - INFO - this epoch choose: [96, 98, 82, 52, 59, 36, 77, 98, 63, 64]
+2026-09-04 20:35:37,278 - INFO - this epoch dispatch models: [6 5 4 3 5 1 3 6 0 0]
+2026-09-04 20:35:37,278 - INFO - this epoch received models: [np.int64(6), np.int64(5), np.int64(4), np.int64(3), np.int64(5), np.int64(1), np.int64(3), np.int64(6), np.int64(0), np.int64(0)]
+2026-09-04 20:35:37,278 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:35:37,441 - INFO - Round 8 consistency:
+2026-09-04 20:35:37,441 - INFO - Pairwise cosine: mean=0.046634, median=0.034956, min=-0.003285, P10=0.008508, P25=0.021088, negative_ratio=0.022222, ratio(cos < 0.3)=0.977778
+2026-09-04 20:35:37,441 - INFO - LOO cosine: mean=0.110855, median=0.103450, min=0.079487, P10=0.081480, P25=0.101080, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:35:37,441 - INFO - Same-width pairs: mean=0.047796, median=0.048393
+2026-09-04 20:35:37,441 - INFO - Cross-width pairs: mean=0.046109, median=0.033898
+2026-09-04 20:35:37,441 - INFO - Diagnostic input integrity: checksum_before=36798.229220033, checksum_after=36798.229220033, max_abs_diff=0.0
+2026-09-04 20:35:37,517 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:35:38,998 - INFO - Testing accuracy: 11.73
+2026-09-04 20:35:38,999 - INFO - ********************************************************************************
+2026-09-04 20:35:38,999 - INFO - Round   9
+2026-09-04 20:35:45,855 - INFO - this epoch cost time:0.8910000324249268
+2026-09-04 20:35:45,855 - INFO - this epoch choose: [50, 75, 4, 70, 55, 95, 95, 82, 53, 85]
+2026-09-04 20:35:45,855 - INFO - this epoch dispatch models: [2 2 1 3 4 2 6 6 0 0]
+2026-09-04 20:35:45,855 - INFO - this epoch received models: [np.int64(2), np.int64(2), np.int64(1), np.int64(3), np.int64(4), np.int64(2), np.int64(6), np.int64(6), np.int64(0), np.int64(0)]
+2026-09-04 20:35:45,855 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:35:46,016 - INFO - Round 9 consistency:
+2026-09-04 20:35:46,017 - INFO - Pairwise cosine: mean=0.060729, median=0.045212, min=-0.006165, P10=0.018740, P25=0.030288, negative_ratio=0.022222, ratio(cos < 0.3)=0.977778
+2026-09-04 20:35:46,017 - INFO - LOO cosine: mean=0.136128, median=0.136072, min=0.071934, P10=0.079215, P25=0.102950, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:35:46,017 - INFO - Same-width pairs: mean=0.077857, median=0.060839
+2026-09-04 20:35:46,017 - INFO - Cross-width pairs: mean=0.050330, median=0.036812
+2026-09-04 20:35:46,017 - INFO - Diagnostic input integrity: checksum_before=35040.596513639, checksum_after=35040.596513639, max_abs_diff=0.0
+2026-09-04 20:35:46,091 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:35:47,576 - INFO - Testing accuracy: 12.94
+2026-09-04 20:35:47,579 - INFO - ********************************************************************************
+2026-09-04 20:35:47,579 - INFO - Round  10
+2026-09-04 20:35:55,152 - INFO - this epoch cost time:1.1879987716674805
+2026-09-04 20:35:55,152 - INFO - this epoch choose: [22, 46, 75, 96, 89, 99, 83, 87, 81, 45]
+2026-09-04 20:35:55,152 - INFO - this epoch dispatch models: [1 1 5 3 0 0 5 5 6 4]
+2026-09-04 20:35:55,153 - INFO - this epoch received models: [np.int64(1), np.int64(1), np.int64(5), np.int64(3), np.int64(0), np.int64(0), np.int64(5), np.int64(5), np.int64(6), np.int64(4)]
+2026-09-04 20:35:55,153 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:35:55,316 - INFO - Round 10 consistency:
+2026-09-04 20:35:55,317 - INFO - Pairwise cosine: mean=0.046343, median=0.045754, min=0.009028, P10=0.015877, P25=0.028578, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:35:55,317 - INFO - LOO cosine: mean=0.118146, median=0.109550, min=0.075888, P10=0.083182, P25=0.096274, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:35:55,317 - INFO - Same-width pairs: mean=0.053156, median=0.054828
+2026-09-04 20:35:55,317 - INFO - Cross-width pairs: mean=0.042583, median=0.039757
+2026-09-04 20:35:55,317 - INFO - Diagnostic input integrity: checksum_before=34380.722466747, checksum_after=34380.722466747, max_abs_diff=0.0
+2026-09-04 20:35:55,391 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:35:56,885 - INFO - Testing accuracy: 15.18
+2026-09-04 20:35:56,889 - INFO - ********************************************************************************
+2026-09-04 20:35:56,889 - INFO - Round  11
+2026-09-04 20:36:03,157 - INFO - this epoch cost time:0.92799973487854
+2026-09-04 20:36:03,158 - INFO - this epoch choose: [68, 91, 65, 46, 89, 50, 73, 93, 50, 63]
+2026-09-04 20:36:03,158 - INFO - this epoch dispatch models: [5 6 2 4 3 5 3 5 0 3]
+2026-09-04 20:36:03,158 - INFO - this epoch received models: [np.int64(5), np.int64(6), np.int64(2), np.int64(4), np.int64(3), np.int64(5), np.int64(3), np.int64(5), np.int64(0), np.int64(3)]
+2026-09-04 20:36:03,158 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:36:03,326 - INFO - Round 11 consistency:
+2026-09-04 20:36:03,326 - INFO - Pairwise cosine: mean=0.036741, median=0.034640, min=-0.032978, P10=0.008932, P25=0.021151, negative_ratio=0.066667, ratio(cos < 0.3)=1.000000
+2026-09-04 20:36:03,326 - INFO - LOO cosine: mean=0.091594, median=0.089607, min=0.059080, P10=0.066963, P25=0.083728, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:36:03,326 - INFO - Same-width pairs: mean=0.032472, median=0.033481
+2026-09-04 20:36:03,326 - INFO - Cross-width pairs: mean=0.040824, median=0.035387
+2026-09-04 20:36:03,326 - INFO - Diagnostic input integrity: checksum_before=36264.333774470, checksum_after=36264.333774470, max_abs_diff=0.0
+2026-09-04 20:36:03,400 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:36:04,869 - INFO - Testing accuracy: 15.62
+2026-09-04 20:36:04,870 - INFO - ********************************************************************************
+2026-09-04 20:36:04,870 - INFO - Round  12
+2026-09-04 20:36:12,046 - INFO - this epoch cost time:0.8759996891021729
+2026-09-04 20:36:12,046 - INFO - this epoch choose: [71, 86, 41, 85, 42, 59, 85, 78, 75, 77]
+2026-09-04 20:36:12,046 - INFO - this epoch dispatch models: [4 3 4 6 4 5 4 1 0 4]
+2026-09-04 20:36:12,046 - INFO - this epoch received models: [np.int64(4), np.int64(3), np.int64(4), np.int64(6), np.int64(4), np.int64(5), np.int64(4), np.int64(1), np.int64(0), np.int64(4)]
+2026-09-04 20:36:12,046 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:36:12,212 - INFO - Round 12 consistency:
+2026-09-04 20:36:12,213 - INFO - Pairwise cosine: mean=0.039269, median=0.033208, min=0.010209, P10=0.015632, P25=0.023326, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:36:12,213 - INFO - LOO cosine: mean=0.098207, median=0.087770, min=0.047613, P10=0.070789, P25=0.081529, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:36:12,213 - INFO - Same-width pairs: mean=0.037458, median=0.036232
+2026-09-04 20:36:12,213 - INFO - Cross-width pairs: mean=0.041001, median=0.032950
+2026-09-04 20:36:12,213 - INFO - Diagnostic input integrity: checksum_before=35069.311285194, checksum_after=35069.311285194, max_abs_diff=0.0
+2026-09-04 20:36:12,290 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:36:13,876 - INFO - Testing accuracy: 14.48
+2026-09-04 20:36:13,876 - INFO - ********************************************************************************
+2026-09-04 20:36:13,876 - INFO - Round  13
+2026-09-04 20:36:19,845 - INFO - this epoch cost time:0.8189997673034668
+2026-09-04 20:36:19,845 - INFO - this epoch choose: [50, 82, 50, 21, 72, 29, 1, 98, 25, 74]
+2026-09-04 20:36:19,845 - INFO - this epoch dispatch models: [2 0 5 2 4 1 1 0 2 4]
+2026-09-04 20:36:19,845 - INFO - this epoch received models: [np.int64(2), np.int64(0), np.int64(5), np.int64(2), np.int64(4), np.int64(1), np.int64(1), np.int64(0), np.int64(2), np.int64(4)]
+2026-09-04 20:36:19,845 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:36:20,009 - INFO - Round 13 consistency:
+2026-09-04 20:36:20,009 - INFO - Pairwise cosine: mean=0.054004, median=0.035257, min=-0.001148, P10=0.005533, P25=0.020574, negative_ratio=0.022222, ratio(cos < 0.3)=0.977778
+2026-09-04 20:36:20,010 - INFO - LOO cosine: mean=0.125544, median=0.123137, min=0.063090, P10=0.075362, P25=0.095793, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:36:20,010 - INFO - Same-width pairs: mean=0.059672, median=0.059522
+2026-09-04 20:36:20,010 - INFO - Cross-width pairs: mean=0.047526, median=0.025872
+2026-09-04 20:36:20,010 - INFO - Diagnostic input integrity: checksum_before=30950.489896531, checksum_after=30950.489896531, max_abs_diff=0.0
+2026-09-04 20:36:20,084 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:36:21,586 - INFO - Testing accuracy: 16.57
+2026-09-04 20:36:21,587 - INFO - ********************************************************************************
+2026-09-04 20:36:21,587 - INFO - Round  14
+2026-09-04 20:36:28,525 - INFO - this epoch cost time:0.8339996337890625
+2026-09-04 20:36:28,525 - INFO - this epoch choose: [98, 70, 54, 51, 86, 62, 73, 45, 58, 98]
+2026-09-04 20:36:28,525 - INFO - this epoch dispatch models: [4 0 4 1 6 4 1 0 2 3]
+2026-09-04 20:36:28,525 - INFO - this epoch received models: [np.int64(4), np.int64(0), np.int64(4), np.int64(1), np.int64(6), np.int64(4), np.int64(1), np.int64(0), np.int64(2), np.int64(3)]
+2026-09-04 20:36:28,525 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:36:28,690 - INFO - Round 14 consistency:
+2026-09-04 20:36:28,690 - INFO - Pairwise cosine: mean=0.032145, median=0.022909, min=-0.020191, P10=0.004872, P25=0.009497, negative_ratio=0.066667, ratio(cos < 0.3)=1.000000
+2026-09-04 20:36:28,690 - INFO - LOO cosine: mean=0.084074, median=0.073437, min=0.039643, P10=0.060747, P25=0.071210, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:36:28,691 - INFO - Same-width pairs: mean=0.056194, median=0.041924
+2026-09-04 20:36:28,691 - INFO - Cross-width pairs: mean=0.018877, median=0.014706
+2026-09-04 20:36:28,691 - INFO - Diagnostic input integrity: checksum_before=31826.107289206, checksum_after=31826.107289206, max_abs_diff=0.0
+2026-09-04 20:36:28,766 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:36:30,244 - INFO - Testing accuracy: 16.30
+2026-09-04 20:36:30,244 - INFO - ********************************************************************************
+2026-09-04 20:36:30,245 - INFO - Round  15
+2026-09-04 20:36:36,761 - INFO - this epoch cost time:0.8970057964324951
+2026-09-04 20:36:36,761 - INFO - this epoch choose: [34, 84, 75, 78, 93, 0, 82, 94, 65, 16]
+2026-09-04 20:36:36,761 - INFO - this epoch dispatch models: [1 2 4 4 2 2 6 0 1 2]
+2026-09-04 20:36:36,761 - INFO - this epoch received models: [np.int64(1), np.int64(2), np.int64(4), np.int64(4), np.int64(2), np.int64(2), np.int64(6), np.int64(0), np.int64(1), np.int64(2)]
+2026-09-04 20:36:36,761 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:36:36,933 - INFO - Round 15 consistency:
+2026-09-04 20:36:36,933 - INFO - Pairwise cosine: mean=0.031887, median=0.022359, min=-0.011113, P10=0.004460, P25=0.011892, negative_ratio=0.066667, ratio(cos < 0.3)=1.000000
+2026-09-04 20:36:36,933 - INFO - LOO cosine: mean=0.086850, median=0.083899, min=0.035151, P10=0.054928, P25=0.061900, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:36:36,933 - INFO - Same-width pairs: mean=0.044543, median=0.043061
+2026-09-04 20:36:36,933 - INFO - Cross-width pairs: mean=0.019782, median=0.015893
+2026-09-04 20:36:36,933 - INFO - Diagnostic input integrity: checksum_before=31940.565070883, checksum_after=31940.565070883, max_abs_diff=0.0
+2026-09-04 20:36:37,006 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:36:38,471 - INFO - Testing accuracy: 16.63
+2026-09-04 20:36:38,472 - INFO - ********************************************************************************
+2026-09-04 20:36:38,472 - INFO - Round  16
+2026-09-04 20:36:45,842 - INFO - this epoch cost time:1.246999740600586
+2026-09-04 20:36:45,842 - INFO - this epoch choose: [86, 94, 71, 26, 83, 43, 61, 46, 76, 87]
+2026-09-04 20:36:45,842 - INFO - this epoch dispatch models: [6 6 2 0 6 5 1 2 4 6]
+2026-09-04 20:36:45,842 - INFO - this epoch received models: [np.int64(6), np.int64(6), np.int64(2), np.int64(0), np.int64(6), np.int64(5), np.int64(1), np.int64(2), np.int64(4), np.int64(6)]
+2026-09-04 20:36:45,842 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:36:46,018 - INFO - Round 16 consistency:
+2026-09-04 20:36:46,018 - INFO - Pairwise cosine: mean=0.021425, median=0.019786, min=-0.005896, P10=0.001518, P25=0.009454, negative_ratio=0.044444, ratio(cos < 0.3)=1.000000
+2026-09-04 20:36:46,018 - INFO - LOO cosine: mean=0.058428, median=0.060118, min=0.035805, P10=0.040062, P25=0.041256, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:36:46,018 - INFO - Same-width pairs: mean=0.022905, median=0.019786
+2026-09-04 20:36:46,018 - INFO - Cross-width pairs: mean=0.020823, median=0.019569
+2026-09-04 20:36:46,018 - INFO - Diagnostic input integrity: checksum_before=36383.729072626, checksum_after=36383.729072626, max_abs_diff=0.0
+2026-09-04 20:36:46,096 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:36:47,694 - INFO - Testing accuracy: 19.09
+2026-09-04 20:36:47,695 - INFO - ********************************************************************************
+2026-09-04 20:36:47,695 - INFO - Round  17
+2026-09-04 20:36:55,323 - INFO - this epoch cost time:0.9740009307861328
+2026-09-04 20:36:55,323 - INFO - this epoch choose: [25, 86, 66, 71, 45, 53, 44, 40, 74, 69]
+2026-09-04 20:36:55,323 - INFO - this epoch dispatch models: [0 6 5 5 1 2 1 5 4 2]
+2026-09-04 20:36:55,323 - INFO - this epoch received models: [np.int64(0), np.int64(6), np.int64(5), np.int64(5), np.int64(1), np.int64(2), np.int64(1), np.int64(5), np.int64(4), np.int64(2)]
+2026-09-04 20:36:55,323 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:36:55,488 - INFO - Round 17 consistency:
+2026-09-04 20:36:55,489 - INFO - Pairwise cosine: mean=0.024618, median=0.022402, min=-0.009493, P10=-0.000656, P25=0.007987, negative_ratio=0.111111, ratio(cos < 0.3)=1.000000
+2026-09-04 20:36:55,489 - INFO - LOO cosine: mean=0.066979, median=0.073257, min=0.029862, P10=0.030164, P25=0.035449, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:36:55,489 - INFO - Same-width pairs: mean=0.035091, median=0.028960
+2026-09-04 20:36:55,489 - INFO - Cross-width pairs: mean=0.018840, median=0.019485
+2026-09-04 20:36:55,489 - INFO - Diagnostic input integrity: checksum_before=32707.109834741, checksum_after=32707.109834741, max_abs_diff=0.0
+2026-09-04 20:36:55,568 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:36:57,114 - INFO - Testing accuracy: 17.87
+2026-09-04 20:36:57,114 - INFO - ********************************************************************************
+2026-09-04 20:36:57,114 - INFO - Round  18
+2026-09-04 20:37:04,226 - INFO - this epoch cost time:1.0269997119903564
+2026-09-04 20:37:04,226 - INFO - this epoch choose: [79, 90, 78, 42, 69, 76, 3, 91, 29, 81]
+2026-09-04 20:37:04,226 - INFO - this epoch dispatch models: [0 5 0 1 5 0 1 3 1 1]
+2026-09-04 20:37:04,226 - INFO - this epoch received models: [np.int64(0), np.int64(5), np.int64(0), np.int64(1), np.int64(5), np.int64(0), np.int64(1), np.int64(3), np.int64(1), np.int64(1)]
+2026-09-04 20:37:04,226 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:37:04,388 - INFO - Round 18 consistency:
+2026-09-04 20:37:04,388 - INFO - Pairwise cosine: mean=0.026991, median=0.027977, min=-0.008961, P10=0.004674, P25=0.013363, negative_ratio=0.022222, ratio(cos < 0.3)=1.000000
+2026-09-04 20:37:04,389 - INFO - LOO cosine: mean=0.072822, median=0.078991, min=0.037528, P10=0.051029, P25=0.056348, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:37:04,389 - INFO - Same-width pairs: mean=0.032801, median=0.031222
+2026-09-04 20:37:04,389 - INFO - Cross-width pairs: mean=0.020352, median=0.013964
+2026-09-04 20:37:04,389 - INFO - Diagnostic input integrity: checksum_before=27843.078950103, checksum_after=27843.078950103, max_abs_diff=0.0
+2026-09-04 20:37:04,461 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:37:05,945 - INFO - Testing accuracy: 17.68
+2026-09-04 20:37:05,945 - INFO - ********************************************************************************
+2026-09-04 20:37:05,945 - INFO - Round  19
+2026-09-04 20:37:13,046 - INFO - this epoch cost time:1.0019993782043457
+2026-09-04 20:37:13,046 - INFO - this epoch choose: [75, 75, 77, 51, 95, 72, 91, 70, 91, 32]
+2026-09-04 20:37:13,046 - INFO - this epoch dispatch models: [6 5 4 4 3 6 5 0 3 0]
+2026-09-04 20:37:13,046 - INFO - this epoch received models: [np.int64(6), np.int64(5), np.int64(4), np.int64(4), np.int64(3), np.int64(6), np.int64(5), np.int64(0), np.int64(3), np.int64(0)]
+2026-09-04 20:37:13,046 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:37:13,216 - INFO - Round 19 consistency:
+2026-09-04 20:37:13,216 - INFO - Pairwise cosine: mean=0.028582, median=0.019444, min=-0.005880, P10=0.003967, P25=0.007707, negative_ratio=0.066667, ratio(cos < 0.3)=0.977778
+2026-09-04 20:37:13,216 - INFO - LOO cosine: mean=0.073989, median=0.066558, min=0.024410, P10=0.038071, P25=0.045342, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:37:13,216 - INFO - Same-width pairs: mean=0.032720, median=0.021613
+2026-09-04 20:37:13,216 - INFO - Cross-width pairs: mean=0.026069, median=0.017093
+2026-09-04 20:37:13,216 - INFO - Diagnostic input integrity: checksum_before=33679.708481720, checksum_after=33679.708481720, max_abs_diff=0.0
+2026-09-04 20:37:13,293 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:37:14,780 - INFO - Testing accuracy: 19.25
+2026-09-04 20:37:14,780 - INFO - ********************************************************************************
+2026-09-04 20:37:14,780 - INFO - Round  20
+2026-09-04 20:37:21,757 - INFO - this epoch cost time:0.8839991092681885
+2026-09-04 20:37:21,757 - INFO - this epoch choose: [42, 86, 9, 45, 95, 41, 68, 1, 88, 96]
+2026-09-04 20:37:21,757 - INFO - this epoch dispatch models: [3 1 2 5 5 4 5 0 5 0]
+2026-09-04 20:37:21,757 - INFO - this epoch received models: [np.int64(3), np.int64(1), np.int64(2), np.int64(5), np.int64(5), np.int64(4), np.int64(5), np.int64(0), np.int64(5), np.int64(0)]
+2026-09-04 20:37:21,757 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:37:21,920 - INFO - Round 20 consistency:
+2026-09-04 20:37:21,920 - INFO - Pairwise cosine: mean=0.019497, median=0.017328, min=-0.028691, P10=-0.000639, P25=0.002183, negative_ratio=0.155556, ratio(cos < 0.3)=1.000000
+2026-09-04 20:37:21,921 - INFO - LOO cosine: mean=0.055738, median=0.057384, min=0.024763, P10=0.025548, P25=0.035152, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:37:21,921 - INFO - Same-width pairs: mean=0.024707, median=0.026247
+2026-09-04 20:37:21,921 - INFO - Cross-width pairs: mean=0.014938, median=0.013164
+2026-09-04 20:37:21,921 - INFO - Diagnostic input integrity: checksum_before=30949.868051517, checksum_after=30949.868051517, max_abs_diff=0.0
+2026-09-04 20:37:21,996 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:37:23,464 - INFO - Testing accuracy: 20.14
+2026-09-04 20:37:23,464 - INFO - ********************************************************************************
+2026-09-04 20:37:23,464 - INFO - Round  21
+2026-09-04 20:37:31,050 - INFO - this epoch cost time:0.9999997615814209
+2026-09-04 20:37:31,051 - INFO - this epoch choose: [57, 55, 34, 14, 91, 79, 75, 62, 37, 44]
+2026-09-04 20:37:31,051 - INFO - this epoch dispatch models: [5 3 1 1 5 0 6 5 0 4]
+2026-09-04 20:37:31,051 - INFO - this epoch received models: [np.int64(5), np.int64(3), np.int64(1), np.int64(1), np.int64(5), np.int64(0), np.int64(6), np.int64(5), np.int64(0), np.int64(4)]
+2026-09-04 20:37:31,051 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:37:31,211 - INFO - Round 21 consistency:
+2026-09-04 20:37:31,211 - INFO - Pairwise cosine: mean=0.014993, median=0.013586, min=-0.014319, P10=-0.000391, P25=0.003634, negative_ratio=0.111111, ratio(cos < 0.3)=1.000000
+2026-09-04 20:37:31,211 - INFO - LOO cosine: mean=0.042854, median=0.041124, min=0.020051, P10=0.021028, P25=0.029953, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:37:31,211 - INFO - Same-width pairs: mean=0.017108, median=0.018433
+2026-09-04 20:37:31,211 - INFO - Cross-width pairs: mean=0.013825, median=0.011961
+2026-09-04 20:37:31,211 - INFO - Diagnostic input integrity: checksum_before=30993.673720466, checksum_after=30993.673720466, max_abs_diff=0.0
+2026-09-04 20:37:31,285 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:37:32,763 - INFO - Testing accuracy: 19.16
+2026-09-04 20:37:32,764 - INFO - ********************************************************************************
+2026-09-04 20:37:32,764 - INFO - Round  22
+2026-09-04 20:37:39,627 - INFO - this epoch cost time:0.8320002555847168
+2026-09-04 20:37:39,627 - INFO - this epoch choose: [21, 50, 56, 73, 21, 91, 78, 82, 85, 58]
+2026-09-04 20:37:39,627 - INFO - this epoch dispatch models: [2 5 3 4 2 6 6 0 5 3]
+2026-09-04 20:37:39,627 - INFO - this epoch received models: [np.int64(2), np.int64(5), np.int64(3), np.int64(4), np.int64(2), np.int64(6), np.int64(6), np.int64(0), np.int64(5), np.int64(3)]
+2026-09-04 20:37:39,627 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:37:39,793 - INFO - Round 22 consistency:
+2026-09-04 20:37:39,794 - INFO - Pairwise cosine: mean=0.028249, median=0.013764, min=-0.012017, P10=0.003078, P25=0.006887, negative_ratio=0.066667, ratio(cos < 0.3)=0.977778
+2026-09-04 20:37:39,794 - INFO - LOO cosine: mean=0.077634, median=0.037831, min=0.022202, P10=0.028896, P25=0.031016, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:37:39,794 - INFO - Same-width pairs: mean=0.061238, median=0.016694
+2026-09-04 20:37:39,794 - INFO - Cross-width pairs: mean=0.013350, median=0.013625
+2026-09-04 20:37:39,794 - INFO - Diagnostic input integrity: checksum_before=33381.252038163, checksum_after=33381.252038163, max_abs_diff=0.0
+2026-09-04 20:37:39,871 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:37:41,344 - INFO - Testing accuracy: 21.50
+2026-09-04 20:37:41,345 - INFO - ********************************************************************************
+2026-09-04 20:37:41,345 - INFO - Round  23
+2026-09-04 20:37:48,603 - INFO - this epoch cost time:0.9169986248016357
+2026-09-04 20:37:48,603 - INFO - this epoch choose: [69, 84, 60, 63, 60, 47, 41, 39, 82, 43]
+2026-09-04 20:37:48,604 - INFO - this epoch dispatch models: [3 5 5 1 2 4 3 0 6 0]
+2026-09-04 20:37:48,604 - INFO - this epoch received models: [np.int64(3), np.int64(5), np.int64(5), np.int64(1), np.int64(2), np.int64(4), np.int64(3), np.int64(0), np.int64(6), np.int64(0)]
+2026-09-04 20:37:48,604 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:37:48,776 - INFO - Round 23 consistency:
+2026-09-04 20:37:48,777 - INFO - Pairwise cosine: mean=0.019944, median=0.007599, min=-0.027511, P10=-0.008150, P25=0.000494, negative_ratio=0.222222, ratio(cos < 0.3)=0.977778
+2026-09-04 20:37:48,777 - INFO - LOO cosine: mean=0.048263, median=0.029154, min=0.012756, P10=0.013991, P25=0.017798, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:37:48,777 - INFO - Same-width pairs: mean=0.014975, median=0.015156
+2026-09-04 20:37:48,777 - INFO - Cross-width pairs: mean=0.022685, median=0.007422
+2026-09-04 20:37:48,777 - INFO - Diagnostic input integrity: checksum_before=30706.220345026, checksum_after=30706.220345026, max_abs_diff=0.0
+2026-09-04 20:37:48,856 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:37:50,340 - INFO - Testing accuracy: 21.66
+2026-09-04 20:37:50,341 - INFO - ********************************************************************************
+2026-09-04 20:37:50,341 - INFO - Round  24
+2026-09-04 20:37:57,128 - INFO - this epoch cost time:0.918076753616333
+2026-09-04 20:37:57,128 - INFO - this epoch choose: [66, 90, 24, 56, 73, 32, 93, 72, 53, 77]
+2026-09-04 20:37:57,128 - INFO - this epoch dispatch models: [5 4 2 4 6 2 0 5 3 0]
+2026-09-04 20:37:57,128 - INFO - this epoch received models: [np.int64(5), np.int64(4), np.int64(2), np.int64(4), np.int64(6), np.int64(2), np.int64(0), np.int64(5), np.int64(3), np.int64(0)]
+2026-09-04 20:37:57,128 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:37:57,345 - INFO - Round 24 consistency:
+2026-09-04 20:37:57,345 - INFO - Pairwise cosine: mean=0.013798, median=0.012726, min=-0.011559, P10=-0.005814, P25=0.005746, negative_ratio=0.177778, ratio(cos < 0.3)=1.000000
+2026-09-04 20:37:57,345 - INFO - LOO cosine: mean=0.036341, median=0.036431, min=0.018983, P10=0.024441, P25=0.029951, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:37:57,345 - INFO - Same-width pairs: mean=0.020662, median=0.015777
+2026-09-04 20:37:57,345 - INFO - Cross-width pairs: mean=0.010011, median=0.011664
+2026-09-04 20:37:57,345 - INFO - Diagnostic input integrity: checksum_before=31088.040487854, checksum_after=31088.040487854, max_abs_diff=0.0
+2026-09-04 20:37:57,456 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:37:59,210 - INFO - Testing accuracy: 23.35
+2026-09-04 20:37:59,210 - INFO - ********************************************************************************
+2026-09-04 20:37:59,210 - INFO - Round  25
+2026-09-04 20:38:07,325 - INFO - this epoch cost time:1.1399996280670166
+2026-09-04 20:38:07,325 - INFO - this epoch choose: [55, 92, 41, 28, 2, 50, 49, 42, 92, 20]
+2026-09-04 20:38:07,325 - INFO - this epoch dispatch models: [0 4 5 2 1 0 4 3 0 1]
+2026-09-04 20:38:07,325 - INFO - this epoch received models: [np.int64(0), np.int64(4), np.int64(5), np.int64(2), np.int64(1), np.int64(0), np.int64(4), np.int64(3), np.int64(0), np.int64(1)]
+2026-09-04 20:38:07,325 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:38:07,518 - INFO - Round 25 consistency:
+2026-09-04 20:38:07,518 - INFO - Pairwise cosine: mean=0.018916, median=0.014683, min=-0.006990, P10=-0.000389, P25=0.003068, negative_ratio=0.111111, ratio(cos < 0.3)=1.000000
+2026-09-04 20:38:07,519 - INFO - LOO cosine: mean=0.053862, median=0.050650, min=0.001804, P10=0.023532, P25=0.033420, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:38:07,519 - INFO - Same-width pairs: mean=0.018761, median=0.017225
+2026-09-04 20:38:07,519 - INFO - Cross-width pairs: mean=0.019051, median=0.005025
+2026-09-04 20:38:07,519 - INFO - Diagnostic input integrity: checksum_before=27526.956968420, checksum_after=27526.956968420, max_abs_diff=0.0
+2026-09-04 20:38:07,602 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:38:09,366 - INFO - Testing accuracy: 24.12
+2026-09-04 20:38:09,367 - INFO - ********************************************************************************
+2026-09-04 20:38:09,367 - INFO - Round  26
+2026-09-04 20:38:16,929 - INFO - this epoch cost time:1.0869996547698975
+2026-09-04 20:38:16,929 - INFO - this epoch choose: [57, 85, 72, 91, 67, 87, 93, 54, 80, 88]
+2026-09-04 20:38:16,929 - INFO - this epoch dispatch models: [2 4 4 6 3 6 3 3 3 2]
+2026-09-04 20:38:16,929 - INFO - this epoch received models: [np.int64(2), np.int64(4), np.int64(4), np.int64(6), np.int64(3), np.int64(6), np.int64(3), np.int64(3), np.int64(3), np.int64(2)]
+2026-09-04 20:38:16,929 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:38:17,119 - INFO - Round 26 consistency:
+2026-09-04 20:38:17,119 - INFO - Pairwise cosine: mean=0.011861, median=0.012648, min=-0.022551, P10=-0.001115, P25=0.005985, negative_ratio=0.111111, ratio(cos < 0.3)=1.000000
+2026-09-04 20:38:17,120 - INFO - LOO cosine: mean=0.031870, median=0.032372, min=0.015539, P10=0.023101, P25=0.027572, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:38:17,120 - INFO - Same-width pairs: mean=0.017044, median=0.014865
+2026-09-04 20:38:17,120 - INFO - Cross-width pairs: mean=0.008714, median=0.009119
+2026-09-04 20:38:17,120 - INFO - Diagnostic input integrity: checksum_before=32797.328569878, checksum_after=32797.328569878, max_abs_diff=0.0
+2026-09-04 20:38:17,204 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:38:18,915 - INFO - Testing accuracy: 23.87
+2026-09-04 20:38:18,915 - INFO - ********************************************************************************
+2026-09-04 20:38:18,915 - INFO - Round  27
+2026-09-04 20:38:27,552 - INFO - this epoch cost time:1.0929999351501465
+2026-09-04 20:38:27,552 - INFO - this epoch choose: [73, 84, 54, 73, 90, 41, 65, 86, 76, 91]
+2026-09-04 20:38:27,553 - INFO - this epoch dispatch models: [3 6 3 5 6 4 3 2 4 4]
+2026-09-04 20:38:27,553 - INFO - this epoch received models: [np.int64(3), np.int64(6), np.int64(3), np.int64(5), np.int64(6), np.int64(4), np.int64(3), np.int64(2), np.int64(4), np.int64(4)]
+2026-09-04 20:38:27,553 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:38:27,747 - INFO - Round 27 consistency:
+2026-09-04 20:38:27,747 - INFO - Pairwise cosine: mean=0.011784, median=0.007648, min=-0.017187, P10=-0.010081, P25=-0.001808, negative_ratio=0.288889, ratio(cos < 0.3)=1.000000
+2026-09-04 20:38:27,747 - INFO - LOO cosine: mean=0.031615, median=0.019209, min=-0.009382, P10=-0.008051, P25=0.014262, negative_ratio=0.200000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:38:27,747 - INFO - Same-width pairs: mean=0.016324, median=0.004835
+2026-09-04 20:38:27,748 - INFO - Cross-width pairs: mean=0.007442, median=0.008806
+2026-09-04 20:38:27,748 - INFO - Diagnostic input integrity: checksum_before=33221.456710686, checksum_after=33221.456710686, max_abs_diff=0.0
+2026-09-04 20:38:27,831 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:38:29,522 - INFO - Testing accuracy: 24.06
+2026-09-04 20:38:29,523 - INFO - ********************************************************************************
+2026-09-04 20:38:29,523 - INFO - Round  28
+2026-09-04 20:38:38,210 - INFO - this epoch cost time:1.1209988594055176
+2026-09-04 20:38:38,210 - INFO - this epoch choose: [41, 82, 80, 54, 43, 87, 79, 74, 53, 6]
+2026-09-04 20:38:38,210 - INFO - this epoch dispatch models: [0 3 3 0 3 5 6 6 5 1]
+2026-09-04 20:38:38,210 - INFO - this epoch received models: [np.int64(0), np.int64(3), np.int64(3), np.int64(0), np.int64(3), np.int64(5), np.int64(6), np.int64(6), np.int64(5), np.int64(1)]
+2026-09-04 20:38:38,210 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:38:38,398 - INFO - Round 28 consistency:
+2026-09-04 20:38:38,398 - INFO - Pairwise cosine: mean=0.006682, median=0.006828, min=-0.026731, P10=-0.010274, P25=-0.001616, negative_ratio=0.288889, ratio(cos < 0.3)=1.000000
+2026-09-04 20:38:38,398 - INFO - LOO cosine: mean=0.016232, median=0.014007, min=0.009117, P10=0.010554, P25=0.011715, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:38:38,398 - INFO - Same-width pairs: mean=0.012975, median=0.013408
+2026-09-04 20:38:38,398 - INFO - Cross-width pairs: mean=0.003841, median=0.004112
+2026-09-04 20:38:38,398 - INFO - Diagnostic input integrity: checksum_before=30853.738177560, checksum_after=30853.738177560, max_abs_diff=0.0
+2026-09-04 20:38:38,481 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:38:40,156 - INFO - Testing accuracy: 25.02
+2026-09-04 20:38:40,156 - INFO - ********************************************************************************
+2026-09-04 20:38:40,156 - INFO - Round  29
+2026-09-04 20:38:47,723 - INFO - this epoch cost time:1.2159996032714844
+2026-09-04 20:38:47,723 - INFO - this epoch choose: [39, 9, 9, 39, 38, 95, 75, 53, 76, 32]
+2026-09-04 20:38:47,723 - INFO - this epoch dispatch models: [0 2 2 2 0 2 6 1 4 0]
+2026-09-04 20:38:47,723 - INFO - this epoch received models: [np.int64(0), np.int64(2), np.int64(2), np.int64(2), np.int64(0), np.int64(2), np.int64(6), np.int64(1), np.int64(4), np.int64(0)]
+2026-09-04 20:38:47,723 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:38:47,911 - INFO - Round 29 consistency:
+2026-09-04 20:38:47,911 - INFO - Pairwise cosine: mean=0.037323, median=0.014208, min=-0.010315, P10=0.000723, P25=0.006328, negative_ratio=0.088889, ratio(cos < 0.3)=0.977778
+2026-09-04 20:38:47,911 - INFO - LOO cosine: mean=0.089408, median=0.051244, min=0.014231, P10=0.019770, P25=0.032598, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:38:47,911 - INFO - Same-width pairs: mean=0.053986, median=0.020134
+2026-09-04 20:38:47,911 - INFO - Cross-width pairs: mean=0.009879, median=0.006894
+2026-09-04 20:38:47,911 - INFO - Diagnostic input integrity: checksum_before=27645.584151226, checksum_after=27645.584151226, max_abs_diff=0.0
+2026-09-04 20:38:47,993 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:38:49,682 - INFO - Testing accuracy: 22.92
+2026-09-04 20:38:49,683 - INFO - ********************************************************************************
+2026-09-04 20:38:49,683 - INFO - Round  30
+2026-09-04 20:38:57,470 - INFO - this epoch cost time:1.009918451309204
+2026-09-04 20:38:57,470 - INFO - this epoch choose: [48, 40, 87, 4, 77, 27, 97, 88, 84, 21]
+2026-09-04 20:38:57,470 - INFO - this epoch dispatch models: [4 4 6 1 3 1 4 6 6 1]
+2026-09-04 20:38:57,470 - INFO - this epoch received models: [np.int64(4), np.int64(4), np.int64(6), np.int64(1), np.int64(3), np.int64(1), np.int64(4), np.int64(6), np.int64(6), np.int64(1)]
+2026-09-04 20:38:57,470 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:38:57,658 - INFO - Round 30 consistency:
+2026-09-04 20:38:57,658 - INFO - Pairwise cosine: mean=0.014753, median=0.016246, min=-0.003417, P10=-0.000896, P25=0.004930, negative_ratio=0.133333, ratio(cos < 0.3)=1.000000
+2026-09-04 20:38:57,658 - INFO - LOO cosine: mean=0.040111, median=0.035974, min=0.021959, P10=0.027060, P25=0.035327, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:38:57,659 - INFO - Same-width pairs: mean=0.022155, median=0.023358
+2026-09-04 20:38:57,659 - INFO - Cross-width pairs: mean=0.012061, median=0.013261
+2026-09-04 20:38:57,659 - INFO - Diagnostic input integrity: checksum_before=31838.451528734, checksum_after=31838.451528734, max_abs_diff=0.0
+2026-09-04 20:38:57,743 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:38:59,436 - INFO - Testing accuracy: 24.34
+2026-09-04 20:38:59,436 - INFO - ********************************************************************************
+2026-09-04 20:38:59,436 - INFO - Round  31
+2026-09-04 20:39:07,821 - INFO - this epoch cost time:1.053999662399292
+2026-09-04 20:39:07,821 - INFO - this epoch choose: [99, 85, 89, 65, 71, 48, 25, 44, 73, 53]
+2026-09-04 20:39:07,822 - INFO - this epoch dispatch models: [2 5 6 1 6 0 0 2 6 4]
+2026-09-04 20:39:07,822 - INFO - this epoch received models: [np.int64(2), np.int64(5), np.int64(6), np.int64(1), np.int64(6), np.int64(0), np.int64(0), np.int64(2), np.int64(6), np.int64(4)]
+2026-09-04 20:39:07,822 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:39:08,005 - INFO - Round 31 consistency:
+2026-09-04 20:39:08,006 - INFO - Pairwise cosine: mean=0.009591, median=0.005549, min=-0.017297, P10=-0.009073, P25=-0.001310, negative_ratio=0.311111, ratio(cos < 0.3)=1.000000
+2026-09-04 20:39:08,006 - INFO - LOO cosine: mean=0.025049, median=0.027188, min=-0.016802, P10=0.000322, P25=0.019407, negative_ratio=0.100000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:39:08,006 - INFO - Same-width pairs: mean=0.018198, median=0.023885
+2026-09-04 20:39:08,006 - INFO - Cross-width pairs: mean=0.005704, median=0.002636
+2026-09-04 20:39:08,006 - INFO - Diagnostic input integrity: checksum_before=30926.361935660, checksum_after=30926.361935660, max_abs_diff=0.0
+2026-09-04 20:39:08,088 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:39:09,777 - INFO - Testing accuracy: 25.44
+2026-09-04 20:39:09,777 - INFO - ********************************************************************************
+2026-09-04 20:39:09,777 - INFO - Round  32
+2026-09-04 20:39:17,984 - INFO - this epoch cost time:0.9950003623962402
+2026-09-04 20:39:17,984 - INFO - this epoch choose: [73, 91, 55, 88, 24, 71, 13, 85, 64, 58]
+2026-09-04 20:39:17,984 - INFO - this epoch dispatch models: [1 6 0 6 0 3 1 0 4 3]
+2026-09-04 20:39:17,984 - INFO - this epoch received models: [np.int64(1), np.int64(6), np.int64(0), np.int64(6), np.int64(0), np.int64(3), np.int64(1), np.int64(0), np.int64(4), np.int64(3)]
+2026-09-04 20:39:17,984 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:39:18,168 - INFO - Round 32 consistency:
+2026-09-04 20:39:18,168 - INFO - Pairwise cosine: mean=0.009943, median=0.008565, min=-0.018943, P10=-0.003982, P25=0.001391, negative_ratio=0.177778, ratio(cos < 0.3)=1.000000
+2026-09-04 20:39:18,168 - INFO - LOO cosine: mean=0.028713, median=0.027470, min=0.012847, P10=0.015599, P25=0.023989, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:39:18,168 - INFO - Same-width pairs: mean=0.013758, median=0.008759
+2026-09-04 20:39:18,168 - INFO - Cross-width pairs: mean=0.008219, median=0.008565
+2026-09-04 20:39:18,168 - INFO - Diagnostic input integrity: checksum_before=28422.814600376, checksum_after=28422.814600376, max_abs_diff=0.0
+2026-09-04 20:39:18,252 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:39:19,947 - INFO - Testing accuracy: 25.02
+2026-09-04 20:39:19,947 - INFO - ********************************************************************************
+2026-09-04 20:39:19,947 - INFO - Round  33
+2026-09-04 20:39:28,742 - INFO - this epoch cost time:1.3110008239746094
+2026-09-04 20:39:28,742 - INFO - this epoch choose: [64, 71, 41, 80, 79, 97, 65, 97, 36, 2]
+2026-09-04 20:39:28,742 - INFO - this epoch dispatch models: [2 3 4 6 5 6 4 3 0 0]
+2026-09-04 20:39:28,742 - INFO - this epoch received models: [np.int64(2), np.int64(3), np.int64(4), np.int64(6), np.int64(5), np.int64(6), np.int64(4), np.int64(3), np.int64(0), np.int64(0)]
+2026-09-04 20:39:28,742 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:39:28,931 - INFO - Round 33 consistency:
+2026-09-04 20:39:28,932 - INFO - Pairwise cosine: mean=0.010036, median=0.001512, min=-0.017549, P10=-0.008413, P25=-0.003133, negative_ratio=0.422222, ratio(cos < 0.3)=1.000000
+2026-09-04 20:39:28,932 - INFO - LOO cosine: mean=0.026858, median=0.022154, min=-0.012639, P10=0.000316, P25=0.015029, negative_ratio=0.100000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:39:28,932 - INFO - Same-width pairs: mean=0.003816, median=0.002237
+2026-09-04 20:39:28,932 - INFO - Cross-width pairs: mean=0.012845, median=0.001409
+2026-09-04 20:39:28,932 - INFO - Diagnostic input integrity: checksum_before=30524.461228045, checksum_after=30524.461228045, max_abs_diff=0.0
+2026-09-04 20:39:29,019 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:39:30,699 - INFO - Testing accuracy: 26.08
+2026-09-04 20:39:30,700 - INFO - ********************************************************************************
+2026-09-04 20:39:30,700 - INFO - Round  34
+2026-09-04 20:39:38,347 - INFO - this epoch cost time:0.8940014839172363
+2026-09-04 20:39:38,347 - INFO - this epoch choose: [20, 76, 97, 60, 95, 76, 17, 61, 67, 27]
+2026-09-04 20:39:38,347 - INFO - this epoch dispatch models: [0 6 6 4 6 5 1 5 4 1]
+2026-09-04 20:39:38,347 - INFO - this epoch received models: [np.int64(0), np.int64(6), np.int64(6), np.int64(4), np.int64(6), np.int64(5), np.int64(1), np.int64(5), np.int64(4), np.int64(1)]
+2026-09-04 20:39:38,347 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:39:38,534 - INFO - Round 34 consistency:
+2026-09-04 20:39:38,534 - INFO - Pairwise cosine: mean=0.017659, median=0.007708, min=-0.013873, P10=-0.006478, P25=-0.000876, negative_ratio=0.288889, ratio(cos < 0.3)=0.977778
+2026-09-04 20:39:38,535 - INFO - LOO cosine: mean=0.046448, median=0.028831, min=-0.009876, P10=0.018342, P25=0.023219, negative_ratio=0.100000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:39:38,535 - INFO - Same-width pairs: mean=0.011045, median=0.012104
+2026-09-04 20:39:38,535 - INFO - Cross-width pairs: mean=0.020064, median=0.005590
+2026-09-04 20:39:38,535 - INFO - Diagnostic input integrity: checksum_before=31461.674764086, checksum_after=31461.674764086, max_abs_diff=0.0
+2026-09-04 20:39:38,616 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:39:40,319 - INFO - Testing accuracy: 24.68
+2026-09-04 20:39:40,320 - INFO - ********************************************************************************
+2026-09-04 20:39:40,320 - INFO - Round  35
+2026-09-04 20:39:50,013 - INFO - this epoch cost time:1.411999225616455
+2026-09-04 20:39:50,013 - INFO - this epoch choose: [34, 83, 12, 96, 64, 99, 75, 81, 98, 98]
+2026-09-04 20:39:50,014 - INFO - this epoch dispatch models: [2 5 2 6 5 4 5 6 3 6]
+2026-09-04 20:39:50,014 - INFO - this epoch received models: [np.int64(2), np.int64(5), np.int64(2), np.int64(6), np.int64(5), np.int64(4), np.int64(5), np.int64(6), np.int64(3), np.int64(6)]
+2026-09-04 20:39:50,014 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:39:50,205 - INFO - Round 35 consistency:
+2026-09-04 20:39:50,205 - INFO - Pairwise cosine: mean=0.023992, median=0.019036, min=-0.014959, P10=0.004346, P25=0.006139, negative_ratio=0.066667, ratio(cos < 0.3)=1.000000
+2026-09-04 20:39:50,205 - INFO - LOO cosine: mean=0.063558, median=0.065102, min=0.014509, P10=0.032471, P25=0.047419, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:39:50,205 - INFO - Same-width pairs: mean=0.023350, median=0.024015
+2026-09-04 20:39:50,206 - INFO - Cross-width pairs: mean=0.024283, median=0.016674
+2026-09-04 20:39:50,206 - INFO - Diagnostic input integrity: checksum_before=33132.240727066, checksum_after=33132.240727066, max_abs_diff=0.0
+2026-09-04 20:39:50,288 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:39:51,973 - INFO - Testing accuracy: 27.41
+2026-09-04 20:39:51,973 - INFO - ********************************************************************************
+2026-09-04 20:39:51,973 - INFO - Round  36
+2026-09-04 20:40:00,474 - INFO - this epoch cost time:1.266000509262085
+2026-09-04 20:40:00,474 - INFO - this epoch choose: [93, 83, 68, 71, 98, 74, 55, 44, 86, 5]
+2026-09-04 20:40:00,475 - INFO - this epoch dispatch models: [4 4 0 3 2 4 5 3 4 2]
+2026-09-04 20:40:00,475 - INFO - this epoch received models: [np.int64(4), np.int64(4), np.int64(0), np.int64(3), np.int64(2), np.int64(4), np.int64(5), np.int64(3), np.int64(4), np.int64(2)]
+2026-09-04 20:40:00,475 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:40:00,664 - INFO - Round 36 consistency:
+2026-09-04 20:40:00,664 - INFO - Pairwise cosine: mean=0.001956, median=0.000612, min=-0.050714, P10=-0.013022, P25=-0.005134, negative_ratio=0.488889, ratio(cos < 0.3)=1.000000
+2026-09-04 20:40:00,664 - INFO - LOO cosine: mean=0.006617, median=0.011009, min=-0.040679, P10=-0.007461, P25=0.003805, negative_ratio=0.200000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:40:00,664 - INFO - Same-width pairs: mean=0.004053, median=0.003184
+2026-09-04 20:40:00,665 - INFO - Cross-width pairs: mean=-0.000440, median=-0.001321
+2026-09-04 20:40:00,665 - INFO - Diagnostic input integrity: checksum_before=29113.393579041, checksum_after=29113.393579041, max_abs_diff=0.0
+2026-09-04 20:40:00,749 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:40:02,439 - INFO - Testing accuracy: 26.62
+2026-09-04 20:40:02,439 - INFO - ********************************************************************************
+2026-09-04 20:40:02,439 - INFO - Round  37
+2026-09-04 20:40:09,696 - INFO - this epoch cost time:0.9619998931884766
+2026-09-04 20:40:09,696 - INFO - this epoch choose: [72, 48, 21, 50, 98, 68, 27, 57, 97, 42]
+2026-09-04 20:40:09,696 - INFO - this epoch dispatch models: [6 3 0 5 5 2 1 3 2 0]
+2026-09-04 20:40:09,696 - INFO - this epoch received models: [np.int64(6), np.int64(3), np.int64(0), np.int64(5), np.int64(5), np.int64(2), np.int64(1), np.int64(3), np.int64(2), np.int64(0)]
+2026-09-04 20:40:09,696 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:40:09,884 - INFO - Round 37 consistency:
+2026-09-04 20:40:09,884 - INFO - Pairwise cosine: mean=0.010336, median=0.010288, min=-0.022430, P10=-0.007098, P25=0.003622, negative_ratio=0.200000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:40:09,884 - INFO - LOO cosine: mean=0.025274, median=0.028788, min=0.002018, P10=0.005938, P25=0.017465, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:40:09,884 - INFO - Same-width pairs: mean=0.008702, median=0.008017
+2026-09-04 20:40:09,884 - INFO - Cross-width pairs: mean=0.011237, median=0.012421
+2026-09-04 20:40:09,884 - INFO - Diagnostic input integrity: checksum_before=28326.915012842, checksum_after=28326.915012842, max_abs_diff=0.0
+2026-09-04 20:40:09,970 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:40:11,615 - INFO - Testing accuracy: 26.36
+2026-09-04 20:40:11,615 - INFO - ********************************************************************************
+2026-09-04 20:40:11,615 - INFO - Round  38
+2026-09-04 20:40:19,093 - INFO - this epoch cost time:1.0909998416900635
+2026-09-04 20:40:19,093 - INFO - this epoch choose: [78, 64, 93, 32, 63, 61, 43, 14, 79, 30]
+2026-09-04 20:40:19,093 - INFO - this epoch dispatch models: [5 1 4 1 3 3 1 2 6 0]
+2026-09-04 20:40:19,093 - INFO - this epoch received models: [np.int64(5), np.int64(1), np.int64(4), np.int64(1), np.int64(3), np.int64(3), np.int64(1), np.int64(2), np.int64(6), np.int64(0)]
+2026-09-04 20:40:19,093 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:40:19,280 - INFO - Round 38 consistency:
+2026-09-04 20:40:19,280 - INFO - Pairwise cosine: mean=0.010047, median=0.008338, min=-0.015879, P10=-0.006245, P25=0.000008, negative_ratio=0.244444, ratio(cos < 0.3)=1.000000
+2026-09-04 20:40:19,280 - INFO - LOO cosine: mean=0.028529, median=0.024378, min=0.008017, P10=0.010623, P25=0.021909, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:40:19,280 - INFO - Same-width pairs: mean=0.012750, median=0.009887
+2026-09-04 20:40:19,280 - INFO - Cross-width pairs: mean=0.008555, median=0.007921
+2026-09-04 20:40:19,280 - INFO - Diagnostic input integrity: checksum_before=27884.500231767, checksum_after=27884.500231767, max_abs_diff=0.0
+2026-09-04 20:40:19,368 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:40:21,224 - INFO - Testing accuracy: 27.00
+2026-09-04 20:40:21,224 - INFO - ********************************************************************************
+2026-09-04 20:40:21,224 - INFO - Round  39
+2026-09-04 20:40:30,137 - INFO - this epoch cost time:1.2169995307922363
+2026-09-04 20:40:30,137 - INFO - this epoch choose: [77, 89, 92, 62, 74, 74, 75, 89, 73, 60]
+2026-09-04 20:40:30,137 - INFO - this epoch dispatch models: [2 4 6 0 6 2 4 3 6 4]
+2026-09-04 20:40:30,137 - INFO - this epoch received models: [np.int64(2), np.int64(4), np.int64(6), np.int64(0), np.int64(6), np.int64(2), np.int64(4), np.int64(3), np.int64(6), np.int64(4)]
+2026-09-04 20:40:30,137 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:40:30,327 - INFO - Round 39 consistency:
+2026-09-04 20:40:30,327 - INFO - Pairwise cosine: mean=0.031503, median=0.016703, min=-0.009358, P10=-0.002872, P25=0.007223, negative_ratio=0.155556, ratio(cos < 0.3)=0.955556
+2026-09-04 20:40:30,328 - INFO - LOO cosine: mean=0.080220, median=0.053515, min=0.020791, P10=0.024738, P25=0.034587, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:40:30,328 - INFO - Same-width pairs: mean=0.052827, median=0.022519
+2026-09-04 20:40:30,328 - INFO - Cross-width pairs: mean=0.023749, median=0.013082
+2026-09-04 20:40:30,328 - INFO - Diagnostic input integrity: checksum_before=31257.564816927, checksum_after=31257.564816927, max_abs_diff=0.0
+2026-09-04 20:40:30,412 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:40:32,118 - INFO - Testing accuracy: 26.58
+2026-09-04 20:40:32,119 - INFO - ********************************************************************************
+2026-09-04 20:40:32,119 - INFO - Round  40
+2026-09-04 20:40:40,884 - INFO - this epoch cost time:1.0339982509613037
+2026-09-04 20:40:40,884 - INFO - this epoch choose: [71, 66, 9, 64, 97, 90, 49, 96, 16, 43]
+2026-09-04 20:40:40,884 - INFO - this epoch dispatch models: [6 3 0 5 6 5 4 6 2 2]
+2026-09-04 20:40:40,884 - INFO - this epoch received models: [np.int64(6), np.int64(3), np.int64(0), np.int64(5), np.int64(6), np.int64(5), np.int64(4), np.int64(6), np.int64(2), np.int64(2)]
+2026-09-04 20:40:40,884 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:40:41,078 - INFO - Round 40 consistency:
+2026-09-04 20:40:41,079 - INFO - Pairwise cosine: mean=0.013107, median=0.013550, min=-0.019583, P10=-0.000390, P25=0.002992, negative_ratio=0.155556, ratio(cos < 0.3)=1.000000
+2026-09-04 20:40:41,079 - INFO - LOO cosine: mean=0.035843, median=0.037332, min=0.022648, P10=0.022993, P25=0.029416, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:40:41,079 - INFO - Same-width pairs: mean=0.012936, median=0.016532
+2026-09-04 20:40:41,079 - INFO - Cross-width pairs: mean=0.013169, median=0.012629
+2026-09-04 20:40:41,079 - INFO - Diagnostic input integrity: checksum_before=31440.913539384, checksum_after=31440.913539384, max_abs_diff=0.0
+2026-09-04 20:40:41,164 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:40:42,884 - INFO - Testing accuracy: 28.25
+2026-09-04 20:40:42,884 - INFO - ********************************************************************************
+2026-09-04 20:40:42,884 - INFO - Round  41
+2026-09-04 20:40:51,381 - INFO - this epoch cost time:1.0319995880126953
+2026-09-04 20:40:51,382 - INFO - this epoch choose: [47, 78, 75, 90, 48, 9, 73, 70, 54, 88]
+2026-09-04 20:40:51,382 - INFO - this epoch dispatch models: [4 1 2 5 1 1 1 0 5 6]
+2026-09-04 20:40:51,382 - INFO - this epoch received models: [np.int64(4), np.int64(1), np.int64(2), np.int64(5), np.int64(1), np.int64(1), np.int64(1), np.int64(0), np.int64(5), np.int64(6)]
+2026-09-04 20:40:51,382 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:40:51,577 - INFO - Round 41 consistency:
+2026-09-04 20:40:51,577 - INFO - Pairwise cosine: mean=0.011244, median=0.009466, min=-0.020474, P10=-0.004707, P25=0.003152, negative_ratio=0.155556, ratio(cos < 0.3)=1.000000
+2026-09-04 20:40:51,577 - INFO - LOO cosine: mean=0.030360, median=0.030562, min=0.012420, P10=0.016269, P25=0.022280, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:40:51,578 - INFO - Same-width pairs: mean=0.015110, median=0.017504
+2026-09-04 20:40:51,578 - INFO - Cross-width pairs: mean=0.008667, median=0.007668
+2026-09-04 20:40:51,578 - INFO - Diagnostic input integrity: checksum_before=27306.616317179, checksum_after=27306.616317179, max_abs_diff=0.0
+2026-09-04 20:40:51,666 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:40:53,335 - INFO - Testing accuracy: 27.30
+2026-09-04 20:40:53,335 - INFO - ********************************************************************************
+2026-09-04 20:40:53,335 - INFO - Round  42
+2026-09-04 20:41:01,854 - INFO - this epoch cost time:1.1180009841918945
+2026-09-04 20:41:01,854 - INFO - this epoch choose: [45, 57, 63, 37, 72, 74, 14, 69, 35, 13]
+2026-09-04 20:41:01,854 - INFO - this epoch dispatch models: [5 4 4 2 2 3 1 4 0 0]
+2026-09-04 20:41:01,854 - INFO - this epoch received models: [np.int64(5), np.int64(4), np.int64(4), np.int64(2), np.int64(2), np.int64(3), np.int64(1), np.int64(4), np.int64(0), np.int64(0)]
+2026-09-04 20:41:01,854 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:41:02,053 - INFO - Round 42 consistency:
+2026-09-04 20:41:02,053 - INFO - Pairwise cosine: mean=0.015413, median=0.015610, min=-0.003105, P10=0.002533, P25=0.009830, negative_ratio=0.066667, ratio(cos < 0.3)=1.000000
+2026-09-04 20:41:02,054 - INFO - LOO cosine: mean=0.042110, median=0.043230, min=0.026141, P10=0.031966, P25=0.039635, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:41:02,054 - INFO - Same-width pairs: mean=0.018419, median=0.017857
+2026-09-04 20:41:02,054 - INFO - Cross-width pairs: mean=0.013007, median=0.011812
+2026-09-04 20:41:02,054 - INFO - Diagnostic input integrity: checksum_before=26997.320934526, checksum_after=26997.320934526, max_abs_diff=0.0
+2026-09-04 20:41:02,133 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:41:03,793 - INFO - Testing accuracy: 27.12
+2026-09-04 20:41:03,793 - INFO - ********************************************************************************
+2026-09-04 20:41:03,793 - INFO - Round  43
+2026-09-04 20:41:10,891 - INFO - this epoch cost time:0.7959980964660645
+2026-09-04 20:41:10,891 - INFO - this epoch choose: [95, 42, 37, 40, 78, 82, 1, 11, 52, 47]
+2026-09-04 20:41:10,892 - INFO - this epoch dispatch models: [6 3 2 4 1 3 1 1 2 5]
+2026-09-04 20:41:10,892 - INFO - this epoch received models: [np.int64(6), np.int64(3), np.int64(2), np.int64(4), np.int64(1), np.int64(3), np.int64(1), np.int64(1), np.int64(2), np.int64(5)]
+2026-09-04 20:41:10,892 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:41:11,111 - INFO - Round 43 consistency:
+2026-09-04 20:41:11,111 - INFO - Pairwise cosine: mean=0.012063, median=0.012174, min=-0.020003, P10=-0.006291, P25=0.000930, negative_ratio=0.222222, ratio(cos < 0.3)=1.000000
+2026-09-04 20:41:11,111 - INFO - LOO cosine: mean=0.032132, median=0.035550, min=0.002218, P10=0.004355, P25=0.019074, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:41:11,111 - INFO - Same-width pairs: mean=0.009829, median=0.004981
+2026-09-04 20:41:11,111 - INFO - Cross-width pairs: mean=0.013295, median=0.015195
+2026-09-04 20:41:11,111 - INFO - Diagnostic input integrity: checksum_before=27980.947625403, checksum_after=27980.947625403, max_abs_diff=0.0
+2026-09-04 20:41:11,193 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:41:12,763 - INFO - Testing accuracy: 27.48
+2026-09-04 20:41:12,763 - INFO - ********************************************************************************
+2026-09-04 20:41:12,763 - INFO - Round  44
+2026-09-04 20:41:20,401 - INFO - this epoch cost time:0.9110002517700195
+2026-09-04 20:41:20,401 - INFO - this epoch choose: [92, 96, 90, 71, 24, 55, 75, 66, 20, 47]
+2026-09-04 20:41:20,402 - INFO - this epoch dispatch models: [5 4 5 6 0 3 0 4 2 3]
+2026-09-04 20:41:20,402 - INFO - this epoch received models: [np.int64(5), np.int64(4), np.int64(5), np.int64(6), np.int64(0), np.int64(3), np.int64(0), np.int64(4), np.int64(2), np.int64(3)]
+2026-09-04 20:41:20,402 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:41:20,565 - INFO - Round 44 consistency:
+2026-09-04 20:41:20,565 - INFO - Pairwise cosine: mean=0.006379, median=0.005813, min=-0.014212, P10=-0.010047, P25=-0.004937, negative_ratio=0.311111, ratio(cos < 0.3)=1.000000
+2026-09-04 20:41:20,565 - INFO - LOO cosine: mean=0.016562, median=0.014195, min=-0.006532, P10=0.007306, P25=0.010181, negative_ratio=0.100000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:41:20,565 - INFO - Same-width pairs: mean=0.006086, median=0.007286
+2026-09-04 20:41:20,565 - INFO - Cross-width pairs: mean=0.006574, median=0.003229
+2026-09-04 20:41:20,565 - INFO - Diagnostic input integrity: checksum_before=28596.849892224, checksum_after=28596.849892224, max_abs_diff=0.0
+2026-09-04 20:41:20,642 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:41:22,217 - INFO - Testing accuracy: 28.27
+2026-09-04 20:41:22,217 - INFO - ********************************************************************************
+2026-09-04 20:41:22,217 - INFO - Round  45
+2026-09-04 20:41:29,197 - INFO - this epoch cost time:0.9310007095336914
+2026-09-04 20:41:29,197 - INFO - this epoch choose: [68, 21, 87, 55, 50, 95, 13, 55, 99, 64]
+2026-09-04 20:41:29,197 - INFO - this epoch dispatch models: [5 1 1 4 4 0 2 1 6 3]
+2026-09-04 20:41:29,197 - INFO - this epoch received models: [np.int64(5), np.int64(1), np.int64(1), np.int64(4), np.int64(4), np.int64(0), np.int64(2), np.int64(1), np.int64(6), np.int64(3)]
+2026-09-04 20:41:29,197 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:41:29,363 - INFO - Round 45 consistency:
+2026-09-04 20:41:29,363 - INFO - Pairwise cosine: mean=0.013957, median=0.005752, min=-0.011453, P10=-0.009150, P25=-0.002031, negative_ratio=0.355556, ratio(cos < 0.3)=0.977778
+2026-09-04 20:41:29,364 - INFO - LOO cosine: mean=0.043802, median=0.020912, min=-0.008632, P10=0.003016, P25=0.015120, negative_ratio=0.100000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:41:29,364 - INFO - Same-width pairs: mean=0.005001, median=0.005744
+2026-09-04 20:41:29,364 - INFO - Cross-width pairs: mean=0.018899, median=0.005873
+2026-09-04 20:41:29,364 - INFO - Diagnostic input integrity: checksum_before=27330.851041043, checksum_after=27330.851041043, max_abs_diff=0.0
+2026-09-04 20:41:29,444 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:41:30,993 - INFO - Testing accuracy: 28.13
+2026-09-04 20:41:30,993 - INFO - ********************************************************************************
+2026-09-04 20:41:30,993 - INFO - Round  46
+2026-09-04 20:41:38,490 - INFO - this epoch cost time:0.9039990901947021
+2026-09-04 20:41:38,490 - INFO - this epoch choose: [95, 69, 37, 70, 56, 91, 61, 60, 73, 53]
+2026-09-04 20:41:38,490 - INFO - this epoch dispatch models: [6 0 1 0 5 2 2 4 6 3]
+2026-09-04 20:41:38,490 - INFO - this epoch received models: [np.int64(6), np.int64(0), np.int64(1), np.int64(0), np.int64(5), np.int64(2), np.int64(2), np.int64(4), np.int64(6), np.int64(3)]
+2026-09-04 20:41:38,490 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:41:38,660 - INFO - Round 46 consistency:
+2026-09-04 20:41:38,661 - INFO - Pairwise cosine: mean=0.011286, median=0.009079, min=-0.019460, P10=0.000098, P25=0.003222, negative_ratio=0.111111, ratio(cos < 0.3)=1.000000
+2026-09-04 20:41:38,661 - INFO - LOO cosine: mean=0.026621, median=0.024808, min=0.014671, P10=0.018077, P25=0.020671, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:41:38,661 - INFO - Same-width pairs: mean=0.013422, median=0.010141
+2026-09-04 20:41:38,661 - INFO - Cross-width pairs: mean=0.010321, median=0.007905
+2026-09-04 20:41:38,661 - INFO - Diagnostic input integrity: checksum_before=28192.599138394, checksum_after=28192.599138394, max_abs_diff=0.0
+2026-09-04 20:41:38,739 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:41:40,281 - INFO - Testing accuracy: 29.10
+2026-09-04 20:41:40,281 - INFO - ********************************************************************************
+2026-09-04 20:41:40,281 - INFO - Round  47
+2026-09-04 20:41:47,837 - INFO - this epoch cost time:1.1640002727508545
+2026-09-04 20:41:47,837 - INFO - this epoch choose: [83, 40, 5, 3, 40, 37, 92, 78, 60, 57]
+2026-09-04 20:41:47,837 - INFO - this epoch dispatch models: [2 2 2 0 5 2 0 4 5 1]
+2026-09-04 20:41:47,837 - INFO - this epoch received models: [np.int64(2), np.int64(2), np.int64(2), np.int64(0), np.int64(5), np.int64(2), np.int64(0), np.int64(4), np.int64(5), np.int64(1)]
+2026-09-04 20:41:47,837 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:41:48,026 - INFO - Round 47 consistency:
+2026-09-04 20:41:48,026 - INFO - Pairwise cosine: mean=0.020420, median=0.005225, min=-0.021031, P10=-0.010383, P25=-0.001821, negative_ratio=0.311111, ratio(cos < 0.3)=0.977778
+2026-09-04 20:41:48,026 - INFO - LOO cosine: mean=0.049834, median=0.031160, min=0.002646, P10=0.006132, P25=0.013310, negative_ratio=0.000000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:41:48,026 - INFO - Same-width pairs: mean=0.012687, median=0.006109
+2026-09-04 20:41:48,026 - INFO - Cross-width pairs: mean=0.029257, median=0.005130
+2026-09-04 20:41:48,026 - INFO - Diagnostic input integrity: checksum_before=26079.831916964, checksum_after=26079.831916964, max_abs_diff=0.0
+2026-09-04 20:41:48,100 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:41:49,630 - INFO - Testing accuracy: 28.50
+2026-09-04 20:41:49,630 - INFO - ********************************************************************************
+2026-09-04 20:41:49,630 - INFO - Round  48
+2026-09-04 20:41:56,347 - INFO - this epoch cost time:0.972001314163208
+2026-09-04 20:41:56,347 - INFO - this epoch choose: [65, 40, 51, 44, 72, 99, 40, 89, 69, 47]
+2026-09-04 20:41:56,347 - INFO - this epoch dispatch models: [5 0 2 3 6 6 0 6 4 3]
+2026-09-04 20:41:56,347 - INFO - this epoch received models: [np.int64(5), np.int64(0), np.int64(2), np.int64(3), np.int64(6), np.int64(6), np.int64(0), np.int64(6), np.int64(4), np.int64(3)]
+2026-09-04 20:41:56,347 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:41:56,518 - INFO - Round 48 consistency:
+2026-09-04 20:41:56,519 - INFO - Pairwise cosine: mean=0.012562, median=0.003658, min=-0.021276, P10=-0.013554, P25=-0.003278, negative_ratio=0.355556, ratio(cos < 0.3)=0.977778
+2026-09-04 20:41:56,519 - INFO - LOO cosine: mean=0.047360, median=0.010327, min=-0.009202, P10=-0.004852, P25=0.003452, negative_ratio=0.200000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:41:56,519 - INFO - Same-width pairs: mean=0.043901, median=0.004942
+2026-09-04 20:41:56,519 - INFO - Cross-width pairs: mean=0.001166, median=0.002993
+2026-09-04 20:41:56,519 - INFO - Diagnostic input integrity: checksum_before=29699.921728432, checksum_after=29699.921728432, max_abs_diff=0.0
+2026-09-04 20:41:56,598 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:41:58,153 - INFO - Testing accuracy: 29.97
+2026-09-04 20:41:58,153 - INFO - ********************************************************************************
+2026-09-04 20:41:58,153 - INFO - Round  49
+2026-09-04 20:42:05,794 - INFO - this epoch cost time:0.9589986801147461
+2026-09-04 20:42:05,794 - INFO - this epoch choose: [56, 53, 79, 94, 97, 69, 97, 88, 60, 91]
+2026-09-04 20:42:05,795 - INFO - this epoch dispatch models: [3 3 0 6 3 1 6 2 0 6]
+2026-09-04 20:42:05,795 - INFO - this epoch received models: [np.int64(3), np.int64(3), np.int64(0), np.int64(6), np.int64(3), np.int64(1), np.int64(6), np.int64(2), np.int64(0), np.int64(6)]
+2026-09-04 20:42:05,795 - INFO - hetero_proportion: 	4:3:3
+2026-09-04 20:42:05,986 - INFO - Round 49 consistency:
+2026-09-04 20:42:05,986 - INFO - Pairwise cosine: mean=0.012065, median=0.006422, min=-0.017245, P10=-0.005458, P25=-0.000023, negative_ratio=0.266667, ratio(cos < 0.3)=1.000000
+2026-09-04 20:42:05,986 - INFO - LOO cosine: mean=0.026077, median=0.021322, min=-0.001557, P10=0.000712, P25=0.011370, negative_ratio=0.100000, ratio(cos < 0.3)=1.000000
+2026-09-04 20:42:05,986 - INFO - Same-width pairs: mean=0.009116, median=0.006422
+2026-09-04 20:42:05,986 - INFO - Cross-width pairs: mean=0.013137, median=0.006422
+2026-09-04 20:42:05,986 - INFO - Diagnostic input integrity: checksum_before=28715.702636992, checksum_after=28715.702636992, max_abs_diff=0.0
+2026-09-04 20:42:06,068 - INFO - Full evaluation profile: (1.0, 2, 11.424356)
+2026-09-04 20:42:07,741 - INFO - Testing accuracy: 28.77
+2026-09-04 20:42:07,775 - INFO - Saved client LOO consistency: results/cross_scale_consistency_50\client_loo_consistency.json
+2026-09-04 20:42:07,775 - INFO - Saved pairwise consistency: results/cross_scale_consistency_50\pairwise_consistency.json
+2026-09-04 20:42:07,775 - INFO - Saved Full integrity accuracy: results/cross_scale_consistency_50\full_accuracy.json
+2026-09-04 20:42:07,777 - INFO - Total experiment wall time (seconds): 467.984628
+2026-09-04 20:42:07,777 - INFO - Average wall time per round (seconds): 9.359693

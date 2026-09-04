@@ -1,0 +1,5297 @@
+{
+  "experiment": "Cross-Scale Update Consistency Diagnostic",
+  "diagnostic_rounds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49
+  ],
+  "shared_core_coordinates": 2120985,
+  "profiles": [
+    {
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "parameters_million": 2.120985
+    },
+    {
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "parameters_million": 2.646356
+    },
+    {
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "parameters_million": 4.64774
+    },
+    {
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "parameters_million": 5.159621
+    },
+    {
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "parameters_million": 5.528077
+    },
+    {
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "parameters_million": 6.945581
+    },
+    {
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "parameters_million": 11.424356
+    }
+  ],
+  "records": [
+    {
+      "round": 1,
+      "client_id": 70,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 647,
+      "update_norm": 1.1073471307754517,
+      "loo_cosine": 0.18751327693462372
+    },
+    {
+      "round": 1,
+      "client_id": 81,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 674,
+      "update_norm": 1.0653667449951172,
+      "loo_cosine": 0.12503841519355774
+    },
+    {
+      "round": 1,
+      "client_id": 64,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 462,
+      "update_norm": 1.0326776504516602,
+      "loo_cosine": 0.09908390790224075
+    },
+    {
+      "round": 1,
+      "client_id": 95,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 387,
+      "update_norm": 0.8999990820884705,
+      "loo_cosine": 0.06722986698150635
+    },
+    {
+      "round": 1,
+      "client_id": 26,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 436,
+      "update_norm": 1.1516780853271484,
+      "loo_cosine": 0.07419385761022568
+    },
+    {
+      "round": 1,
+      "client_id": 12,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 463,
+      "update_norm": 1.1823970079421997,
+      "loo_cosine": 0.08736974000930786
+    },
+    {
+      "round": 1,
+      "client_id": 71,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 508,
+      "update_norm": 1.07828688621521,
+      "loo_cosine": 0.11725510656833649
+    },
+    {
+      "round": 1,
+      "client_id": 70,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 647,
+      "update_norm": 1.0396636724472046,
+      "loo_cosine": 0.16155442595481873
+    },
+    {
+      "round": 1,
+      "client_id": 97,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 496,
+      "update_norm": 0.9735382199287415,
+      "loo_cosine": 0.053516484797000885
+    },
+    {
+      "round": 1,
+      "client_id": 49,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 649,
+      "update_norm": 1.2566298246383667,
+      "loo_cosine": 0.10249658674001694
+    },
+    {
+      "round": 2,
+      "client_id": 67,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 412,
+      "update_norm": 0.9874501824378967,
+      "loo_cosine": 0.10597389191389084
+    },
+    {
+      "round": 2,
+      "client_id": 78,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 366,
+      "update_norm": 0.9449057579040527,
+      "loo_cosine": 0.1116223931312561
+    },
+    {
+      "round": 2,
+      "client_id": 88,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 483,
+      "update_norm": 1.063475489616394,
+      "loo_cosine": 0.1054120734333992
+    },
+    {
+      "round": 2,
+      "client_id": 98,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 426,
+      "update_norm": 1.131685495376587,
+      "loo_cosine": 0.13850201666355133
+    },
+    {
+      "round": 2,
+      "client_id": 40,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 488,
+      "update_norm": 1.0084738731384277,
+      "loo_cosine": 0.1284264326095581
+    },
+    {
+      "round": 2,
+      "client_id": 84,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 422,
+      "update_norm": 0.878326952457428,
+      "loo_cosine": 0.23101922869682312
+    },
+    {
+      "round": 2,
+      "client_id": 84,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 422,
+      "update_norm": 0.8381659984588623,
+      "loo_cosine": 0.19738242030143738
+    },
+    {
+      "round": 2,
+      "client_id": 34,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 588,
+      "update_norm": 1.2190035581588745,
+      "loo_cosine": 0.18860791623592377
+    },
+    {
+      "round": 2,
+      "client_id": 86,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 539,
+      "update_norm": 1.0430227518081665,
+      "loo_cosine": 0.1503937542438507
+    },
+    {
+      "round": 2,
+      "client_id": 29,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 465,
+      "update_norm": 1.201319694519043,
+      "loo_cosine": 0.10078790783882141
+    },
+    {
+      "round": 3,
+      "client_id": 75,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 600,
+      "update_norm": 1.3127095699310303,
+      "loo_cosine": 0.19459573924541473
+    },
+    {
+      "round": 3,
+      "client_id": 73,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 469,
+      "update_norm": 0.9264547228813171,
+      "loo_cosine": 0.15227262675762177
+    },
+    {
+      "round": 3,
+      "client_id": 40,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 488,
+      "update_norm": 1.3160275220870972,
+      "loo_cosine": 0.11492003500461578
+    },
+    {
+      "round": 3,
+      "client_id": 70,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 647,
+      "update_norm": 0.9682303071022034,
+      "loo_cosine": 0.1790439337491989
+    },
+    {
+      "round": 3,
+      "client_id": 41,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 633,
+      "update_norm": 1.0888500213623047,
+      "loo_cosine": 0.13003887236118317
+    },
+    {
+      "round": 3,
+      "client_id": 3,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 598,
+      "update_norm": 1.3831037282943726,
+      "loo_cosine": 0.13617362082004547
+    },
+    {
+      "round": 3,
+      "client_id": 83,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 757,
+      "update_norm": 1.474317193031311,
+      "loo_cosine": 0.17418259382247925
+    },
+    {
+      "round": 3,
+      "client_id": 74,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 561,
+      "update_norm": 1.0150312185287476,
+      "loo_cosine": 0.16562168300151825
+    },
+    {
+      "round": 3,
+      "client_id": 70,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 647,
+      "update_norm": 0.9661303162574768,
+      "loo_cosine": 0.17506612837314606
+    },
+    {
+      "round": 3,
+      "client_id": 48,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 644,
+      "update_norm": 1.3897919654846191,
+      "loo_cosine": 0.15651501715183258
+    },
+    {
+      "round": 4,
+      "client_id": 87,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 323,
+      "update_norm": 1.0385944843292236,
+      "loo_cosine": 0.22266434133052826
+    },
+    {
+      "round": 4,
+      "client_id": 27,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 415,
+      "update_norm": 1.2948873043060303,
+      "loo_cosine": 0.18054038286209106
+    },
+    {
+      "round": 4,
+      "client_id": 67,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 412,
+      "update_norm": 0.9836710095405579,
+      "loo_cosine": 0.17508889734745026
+    },
+    {
+      "round": 4,
+      "client_id": 92,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 491,
+      "update_norm": 1.2519670724868774,
+      "loo_cosine": 0.20784920454025269
+    },
+    {
+      "round": 4,
+      "client_id": 3,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 598,
+      "update_norm": 1.381514072418213,
+      "loo_cosine": 0.16047878563404083
+    },
+    {
+      "round": 4,
+      "client_id": 67,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 412,
+      "update_norm": 1.230613350868225,
+      "loo_cosine": 0.1570577621459961
+    },
+    {
+      "round": 4,
+      "client_id": 54,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 560,
+      "update_norm": 1.0703840255737305,
+      "loo_cosine": 0.20803561806678772
+    },
+    {
+      "round": 4,
+      "client_id": 88,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 483,
+      "update_norm": 1.0983980894088745,
+      "loo_cosine": 0.1469312310218811
+    },
+    {
+      "round": 4,
+      "client_id": 56,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 512,
+      "update_norm": 1.2635656595230103,
+      "loo_cosine": 0.16004666686058044
+    },
+    {
+      "round": 4,
+      "client_id": 63,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 507,
+      "update_norm": 1.3309252262115479,
+      "loo_cosine": 0.14539377391338348
+    },
+    {
+      "round": 5,
+      "client_id": 70,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 647,
+      "update_norm": 1.5038360357284546,
+      "loo_cosine": 0.16367116570472717
+    },
+    {
+      "round": 5,
+      "client_id": 77,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 429,
+      "update_norm": 0.8709978461265564,
+      "loo_cosine": 0.19258031249046326
+    },
+    {
+      "round": 5,
+      "client_id": 62,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 458,
+      "update_norm": 1.100793480873108,
+      "loo_cosine": 0.23197786509990692
+    },
+    {
+      "round": 5,
+      "client_id": 77,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 429,
+      "update_norm": 0.861452579498291,
+      "loo_cosine": 0.1944292038679123
+    },
+    {
+      "round": 5,
+      "client_id": 83,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 757,
+      "update_norm": 1.2704055309295654,
+      "loo_cosine": 0.2129126340150833
+    },
+    {
+      "round": 5,
+      "client_id": 28,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 522,
+      "update_norm": 1.3564581871032715,
+      "loo_cosine": 0.24462570250034332
+    },
+    {
+      "round": 5,
+      "client_id": 97,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 496,
+      "update_norm": 1.2503902912139893,
+      "loo_cosine": 0.1880873590707779
+    },
+    {
+      "round": 5,
+      "client_id": 69,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 698,
+      "update_norm": 1.2919397354125977,
+      "loo_cosine": 0.19473634660243988
+    },
+    {
+      "round": 5,
+      "client_id": 58,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 544,
+      "update_norm": 1.0877666473388672,
+      "loo_cosine": 0.18327759206295013
+    },
+    {
+      "round": 5,
+      "client_id": 2,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 531,
+      "update_norm": 1.4192283153533936,
+      "loo_cosine": 0.20334681868553162
+    },
+    {
+      "round": 6,
+      "client_id": 53,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 625,
+      "update_norm": 1.5045802593231201,
+      "loo_cosine": 0.18766601383686066
+    },
+    {
+      "round": 6,
+      "client_id": 93,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 262,
+      "update_norm": 0.8520049452781677,
+      "loo_cosine": 0.16259030997753143
+    },
+    {
+      "round": 6,
+      "client_id": 98,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 426,
+      "update_norm": 1.0220052003860474,
+      "loo_cosine": 0.13719028234481812
+    },
+    {
+      "round": 6,
+      "client_id": 71,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 508,
+      "update_norm": 1.2443771362304688,
+      "loo_cosine": 0.2183358073234558
+    },
+    {
+      "round": 6,
+      "client_id": 99,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 467,
+      "update_norm": 1.01156485080719,
+      "loo_cosine": 0.18174223601818085
+    },
+    {
+      "round": 6,
+      "client_id": 82,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 469,
+      "update_norm": 1.3714959621429443,
+      "loo_cosine": 0.1568482220172882
+    },
+    {
+      "round": 6,
+      "client_id": 46,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 553,
+      "update_norm": 1.0633552074432373,
+      "loo_cosine": 0.15541113913059235
+    },
+    {
+      "round": 6,
+      "client_id": 51,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 570,
+      "update_norm": 1.2539362907409668,
+      "loo_cosine": 0.13981035351753235
+    },
+    {
+      "round": 6,
+      "client_id": 80,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 658,
+      "update_norm": 1.5322366952896118,
+      "loo_cosine": 0.21552111208438873
+    },
+    {
+      "round": 6,
+      "client_id": 92,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 491,
+      "update_norm": 1.1296590566635132,
+      "loo_cosine": 0.2276734560728073
+    },
+    {
+      "round": 7,
+      "client_id": 37,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 461,
+      "update_norm": 1.5515925884246826,
+      "loo_cosine": 0.1913531869649887
+    },
+    {
+      "round": 7,
+      "client_id": 47,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 411,
+      "update_norm": 1.0115816593170166,
+      "loo_cosine": 0.1149999126791954
+    },
+    {
+      "round": 7,
+      "client_id": 95,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 387,
+      "update_norm": 1.1033662557601929,
+      "loo_cosine": 0.17018616199493408
+    },
+    {
+      "round": 7,
+      "client_id": 42,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 477,
+      "update_norm": 1.1634713411331177,
+      "loo_cosine": 0.17832498252391815
+    },
+    {
+      "round": 7,
+      "client_id": 92,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 491,
+      "update_norm": 1.0643707513809204,
+      "loo_cosine": 0.13365912437438965
+    },
+    {
+      "round": 7,
+      "client_id": 91,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 525,
+      "update_norm": 1.4092291593551636,
+      "loo_cosine": 0.16988223791122437
+    },
+    {
+      "round": 7,
+      "client_id": 64,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 462,
+      "update_norm": 1.5243113040924072,
+      "loo_cosine": 0.1011059433221817
+    },
+    {
+      "round": 7,
+      "client_id": 99,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 467,
+      "update_norm": 0.8969679474830627,
+      "loo_cosine": 0.10129127651453018
+    },
+    {
+      "round": 7,
+      "client_id": 54,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 560,
+      "update_norm": 1.4539988040924072,
+      "loo_cosine": 0.21630997955799103
+    },
+    {
+      "round": 7,
+      "client_id": 72,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 342,
+      "update_norm": 1.0127900838851929,
+      "loo_cosine": 0.13192473351955414
+    },
+    {
+      "round": 8,
+      "client_id": 96,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 519,
+      "update_norm": 1.0073306560516357,
+      "loo_cosine": 0.10097268968820572
+    },
+    {
+      "round": 8,
+      "client_id": 98,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 426,
+      "update_norm": 0.9411892890930176,
+      "loo_cosine": 0.15008574724197388
+    },
+    {
+      "round": 8,
+      "client_id": 82,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 469,
+      "update_norm": 1.0892419815063477,
+      "loo_cosine": 0.10140138864517212
+    },
+    {
+      "round": 8,
+      "client_id": 52,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 368,
+      "update_norm": 1.081346869468689,
+      "loo_cosine": 0.10412435233592987
+    },
+    {
+      "round": 8,
+      "client_id": 59,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 492,
+      "update_norm": 1.0299698114395142,
+      "loo_cosine": 0.1249089390039444
+    },
+    {
+      "round": 8,
+      "client_id": 36,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 608,
+      "update_norm": 1.5785493850708008,
+      "loo_cosine": 0.12715743482112885
+    },
+    {
+      "round": 8,
+      "client_id": 77,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 429,
+      "update_norm": 1.1338756084442139,
+      "loo_cosine": 0.10277638584375381
+    },
+    {
+      "round": 8,
+      "client_id": 98,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 426,
+      "update_norm": 0.9176979660987854,
+      "loo_cosine": 0.13592927157878876
+    },
+    {
+      "round": 8,
+      "client_id": 63,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 507,
+      "update_norm": 1.5689897537231445,
+      "loo_cosine": 0.07948716729879379
+    },
+    {
+      "round": 8,
+      "client_id": 64,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 462,
+      "update_norm": 1.5721598863601685,
+      "loo_cosine": 0.08170167356729507
+    },
+    {
+      "round": 9,
+      "client_id": 50,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 349,
+      "update_norm": 0.9456513524055481,
+      "loo_cosine": 0.14163082838058472
+    },
+    {
+      "round": 9,
+      "client_id": 75,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 600,
+      "update_norm": 1.3252317905426025,
+      "loo_cosine": 0.20954519510269165
+    },
+    {
+      "round": 9,
+      "client_id": 4,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 469,
+      "update_norm": 1.353487253189087,
+      "loo_cosine": 0.1676323115825653
+    },
+    {
+      "round": 9,
+      "client_id": 70,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 647,
+      "update_norm": 1.3721085786819458,
+      "loo_cosine": 0.08002409338951111
+    },
+    {
+      "round": 9,
+      "client_id": 55,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 574,
+      "update_norm": 1.1816027164459229,
+      "loo_cosine": 0.0990043431520462
+    },
+    {
+      "round": 9,
+      "client_id": 95,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 387,
+      "update_norm": 0.9648535251617432,
+      "loo_cosine": 0.20447316765785217
+    },
+    {
+      "round": 9,
+      "client_id": 95,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 387,
+      "update_norm": 0.7953882217407227,
+      "loo_cosine": 0.14173254370689392
+    },
+    {
+      "round": 9,
+      "client_id": 82,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 469,
+      "update_norm": 0.8843833208084106,
+      "loo_cosine": 0.07193398475646973
+    },
+    {
+      "round": 9,
+      "client_id": 53,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 625,
+      "update_norm": 1.7639107704162598,
+      "loo_cosine": 0.11478710919618607
+    },
+    {
+      "round": 9,
+      "client_id": 85,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 511,
+      "update_norm": 1.6873866319656372,
+      "loo_cosine": 0.13051244616508484
+    },
+    {
+      "round": 10,
+      "client_id": 22,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 511,
+      "update_norm": 1.4177258014678955,
+      "loo_cosine": 0.15728768706321716
+    },
+    {
+      "round": 10,
+      "client_id": 46,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 553,
+      "update_norm": 1.4472062587738037,
+      "loo_cosine": 0.15703998506069183
+    },
+    {
+      "round": 10,
+      "client_id": 75,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 600,
+      "update_norm": 1.083865761756897,
+      "loo_cosine": 0.10489016026258469
+    },
+    {
+      "round": 10,
+      "client_id": 96,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 519,
+      "update_norm": 1.2897896766662598,
+      "loo_cosine": 0.07588789612054825
+    },
+    {
+      "round": 10,
+      "client_id": 89,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 380,
+      "update_norm": 1.3834441900253296,
+      "loo_cosine": 0.09340131282806396
+    },
+    {
+      "round": 10,
+      "client_id": 99,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 467,
+      "update_norm": 1.5318820476531982,
+      "loo_cosine": 0.10613597929477692
+    },
+    {
+      "round": 10,
+      "client_id": 83,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 757,
+      "update_norm": 1.2124379873275757,
+      "loo_cosine": 0.1455182284116745
+    },
+    {
+      "round": 10,
+      "client_id": 87,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 323,
+      "update_norm": 0.8464352488517761,
+      "loo_cosine": 0.11296387016773224
+    },
+    {
+      "round": 10,
+      "client_id": 81,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 674,
+      "update_norm": 1.1381864547729492,
+      "loo_cosine": 0.08399233967065811
+    },
+    {
+      "round": 10,
+      "client_id": 45,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 505,
+      "update_norm": 1.16152024269104,
+      "loo_cosine": 0.1443387120962143
+    },
+    {
+      "round": 11,
+      "client_id": 68,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 553,
+      "update_norm": 1.0535005331039429,
+      "loo_cosine": 0.09777316451072693
+    },
+    {
+      "round": 11,
+      "client_id": 91,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 525,
+      "update_norm": 1.0078212022781372,
+      "loo_cosine": 0.089819997549057
+    },
+    {
+      "round": 11,
+      "client_id": 65,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 424,
+      "update_norm": 1.063768982887268,
+      "loo_cosine": 0.08249536156654358
+    },
+    {
+      "round": 11,
+      "client_id": 46,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 553,
+      "update_norm": 1.0955004692077637,
+      "loo_cosine": 0.09850458800792694
+    },
+    {
+      "round": 11,
+      "client_id": 89,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 380,
+      "update_norm": 1.0733755826950073,
+      "loo_cosine": 0.0678386315703392
+    },
+    {
+      "round": 11,
+      "client_id": 50,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 349,
+      "update_norm": 0.8237053751945496,
+      "loo_cosine": 0.1467176079750061
+    },
+    {
+      "round": 11,
+      "client_id": 73,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 469,
+      "update_norm": 1.1726150512695312,
+      "loo_cosine": 0.08742713928222656
+    },
+    {
+      "round": 11,
+      "client_id": 93,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 262,
+      "update_norm": 0.7706633806228638,
+      "loo_cosine": 0.08939428627490997
+    },
+    {
+      "round": 11,
+      "client_id": 50,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 349,
+      "update_norm": 1.3258099555969238,
+      "loo_cosine": 0.09689081460237503
+    },
+    {
+      "round": 11,
+      "client_id": 63,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 507,
+      "update_norm": 1.2096149921417236,
+      "loo_cosine": 0.05908031389117241
+    },
+    {
+      "round": 12,
+      "client_id": 71,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 508,
+      "update_norm": 1.0761867761611938,
+      "loo_cosine": 0.11128467321395874
+    },
+    {
+      "round": 12,
+      "client_id": 86,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 539,
+      "update_norm": 1.2965762615203857,
+      "loo_cosine": 0.08404263854026794
+    },
+    {
+      "round": 12,
+      "client_id": 41,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 633,
+      "update_norm": 1.208475947380066,
+      "loo_cosine": 0.08152919262647629
+    },
+    {
+      "round": 12,
+      "client_id": 85,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 511,
+      "update_norm": 1.063112497329712,
+      "loo_cosine": 0.13945654034614563
+    },
+    {
+      "round": 12,
+      "client_id": 42,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 477,
+      "update_norm": 1.0451688766479492,
+      "loo_cosine": 0.04761333763599396
+    },
+    {
+      "round": 12,
+      "client_id": 59,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 492,
+      "update_norm": 0.9934059381484985,
+      "loo_cosine": 0.10288543999195099
+    },
+    {
+      "round": 12,
+      "client_id": 85,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 511,
+      "update_norm": 1.1446146965026855,
+      "loo_cosine": 0.16886940598487854
+    },
+    {
+      "round": 12,
+      "client_id": 78,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 366,
+      "update_norm": 1.1850816011428833,
+      "loo_cosine": 0.09149808436632156
+    },
+    {
+      "round": 12,
+      "client_id": 75,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 600,
+      "update_norm": 1.7805005311965942,
+      "loo_cosine": 0.07336430251598358
+    },
+    {
+      "round": 12,
+      "client_id": 77,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 429,
+      "update_norm": 1.0210940837860107,
+      "loo_cosine": 0.08152878284454346
+    },
+    {
+      "round": 13,
+      "client_id": 50,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 349,
+      "update_norm": 0.8582965135574341,
+      "loo_cosine": 0.19201762974262238
+    },
+    {
+      "round": 13,
+      "client_id": 82,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 469,
+      "update_norm": 1.4956592321395874,
+      "loo_cosine": 0.09007242321968079
+    },
+    {
+      "round": 13,
+      "client_id": 50,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 349,
+      "update_norm": 0.7954161763191223,
+      "loo_cosine": 0.11295653134584427
+    },
+    {
+      "round": 13,
+      "client_id": 21,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 541,
+      "update_norm": 1.1454087495803833,
+      "loo_cosine": 0.14756560325622559
+    },
+    {
+      "round": 13,
+      "client_id": 72,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 342,
+      "update_norm": 0.9641931056976318,
+      "loo_cosine": 0.07672552019357681
+    },
+    {
+      "round": 13,
+      "client_id": 29,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 465,
+      "update_norm": 1.3013001680374146,
+      "loo_cosine": 0.13202600181102753
+    },
+    {
+      "round": 13,
+      "client_id": 1,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 443,
+      "update_norm": 1.25546395778656,
+      "loo_cosine": 0.12160323560237885
+    },
+    {
+      "round": 13,
+      "client_id": 98,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 426,
+      "update_norm": 1.5528604984283447,
+      "loo_cosine": 0.12467086315155029
+    },
+    {
+      "round": 13,
+      "client_id": 25,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 552,
+      "update_norm": 1.2023519277572632,
+      "loo_cosine": 0.1947086751461029
+    },
+    {
+      "round": 13,
+      "client_id": 74,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 561,
+      "update_norm": 1.205057144165039,
+      "loo_cosine": 0.06309019774198532
+    },
+    {
+      "round": 14,
+      "client_id": 98,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 426,
+      "update_norm": 1.0461046695709229,
+      "loo_cosine": 0.07659599930047989
+    },
+    {
+      "round": 14,
+      "client_id": 70,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 647,
+      "update_norm": 1.868239402770996,
+      "loo_cosine": 0.10963159799575806
+    },
+    {
+      "round": 14,
+      "client_id": 54,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 560,
+      "update_norm": 1.153228759765625,
+      "loo_cosine": 0.0630916878581047
+    },
+    {
+      "round": 14,
+      "client_id": 51,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 570,
+      "update_norm": 1.4765547513961792,
+      "loo_cosine": 0.1355752944946289
+    },
+    {
+      "round": 14,
+      "client_id": 86,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 539,
+      "update_norm": 1.0397714376449585,
+      "loo_cosine": 0.039642877876758575
+    },
+    {
+      "round": 14,
+      "client_id": 62,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 458,
+      "update_norm": 1.0709599256515503,
+      "loo_cosine": 0.0712556540966034
+    },
+    {
+      "round": 14,
+      "client_id": 73,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 469,
+      "update_norm": 1.286981463432312,
+      "loo_cosine": 0.07119469344615936
+    },
+    {
+      "round": 14,
+      "client_id": 45,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 505,
+      "update_norm": 1.6879152059555054,
+      "loo_cosine": 0.07460825890302658
+    },
+    {
+      "round": 14,
+      "client_id": 58,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 544,
+      "update_norm": 1.1093488931655884,
+      "loo_cosine": 0.12687468528747559
+    },
+    {
+      "round": 14,
+      "client_id": 98,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 426,
+      "update_norm": 1.1631957292556763,
+      "loo_cosine": 0.07226641476154327
+    },
+    {
+      "round": 15,
+      "client_id": 34,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 588,
+      "update_norm": 1.4283809661865234,
+      "loo_cosine": 0.14084705710411072
+    },
+    {
+      "round": 15,
+      "client_id": 84,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 422,
+      "update_norm": 0.9765197038650513,
+      "loo_cosine": 0.07353419810533524
+    },
+    {
+      "round": 15,
+      "client_id": 75,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 600,
+      "update_norm": 1.1915398836135864,
+      "loo_cosine": 0.06469196826219559
+    },
+    {
+      "round": 15,
+      "client_id": 78,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 366,
+      "update_norm": 1.0049420595169067,
+      "loo_cosine": 0.05712518095970154
+    },
+    {
+      "round": 15,
+      "client_id": 93,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 262,
+      "update_norm": 0.7668448686599731,
+      "loo_cosine": 0.09426397830247879
+    },
+    {
+      "round": 15,
+      "client_id": 0,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 637,
+      "update_norm": 1.1963841915130615,
+      "loo_cosine": 0.10863704979419708
+    },
+    {
+      "round": 15,
+      "client_id": 82,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 469,
+      "update_norm": 0.9123277068138123,
+      "loo_cosine": 0.03515121340751648
+    },
+    {
+      "round": 15,
+      "client_id": 94,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 429,
+      "update_norm": 1.5609967708587646,
+      "loo_cosine": 0.06096869334578514
+    },
+    {
+      "round": 15,
+      "client_id": 65,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 424,
+      "update_norm": 1.2321122884750366,
+      "loo_cosine": 0.11058498919010162
+    },
+    {
+      "round": 15,
+      "client_id": 16,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 457,
+      "update_norm": 1.0503896474838257,
+      "loo_cosine": 0.12270041555166245
+    },
+    {
+      "round": 16,
+      "client_id": 86,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 539,
+      "update_norm": 0.9838129878044128,
+      "loo_cosine": 0.03580468147993088
+    },
+    {
+      "round": 16,
+      "client_id": 94,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 429,
+      "update_norm": 0.9539852142333984,
+      "loo_cosine": 0.04238530620932579
+    },
+    {
+      "round": 16,
+      "client_id": 71,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 508,
+      "update_norm": 1.0285427570343018,
+      "loo_cosine": 0.06733783334493637
+    },
+    {
+      "round": 16,
+      "client_id": 26,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 436,
+      "update_norm": 1.5260875225067139,
+      "loo_cosine": 0.04087978973984718
+    },
+    {
+      "round": 16,
+      "client_id": 83,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 757,
+      "update_norm": 1.1312713623046875,
+      "loo_cosine": 0.07536082714796066
+    },
+    {
+      "round": 16,
+      "client_id": 43,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 502,
+      "update_norm": 1.0042706727981567,
+      "loo_cosine": 0.0717458575963974
+    },
+    {
+      "round": 16,
+      "client_id": 61,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 448,
+      "update_norm": 1.3069971799850464,
+      "loo_cosine": 0.05289814993739128
+    },
+    {
+      "round": 16,
+      "client_id": 46,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 553,
+      "update_norm": 1.0610367059707642,
+      "loo_cosine": 0.08224432170391083
+    },
+    {
+      "round": 16,
+      "client_id": 76,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 462,
+      "update_norm": 1.092725157737732,
+      "loo_cosine": 0.04053529351949692
+    },
+    {
+      "round": 16,
+      "client_id": 87,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 323,
+      "update_norm": 0.8501405715942383,
+      "loo_cosine": 0.07509201020002365
+    },
+    {
+      "round": 17,
+      "client_id": 25,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 552,
+      "update_norm": 1.8344261646270752,
+      "loo_cosine": 0.04227630794048309
+    },
+    {
+      "round": 17,
+      "client_id": 86,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 539,
+      "update_norm": 0.9054917097091675,
+      "loo_cosine": 0.02986188977956772
+    },
+    {
+      "round": 17,
+      "client_id": 66,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 453,
+      "update_norm": 0.9781560897827148,
+      "loo_cosine": 0.07424518465995789
+    },
+    {
+      "round": 17,
+      "client_id": 71,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 508,
+      "update_norm": 0.9739222526550293,
+      "loo_cosine": 0.033173784613609314
+    },
+    {
+      "round": 17,
+      "client_id": 45,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 505,
+      "update_norm": 1.33162522315979,
+      "loo_cosine": 0.08496667444705963
+    },
+    {
+      "round": 17,
+      "client_id": 53,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 625,
+      "update_norm": 1.1268810033798218,
+      "loo_cosine": 0.10551022738218307
+    },
+    {
+      "round": 17,
+      "client_id": 44,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 418,
+      "update_norm": 1.190007209777832,
+      "loo_cosine": 0.10008864849805832
+    },
+    {
+      "round": 17,
+      "client_id": 40,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 488,
+      "update_norm": 1.0131103992462158,
+      "loo_cosine": 0.03019787184894085
+    },
+    {
+      "round": 17,
+      "client_id": 74,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 561,
+      "update_norm": 1.17673659324646,
+      "loo_cosine": 0.0722697377204895
+    },
+    {
+      "round": 17,
+      "client_id": 69,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 698,
+      "update_norm": 1.214186668395996,
+      "loo_cosine": 0.0971960499882698
+    },
+    {
+      "round": 18,
+      "client_id": 79,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 506,
+      "update_norm": 1.7301132678985596,
+      "loo_cosine": 0.07520702481269836
+    },
+    {
+      "round": 18,
+      "client_id": 90,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 588,
+      "update_norm": 1.1166876554489136,
+      "loo_cosine": 0.08277507871389389
+    },
+    {
+      "round": 18,
+      "client_id": 78,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 366,
+      "update_norm": 1.5213311910629272,
+      "loo_cosine": 0.055956464260816574
+    },
+    {
+      "round": 18,
+      "client_id": 42,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 477,
+      "update_norm": 1.3179936408996582,
+      "loo_cosine": 0.1022723987698555
+    },
+    {
+      "round": 18,
+      "client_id": 69,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 698,
+      "update_norm": 1.1617636680603027,
+      "loo_cosine": 0.037528228014707565
+    },
+    {
+      "round": 18,
+      "client_id": 76,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 462,
+      "update_norm": 1.6425468921661377,
+      "loo_cosine": 0.05752408131957054
+    },
+    {
+      "round": 18,
+      "client_id": 3,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 598,
+      "update_norm": 1.3738127946853638,
+      "loo_cosine": 0.08482038974761963
+    },
+    {
+      "round": 18,
+      "client_id": 91,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 525,
+      "update_norm": 1.3192917108535767,
+      "loo_cosine": 0.05252924561500549
+    },
+    {
+      "round": 18,
+      "client_id": 29,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 465,
+      "update_norm": 1.2833138704299927,
+      "loo_cosine": 0.09226258844137192
+    },
+    {
+      "round": 18,
+      "client_id": 81,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 674,
+      "update_norm": 1.5808485746383667,
+      "loo_cosine": 0.08734678477048874
+    },
+    {
+      "round": 19,
+      "client_id": 75,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 600,
+      "update_norm": 1.063557744026184,
+      "loo_cosine": 0.13598531484603882
+    },
+    {
+      "round": 19,
+      "client_id": 75,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 600,
+      "update_norm": 1.0776571035385132,
+      "loo_cosine": 0.1418561041355133
+    },
+    {
+      "round": 19,
+      "client_id": 77,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 429,
+      "update_norm": 1.0570979118347168,
+      "loo_cosine": 0.06792447715997696
+    },
+    {
+      "round": 19,
+      "client_id": 51,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 570,
+      "update_norm": 1.1765387058258057,
+      "loo_cosine": 0.06519103795289993
+    },
+    {
+      "round": 19,
+      "client_id": 95,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 387,
+      "update_norm": 1.0742125511169434,
+      "loo_cosine": 0.048744190484285355
+    },
+    {
+      "round": 19,
+      "client_id": 72,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 342,
+      "update_norm": 0.906701922416687,
+      "loo_cosine": 0.024410434067249298
+    },
+    {
+      "round": 19,
+      "client_id": 91,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 525,
+      "update_norm": 1.025826334953308,
+      "loo_cosine": 0.08810526877641678
+    },
+    {
+      "round": 19,
+      "client_id": 70,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 647,
+      "update_norm": 1.8727747201919556,
+      "loo_cosine": 0.03958829492330551
+    },
+    {
+      "round": 19,
+      "client_id": 91,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 525,
+      "update_norm": 1.240136981010437,
+      "loo_cosine": 0.08387665450572968
+    },
+    {
+      "round": 19,
+      "client_id": 32,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 355,
+      "update_norm": 1.4661983251571655,
+      "loo_cosine": 0.0442073792219162
+    },
+    {
+      "round": 20,
+      "client_id": 42,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 477,
+      "update_norm": 1.2052007913589478,
+      "loo_cosine": 0.03423967957496643
+    },
+    {
+      "round": 20,
+      "client_id": 86,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 539,
+      "update_norm": 1.3776570558547974,
+      "loo_cosine": 0.05988620966672897
+    },
+    {
+      "round": 20,
+      "client_id": 9,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 491,
+      "update_norm": 1.0296192169189453,
+      "loo_cosine": 0.09386321157217026
+    },
+    {
+      "round": 20,
+      "client_id": 45,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 505,
+      "update_norm": 0.9586634635925293,
+      "loo_cosine": 0.025635292753577232
+    },
+    {
+      "round": 20,
+      "client_id": 95,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 387,
+      "update_norm": 0.8286211490631104,
+      "loo_cosine": 0.02476331777870655
+    },
+    {
+      "round": 20,
+      "client_id": 41,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 633,
+      "update_norm": 1.1912177801132202,
+      "loo_cosine": 0.07613209635019302
+    },
+    {
+      "round": 20,
+      "client_id": 68,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 553,
+      "update_norm": 1.0261988639831543,
+      "loo_cosine": 0.05488273501396179
+    },
+    {
+      "round": 20,
+      "client_id": 1,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 443,
+      "update_norm": 1.5527938604354858,
+      "loo_cosine": 0.07910896837711334
+    },
+    {
+      "round": 20,
+      "client_id": 88,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 483,
+      "update_norm": 1.023541808128357,
+      "loo_cosine": 0.03789079934358597
+    },
+    {
+      "round": 20,
+      "client_id": 96,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 519,
+      "update_norm": 1.7455005645751953,
+      "loo_cosine": 0.07097993046045303
+    },
+    {
+      "round": 21,
+      "client_id": 57,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 608,
+      "update_norm": 1.0030012130737305,
+      "loo_cosine": 0.02005147933959961
+    },
+    {
+      "round": 21,
+      "client_id": 55,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 574,
+      "update_norm": 1.2206469774246216,
+      "loo_cosine": 0.05906949192285538
+    },
+    {
+      "round": 21,
+      "client_id": 34,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 588,
+      "update_norm": 1.3498384952545166,
+      "loo_cosine": 0.05624774470925331
+    },
+    {
+      "round": 21,
+      "client_id": 14,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 603,
+      "update_norm": 1.3350493907928467,
+      "loo_cosine": 0.07723993808031082
+    },
+    {
+      "round": 21,
+      "client_id": 91,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 525,
+      "update_norm": 0.9093406796455383,
+      "loo_cosine": 0.021136170253157616
+    },
+    {
+      "round": 21,
+      "client_id": 79,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 506,
+      "update_norm": 1.6426923274993896,
+      "loo_cosine": 0.029491208493709564
+    },
+    {
+      "round": 21,
+      "client_id": 75,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 600,
+      "update_norm": 0.7589665055274963,
+      "loo_cosine": 0.03133774921298027
+    },
+    {
+      "round": 21,
+      "client_id": 62,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 458,
+      "update_norm": 0.9312343001365662,
+      "loo_cosine": 0.05171374976634979
+    },
+    {
+      "round": 21,
+      "client_id": 37,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 461,
+      "update_norm": 1.6379599571228027,
+      "loo_cosine": 0.03986601158976555
+    },
+    {
+      "round": 21,
+      "client_id": 44,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 418,
+      "update_norm": 0.9438049793243408,
+      "loo_cosine": 0.04238174110651016
+    },
+    {
+      "round": 22,
+      "client_id": 21,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 541,
+      "update_norm": 1.019909143447876,
+      "loo_cosine": 0.24968472123146057
+    },
+    {
+      "round": 22,
+      "client_id": 50,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 349,
+      "update_norm": 0.7684391140937805,
+      "loo_cosine": 0.029639210551977158
+    },
+    {
+      "round": 22,
+      "client_id": 56,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 512,
+      "update_norm": 1.2341796159744263,
+      "loo_cosine": 0.03045731782913208
+    },
+    {
+      "round": 22,
+      "client_id": 73,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 469,
+      "update_norm": 1.0995972156524658,
+      "loo_cosine": 0.04008182883262634
+    },
+    {
+      "round": 22,
+      "client_id": 21,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 541,
+      "update_norm": 1.0201008319854736,
+      "loo_cosine": 0.2446434199810028
+    },
+    {
+      "round": 22,
+      "client_id": 91,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 525,
+      "update_norm": 0.7971394658088684,
+      "loo_cosine": 0.05113435536623001
+    },
+    {
+      "round": 22,
+      "client_id": 78,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 366,
+      "update_norm": 0.9572727680206299,
+      "loo_cosine": 0.04022525995969772
+    },
+    {
+      "round": 22,
+      "client_id": 82,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 469,
+      "update_norm": 1.4944190979003906,
+      "loo_cosine": 0.022202296182513237
+    },
+    {
+      "round": 22,
+      "client_id": 85,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 511,
+      "update_norm": 1.0370885133743286,
+      "loo_cosine": 0.035579271614551544
+    },
+    {
+      "round": 22,
+      "client_id": 58,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 544,
+      "update_norm": 1.2420707941055298,
+      "loo_cosine": 0.03269393742084503
+    },
+    {
+      "round": 23,
+      "client_id": 69,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 698,
+      "update_norm": 1.3471057415008545,
+      "loo_cosine": 0.028020475059747696
+    },
+    {
+      "round": 23,
+      "client_id": 84,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 422,
+      "update_norm": 0.8844243288040161,
+      "loo_cosine": 0.012755857780575752
+    },
+    {
+      "round": 23,
+      "client_id": 60,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 476,
+      "update_norm": 0.9531490802764893,
+      "loo_cosine": 0.13173046708106995
+    },
+    {
+      "round": 23,
+      "client_id": 63,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 507,
+      "update_norm": 1.2768983840942383,
+      "loo_cosine": 0.014390144497156143
+    },
+    {
+      "round": 23,
+      "client_id": 60,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 476,
+      "update_norm": 0.9765869975090027,
+      "loo_cosine": 0.14227905869483948
+    },
+    {
+      "round": 23,
+      "client_id": 47,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 411,
+      "update_norm": 1.0316481590270996,
+      "loo_cosine": 0.030223364010453224
+    },
+    {
+      "round": 23,
+      "client_id": 41,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 633,
+      "update_norm": 1.2979238033294678,
+      "loo_cosine": 0.037871357053518295
+    },
+    {
+      "round": 23,
+      "client_id": 39,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 414,
+      "update_norm": 1.4999929666519165,
+      "loo_cosine": 0.04314238578081131
+    },
+    {
+      "round": 23,
+      "client_id": 82,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 469,
+      "update_norm": 0.8696389198303223,
+      "loo_cosine": 0.014128374867141247
+    },
+    {
+      "round": 23,
+      "client_id": 43,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 502,
+      "update_norm": 1.5824668407440186,
+      "loo_cosine": 0.02808421105146408
+    },
+    {
+      "round": 24,
+      "client_id": 66,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 453,
+      "update_norm": 0.946430504322052,
+      "loo_cosine": 0.03509855642914772
+    },
+    {
+      "round": 24,
+      "client_id": 90,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 588,
+      "update_norm": 1.1382182836532593,
+      "loo_cosine": 0.03936822712421417
+    },
+    {
+      "round": 24,
+      "client_id": 24,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 520,
+      "update_norm": 0.9796328544616699,
+      "loo_cosine": 0.02504695951938629
+    },
+    {
+      "round": 24,
+      "client_id": 56,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 512,
+      "update_norm": 1.06732177734375,
+      "loo_cosine": 0.029765743762254715
+    },
+    {
+      "round": 24,
+      "client_id": 73,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 469,
+      "update_norm": 0.9575257897377014,
+      "loo_cosine": 0.01898255944252014
+    },
+    {
+      "round": 24,
+      "client_id": 32,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 355,
+      "update_norm": 0.8370806574821472,
+      "loo_cosine": 0.04714950919151306
+    },
+    {
+      "round": 24,
+      "client_id": 93,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 262,
+      "update_norm": 1.1959185600280762,
+      "loo_cosine": 0.048882368952035904
+    },
+    {
+      "round": 24,
+      "client_id": 72,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 342,
+      "update_norm": 0.8205116987228394,
+      "loo_cosine": 0.05084787309169769
+    },
+    {
+      "round": 24,
+      "client_id": 53,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 625,
+      "update_norm": 1.2401444911956787,
+      "loo_cosine": 0.037763215601444244
+    },
+    {
+      "round": 24,
+      "client_id": 77,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 429,
+      "update_norm": 1.4351080656051636,
+      "loo_cosine": 0.03050580620765686
+    },
+    {
+      "round": 25,
+      "client_id": 55,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 574,
+      "update_norm": 1.634061574935913,
+      "loo_cosine": 0.07131914049386978
+    },
+    {
+      "round": 25,
+      "client_id": 92,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 491,
+      "update_norm": 1.0335098505020142,
+      "loo_cosine": 0.11216945946216583
+    },
+    {
+      "round": 25,
+      "client_id": 41,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 633,
+      "update_norm": 1.0316414833068848,
+      "loo_cosine": 0.0018042294541373849
+    },
+    {
+      "round": 25,
+      "client_id": 28,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 522,
+      "update_norm": 0.9914705157279968,
+      "loo_cosine": 0.04326850548386574
+    },
+    {
+      "round": 25,
+      "client_id": 2,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 531,
+      "update_norm": 1.3091126680374146,
+      "loo_cosine": 0.05923423916101456
+    },
+    {
+      "round": 25,
+      "client_id": 50,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 349,
+      "update_norm": 1.3614648580551147,
+      "loo_cosine": 0.030136600136756897
+    },
+    {
+      "round": 25,
+      "client_id": 49,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 649,
+      "update_norm": 1.1811463832855225,
+      "loo_cosine": 0.047532498836517334
+    },
+    {
+      "round": 25,
+      "client_id": 42,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 477,
+      "update_norm": 1.132433295249939,
+      "loo_cosine": 0.025946423411369324
+    },
+    {
+      "round": 25,
+      "client_id": 92,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 491,
+      "update_norm": 1.5795049667358398,
+      "loo_cosine": 0.09343886375427246
+    },
+    {
+      "round": 25,
+      "client_id": 20,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 546,
+      "update_norm": 1.3311920166015625,
+      "loo_cosine": 0.053767744451761246
+    },
+    {
+      "round": 26,
+      "client_id": 57,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 608,
+      "update_norm": 1.0193583965301514,
+      "loo_cosine": 0.02625533752143383
+    },
+    {
+      "round": 26,
+      "client_id": 85,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 511,
+      "update_norm": 1.1236528158187866,
+      "loo_cosine": 0.015538521111011505
+    },
+    {
+      "round": 26,
+      "client_id": 72,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 342,
+      "update_norm": 0.8956043720245361,
+      "loo_cosine": 0.03868003189563751
+    },
+    {
+      "round": 26,
+      "client_id": 91,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 525,
+      "update_norm": 0.7418188452720642,
+      "loo_cosine": 0.039931945502758026
+    },
+    {
+      "round": 26,
+      "client_id": 67,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 412,
+      "update_norm": 1.1072567701339722,
+      "loo_cosine": 0.03152100369334221
+    },
+    {
+      "round": 26,
+      "client_id": 87,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 323,
+      "update_norm": 0.7971983551979065,
+      "loo_cosine": 0.033140040934085846
+    },
+    {
+      "round": 26,
+      "client_id": 93,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 262,
+      "update_norm": 0.8938418030738831,
+      "loo_cosine": 0.02394152618944645
+    },
+    {
+      "round": 26,
+      "client_id": 54,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 560,
+      "update_norm": 1.1680258512496948,
+      "loo_cosine": 0.03803570568561554
+    },
+    {
+      "round": 26,
+      "client_id": 80,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 658,
+      "update_norm": 1.2653326988220215,
+      "loo_cosine": 0.031603287905454636
+    },
+    {
+      "round": 26,
+      "client_id": 88,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 483,
+      "update_norm": 0.9563190937042236,
+      "loo_cosine": 0.040054626762866974
+    },
+    {
+      "round": 27,
+      "client_id": 73,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 469,
+      "update_norm": 1.1312874555587769,
+      "loo_cosine": 0.09637320786714554
+    },
+    {
+      "round": 27,
+      "client_id": 84,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 422,
+      "update_norm": 0.8708581328392029,
+      "loo_cosine": 0.01538760308176279
+    },
+    {
+      "round": 27,
+      "client_id": 54,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 560,
+      "update_norm": 1.154203176498413,
+      "loo_cosine": -0.007903212681412697
+    },
+    {
+      "round": 27,
+      "client_id": 73,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 469,
+      "update_norm": 0.913537323474884,
+      "loo_cosine": 0.10361725836992264
+    },
+    {
+      "round": 27,
+      "client_id": 90,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 588,
+      "update_norm": 1.0049841403961182,
+      "loo_cosine": 0.02303067408502102
+    },
+    {
+      "round": 27,
+      "client_id": 41,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 633,
+      "update_norm": 1.0582622289657593,
+      "loo_cosine": 0.014067751355469227
+    },
+    {
+      "round": 27,
+      "client_id": 65,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 424,
+      "update_norm": 1.0889064073562622,
+      "loo_cosine": 0.031572382897138596
+    },
+    {
+      "round": 27,
+      "client_id": 86,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 539,
+      "update_norm": 0.9769230484962463,
+      "loo_cosine": 0.03454454615712166
+    },
+    {
+      "round": 27,
+      "client_id": 76,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 462,
+      "update_norm": 1.0282526016235352,
+      "loo_cosine": 0.014843863435089588
+    },
+    {
+      "round": 27,
+      "client_id": 91,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 525,
+      "update_norm": 1.032098412513733,
+      "loo_cosine": -0.009382340125739574
+    },
+    {
+      "round": 28,
+      "client_id": 41,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 633,
+      "update_norm": 1.6899924278259277,
+      "loo_cosine": 0.009117464534938335
+    },
+    {
+      "round": 28,
+      "client_id": 82,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 469,
+      "update_norm": 1.1103099584579468,
+      "loo_cosine": 0.020279396325349808
+    },
+    {
+      "round": 28,
+      "client_id": 80,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 658,
+      "update_norm": 1.2851743698120117,
+      "loo_cosine": 0.021190442144870758
+    },
+    {
+      "round": 28,
+      "client_id": 54,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 560,
+      "update_norm": 1.594682216644287,
+      "loo_cosine": 0.011578168720006943
+    },
+    {
+      "round": 28,
+      "client_id": 43,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 502,
+      "update_norm": 1.101783037185669,
+      "loo_cosine": 0.010713226161897182
+    },
+    {
+      "round": 28,
+      "client_id": 87,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 323,
+      "update_norm": 0.7512699961662292,
+      "loo_cosine": 0.01212689746171236
+    },
+    {
+      "round": 28,
+      "client_id": 79,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 506,
+      "update_norm": 0.9967435002326965,
+      "loo_cosine": 0.02899932488799095
+    },
+    {
+      "round": 28,
+      "client_id": 74,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 561,
+      "update_norm": 1.0105202198028564,
+      "loo_cosine": 0.020305756479501724
+    },
+    {
+      "round": 28,
+      "client_id": 53,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 625,
+      "update_norm": 0.9678584933280945,
+      "loo_cosine": 0.014784939587116241
+    },
+    {
+      "round": 28,
+      "client_id": 6,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 387,
+      "update_norm": 1.1315702199935913,
+      "loo_cosine": 0.013228727504611015
+    },
+    {
+      "round": 29,
+      "client_id": 39,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 414,
+      "update_norm": 1.3967777490615845,
+      "loo_cosine": 0.08765920996665955
+    },
+    {
+      "round": 29,
+      "client_id": 9,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 491,
+      "update_norm": 0.9331122636795044,
+      "loo_cosine": 0.23746362328529358
+    },
+    {
+      "round": 29,
+      "client_id": 9,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 491,
+      "update_norm": 0.9327940940856934,
+      "loo_cosine": 0.2370009422302246
+    },
+    {
+      "round": 29,
+      "client_id": 39,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 414,
+      "update_norm": 0.8486647009849548,
+      "loo_cosine": 0.12881605327129364
+    },
+    {
+      "round": 29,
+      "client_id": 38,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 469,
+      "update_norm": 1.5481189489364624,
+      "loo_cosine": 0.03717765584588051
+    },
+    {
+      "round": 29,
+      "client_id": 95,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 387,
+      "update_norm": 0.791606068611145,
+      "loo_cosine": 0.06531132012605667
+    },
+    {
+      "round": 29,
+      "client_id": 75,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 600,
+      "update_norm": 0.8252700567245483,
+      "loo_cosine": 0.032179225236177444
+    },
+    {
+      "round": 29,
+      "client_id": 53,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 625,
+      "update_norm": 1.3004717826843262,
+      "loo_cosine": 0.020385419949889183
+    },
+    {
+      "round": 29,
+      "client_id": 76,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 462,
+      "update_norm": 1.0329214334487915,
+      "loo_cosine": 0.01423146016895771
+    },
+    {
+      "round": 29,
+      "client_id": 32,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 355,
+      "update_norm": 1.350442886352539,
+      "loo_cosine": 0.033854227513074875
+    },
+    {
+      "round": 30,
+      "client_id": 48,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 644,
+      "update_norm": 1.1503862142562866,
+      "loo_cosine": 0.03528818488121033
+    },
+    {
+      "round": 30,
+      "client_id": 40,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 488,
+      "update_norm": 1.0609749555587769,
+      "loo_cosine": 0.056933969259262085
+    },
+    {
+      "round": 30,
+      "client_id": 87,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 323,
+      "update_norm": 0.758388876914978,
+      "loo_cosine": 0.04174262285232544
+    },
+    {
+      "round": 30,
+      "client_id": 4,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 469,
+      "update_norm": 1.2461656332015991,
+      "loo_cosine": 0.053049199283123016
+    },
+    {
+      "round": 30,
+      "client_id": 77,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 429,
+      "update_norm": 1.0838745832443237,
+      "loo_cosine": 0.03625045716762543
+    },
+    {
+      "round": 30,
+      "client_id": 27,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 415,
+      "update_norm": 1.2085976600646973,
+      "loo_cosine": 0.03544256463646889
+    },
+    {
+      "round": 30,
+      "client_id": 97,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 496,
+      "update_norm": 1.032084584236145,
+      "loo_cosine": 0.05712488293647766
+    },
+    {
+      "round": 30,
+      "client_id": 88,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 483,
+      "update_norm": 0.9530852437019348,
+      "loo_cosine": 0.021959464997053146
+    },
+    {
+      "round": 30,
+      "client_id": 84,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 422,
+      "update_norm": 0.8281023502349854,
+      "loo_cosine": 0.03569696098566055
+    },
+    {
+      "round": 30,
+      "client_id": 21,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 541,
+      "update_norm": 1.3150779008865356,
+      "loo_cosine": 0.02762659266591072
+    },
+    {
+      "round": 31,
+      "client_id": 99,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 467,
+      "update_norm": 0.9172278642654419,
+      "loo_cosine": 0.044319599866867065
+    },
+    {
+      "round": 31,
+      "client_id": 85,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 511,
+      "update_norm": 0.9798714518547058,
+      "loo_cosine": 0.01932227611541748
+    },
+    {
+      "round": 31,
+      "client_id": 89,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 380,
+      "update_norm": 0.8618518710136414,
+      "loo_cosine": -0.01680164970457554
+    },
+    {
+      "round": 31,
+      "client_id": 65,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 424,
+      "update_norm": 1.182350754737854,
+      "loo_cosine": 0.03912953659892082
+    },
+    {
+      "round": 31,
+      "client_id": 71,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 508,
+      "update_norm": 0.9170159697532654,
+      "loo_cosine": 0.028678417205810547
+    },
+    {
+      "round": 31,
+      "client_id": 48,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 644,
+      "update_norm": 1.7304235696792603,
+      "loo_cosine": 0.019662173464894295
+    },
+    {
+      "round": 31,
+      "client_id": 25,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 552,
+      "update_norm": 1.678243637084961,
+      "loo_cosine": 0.04098079726099968
+    },
+    {
+      "round": 31,
+      "client_id": 44,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 418,
+      "update_norm": 0.8235028386116028,
+      "loo_cosine": 0.04727467894554138
+    },
+    {
+      "round": 31,
+      "client_id": 73,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 469,
+      "update_norm": 0.8020021915435791,
+      "loo_cosine": 0.02569670043885708
+    },
+    {
+      "round": 31,
+      "client_id": 53,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 625,
+      "update_norm": 1.0443576574325562,
+      "loo_cosine": 0.002225043484941125
+    },
+    {
+      "round": 32,
+      "client_id": 73,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 469,
+      "update_norm": 1.1822997331619263,
+      "loo_cosine": 0.01284695416688919
+    },
+    {
+      "round": 32,
+      "client_id": 91,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 525,
+      "update_norm": 0.6503199934959412,
+      "loo_cosine": 0.030971581116318703
+    },
+    {
+      "round": 32,
+      "client_id": 55,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 574,
+      "update_norm": 1.6213977336883545,
+      "loo_cosine": 0.029075918719172478
+    },
+    {
+      "round": 32,
+      "client_id": 88,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 483,
+      "update_norm": 0.7936170101165771,
+      "loo_cosine": 0.025864427909255028
+    },
+    {
+      "round": 32,
+      "client_id": 24,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 520,
+      "update_norm": 1.5497701168060303,
+      "loo_cosine": 0.03711656108498573
+    },
+    {
+      "round": 32,
+      "client_id": 71,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 508,
+      "update_norm": 1.1229705810546875,
+      "loo_cosine": 0.02352457493543625
+    },
+    {
+      "round": 32,
+      "client_id": 13,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 560,
+      "update_norm": 1.333915114402771,
+      "loo_cosine": 0.04191749542951584
+    },
+    {
+      "round": 32,
+      "client_id": 85,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 511,
+      "update_norm": 1.6550980806350708,
+      "loo_cosine": 0.02538137324154377
+    },
+    {
+      "round": 32,
+      "client_id": 64,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 462,
+      "update_norm": 0.9754734635353088,
+      "loo_cosine": 0.01590452529489994
+    },
+    {
+      "round": 32,
+      "client_id": 58,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 544,
+      "update_norm": 1.1636155843734741,
+      "loo_cosine": 0.044529274106025696
+    },
+    {
+      "round": 33,
+      "client_id": 64,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 462,
+      "update_norm": 0.880964994430542,
+      "loo_cosine": 0.001755242352373898
+    },
+    {
+      "round": 33,
+      "client_id": 71,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 508,
+      "update_norm": 1.0265930891036987,
+      "loo_cosine": -0.012639498338103294
+    },
+    {
+      "round": 33,
+      "client_id": 41,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 633,
+      "update_norm": 1.0708106756210327,
+      "loo_cosine": 0.01962912082672119
+    },
+    {
+      "round": 33,
+      "client_id": 80,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 658,
+      "update_norm": 1.051171898841858,
+      "loo_cosine": 0.020988451316952705
+    },
+    {
+      "round": 33,
+      "client_id": 79,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 506,
+      "update_norm": 0.9463549852371216,
+      "loo_cosine": 0.023320289328694344
+    },
+    {
+      "round": 33,
+      "client_id": 97,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 496,
+      "update_norm": 0.9225946068763733,
+      "loo_cosine": 0.08076383173465729
+    },
+    {
+      "round": 33,
+      "client_id": 65,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 424,
+      "update_norm": 1.0114892721176147,
+      "loo_cosine": 0.0134954322129488
+    },
+    {
+      "round": 33,
+      "client_id": 97,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 496,
+      "update_norm": 1.0960029363632202,
+      "loo_cosine": 0.06483352929353714
+    },
+    {
+      "round": 33,
+      "client_id": 36,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 608,
+      "update_norm": 1.7574036121368408,
+      "loo_cosine": 0.02617514319717884
+    },
+    {
+      "round": 33,
+      "client_id": 2,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 531,
+      "update_norm": 1.6310123205184937,
+      "loo_cosine": 0.030261632055044174
+    },
+    {
+      "round": 34,
+      "client_id": 20,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 546,
+      "update_norm": 1.6141616106033325,
+      "loo_cosine": 0.023912016302347183
+    },
+    {
+      "round": 34,
+      "client_id": 76,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 462,
+      "update_norm": 0.9371201992034912,
+      "loo_cosine": 0.13032153248786926
+    },
+    {
+      "round": 34,
+      "client_id": 97,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 496,
+      "update_norm": 0.7408157587051392,
+      "loo_cosine": -0.009876363910734653
+    },
+    {
+      "round": 34,
+      "client_id": 60,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 476,
+      "update_norm": 0.9899998903274536,
+      "loo_cosine": 0.02298777736723423
+    },
+    {
+      "round": 34,
+      "client_id": 95,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 387,
+      "update_norm": 0.7958236932754517,
+      "loo_cosine": 0.026349512860178947
+    },
+    {
+      "round": 34,
+      "client_id": 76,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 462,
+      "update_norm": 0.9445818066596985,
+      "loo_cosine": 0.13461196422576904
+    },
+    {
+      "round": 34,
+      "client_id": 17,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 488,
+      "update_norm": 1.220555067062378,
+      "loo_cosine": 0.03131172060966492
+    },
+    {
+      "round": 34,
+      "client_id": 61,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 448,
+      "update_norm": 0.9136990904808044,
+      "loo_cosine": 0.03797755762934685
+    },
+    {
+      "round": 34,
+      "client_id": 67,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 412,
+      "update_norm": 0.9622429013252258,
+      "loo_cosine": 0.021477797999978065
+    },
+    {
+      "round": 34,
+      "client_id": 27,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 415,
+      "update_norm": 1.1920844316482544,
+      "loo_cosine": 0.04541102424263954
+    },
+    {
+      "round": 35,
+      "client_id": 34,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 588,
+      "update_norm": 0.9974387288093567,
+      "loo_cosine": 0.08338327705860138
+    },
+    {
+      "round": 35,
+      "client_id": 83,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 757,
+      "update_norm": 1.0532881021499634,
+      "loo_cosine": 0.0720210000872612
+    },
+    {
+      "round": 35,
+      "client_id": 12,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 463,
+      "update_norm": 0.9052870273590088,
+      "loo_cosine": 0.0649297758936882
+    },
+    {
+      "round": 35,
+      "client_id": 96,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 519,
+      "update_norm": 0.9722971320152283,
+      "loo_cosine": 0.03446628525853157
+    },
+    {
+      "round": 35,
+      "client_id": 64,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 462,
+      "update_norm": 0.8184023499488831,
+      "loo_cosine": 0.014508908614516258
+    },
+    {
+      "round": 35,
+      "client_id": 99,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 467,
+      "update_norm": 0.957375705242157,
+      "loo_cosine": 0.06527333706617355
+    },
+    {
+      "round": 35,
+      "client_id": 75,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 600,
+      "update_norm": 0.8239710927009583,
+      "loo_cosine": 0.04501696303486824
+    },
+    {
+      "round": 35,
+      "client_id": 81,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 674,
+      "update_norm": 1.0500414371490479,
+      "loo_cosine": 0.05462370440363884
+    },
+    {
+      "round": 35,
+      "client_id": 98,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 426,
+      "update_norm": 1.0560194253921509,
+      "loo_cosine": 0.09108958393335342
+    },
+    {
+      "round": 35,
+      "client_id": 98,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 426,
+      "update_norm": 0.8776124119758606,
+      "loo_cosine": 0.11026416718959808
+    },
+    {
+      "round": 36,
+      "client_id": 93,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 262,
+      "update_norm": 0.7674742341041565,
+      "loo_cosine": 0.0038033146411180496
+    },
+    {
+      "round": 36,
+      "client_id": 83,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 757,
+      "update_norm": 1.1227514743804932,
+      "loo_cosine": 0.013087541796267033
+    },
+    {
+      "round": 36,
+      "client_id": 68,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 553,
+      "update_norm": 1.588268518447876,
+      "loo_cosine": 0.003809279529377818
+    },
+    {
+      "round": 36,
+      "client_id": 71,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 508,
+      "update_norm": 0.9523704051971436,
+      "loo_cosine": 0.00893095601350069
+    },
+    {
+      "round": 36,
+      "client_id": 98,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 426,
+      "update_norm": 0.8094643354415894,
+      "loo_cosine": -0.04067889228463173
+    },
+    {
+      "round": 36,
+      "client_id": 74,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 561,
+      "update_norm": 1.0507365465164185,
+      "loo_cosine": 0.014478683471679688
+    },
+    {
+      "round": 36,
+      "client_id": 55,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 574,
+      "update_norm": 0.944858729839325,
+      "loo_cosine": -0.003770632902160287
+    },
+    {
+      "round": 36,
+      "client_id": 44,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 418,
+      "update_norm": 0.9584486484527588,
+      "loo_cosine": 0.028505893424153328
+    },
+    {
+      "round": 36,
+      "client_id": 86,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 539,
+      "update_norm": 1.0343139171600342,
+      "loo_cosine": 0.0198372770100832
+    },
+    {
+      "round": 36,
+      "client_id": 5,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 552,
+      "update_norm": 0.9749821424484253,
+      "loo_cosine": 0.0181647390127182
+    },
+    {
+      "round": 37,
+      "client_id": 72,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 342,
+      "update_norm": 0.7720885872840881,
+      "loo_cosine": 0.029875794425606728
+    },
+    {
+      "round": 37,
+      "client_id": 48,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 644,
+      "update_norm": 1.208260178565979,
+      "loo_cosine": 0.002018473343923688
+    },
+    {
+      "round": 37,
+      "client_id": 21,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 541,
+      "update_norm": 1.5993380546569824,
+      "loo_cosine": 0.01664505898952484
+    },
+    {
+      "round": 37,
+      "client_id": 50,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 349,
+      "update_norm": 0.7376078367233276,
+      "loo_cosine": 0.04691771790385246
+    },
+    {
+      "round": 37,
+      "client_id": 98,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 426,
+      "update_norm": 0.7272908091545105,
+      "loo_cosine": 0.006373366340994835
+    },
+    {
+      "round": 37,
+      "client_id": 68,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 553,
+      "update_norm": 0.9360881447792053,
+      "loo_cosine": 0.028178103268146515
+    },
+    {
+      "round": 37,
+      "client_id": 27,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 415,
+      "update_norm": 1.1268492937088013,
+      "loo_cosine": 0.037862446159124374
+    },
+    {
+      "round": 37,
+      "client_id": 57,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 608,
+      "update_norm": 1.1604151725769043,
+      "loo_cosine": 0.029398851096630096
+    },
+    {
+      "round": 37,
+      "client_id": 97,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 496,
+      "update_norm": 0.7896820306777954,
+      "loo_cosine": 0.01992562599480152
+    },
+    {
+      "round": 37,
+      "client_id": 42,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 477,
+      "update_norm": 1.4750072956085205,
+      "loo_cosine": 0.03554750233888626
+    },
+    {
+      "round": 38,
+      "client_id": 78,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 366,
+      "update_norm": 0.8334855437278748,
+      "loo_cosine": 0.022059692069888115
+    },
+    {
+      "round": 38,
+      "client_id": 64,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 462,
+      "update_norm": 1.190599799156189,
+      "loo_cosine": 0.026999548077583313
+    },
+    {
+      "round": 38,
+      "client_id": 93,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 262,
+      "update_norm": 0.7309199571609497,
+      "loo_cosine": 0.04623255133628845
+    },
+    {
+      "round": 38,
+      "client_id": 32,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 355,
+      "update_norm": 1.0646960735321045,
+      "loo_cosine": 0.008017203770577908
+    },
+    {
+      "round": 38,
+      "client_id": 63,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 507,
+      "update_norm": 1.0931655168533325,
+      "loo_cosine": 0.021858396008610725
+    },
+    {
+      "round": 38,
+      "client_id": 61,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 448,
+      "update_norm": 1.093208909034729,
+      "loo_cosine": 0.022185252979397774
+    },
+    {
+      "round": 38,
+      "client_id": 43,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 502,
+      "update_norm": 1.2061083316802979,
+      "loo_cosine": 0.01091260090470314
+    },
+    {
+      "round": 38,
+      "client_id": 14,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 603,
+      "update_norm": 0.9589264392852783,
+      "loo_cosine": 0.059165921062231064
+    },
+    {
+      "round": 38,
+      "client_id": 79,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 506,
+      "update_norm": 0.8757118582725525,
+      "loo_cosine": 0.026569899171590805
+    },
+    {
+      "round": 38,
+      "client_id": 30,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 484,
+      "update_norm": 1.5506974458694458,
+      "loo_cosine": 0.04128558933734894
+    },
+    {
+      "round": 39,
+      "client_id": 77,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 429,
+      "update_norm": 0.8118966817855835,
+      "loo_cosine": 0.05200790986418724
+    },
+    {
+      "round": 39,
+      "client_id": 89,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 380,
+      "update_norm": 0.8670938611030579,
+      "loo_cosine": 0.11585361510515213
+    },
+    {
+      "round": 39,
+      "client_id": 92,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 491,
+      "update_norm": 0.8927081227302551,
+      "loo_cosine": 0.025176802650094032
+    },
+    {
+      "round": 39,
+      "client_id": 62,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 458,
+      "update_norm": 1.5043222904205322,
+      "loo_cosine": 0.020790554583072662
+    },
+    {
+      "round": 39,
+      "client_id": 74,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 561,
+      "update_norm": 0.9563624262809753,
+      "loo_cosine": 0.1758689284324646
+    },
+    {
+      "round": 39,
+      "client_id": 74,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 561,
+      "update_norm": 0.9501345753669739,
+      "loo_cosine": 0.18424606323242188
+    },
+    {
+      "round": 39,
+      "client_id": 75,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 600,
+      "update_norm": 1.0760633945465088,
+      "loo_cosine": 0.037437353283166885
+    },
+    {
+      "round": 39,
+      "client_id": 89,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 380,
+      "update_norm": 0.9680786728858948,
+      "loo_cosine": 0.10215891897678375
+    },
+    {
+      "round": 39,
+      "client_id": 73,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 469,
+      "update_norm": 0.7279370427131653,
+      "loo_cosine": 0.033636629581451416
+    },
+    {
+      "round": 39,
+      "client_id": 60,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 476,
+      "update_norm": 0.9492630958557129,
+      "loo_cosine": 0.05502224341034889
+    },
+    {
+      "round": 40,
+      "client_id": 71,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 508,
+      "update_norm": 0.8086497783660889,
+      "loo_cosine": 0.0382685624063015
+    },
+    {
+      "round": 40,
+      "client_id": 66,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 453,
+      "update_norm": 1.1192744970321655,
+      "loo_cosine": 0.03741646930575371
+    },
+    {
+      "round": 40,
+      "client_id": 9,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 491,
+      "update_norm": 1.4926096200942993,
+      "loo_cosine": 0.026928294450044632
+    },
+    {
+      "round": 40,
+      "client_id": 64,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 462,
+      "update_norm": 0.8024616837501526,
+      "loo_cosine": 0.03687776252627373
+    },
+    {
+      "round": 40,
+      "client_id": 97,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 496,
+      "update_norm": 0.6201794743537903,
+      "loo_cosine": 0.04245423153042793
+    },
+    {
+      "round": 40,
+      "client_id": 90,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 588,
+      "update_norm": 0.9285516738891602,
+      "loo_cosine": 0.039436791092157364
+    },
+    {
+      "round": 40,
+      "client_id": 49,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 649,
+      "update_norm": 1.1039072275161743,
+      "loo_cosine": 0.054119281470775604
+    },
+    {
+      "round": 40,
+      "client_id": 96,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 519,
+      "update_norm": 0.967975378036499,
+      "loo_cosine": 0.0372467041015625
+    },
+    {
+      "round": 40,
+      "client_id": 16,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 457,
+      "update_norm": 0.8871346116065979,
+      "loo_cosine": 0.022647812962532043
+    },
+    {
+      "round": 40,
+      "client_id": 43,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 502,
+      "update_norm": 0.8978790044784546,
+      "loo_cosine": 0.023031817749142647
+    },
+    {
+      "round": 41,
+      "client_id": 47,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 411,
+      "update_norm": 0.9560431241989136,
+      "loo_cosine": 0.03876898065209389
+    },
+    {
+      "round": 41,
+      "client_id": 78,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 366,
+      "update_norm": 1.112999677658081,
+      "loo_cosine": 0.03194034844636917
+    },
+    {
+      "round": 41,
+      "client_id": 75,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 600,
+      "update_norm": 0.759489893913269,
+      "loo_cosine": 0.048185382038354874
+    },
+    {
+      "round": 41,
+      "client_id": 90,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 588,
+      "update_norm": 0.7744224667549133,
+      "loo_cosine": 0.020076090469956398
+    },
+    {
+      "round": 41,
+      "client_id": 48,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 644,
+      "update_norm": 1.3353922367095947,
+      "loo_cosine": 0.02889004535973072
+    },
+    {
+      "round": 41,
+      "client_id": 9,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 491,
+      "update_norm": 1.1746279001235962,
+      "loo_cosine": 0.01669720746576786
+    },
+    {
+      "round": 41,
+      "client_id": 73,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 469,
+      "update_norm": 1.1347525119781494,
+      "loo_cosine": 0.04448794201016426
+    },
+    {
+      "round": 41,
+      "client_id": 70,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 647,
+      "update_norm": 1.6784496307373047,
+      "loo_cosine": 0.032948266714811325
+    },
+    {
+      "round": 41,
+      "client_id": 54,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 560,
+      "update_norm": 0.8975157141685486,
+      "loo_cosine": 0.012420117855072021
+    },
+    {
+      "round": 41,
+      "client_id": 88,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 483,
+      "update_norm": 0.6769018173217773,
+      "loo_cosine": 0.029182687401771545
+    },
+    {
+      "round": 42,
+      "client_id": 45,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 505,
+      "update_norm": 0.9553954601287842,
+      "loo_cosine": 0.05024553835391998
+    },
+    {
+      "round": 42,
+      "client_id": 57,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 608,
+      "update_norm": 1.03335702419281,
+      "loo_cosine": 0.043248627334833145
+    },
+    {
+      "round": 42,
+      "client_id": 63,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 507,
+      "update_norm": 1.0015448331832886,
+      "loo_cosine": 0.03261295706033707
+    },
+    {
+      "round": 42,
+      "client_id": 37,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 461,
+      "update_norm": 0.946431577205658,
+      "loo_cosine": 0.03976162150502205
+    },
+    {
+      "round": 42,
+      "client_id": 72,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 342,
+      "update_norm": 0.7410984635353088,
+      "loo_cosine": 0.03959290310740471
+    },
+    {
+      "round": 42,
+      "client_id": 74,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 561,
+      "update_norm": 1.1568504571914673,
+      "loo_cosine": 0.026140565052628517
+    },
+    {
+      "round": 42,
+      "client_id": 14,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 603,
+      "update_norm": 1.2469569444656372,
+      "loo_cosine": 0.04481774568557739
+    },
+    {
+      "round": 42,
+      "client_id": 69,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 698,
+      "update_norm": 1.1216967105865479,
+      "loo_cosine": 0.04321041703224182
+    },
+    {
+      "round": 42,
+      "client_id": 35,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 476,
+      "update_norm": 1.4990354776382446,
+      "loo_cosine": 0.04957225173711777
+    },
+    {
+      "round": 42,
+      "client_id": 13,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 560,
+      "update_norm": 1.639839768409729,
+      "loo_cosine": 0.05190059542655945
+    },
+    {
+      "round": 43,
+      "client_id": 95,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 387,
+      "update_norm": 0.7712486386299133,
+      "loo_cosine": 0.05200525373220444
+    },
+    {
+      "round": 43,
+      "client_id": 42,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 477,
+      "update_norm": 1.0425292253494263,
+      "loo_cosine": 0.03169737756252289
+    },
+    {
+      "round": 43,
+      "client_id": 37,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 461,
+      "update_norm": 0.8295902609825134,
+      "loo_cosine": 0.0022180634550750256
+    },
+    {
+      "round": 43,
+      "client_id": 40,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 488,
+      "update_norm": 0.9730495810508728,
+      "loo_cosine": 0.034722473472356796
+    },
+    {
+      "round": 43,
+      "client_id": 78,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 366,
+      "update_norm": 1.0798512697219849,
+      "loo_cosine": 0.03782204911112785
+    },
+    {
+      "round": 43,
+      "client_id": 82,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 469,
+      "update_norm": 0.98972088098526,
+      "loo_cosine": 0.0045923455618321896
+    },
+    {
+      "round": 43,
+      "client_id": 1,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 443,
+      "update_norm": 1.1774077415466309,
+      "loo_cosine": 0.014866837300360203
+    },
+    {
+      "round": 43,
+      "client_id": 11,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 523,
+      "update_norm": 1.2687760591506958,
+      "loo_cosine": 0.03675263375043869
+    },
+    {
+      "round": 43,
+      "client_id": 52,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 368,
+      "update_norm": 0.8567920327186584,
+      "loo_cosine": 0.07026568055152893
+    },
+    {
+      "round": 43,
+      "client_id": 47,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 411,
+      "update_norm": 0.848885178565979,
+      "loo_cosine": 0.036377355456352234
+    },
+    {
+      "round": 44,
+      "client_id": 92,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 491,
+      "update_norm": 0.8224018812179565,
+      "loo_cosine": 0.013306484557688236
+    },
+    {
+      "round": 44,
+      "client_id": 96,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 519,
+      "update_norm": 1.0425225496292114,
+      "loo_cosine": 0.012777002528309822
+    },
+    {
+      "round": 44,
+      "client_id": 90,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 588,
+      "update_norm": 0.6288924217224121,
+      "loo_cosine": 0.023020777851343155
+    },
+    {
+      "round": 44,
+      "client_id": 71,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 508,
+      "update_norm": 0.7439354658126831,
+      "loo_cosine": 0.015083723701536655
+    },
+    {
+      "round": 44,
+      "client_id": 24,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 520,
+      "update_norm": 1.4865716695785522,
+      "loo_cosine": 0.008843718096613884
+    },
+    {
+      "round": 44,
+      "client_id": 55,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 574,
+      "update_norm": 1.158689260482788,
+      "loo_cosine": 0.015557571314275265
+    },
+    {
+      "round": 44,
+      "client_id": 75,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 600,
+      "update_norm": 1.6538535356521606,
+      "loo_cosine": 0.009315391071140766
+    },
+    {
+      "round": 44,
+      "client_id": 66,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 453,
+      "update_norm": 0.953619658946991,
+      "loo_cosine": 0.03839324787259102
+    },
+    {
+      "round": 44,
+      "client_id": 20,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 546,
+      "update_norm": 0.9667061567306519,
+      "loo_cosine": 0.035850394517183304
+    },
+    {
+      "round": 44,
+      "client_id": 47,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 411,
+      "update_norm": 1.0413483381271362,
+      "loo_cosine": -0.006531909108161926
+    },
+    {
+      "round": 45,
+      "client_id": 68,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 553,
+      "update_norm": 0.9544628858566284,
+      "loo_cosine": 0.018381932750344276
+    },
+    {
+      "round": 45,
+      "client_id": 21,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 541,
+      "update_norm": 1.2790240049362183,
+      "loo_cosine": 0.004310176707804203
+    },
+    {
+      "round": 45,
+      "client_id": 87,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 323,
+      "update_norm": 0.998328447341919,
+      "loo_cosine": 0.03463460132479668
+    },
+    {
+      "round": 45,
+      "client_id": 55,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 574,
+      "update_norm": 0.9855505228042603,
+      "loo_cosine": 0.16762249171733856
+    },
+    {
+      "round": 45,
+      "client_id": 50,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 349,
+      "update_norm": 0.8260418176651001,
+      "loo_cosine": 0.014848032966256142
+    },
+    {
+      "round": 45,
+      "client_id": 95,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 387,
+      "update_norm": 1.295398235321045,
+      "loo_cosine": -0.008631645701825619
+    },
+    {
+      "round": 45,
+      "client_id": 13,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 560,
+      "update_norm": 0.979958713054657,
+      "loo_cosine": 0.01593651995062828
+    },
+    {
+      "round": 45,
+      "client_id": 55,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 574,
+      "update_norm": 1.2069796323776245,
+      "loo_cosine": 0.14312857389450073
+    },
+    {
+      "round": 45,
+      "client_id": 99,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 467,
+      "update_norm": 0.9071655869483948,
+      "loo_cosine": 0.02344135195016861
+    },
+    {
+      "round": 45,
+      "client_id": 64,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 462,
+      "update_norm": 1.0188405513763428,
+      "loo_cosine": 0.024352118372917175
+    },
+    {
+      "round": 46,
+      "client_id": 95,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 387,
+      "update_norm": 0.5696110129356384,
+      "loo_cosine": 0.01845592074096203
+    },
+    {
+      "round": 46,
+      "client_id": 69,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 698,
+      "update_norm": 1.7797342538833618,
+      "loo_cosine": 0.025237509980797768
+    },
+    {
+      "round": 46,
+      "client_id": 37,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 461,
+      "update_norm": 1.229216456413269,
+      "loo_cosine": 0.01467143278568983
+    },
+    {
+      "round": 46,
+      "client_id": 70,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 647,
+      "update_norm": 1.6411759853363037,
+      "loo_cosine": 0.0254238061606884
+    },
+    {
+      "round": 46,
+      "client_id": 56,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 512,
+      "update_norm": 0.9214248061180115,
+      "loo_cosine": 0.024378417059779167
+    },
+    {
+      "round": 46,
+      "client_id": 91,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 525,
+      "update_norm": 0.8071929216384888,
+      "loo_cosine": 0.05019615963101387
+    },
+    {
+      "round": 46,
+      "client_id": 61,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 448,
+      "update_norm": 0.8507558107376099,
+      "loo_cosine": 0.02815432846546173
+    },
+    {
+      "round": 46,
+      "client_id": 60,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 476,
+      "update_norm": 0.9216617345809937,
+      "loo_cosine": 0.024095723405480385
+    },
+    {
+      "round": 46,
+      "client_id": 73,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 469,
+      "update_norm": 0.6675819754600525,
+      "loo_cosine": 0.036069054156541824
+    },
+    {
+      "round": 46,
+      "client_id": 53,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 625,
+      "update_norm": 1.1092334985733032,
+      "loo_cosine": 0.019529296085238457
+    },
+    {
+      "round": 47,
+      "client_id": 83,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 757,
+      "update_norm": 1.0256099700927734,
+      "loo_cosine": 0.044680770486593246
+    },
+    {
+      "round": 47,
+      "client_id": 40,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 488,
+      "update_norm": 0.890516996383667,
+      "loo_cosine": 0.16552875936031342
+    },
+    {
+      "round": 47,
+      "client_id": 5,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 552,
+      "update_norm": 0.9505147933959961,
+      "loo_cosine": 0.04792782664299011
+    },
+    {
+      "round": 47,
+      "client_id": 3,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 598,
+      "update_norm": 1.6016428470611572,
+      "loo_cosine": 0.03087937831878662
+    },
+    {
+      "round": 47,
+      "client_id": 40,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 488,
+      "update_norm": 0.9043720960617065,
+      "loo_cosine": 0.13638357818126678
+    },
+    {
+      "round": 47,
+      "client_id": 37,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 461,
+      "update_norm": 0.7418850064277649,
+      "loo_cosine": 0.0026456923224031925
+    },
+    {
+      "round": 47,
+      "client_id": 92,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 491,
+      "update_norm": 1.4627678394317627,
+      "loo_cosine": 0.021881964057683945
+    },
+    {
+      "round": 47,
+      "client_id": 78,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 366,
+      "update_norm": 0.9222697615623474,
+      "loo_cosine": 0.006519222166389227
+    },
+    {
+      "round": 47,
+      "client_id": 60,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 476,
+      "update_norm": 0.7846477627754211,
+      "loo_cosine": 0.010452505201101303
+    },
+    {
+      "round": 47,
+      "client_id": 57,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 608,
+      "update_norm": 1.2540042400360107,
+      "loo_cosine": 0.03144148737192154
+    },
+    {
+      "round": 48,
+      "client_id": 65,
+      "model_idx": 5,
+      "width": 0.66,
+      "depth": 4,
+      "lens": 424,
+      "update_norm": 0.9081435799598694,
+      "loo_cosine": 0.004677569027990103
+    },
+    {
+      "round": 48,
+      "client_id": 40,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 488,
+      "update_norm": 1.5131580829620361,
+      "loo_cosine": 0.21101300418376923
+    },
+    {
+      "round": 48,
+      "client_id": 51,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 570,
+      "update_norm": 0.9734097123146057,
+      "loo_cosine": 0.0030435482040047646
+    },
+    {
+      "round": 48,
+      "client_id": 44,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 418,
+      "update_norm": 0.9646837115287781,
+      "loo_cosine": -0.004368810914456844
+    },
+    {
+      "round": 48,
+      "client_id": 72,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 342,
+      "update_norm": 0.6567599773406982,
+      "loo_cosine": 0.018081126734614372
+    },
+    {
+      "round": 48,
+      "client_id": 99,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 467,
+      "update_norm": 0.7311297059059143,
+      "loo_cosine": 0.016741402447223663
+    },
+    {
+      "round": 48,
+      "client_id": 40,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 488,
+      "update_norm": 1.48079252243042,
+      "loo_cosine": 0.21296173334121704
+    },
+    {
+      "round": 48,
+      "client_id": 89,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 380,
+      "update_norm": 0.8312567472457886,
+      "loo_cosine": 0.015664422884583473
+    },
+    {
+      "round": 48,
+      "client_id": 69,
+      "model_idx": 4,
+      "width": 0.66,
+      "depth": 3,
+      "lens": 698,
+      "update_norm": 1.1137187480926514,
+      "loo_cosine": -0.009202304296195507
+    },
+    {
+      "round": 48,
+      "client_id": 47,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 411,
+      "update_norm": 1.0280030965805054,
+      "loo_cosine": 0.004989719018340111
+    },
+    {
+      "round": 49,
+      "client_id": 56,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 512,
+      "update_norm": 1.0733882188796997,
+      "loo_cosine": 0.013129820115864277
+    },
+    {
+      "round": 49,
+      "client_id": 53,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 625,
+      "update_norm": 1.02418851852417,
+      "loo_cosine": 0.02243952639400959
+    },
+    {
+      "round": 49,
+      "client_id": 79,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 506,
+      "update_norm": 1.5081079006195068,
+      "loo_cosine": 0.020532868802547455
+    },
+    {
+      "round": 49,
+      "client_id": 94,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 429,
+      "update_norm": 0.8765870332717896,
+      "loo_cosine": 0.010783648118376732
+    },
+    {
+      "round": 49,
+      "client_id": 97,
+      "model_idx": 3,
+      "width": 0.66,
+      "depth": 2,
+      "lens": 496,
+      "update_norm": 1.0088814496994019,
+      "loo_cosine": 0.05644025653600693
+    },
+    {
+      "round": 49,
+      "client_id": 69,
+      "model_idx": 1,
+      "width": 0.4,
+      "depth": 3,
+      "lens": 698,
+      "update_norm": 1.3906275033950806,
+      "loo_cosine": -0.0015567237278446555
+    },
+    {
+      "round": 49,
+      "client_id": 97,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 496,
+      "update_norm": 0.6844714879989624,
+      "loo_cosine": 0.08410148322582245
+    },
+    {
+      "round": 49,
+      "client_id": 88,
+      "model_idx": 2,
+      "width": 0.4,
+      "depth": 4,
+      "lens": 483,
+      "update_norm": 0.8063485026359558,
+      "loo_cosine": 0.0318216048181057
+    },
+    {
+      "round": 49,
+      "client_id": 60,
+      "model_idx": 0,
+      "width": 0.4,
+      "depth": 2,
+      "lens": 476,
+      "update_norm": 1.4438560009002686,
+      "loo_cosine": 0.0009639341733418405
+    },
+    {
+      "round": 49,
+      "client_id": 91,
+      "model_idx": 6,
+      "width": 1.0,
+      "depth": 2,
+      "lens": 525,
+      "update_norm": 0.5648638010025024,
+      "loo_cosine": 0.022112013772130013
+    }
+  ],
+  "input_integrity": [
+    {
+      "round": 1,
+      "checksum_before": 42107.85736281494,
+      "checksum_after": 42107.85736281494,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 2,
+      "checksum_before": 39748.13549986997,
+      "checksum_after": 39748.13549986997,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 3,
+      "checksum_before": 38733.234185294874,
+      "checksum_after": 38733.234185294874,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 4,
+      "checksum_before": 32440.036677151413,
+      "checksum_after": 32440.036677151413,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 5,
+      "checksum_before": 36751.55353261319,
+      "checksum_after": 36751.55353261319,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 6,
+      "checksum_before": 34654.83564180308,
+      "checksum_after": 34654.83564180308,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 7,
+      "checksum_before": 33189.340189682596,
+      "checksum_after": 33189.340189682596,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 8,
+      "checksum_before": 36798.2292200327,
+      "checksum_after": 36798.2292200327,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 9,
+      "checksum_before": 35040.59651363869,
+      "checksum_after": 35040.59651363869,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 10,
+      "checksum_before": 34380.722466747306,
+      "checksum_after": 34380.722466747306,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 11,
+      "checksum_before": 36264.33377446968,
+      "checksum_after": 36264.33377446968,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 12,
+      "checksum_before": 35069.31128519353,
+      "checksum_after": 35069.31128519353,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 13,
+      "checksum_before": 30950.48989653134,
+      "checksum_after": 30950.48989653134,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 14,
+      "checksum_before": 31826.107289205604,
+      "checksum_after": 31826.107289205604,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 15,
+      "checksum_before": 31940.56507088321,
+      "checksum_after": 31940.56507088321,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 16,
+      "checksum_before": 36383.72907262604,
+      "checksum_after": 36383.72907262604,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 17,
+      "checksum_before": 32707.109834741295,
+      "checksum_after": 32707.109834741295,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 18,
+      "checksum_before": 27843.078950103078,
+      "checksum_after": 27843.078950103078,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 19,
+      "checksum_before": 33679.70848171973,
+      "checksum_after": 33679.70848171973,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 20,
+      "checksum_before": 30949.86805151684,
+      "checksum_after": 30949.86805151684,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 21,
+      "checksum_before": 30993.67372046596,
+      "checksum_after": 30993.67372046596,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 22,
+      "checksum_before": 33381.25203816287,
+      "checksum_after": 33381.25203816287,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 23,
+      "checksum_before": 30706.220345026384,
+      "checksum_after": 30706.220345026384,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 24,
+      "checksum_before": 31088.040487853632,
+      "checksum_after": 31088.040487853632,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 25,
+      "checksum_before": 27526.956968420174,
+      "checksum_after": 27526.956968420174,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 26,
+      "checksum_before": 32797.328569877645,
+      "checksum_after": 32797.328569877645,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 27,
+      "checksum_before": 33221.45671068556,
+      "checksum_after": 33221.45671068556,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 28,
+      "checksum_before": 30853.738177560095,
+      "checksum_after": 30853.738177560095,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 29,
+      "checksum_before": 27645.58415122621,
+      "checksum_after": 27645.58415122621,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 30,
+      "checksum_before": 31838.451528734247,
+      "checksum_after": 31838.451528734247,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 31,
+      "checksum_before": 30926.361935659577,
+      "checksum_after": 30926.361935659577,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 32,
+      "checksum_before": 28422.81460037614,
+      "checksum_after": 28422.81460037614,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 33,
+      "checksum_before": 30524.461228044893,
+      "checksum_after": 30524.461228044893,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 34,
+      "checksum_before": 31461.67476408613,
+      "checksum_after": 31461.67476408613,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 35,
+      "checksum_before": 33132.240727066484,
+      "checksum_after": 33132.240727066484,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 36,
+      "checksum_before": 29113.393579041094,
+      "checksum_after": 29113.393579041094,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 37,
+      "checksum_before": 28326.915012841524,
+      "checksum_after": 28326.915012841524,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 38,
+      "checksum_before": 27884.5002317667,
+      "checksum_after": 27884.5002317667,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 39,
+      "checksum_before": 31257.564816926715,
+      "checksum_after": 31257.564816926715,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 40,
+      "checksum_before": 31440.913539384437,
+      "checksum_after": 31440.913539384437,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 41,
+      "checksum_before": 27306.616317178912,
+      "checksum_after": 27306.616317178912,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 42,
+      "checksum_before": 26997.320934525953,
+      "checksum_after": 26997.320934525953,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 43,
+      "checksum_before": 27980.9476254028,
+      "checksum_after": 27980.9476254028,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 44,
+      "checksum_before": 28596.849892223967,
+      "checksum_after": 28596.849892223967,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 45,
+      "checksum_before": 27330.85104104316,
+      "checksum_after": 27330.85104104316,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 46,
+      "checksum_before": 28192.599138393838,
+      "checksum_after": 28192.599138393838,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 47,
+      "checksum_before": 26079.831916963652,
+      "checksum_after": 26079.831916963652,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 48,
+      "checksum_before": 29699.921728432135,
+      "checksum_after": 29699.921728432135,
+      "max_abs_diff": 0.0
+    },
+    {
+      "round": 49,
+      "checksum_before": 28715.702636992257,
+      "checksum_after": 28715.702636992257,
+      "max_abs_diff": 0.0
+    }
+  ]
+}
