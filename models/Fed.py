@@ -157,7 +157,16 @@ def select_clients(args, ration_users, net_glob_list_len):
                     idx_users.append(random.randint(int(args.num_users * sum(hetero_proportion[:1])), args.num_users - 1))
                 elif int(model_type / 3) == 2:
                     if getattr(args, 'full_access_oracle', False):
-                        idx_users.append(random.randint(0, args.num_users - 1))
+                        # Draw the oracle client from a local copy of the current
+                        # RNG state, then advance the global RNG exactly as the
+                        # baseline Full draw would.  This keeps all subsequent
+                        # non-Full selections causally matched to the baseline.
+                        oracle_rng = random.Random()
+                        oracle_rng.setstate(random.getstate())
+                        oracle_client = oracle_rng.randint(0, args.num_users - 1)
+                        _ = random.randint(int(args.num_users * sum(hetero_proportion[:2])),
+                                           args.num_users - 1)
+                        idx_users.append(oracle_client)
                     else:
                         idx_users.append(random.randint(int(args.num_users * sum(hetero_proportion[:2])), args.num_users - 1))
         elif args.client_chosen_mode == 'fit':

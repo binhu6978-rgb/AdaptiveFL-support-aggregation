@@ -150,6 +150,29 @@ class FullAccessOracleTests(unittest.TestCase):
             self.assertTrue(all(isinstance(client_id, int) for client_id in selected))
             self.assertTrue(all(0 <= client_id < 100 for client_id in selected))
 
+    def test_11_mixed_profile_causal_isolation_preserves_non_full_ids_and_rng(self):
+        sequence = [
+            6, 0, 3, 1, 5, 2, 4, 6, 0, 6,
+            3, 0, 6, 5, 1, 4, 6, 2, 3, 0,
+        ]
+        oracle_full_ids = []
+        for seed in (0, 1, 2, 6, 9, 17, 12345, 2026):
+            random.seed(seed)
+            baseline = select_clients(_args(False), sequence, 7)
+            baseline_state = random.getstate()
+            random.seed(seed)
+            oracle = select_clients(_args(True), sequence, 7)
+            oracle_state = random.getstate()
+            self.assertEqual(baseline_state, oracle_state)
+            for profile, baseline_id, oracle_id in zip(sequence, baseline, oracle):
+                if profile == 6:
+                    self.assertTrue(70 <= baseline_id <= 99)
+                    self.assertTrue(0 <= oracle_id <= 99)
+                    oracle_full_ids.append(oracle_id)
+                else:
+                    self.assertEqual(baseline_id, oracle_id)
+        self.assertTrue(any(client_id < 70 for client_id in oracle_full_ids))
+
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)

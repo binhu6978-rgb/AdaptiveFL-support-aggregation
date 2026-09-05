@@ -11,6 +11,9 @@
     1470
   ],
   "profile_sequence_identical_between_modes": true,
+  "non_full_assignment_mismatch_count": 0,
+  "non_full_assignment_total": 8530,
+  "final_python_rng_state_equal": true,
   "modes": {
     "baseline": {
       "full_occurrence_count": 1470,
@@ -40,14 +43,14 @@
       "full_client_max": 99,
       "full_unique_client_count": 100,
       "full_block_counts_0_39_40_69_70_99": [
-        606,
-        442,
-        422
+        618,
+        458,
+        394
       ],
       "full_block_ratios_0_39_40_69_70_99": [
-        0.4122448979591837,
-        0.3006802721088435,
-        0.2870748299319728
+        0.4204081632653061,
+        0.3115646258503401,
+        0.2680272108843537
       ],
       "eligibility_violations": {
         "small_0_to_2": 0,

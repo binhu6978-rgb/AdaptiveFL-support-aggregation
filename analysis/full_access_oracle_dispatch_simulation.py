@@ -50,17 +50,29 @@ def summarize(profile_sequence, selected_ids, oracle):
 
 def main():
     profile_sequence = np.random.RandomState(1).choice(range(7), 10000).tolist()
-    outputs = {}
+    selected_by_mode = {}
+    final_state_by_mode = {}
     for name, oracle in (('baseline', False), ('full_access_oracle', True)):
         random.seed(123456)
         selected_ids = select_clients(make_args(oracle), profile_sequence, 7)
-        outputs[name] = summarize(profile_sequence, selected_ids, oracle)
+        selected_by_mode[name] = selected_ids
+        final_state_by_mode[name] = random.getstate()
+    non_full_pairs = [(baseline_id, oracle_id) for profile, baseline_id, oracle_id in zip(
+        profile_sequence, selected_by_mode['baseline'], selected_by_mode['full_access_oracle'])
+        if profile != 6]
     result = {
         'simulation': 'dispatch-only; no model construction, local training, or aggregation',
         'profile_assignment_occurrences': len(profile_sequence),
         'profile_counts': [profile_sequence.count(profile) for profile in range(7)],
         'profile_sequence_identical_between_modes': True,
-        'modes': outputs,
+        'non_full_assignment_mismatch_count': sum(left != right for left, right in non_full_pairs),
+        'non_full_assignment_total': len(non_full_pairs),
+        'final_python_rng_state_equal': (
+            final_state_by_mode['baseline'] == final_state_by_mode['full_access_oracle']),
+        'modes': {
+            'baseline': summarize(profile_sequence, selected_by_mode['baseline'], False),
+            'full_access_oracle': summarize(profile_sequence, selected_by_mode['full_access_oracle'], True),
+        },
     }
     path = os.path.join('results', 'full_access_oracle_dispatch_simulation.json')
     os.makedirs('results', exist_ok=True)
