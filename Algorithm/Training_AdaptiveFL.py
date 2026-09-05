@@ -3,6 +3,8 @@
 # Python version: 3.6
 import random
 import time
+import json
+import os
 from collections import OrderedDict
 
 import torch
@@ -30,6 +32,7 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
     total_time = 0
     time_list = []
     acc_list = [[] for _ in net_glob_list]
+    dispatch_records = []
     clients = HeteroClients(args, net_slim_info)
 
     # 开始训练
@@ -83,6 +86,16 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
         print(f"this epoch received models: {feedback_list}")  # 每个用户对应的模型的比例, 初始分发
         print(f"hetero_proportion: \t{args.client_hetero_ration}")
         # 需要print 每个客户端的计算资源
+        dispatch_records.append({
+            'round': int(iter),
+            'ration_users': [int(profile) for profile in ration_users],
+            'idx_users': [int(client_id) for client_id in idx_users],
+            'small_count': int(sum(profile in (0, 1, 2) for profile in ration_users)),
+            'medium_count': int(sum(profile in (3, 4, 5) for profile in ration_users)),
+            'full_count': int(sum(profile == 6 for profile in ration_users)),
+            'full_selected_client_ids': [int(client_id) for profile, client_id
+                                         in zip(ration_users, idx_users) if profile == 6],
+        })
 
         w_glob_param = Aggregation_AdaptiveFL(w_locals, lens, net_glob_list[-1].state_dict())
 
@@ -90,6 +103,19 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
             net.load_state_dict(split_model(w_glob_param, net.state_dict()))
             print(net_slim_info[idx])
             acc_list[idx].append(test(net, dataset_test, args))
+
+    result_dir = getattr(args, 'experiment_result_dir', None)
+    if result_dir:
+        os.makedirs(result_dir, exist_ok=True)
+        with open(os.path.join(result_dir, 'all_profile_accuracy.json'), 'w', encoding='utf-8') as handle:
+            json.dump({
+                'profiles': [[float(width), int(depth)] for width, depth, _ in net_slim_info],
+                'accuracy': acc_list,
+            }, handle, indent=2)
+        with open(os.path.join(result_dir, 'dispatch_log.json'), 'w', encoding='utf-8') as handle:
+            json.dump(dispatch_records, handle, indent=2)
+        return {'accuracy': acc_list, 'dispatch_records': dispatch_records,
+                'round_time_cumulative': time_list}
 
     save_result(time_list, 'test_time', args)
     for id, acc in enumerate(acc_list):
