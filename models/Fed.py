@@ -156,7 +156,10 @@ def select_clients(args, ration_users, net_glob_list_len):
                 elif int(model_type / 3) == 1:
                     idx_users.append(random.randint(int(args.num_users * sum(hetero_proportion[:1])), args.num_users - 1))
                 elif int(model_type / 3) == 2:
-                    idx_users.append(random.randint(int(args.num_users * sum(hetero_proportion[:2])), args.num_users - 1))
+                    if getattr(args, 'full_access_oracle', False):
+                        idx_users.append(random.randint(0, args.num_users - 1))
+                    else:
+                        idx_users.append(random.randint(int(args.num_users * sum(hetero_proportion[:2])), args.num_users - 1))
         elif args.client_chosen_mode == 'fit':
             for model_type in ration_users:
                 if int(model_type / 3) == 0:

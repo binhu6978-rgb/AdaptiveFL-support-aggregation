@@ -75,6 +75,8 @@ def args_parser():
     parser.add_argument("--depth_saved", default=[4, 6, 8], type=int, nargs='*', help="the index of network start channel slim.")  # vgg 采用4-6-8 resnet采用2-3-4 其中resnet是用block为最小单位
     parser.add_argument("--width_ration", default=[0.4, 0.66, 1.0], type=float, nargs='*', help="the info of model ration and model type.")
     parser.add_argument("--client_hetero_ration", default='4:3:3', type=str, help="the info of model ration and model type.")
+    parser.add_argument("--full_access_oracle", action='store_true',
+                        help="diagnostic only: allow profile 6 to select any client in available mode")
 
 
     args = parser.parse_args()

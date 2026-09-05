@@ -1,0 +1,60 @@
+{
+  "simulation": "dispatch-only; no model construction, local training, or aggregation",
+  "profile_assignment_occurrences": 10000,
+  "profile_counts": [
+    1391,
+    1392,
+    1434,
+    1421,
+    1394,
+    1498,
+    1470
+  ],
+  "profile_sequence_identical_between_modes": true,
+  "modes": {
+    "baseline": {
+      "full_occurrence_count": 1470,
+      "full_client_min": 70,
+      "full_client_max": 99,
+      "full_unique_client_count": 30,
+      "full_block_counts_0_39_40_69_70_99": [
+        0,
+        0,
+        1470
+      ],
+      "full_block_ratios_0_39_40_69_70_99": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "eligibility_violations": {
+        "small_0_to_2": 0,
+        "medium_3_to_5": 0,
+        "full": 0
+      },
+      "duplicate_full_occurrences_allowed": true
+    },
+    "full_access_oracle": {
+      "full_occurrence_count": 1470,
+      "full_client_min": 0,
+      "full_client_max": 99,
+      "full_unique_client_count": 100,
+      "full_block_counts_0_39_40_69_70_99": [
+        606,
+        442,
+        422
+      ],
+      "full_block_ratios_0_39_40_69_70_99": [
+        0.4122448979591837,
+        0.3006802721088435,
+        0.2870748299319728
+      ],
+      "eligibility_violations": {
+        "small_0_to_2": 0,
+        "medium_3_to_5": 0,
+        "full": 0
+      },
+      "duplicate_full_occurrences_allowed": true
+    }
+  }
+}
