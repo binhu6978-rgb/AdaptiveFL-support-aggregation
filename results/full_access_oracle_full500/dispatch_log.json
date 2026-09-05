@@ -1,0 +1,15630 @@
+[
+  {
+    "round": 0,
+    "ration_users": [
+      5,
+      3,
+      4,
+      0,
+      1,
+      3,
+      5,
+      0,
+      0,
+      1
+    ],
+    "idx_users": [
+      48,
+      76,
+      94,
+      97,
+      8,
+      56,
+      47,
+      63,
+      97,
+      57
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 1,
+    "ration_users": [
+      4,
+      5,
+      4,
+      6,
+      1,
+      2,
+      4,
+      6,
+      5,
+      2
+    ],
+    "idx_users": [
+      70,
+      81,
+      64,
+      26,
+      26,
+      12,
+      71,
+      3,
+      97,
+      49
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      26,
+      3
+    ]
+  },
+  {
+    "round": 2,
+    "ration_users": [
+      4,
+      3,
+      4,
+      2,
+      4,
+      5,
+      6,
+      2,
+      4,
+      1
+    ],
+    "idx_users": [
+      67,
+      78,
+      88,
+      98,
+      40,
+      84,
+      57,
+      34,
+      86,
+      29
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      57
+    ]
+  },
+  {
+    "round": 3,
+    "ration_users": [
+      1,
+      6,
+      0,
+      6,
+      5,
+      1,
+      1,
+      5,
+      6,
+      1
+    ],
+    "idx_users": [
+      75,
+      13,
+      40,
+      3,
+      41,
+      3,
+      83,
+      74,
+      1,
+      48
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      13,
+      3,
+      1
+    ]
+  },
+  {
+    "round": 4,
+    "ration_users": [
+      1,
+      0,
+      4,
+      1,
+      0,
+      0,
+      5,
+      3,
+      2,
+      1
+    ],
+    "idx_users": [
+      87,
+      27,
+      67,
+      92,
+      3,
+      67,
+      54,
+      88,
+      56,
+      63
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 5,
+    "ration_users": [
+      0,
+      6,
+      3,
+      6,
+      5,
+      1,
+      1,
+      3,
+      4,
+      0
+    ],
+    "idx_users": [
+      70,
+      29,
+      62,
+      29,
+      83,
+      28,
+      97,
+      69,
+      58,
+      2
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      29,
+      29
+    ]
+  },
+  {
+    "round": 6,
+    "ration_users": [
+      1,
+      3,
+      4,
+      2,
+      4,
+      0,
+      5,
+      3,
+      1,
+      2
+    ],
+    "idx_users": [
+      53,
+      93,
+      98,
+      71,
+      99,
+      82,
+      46,
+      51,
+      80,
+      92
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 7,
+    "ration_users": [
+      0,
+      4,
+      1,
+      2,
+      2,
+      1,
+      0,
+      6,
+      1,
+      3
+    ],
+    "idx_users": [
+      37,
+      47,
+      95,
+      42,
+      92,
+      91,
+      64,
+      54,
+      54,
+      72
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      54
+    ]
+  },
+  {
+    "round": 8,
+    "ration_users": [
+      6,
+      5,
+      4,
+      3,
+      5,
+      1,
+      3,
+      6,
+      0,
+      0
+    ],
+    "idx_users": [
+      85,
+      98,
+      82,
+      52,
+      59,
+      36,
+      77,
+      63,
+      63,
+      64
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      85,
+      63
+    ]
+  },
+  {
+    "round": 9,
+    "ration_users": [
+      2,
+      2,
+      1,
+      3,
+      4,
+      2,
+      6,
+      6,
+      0,
+      0
+    ],
+    "idx_users": [
+      50,
+      75,
+      4,
+      70,
+      55,
+      95,
+      51,
+      51,
+      53,
+      85
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      51,
+      51
+    ]
+  },
+  {
+    "round": 10,
+    "ration_users": [
+      1,
+      1,
+      5,
+      3,
+      0,
+      0,
+      5,
+      5,
+      6,
+      4
+    ],
+    "idx_users": [
+      22,
+      46,
+      75,
+      96,
+      89,
+      99,
+      83,
+      87,
+      47,
+      45
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      47
+    ]
+  },
+  {
+    "round": 11,
+    "ration_users": [
+      5,
+      6,
+      2,
+      4,
+      3,
+      5,
+      3,
+      5,
+      0,
+      3
+    ],
+    "idx_users": [
+      68,
+      84,
+      65,
+      46,
+      89,
+      50,
+      73,
+      93,
+      50,
+      63
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      84
+    ]
+  },
+  {
+    "round": 12,
+    "ration_users": [
+      4,
+      3,
+      4,
+      6,
+      4,
+      5,
+      4,
+      1,
+      0,
+      4
+    ],
+    "idx_users": [
+      71,
+      86,
+      41,
+      60,
+      42,
+      59,
+      85,
+      78,
+      75,
+      77
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      60
+    ]
+  },
+  {
+    "round": 13,
+    "ration_users": [
+      2,
+      0,
+      5,
+      2,
+      4,
+      1,
+      1,
+      0,
+      2,
+      4
+    ],
+    "idx_users": [
+      50,
+      82,
+      50,
+      21,
+      72,
+      29,
+      1,
+      98,
+      25,
+      74
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 14,
+    "ration_users": [
+      4,
+      0,
+      4,
+      1,
+      6,
+      4,
+      1,
+      0,
+      2,
+      3
+    ],
+    "idx_users": [
+      98,
+      70,
+      54,
+      51,
+      65,
+      62,
+      73,
+      45,
+      58,
+      98
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      65
+    ]
+  },
+  {
+    "round": 15,
+    "ration_users": [
+      1,
+      2,
+      4,
+      4,
+      2,
+      2,
+      6,
+      0,
+      1,
+      2
+    ],
+    "idx_users": [
+      34,
+      84,
+      75,
+      78,
+      93,
+      0,
+      49,
+      94,
+      65,
+      16
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      49
+    ]
+  },
+  {
+    "round": 16,
+    "ration_users": [
+      6,
+      6,
+      2,
+      0,
+      6,
+      5,
+      1,
+      2,
+      4,
+      6
+    ],
+    "idx_users": [
+      66,
+      99,
+      71,
+      26,
+      54,
+      43,
+      61,
+      46,
+      76,
+      70
+    ],
+    "full_occurrence_count": 4,
+    "full_selected_client_ids": [
+      66,
+      99,
+      54,
+      70
+    ]
+  },
+  {
+    "round": 17,
+    "ration_users": [
+      0,
+      6,
+      5,
+      5,
+      1,
+      2,
+      1,
+      5,
+      4,
+      2
+    ],
+    "idx_users": [
+      25,
+      64,
+      66,
+      71,
+      45,
+      53,
+      44,
+      40,
+      74,
+      69
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      64
+    ]
+  },
+  {
+    "round": 18,
+    "ration_users": [
+      0,
+      5,
+      0,
+      1,
+      5,
+      0,
+      1,
+      3,
+      1,
+      1
+    ],
+    "idx_users": [
+      79,
+      90,
+      78,
+      42,
+      69,
+      76,
+      3,
+      91,
+      29,
+      81
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 19,
+    "ration_users": [
+      6,
+      5,
+      4,
+      4,
+      3,
+      6,
+      5,
+      0,
+      3,
+      0
+    ],
+    "idx_users": [
+      22,
+      75,
+      77,
+      51,
+      95,
+      11,
+      91,
+      70,
+      91,
+      32
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      22,
+      11
+    ]
+  },
+  {
+    "round": 20,
+    "ration_users": [
+      3,
+      1,
+      2,
+      5,
+      5,
+      4,
+      5,
+      0,
+      5,
+      0
+    ],
+    "idx_users": [
+      42,
+      86,
+      9,
+      45,
+      95,
+      41,
+      68,
+      1,
+      88,
+      96
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 21,
+    "ration_users": [
+      5,
+      3,
+      1,
+      1,
+      5,
+      0,
+      6,
+      5,
+      0,
+      4
+    ],
+    "idx_users": [
+      57,
+      55,
+      34,
+      14,
+      91,
+      79,
+      23,
+      62,
+      37,
+      44
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      23
+    ]
+  },
+  {
+    "round": 22,
+    "ration_users": [
+      2,
+      5,
+      3,
+      4,
+      2,
+      6,
+      6,
+      0,
+      5,
+      3
+    ],
+    "idx_users": [
+      21,
+      50,
+      56,
+      73,
+      21,
+      84,
+      34,
+      82,
+      85,
+      58
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      84,
+      34
+    ]
+  },
+  {
+    "round": 23,
+    "ration_users": [
+      3,
+      5,
+      5,
+      1,
+      2,
+      4,
+      3,
+      0,
+      6,
+      0
+    ],
+    "idx_users": [
+      69,
+      84,
+      60,
+      63,
+      60,
+      47,
+      41,
+      39,
+      49,
+      43
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      49
+    ]
+  },
+  {
+    "round": 24,
+    "ration_users": [
+      5,
+      4,
+      2,
+      4,
+      6,
+      2,
+      0,
+      5,
+      3,
+      0
+    ],
+    "idx_users": [
+      66,
+      90,
+      24,
+      56,
+      13,
+      32,
+      93,
+      72,
+      53,
+      77
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      13
+    ]
+  },
+  {
+    "round": 25,
+    "ration_users": [
+      0,
+      4,
+      5,
+      2,
+      1,
+      0,
+      4,
+      3,
+      0,
+      1
+    ],
+    "idx_users": [
+      55,
+      92,
+      41,
+      28,
+      2,
+      50,
+      49,
+      42,
+      92,
+      20
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 26,
+    "ration_users": [
+      2,
+      4,
+      4,
+      6,
+      3,
+      6,
+      3,
+      3,
+      3,
+      2
+    ],
+    "idx_users": [
+      57,
+      85,
+      72,
+      86,
+      67,
+      69,
+      93,
+      54,
+      80,
+      88
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      86,
+      69
+    ]
+  },
+  {
+    "round": 27,
+    "ration_users": [
+      3,
+      6,
+      3,
+      5,
+      6,
+      4,
+      3,
+      2,
+      4,
+      4
+    ],
+    "idx_users": [
+      73,
+      57,
+      54,
+      73,
+      83,
+      41,
+      65,
+      86,
+      76,
+      91
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      57,
+      83
+    ]
+  },
+  {
+    "round": 28,
+    "ration_users": [
+      0,
+      3,
+      3,
+      0,
+      3,
+      5,
+      6,
+      6,
+      5,
+      1
+    ],
+    "idx_users": [
+      41,
+      82,
+      80,
+      54,
+      43,
+      87,
+      38,
+      16,
+      53,
+      6
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      38,
+      16
+    ]
+  },
+  {
+    "round": 29,
+    "ration_users": [
+      0,
+      2,
+      2,
+      2,
+      0,
+      2,
+      6,
+      1,
+      4,
+      0
+    ],
+    "idx_users": [
+      39,
+      9,
+      9,
+      39,
+      38,
+      95,
+      20,
+      53,
+      76,
+      32
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      20
+    ]
+  },
+  {
+    "round": 30,
+    "ration_users": [
+      4,
+      4,
+      6,
+      1,
+      3,
+      1,
+      4,
+      6,
+      6,
+      1
+    ],
+    "idx_users": [
+      48,
+      40,
+      71,
+      4,
+      77,
+      27,
+      97,
+      72,
+      58,
+      21
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      71,
+      72,
+      58
+    ]
+  },
+  {
+    "round": 31,
+    "ration_users": [
+      2,
+      5,
+      6,
+      1,
+      6,
+      0,
+      0,
+      2,
+      6,
+      4
+    ],
+    "idx_users": [
+      99,
+      85,
+      79,
+      65,
+      4,
+      48,
+      25,
+      44,
+      12,
+      53
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      79,
+      4,
+      12
+    ]
+  },
+  {
+    "round": 32,
+    "ration_users": [
+      1,
+      6,
+      0,
+      6,
+      0,
+      3,
+      1,
+      0,
+      4,
+      3
+    ],
+    "idx_users": [
+      73,
+      86,
+      55,
+      75,
+      24,
+      71,
+      13,
+      85,
+      64,
+      58
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      86,
+      75
+    ]
+  },
+  {
+    "round": 33,
+    "ration_users": [
+      2,
+      3,
+      4,
+      6,
+      5,
+      6,
+      4,
+      3,
+      0,
+      0
+    ],
+    "idx_users": [
+      64,
+      71,
+      41,
+      41,
+      79,
+      51,
+      65,
+      97,
+      36,
+      2
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      41,
+      51
+    ]
+  },
+  {
+    "round": 34,
+    "ration_users": [
+      0,
+      6,
+      6,
+      4,
+      6,
+      5,
+      1,
+      5,
+      4,
+      1
+    ],
+    "idx_users": [
+      20,
+      25,
+      41,
+      60,
+      72,
+      76,
+      17,
+      61,
+      67,
+      27
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      25,
+      41,
+      72
+    ]
+  },
+  {
+    "round": 35,
+    "ration_users": [
+      2,
+      5,
+      2,
+      6,
+      5,
+      4,
+      5,
+      6,
+      3,
+      6
+    ],
+    "idx_users": [
+      34,
+      83,
+      12,
+      48,
+      64,
+      99,
+      75,
+      44,
+      98,
+      87
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      48,
+      44,
+      87
+    ]
+  },
+  {
+    "round": 36,
+    "ration_users": [
+      4,
+      4,
+      0,
+      3,
+      2,
+      4,
+      5,
+      3,
+      4,
+      2
+    ],
+    "idx_users": [
+      93,
+      83,
+      68,
+      71,
+      98,
+      74,
+      55,
+      44,
+      86,
+      5
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 37,
+    "ration_users": [
+      6,
+      3,
+      0,
+      5,
+      5,
+      2,
+      1,
+      3,
+      2,
+      0
+    ],
+    "idx_users": [
+      10,
+      48,
+      21,
+      50,
+      98,
+      68,
+      27,
+      57,
+      97,
+      42
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      10
+    ]
+  },
+  {
+    "round": 38,
+    "ration_users": [
+      5,
+      1,
+      4,
+      1,
+      3,
+      3,
+      1,
+      2,
+      6,
+      0
+    ],
+    "idx_users": [
+      78,
+      64,
+      93,
+      32,
+      63,
+      61,
+      43,
+      14,
+      37,
+      30
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      37
+    ]
+  },
+  {
+    "round": 39,
+    "ration_users": [
+      2,
+      4,
+      6,
+      0,
+      6,
+      2,
+      4,
+      3,
+      6,
+      4
+    ],
+    "idx_users": [
+      77,
+      89,
+      91,
+      62,
+      17,
+      74,
+      75,
+      89,
+      13,
+      60
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      91,
+      17,
+      13
+    ]
+  },
+  {
+    "round": 40,
+    "ration_users": [
+      6,
+      3,
+      0,
+      5,
+      6,
+      5,
+      4,
+      6,
+      2,
+      2
+    ],
+    "idx_users": [
+      5,
+      66,
+      9,
+      64,
+      18,
+      90,
+      49,
+      16,
+      16,
+      43
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      5,
+      18,
+      16
+    ]
+  },
+  {
+    "round": 41,
+    "ration_users": [
+      4,
+      1,
+      2,
+      5,
+      1,
+      1,
+      1,
+      0,
+      5,
+      6
+    ],
+    "idx_users": [
+      47,
+      78,
+      75,
+      90,
+      48,
+      9,
+      73,
+      70,
+      54,
+      72
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      72
+    ]
+  },
+  {
+    "round": 42,
+    "ration_users": [
+      5,
+      4,
+      4,
+      2,
+      2,
+      3,
+      1,
+      4,
+      0,
+      0
+    ],
+    "idx_users": [
+      45,
+      57,
+      63,
+      37,
+      72,
+      74,
+      14,
+      69,
+      35,
+      13
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 43,
+    "ration_users": [
+      6,
+      3,
+      2,
+      4,
+      1,
+      3,
+      1,
+      1,
+      2,
+      5
+    ],
+    "idx_users": [
+      5,
+      42,
+      37,
+      40,
+      78,
+      82,
+      1,
+      11,
+      52,
+      47
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      5
+    ]
+  },
+  {
+    "round": 44,
+    "ration_users": [
+      5,
+      4,
+      5,
+      6,
+      0,
+      3,
+      0,
+      4,
+      2,
+      3
+    ],
+    "idx_users": [
+      92,
+      96,
+      90,
+      5,
+      24,
+      55,
+      75,
+      66,
+      20,
+      47
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      5
+    ]
+  },
+  {
+    "round": 45,
+    "ration_users": [
+      5,
+      1,
+      1,
+      4,
+      4,
+      0,
+      2,
+      1,
+      6,
+      3
+    ],
+    "idx_users": [
+      68,
+      21,
+      87,
+      55,
+      50,
+      95,
+      13,
+      55,
+      48,
+      64
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      48
+    ]
+  },
+  {
+    "round": 46,
+    "ration_users": [
+      6,
+      0,
+      1,
+      0,
+      5,
+      2,
+      2,
+      4,
+      6,
+      3
+    ],
+    "idx_users": [
+      69,
+      69,
+      37,
+      70,
+      56,
+      91,
+      61,
+      60,
+      12,
+      53
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      69,
+      12
+    ]
+  },
+  {
+    "round": 47,
+    "ration_users": [
+      2,
+      2,
+      2,
+      0,
+      5,
+      2,
+      0,
+      4,
+      5,
+      1
+    ],
+    "idx_users": [
+      83,
+      40,
+      5,
+      3,
+      40,
+      37,
+      92,
+      78,
+      60,
+      57
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 48,
+    "ration_users": [
+      5,
+      0,
+      2,
+      3,
+      6,
+      6,
+      0,
+      6,
+      4,
+      3
+    ],
+    "idx_users": [
+      65,
+      40,
+      51,
+      44,
+      8,
+      40,
+      40,
+      76,
+      69,
+      47
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      8,
+      40,
+      76
+    ]
+  },
+  {
+    "round": 49,
+    "ration_users": [
+      3,
+      3,
+      0,
+      6,
+      3,
+      1,
+      6,
+      2,
+      0,
+      6
+    ],
+    "idx_users": [
+      56,
+      53,
+      79,
+      99,
+      97,
+      69,
+      88,
+      88,
+      60,
+      84
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      99,
+      88,
+      84
+    ]
+  },
+  {
+    "round": 50,
+    "ration_users": [
+      1,
+      6,
+      4,
+      2,
+      3,
+      4,
+      5,
+      4,
+      6,
+      2
+    ],
+    "idx_users": [
+      45,
+      33,
+      51,
+      69,
+      53,
+      59,
+      52,
+      55,
+      46,
+      10
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      33,
+      46
+    ]
+  },
+  {
+    "round": 51,
+    "ration_users": [
+      6,
+      1,
+      2,
+      6,
+      5,
+      0,
+      5,
+      3,
+      5,
+      3
+    ],
+    "idx_users": [
+      35,
+      35,
+      11,
+      96,
+      68,
+      11,
+      81,
+      76,
+      81,
+      61
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      35,
+      96
+    ]
+  },
+  {
+    "round": 52,
+    "ration_users": [
+      2,
+      6,
+      0,
+      6,
+      0,
+      0,
+      0,
+      6,
+      2,
+      4
+    ],
+    "idx_users": [
+      29,
+      49,
+      39,
+      5,
+      41,
+      23,
+      40,
+      74,
+      74,
+      97
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      49,
+      5,
+      74
+    ]
+  },
+  {
+    "round": 53,
+    "ration_users": [
+      0,
+      4,
+      1,
+      2,
+      1,
+      2,
+      4,
+      1,
+      3,
+      5
+    ],
+    "idx_users": [
+      38,
+      55,
+      42,
+      12,
+      69,
+      78,
+      77,
+      76,
+      45,
+      55
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 54,
+    "ration_users": [
+      1,
+      5,
+      1,
+      2,
+      6,
+      4,
+      1,
+      0,
+      6,
+      2
+    ],
+    "idx_users": [
+      28,
+      41,
+      31,
+      51,
+      9,
+      57,
+      70,
+      9,
+      93,
+      9
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      9,
+      93
+    ]
+  },
+  {
+    "round": 55,
+    "ration_users": [
+      5,
+      1,
+      2,
+      0,
+      0,
+      5,
+      3,
+      4,
+      1,
+      5
+    ],
+    "idx_users": [
+      41,
+      81,
+      1,
+      37,
+      96,
+      90,
+      62,
+      71,
+      60,
+      95
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 56,
+    "ration_users": [
+      0,
+      4,
+      0,
+      6,
+      3,
+      2,
+      4,
+      3,
+      2,
+      4
+    ],
+    "idx_users": [
+      19,
+      46,
+      64,
+      99,
+      90,
+      41,
+      44,
+      72,
+      85,
+      51
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      99
+    ]
+  },
+  {
+    "round": 57,
+    "ration_users": [
+      2,
+      4,
+      0,
+      0,
+      5,
+      4,
+      2,
+      2,
+      4,
+      2
+    ],
+    "idx_users": [
+      22,
+      89,
+      19,
+      18,
+      92,
+      95,
+      40,
+      39,
+      46,
+      90
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 58,
+    "ration_users": [
+      6,
+      3,
+      5,
+      0,
+      0,
+      4,
+      3,
+      4,
+      3,
+      3
+    ],
+    "idx_users": [
+      65,
+      93,
+      98,
+      77,
+      37,
+      48,
+      97,
+      53,
+      49,
+      74
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      65
+    ]
+  },
+  {
+    "round": 59,
+    "ration_users": [
+      4,
+      0,
+      6,
+      5,
+      3,
+      5,
+      1,
+      4,
+      4,
+      3
+    ],
+    "idx_users": [
+      98,
+      92,
+      4,
+      89,
+      60,
+      92,
+      79,
+      91,
+      83,
+      98
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      4
+    ]
+  },
+  {
+    "round": 60,
+    "ration_users": [
+      2,
+      2,
+      2,
+      6,
+      2,
+      6,
+      6,
+      2,
+      0,
+      2
+    ],
+    "idx_users": [
+      70,
+      95,
+      88,
+      26,
+      22,
+      38,
+      55,
+      68,
+      20,
+      6
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      26,
+      38,
+      55
+    ]
+  },
+  {
+    "round": 61,
+    "ration_users": [
+      1,
+      6,
+      5,
+      2,
+      6,
+      3,
+      5,
+      0,
+      0,
+      5
+    ],
+    "idx_users": [
+      91,
+      85,
+      82,
+      31,
+      32,
+      89,
+      44,
+      87,
+      57,
+      91
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      85,
+      32
+    ]
+  },
+  {
+    "round": 62,
+    "ration_users": [
+      5,
+      6,
+      5,
+      1,
+      6,
+      1,
+      3,
+      3,
+      5,
+      6
+    ],
+    "idx_users": [
+      67,
+      70,
+      56,
+      69,
+      56,
+      68,
+      69,
+      40,
+      65,
+      43
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      70,
+      56,
+      43
+    ]
+  },
+  {
+    "round": 63,
+    "ration_users": [
+      3,
+      6,
+      1,
+      3,
+      3,
+      3,
+      6,
+      1,
+      3,
+      0
+    ],
+    "idx_users": [
+      61,
+      21,
+      33,
+      71,
+      41,
+      90,
+      82,
+      53,
+      76,
+      2
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      21,
+      82
+    ]
+  },
+  {
+    "round": 64,
+    "ration_users": [
+      4,
+      5,
+      0,
+      5,
+      5,
+      2,
+      6,
+      6,
+      4,
+      4
+    ],
+    "idx_users": [
+      43,
+      84,
+      45,
+      77,
+      48,
+      75,
+      16,
+      17,
+      56,
+      93
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      16,
+      17
+    ]
+  },
+  {
+    "round": 65,
+    "ration_users": [
+      2,
+      0,
+      6,
+      3,
+      5,
+      2,
+      4,
+      5,
+      0,
+      4
+    ],
+    "idx_users": [
+      35,
+      50,
+      72,
+      65,
+      51,
+      78,
+      45,
+      54,
+      62,
+      40
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      72
+    ]
+  },
+  {
+    "round": 66,
+    "ration_users": [
+      6,
+      5,
+      2,
+      3,
+      4,
+      2,
+      4,
+      1,
+      3,
+      4
+    ],
+    "idx_users": [
+      22,
+      73,
+      40,
+      72,
+      97,
+      83,
+      98,
+      56,
+      99,
+      83
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      22
+    ]
+  },
+  {
+    "round": 67,
+    "ration_users": [
+      3,
+      0,
+      3,
+      0,
+      4,
+      6,
+      6,
+      3,
+      0,
+      6
+    ],
+    "idx_users": [
+      80,
+      93,
+      54,
+      30,
+      60,
+      63,
+      87,
+      70,
+      28,
+      91
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      63,
+      87,
+      91
+    ]
+  },
+  {
+    "round": 68,
+    "ration_users": [
+      6,
+      5,
+      3,
+      1,
+      6,
+      4,
+      4,
+      5,
+      6,
+      6
+    ],
+    "idx_users": [
+      52,
+      61,
+      75,
+      78,
+      93,
+      86,
+      98,
+      81,
+      35,
+      82
+    ],
+    "full_occurrence_count": 4,
+    "full_selected_client_ids": [
+      52,
+      93,
+      35,
+      82
+    ]
+  },
+  {
+    "round": 69,
+    "ration_users": [
+      2,
+      5,
+      5,
+      2,
+      4,
+      2,
+      1,
+      2,
+      3,
+      1
+    ],
+    "idx_users": [
+      28,
+      43,
+      98,
+      9,
+      88,
+      65,
+      82,
+      47,
+      50,
+      65
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 70,
+    "ration_users": [
+      5,
+      5,
+      3,
+      3,
+      6,
+      0,
+      4,
+      3,
+      3,
+      5
+    ],
+    "idx_users": [
+      89,
+      90,
+      96,
+      53,
+      39,
+      38,
+      84,
+      59,
+      94,
+      75
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      39
+    ]
+  },
+  {
+    "round": 71,
+    "ration_users": [
+      3,
+      3,
+      6,
+      0,
+      2,
+      6,
+      3,
+      5,
+      1,
+      5
+    ],
+    "idx_users": [
+      63,
+      50,
+      89,
+      89,
+      94,
+      59,
+      78,
+      45,
+      15,
+      97
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      89,
+      59
+    ]
+  },
+  {
+    "round": 72,
+    "ration_users": [
+      3,
+      2,
+      6,
+      5,
+      3,
+      2,
+      6,
+      5,
+      2,
+      0
+    ],
+    "idx_users": [
+      78,
+      65,
+      73,
+      64,
+      51,
+      19,
+      32,
+      67,
+      27,
+      72
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      73,
+      32
+    ]
+  },
+  {
+    "round": 73,
+    "ration_users": [
+      4,
+      0,
+      1,
+      3,
+      0,
+      6,
+      0,
+      0,
+      1,
+      2
+    ],
+    "idx_users": [
+      86,
+      96,
+      6,
+      71,
+      87,
+      50,
+      91,
+      81,
+      44,
+      49
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      50
+    ]
+  },
+  {
+    "round": 74,
+    "ration_users": [
+      4,
+      6,
+      4,
+      2,
+      0,
+      1,
+      0,
+      0,
+      5,
+      6
+    ],
+    "idx_users": [
+      72,
+      21,
+      50,
+      69,
+      93,
+      5,
+      67,
+      11,
+      91,
+      32
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      21,
+      32
+    ]
+  },
+  {
+    "round": 75,
+    "ration_users": [
+      2,
+      6,
+      5,
+      4,
+      3,
+      0,
+      6,
+      2,
+      1,
+      3
+    ],
+    "idx_users": [
+      80,
+      12,
+      57,
+      87,
+      98,
+      10,
+      17,
+      99,
+      78,
+      93
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      12,
+      17
+    ]
+  },
+  {
+    "round": 76,
+    "ration_users": [
+      3,
+      1,
+      4,
+      4,
+      4,
+      5,
+      0,
+      1,
+      0,
+      6
+    ],
+    "idx_users": [
+      82,
+      87,
+      84,
+      45,
+      68,
+      94,
+      30,
+      48,
+      55,
+      50
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      50
+    ]
+  },
+  {
+    "round": 77,
+    "ration_users": [
+      1,
+      2,
+      2,
+      4,
+      5,
+      5,
+      6,
+      2,
+      4,
+      5
+    ],
+    "idx_users": [
+      21,
+      41,
+      56,
+      48,
+      79,
+      98,
+      62,
+      27,
+      47,
+      67
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      62
+    ]
+  },
+  {
+    "round": 78,
+    "ration_users": [
+      6,
+      0,
+      5,
+      2,
+      5,
+      4,
+      4,
+      1,
+      1,
+      1
+    ],
+    "idx_users": [
+      76,
+      68,
+      66,
+      15,
+      82,
+      58,
+      57,
+      31,
+      48,
+      95
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      76
+    ]
+  },
+  {
+    "round": 79,
+    "ration_users": [
+      1,
+      5,
+      4,
+      6,
+      5,
+      3,
+      6,
+      4,
+      1,
+      1
+    ],
+    "idx_users": [
+      71,
+      40,
+      52,
+      67,
+      68,
+      77,
+      2,
+      41,
+      80,
+      77
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      67,
+      2
+    ]
+  },
+  {
+    "round": 80,
+    "ration_users": [
+      6,
+      5,
+      1,
+      2,
+      6,
+      4,
+      3,
+      2,
+      3,
+      3
+    ],
+    "idx_users": [
+      31,
+      93,
+      33,
+      26,
+      22,
+      58,
+      49,
+      69,
+      52,
+      57
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      31,
+      22
+    ]
+  },
+  {
+    "round": 81,
+    "ration_users": [
+      2,
+      3,
+      0,
+      2,
+      0,
+      1,
+      5,
+      0,
+      5,
+      6
+    ],
+    "idx_users": [
+      39,
+      77,
+      96,
+      32,
+      87,
+      57,
+      90,
+      21,
+      74,
+      45
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      45
+    ]
+  },
+  {
+    "round": 82,
+    "ration_users": [
+      0,
+      3,
+      4,
+      0,
+      0,
+      5,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx_users": [
+      62,
+      66,
+      94,
+      15,
+      98,
+      53,
+      73,
+      49,
+      26,
+      36
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 83,
+    "ration_users": [
+      5,
+      1,
+      3,
+      6,
+      3,
+      6,
+      4,
+      6,
+      5,
+      0
+    ],
+    "idx_users": [
+      91,
+      13,
+      97,
+      3,
+      41,
+      15,
+      76,
+      95,
+      40,
+      69
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      3,
+      15,
+      95
+    ]
+  },
+  {
+    "round": 84,
+    "ration_users": [
+      1,
+      5,
+      0,
+      6,
+      3,
+      2,
+      1,
+      1,
+      0,
+      0
+    ],
+    "idx_users": [
+      37,
+      83,
+      97,
+      92,
+      81,
+      17,
+      9,
+      64,
+      47,
+      73
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      92
+    ]
+  },
+  {
+    "round": 85,
+    "ration_users": [
+      1,
+      6,
+      6,
+      1,
+      3,
+      3,
+      5,
+      3,
+      4,
+      5
+    ],
+    "idx_users": [
+      39,
+      55,
+      64,
+      86,
+      62,
+      88,
+      73,
+      60,
+      40,
+      47
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      55,
+      64
+    ]
+  },
+  {
+    "round": 86,
+    "ration_users": [
+      2,
+      5,
+      3,
+      0,
+      2,
+      2,
+      0,
+      2,
+      2,
+      6
+    ],
+    "idx_users": [
+      56,
+      85,
+      68,
+      44,
+      39,
+      69,
+      51,
+      43,
+      93,
+      87
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      87
+    ]
+  },
+  {
+    "round": 87,
+    "ration_users": [
+      1,
+      0,
+      1,
+      4,
+      6,
+      3,
+      1,
+      4,
+      0,
+      0
+    ],
+    "idx_users": [
+      73,
+      63,
+      14,
+      81,
+      48,
+      64,
+      48,
+      53,
+      71,
+      0
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      48
+    ]
+  },
+  {
+    "round": 88,
+    "ration_users": [
+      0,
+      6,
+      6,
+      2,
+      0,
+      6,
+      4,
+      1,
+      4,
+      0
+    ],
+    "idx_users": [
+      35,
+      81,
+      76,
+      92,
+      94,
+      93,
+      86,
+      65,
+      52,
+      59
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      81,
+      76,
+      93
+    ]
+  },
+  {
+    "round": 89,
+    "ration_users": [
+      2,
+      5,
+      3,
+      2,
+      5,
+      6,
+      1,
+      6,
+      5,
+      3
+    ],
+    "idx_users": [
+      76,
+      93,
+      73,
+      52,
+      99,
+      95,
+      91,
+      39,
+      84,
+      50
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      95,
+      39
+    ]
+  },
+  {
+    "round": 90,
+    "ration_users": [
+      1,
+      1,
+      5,
+      6,
+      6,
+      2,
+      5,
+      6,
+      0,
+      4
+    ],
+    "idx_users": [
+      57,
+      79,
+      82,
+      67,
+      25,
+      46,
+      73,
+      0,
+      86,
+      64
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      67,
+      25,
+      0
+    ]
+  },
+  {
+    "round": 91,
+    "ration_users": [
+      4,
+      2,
+      2,
+      4,
+      0,
+      0,
+      6,
+      3,
+      4,
+      6
+    ],
+    "idx_users": [
+      77,
+      54,
+      51,
+      61,
+      79,
+      74,
+      93,
+      84,
+      97,
+      95
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      93,
+      95
+    ]
+  },
+  {
+    "round": 92,
+    "ration_users": [
+      4,
+      3,
+      5,
+      1,
+      0,
+      3,
+      6,
+      5,
+      1,
+      2
+    ],
+    "idx_users": [
+      44,
+      71,
+      87,
+      31,
+      81,
+      81,
+      37,
+      80,
+      2,
+      52
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      37
+    ]
+  },
+  {
+    "round": 93,
+    "ration_users": [
+      3,
+      6,
+      3,
+      1,
+      0,
+      4,
+      0,
+      1,
+      1,
+      6
+    ],
+    "idx_users": [
+      86,
+      80,
+      49,
+      81,
+      99,
+      99,
+      50,
+      34,
+      22,
+      98
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      80,
+      98
+    ]
+  },
+  {
+    "round": 94,
+    "ration_users": [
+      6,
+      5,
+      3,
+      5,
+      5,
+      4,
+      4,
+      2,
+      5,
+      6
+    ],
+    "idx_users": [
+      9,
+      92,
+      89,
+      78,
+      40,
+      62,
+      98,
+      33,
+      91,
+      90
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      9,
+      90
+    ]
+  },
+  {
+    "round": 95,
+    "ration_users": [
+      2,
+      2,
+      5,
+      2,
+      3,
+      4,
+      1,
+      3,
+      1,
+      5
+    ],
+    "idx_users": [
+      52,
+      87,
+      74,
+      38,
+      49,
+      69,
+      33,
+      71,
+      21,
+      69
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 96,
+    "ration_users": [
+      1,
+      4,
+      1,
+      3,
+      0,
+      4,
+      0,
+      4,
+      6,
+      1
+    ],
+    "idx_users": [
+      65,
+      42,
+      34,
+      72,
+      12,
+      87,
+      75,
+      67,
+      8,
+      45
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      8
+    ]
+  },
+  {
+    "round": 97,
+    "ration_users": [
+      2,
+      0,
+      2,
+      4,
+      4,
+      6,
+      1,
+      0,
+      1,
+      4
+    ],
+    "idx_users": [
+      8,
+      84,
+      56,
+      41,
+      50,
+      64,
+      90,
+      20,
+      88,
+      45
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      64
+    ]
+  },
+  {
+    "round": 98,
+    "ration_users": [
+      1,
+      3,
+      6,
+      0,
+      2,
+      5,
+      1,
+      1,
+      1,
+      6
+    ],
+    "idx_users": [
+      51,
+      80,
+      88,
+      35,
+      77,
+      59,
+      26,
+      67,
+      26,
+      30
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      88,
+      30
+    ]
+  },
+  {
+    "round": 99,
+    "ration_users": [
+      2,
+      4,
+      0,
+      2,
+      5,
+      5,
+      0,
+      4,
+      2,
+      3
+    ],
+    "idx_users": [
+      42,
+      57,
+      8,
+      9,
+      84,
+      93,
+      66,
+      82,
+      47,
+      69
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 100,
+    "ration_users": [
+      2,
+      5,
+      6,
+      0,
+      4,
+      2,
+      3,
+      6,
+      1,
+      0
+    ],
+    "idx_users": [
+      65,
+      75,
+      94,
+      6,
+      50,
+      38,
+      81,
+      94,
+      91,
+      71
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      94,
+      94
+    ]
+  },
+  {
+    "round": 101,
+    "ration_users": [
+      6,
+      5,
+      0,
+      2,
+      2,
+      2,
+      0,
+      3,
+      1,
+      5
+    ],
+    "idx_users": [
+      34,
+      62,
+      78,
+      94,
+      29,
+      50,
+      71,
+      65,
+      22,
+      70
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      34
+    ]
+  },
+  {
+    "round": 102,
+    "ration_users": [
+      1,
+      1,
+      6,
+      3,
+      6,
+      2,
+      1,
+      1,
+      2,
+      5
+    ],
+    "idx_users": [
+      33,
+      78,
+      42,
+      85,
+      28,
+      33,
+      78,
+      90,
+      31,
+      94
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      42,
+      28
+    ]
+  },
+  {
+    "round": 103,
+    "ration_users": [
+      5,
+      2,
+      6,
+      4,
+      3,
+      1,
+      4,
+      5,
+      3,
+      3
+    ],
+    "idx_users": [
+      82,
+      3,
+      79,
+      97,
+      95,
+      79,
+      65,
+      60,
+      99,
+      67
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      79
+    ]
+  },
+  {
+    "round": 104,
+    "ration_users": [
+      5,
+      5,
+      0,
+      2,
+      1,
+      4,
+      6,
+      1,
+      4,
+      6
+    ],
+    "idx_users": [
+      99,
+      88,
+      31,
+      34,
+      24,
+      44,
+      80,
+      93,
+      50,
+      74
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      80,
+      74
+    ]
+  },
+  {
+    "round": 105,
+    "ration_users": [
+      1,
+      3,
+      3,
+      2,
+      0,
+      4,
+      0,
+      5,
+      4,
+      6
+    ],
+    "idx_users": [
+      74,
+      68,
+      77,
+      93,
+      18,
+      78,
+      33,
+      69,
+      73,
+      20
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      20
+    ]
+  },
+  {
+    "round": 106,
+    "ration_users": [
+      1,
+      3,
+      0,
+      5,
+      2,
+      0,
+      1,
+      2,
+      2,
+      5
+    ],
+    "idx_users": [
+      17,
+      89,
+      17,
+      97,
+      91,
+      56,
+      46,
+      39,
+      96,
+      65
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 107,
+    "ration_users": [
+      2,
+      6,
+      5,
+      3,
+      5,
+      1,
+      2,
+      5,
+      2,
+      5
+    ],
+    "idx_users": [
+      30,
+      14,
+      85,
+      53,
+      85,
+      87,
+      39,
+      44,
+      13,
+      54
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      14
+    ]
+  },
+  {
+    "round": 108,
+    "ration_users": [
+      5,
+      4,
+      1,
+      6,
+      6,
+      1,
+      5,
+      0,
+      1,
+      0
+    ],
+    "idx_users": [
+      65,
+      60,
+      63,
+      12,
+      12,
+      23,
+      42,
+      7,
+      76,
+      2
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      12,
+      12
+    ]
+  },
+  {
+    "round": 109,
+    "ration_users": [
+      1,
+      6,
+      2,
+      6,
+      1,
+      0,
+      3,
+      0,
+      5,
+      6
+    ],
+    "idx_users": [
+      96,
+      27,
+      87,
+      4,
+      63,
+      90,
+      73,
+      92,
+      96,
+      78
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      27,
+      4,
+      78
+    ]
+  },
+  {
+    "round": 110,
+    "ration_users": [
+      0,
+      0,
+      2,
+      3,
+      1,
+      3,
+      5,
+      3,
+      2,
+      2
+    ],
+    "idx_users": [
+      56,
+      43,
+      84,
+      93,
+      35,
+      47,
+      79,
+      84,
+      22,
+      12
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 111,
+    "ration_users": [
+      5,
+      1,
+      3,
+      3,
+      2,
+      2,
+      3,
+      5,
+      2,
+      3
+    ],
+    "idx_users": [
+      54,
+      51,
+      54,
+      71,
+      57,
+      48,
+      88,
+      50,
+      29,
+      55
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 112,
+    "ration_users": [
+      3,
+      3,
+      6,
+      1,
+      5,
+      3,
+      4,
+      0,
+      1,
+      0
+    ],
+    "idx_users": [
+      92,
+      58,
+      59,
+      70,
+      77,
+      64,
+      53,
+      57,
+      91,
+      33
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      59
+    ]
+  },
+  {
+    "round": 113,
+    "ration_users": [
+      6,
+      4,
+      6,
+      4,
+      1,
+      5,
+      4,
+      3,
+      2,
+      3
+    ],
+    "idx_users": [
+      42,
+      71,
+      75,
+      47,
+      27,
+      45,
+      42,
+      40,
+      0,
+      94
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      42,
+      75
+    ]
+  },
+  {
+    "round": 114,
+    "ration_users": [
+      2,
+      0,
+      6,
+      3,
+      2,
+      4,
+      0,
+      5,
+      1,
+      2
+    ],
+    "idx_users": [
+      61,
+      40,
+      49,
+      64,
+      74,
+      58,
+      25,
+      65,
+      20,
+      97
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      49
+    ]
+  },
+  {
+    "round": 115,
+    "ration_users": [
+      4,
+      1,
+      4,
+      5,
+      2,
+      1,
+      4,
+      3,
+      3,
+      1
+    ],
+    "idx_users": [
+      81,
+      19,
+      90,
+      98,
+      3,
+      1,
+      64,
+      49,
+      96,
+      85
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 116,
+    "ration_users": [
+      5,
+      5,
+      2,
+      6,
+      5,
+      1,
+      1,
+      6,
+      1,
+      2
+    ],
+    "idx_users": [
+      74,
+      43,
+      72,
+      48,
+      56,
+      16,
+      10,
+      59,
+      83,
+      38
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      48,
+      59
+    ]
+  },
+  {
+    "round": 117,
+    "ration_users": [
+      6,
+      5,
+      0,
+      5,
+      4,
+      4,
+      3,
+      3,
+      2,
+      0
+    ],
+    "idx_users": [
+      1,
+      40,
+      4,
+      74,
+      43,
+      73,
+      93,
+      48,
+      5,
+      35
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      1
+    ]
+  },
+  {
+    "round": 118,
+    "ration_users": [
+      5,
+      2,
+      4,
+      4,
+      1,
+      2,
+      2,
+      3,
+      5,
+      5
+    ],
+    "idx_users": [
+      89,
+      15,
+      67,
+      45,
+      24,
+      3,
+      63,
+      80,
+      48,
+      87
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 119,
+    "ration_users": [
+      1,
+      6,
+      4,
+      3,
+      3,
+      5,
+      4,
+      1,
+      0,
+      2
+    ],
+    "idx_users": [
+      35,
+      87,
+      92,
+      94,
+      52,
+      82,
+      68,
+      49,
+      42,
+      80
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      87
+    ]
+  },
+  {
+    "round": 120,
+    "ration_users": [
+      0,
+      3,
+      2,
+      3,
+      5,
+      1,
+      3,
+      6,
+      2,
+      3
+    ],
+    "idx_users": [
+      34,
+      56,
+      82,
+      80,
+      55,
+      31,
+      43,
+      75,
+      75,
+      51
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      75
+    ]
+  },
+  {
+    "round": 121,
+    "ration_users": [
+      0,
+      0,
+      4,
+      0,
+      2,
+      6,
+      6,
+      2,
+      0,
+      3
+    ],
+    "idx_users": [
+      44,
+      54,
+      78,
+      89,
+      71,
+      81,
+      66,
+      7,
+      45,
+      75
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      81,
+      66
+    ]
+  },
+  {
+    "round": 122,
+    "ration_users": [
+      6,
+      2,
+      3,
+      4,
+      1,
+      6,
+      6,
+      3,
+      2,
+      4
+    ],
+    "idx_users": [
+      52,
+      68,
+      52,
+      85,
+      68,
+      54,
+      84,
+      82,
+      8,
+      85
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      52,
+      54,
+      84
+    ]
+  },
+  {
+    "round": 123,
+    "ration_users": [
+      1,
+      2,
+      3,
+      1,
+      5,
+      5,
+      2,
+      6,
+      1,
+      4
+    ],
+    "idx_users": [
+      34,
+      95,
+      79,
+      92,
+      88,
+      44,
+      32,
+      22,
+      12,
+      49
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      22
+    ]
+  },
+  {
+    "round": 124,
+    "ration_users": [
+      6,
+      3,
+      0,
+      5,
+      2,
+      2,
+      5,
+      3,
+      5,
+      6
+    ],
+    "idx_users": [
+      7,
+      98,
+      26,
+      94,
+      54,
+      5,
+      43,
+      80,
+      45,
+      65
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      7,
+      65
+    ]
+  },
+  {
+    "round": 125,
+    "ration_users": [
+      4,
+      3,
+      4,
+      5,
+      1,
+      2,
+      2,
+      4,
+      3,
+      0
+    ],
+    "idx_users": [
+      92,
+      72,
+      70,
+      72,
+      47,
+      12,
+      40,
+      42,
+      48,
+      68
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 126,
+    "ration_users": [
+      2,
+      5,
+      2,
+      3,
+      3,
+      4,
+      2,
+      5,
+      2,
+      4
+    ],
+    "idx_users": [
+      4,
+      68,
+      85,
+      48,
+      97,
+      65,
+      97,
+      85,
+      57,
+      41
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 127,
+    "ration_users": [
+      2,
+      6,
+      4,
+      2,
+      0,
+      6,
+      0,
+      5,
+      2,
+      6
+    ],
+    "idx_users": [
+      94,
+      67,
+      57,
+      11,
+      32,
+      41,
+      41,
+      45,
+      38,
+      4
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      67,
+      41,
+      4
+    ]
+  },
+  {
+    "round": 128,
+    "ration_users": [
+      4,
+      3,
+      0,
+      4,
+      3,
+      4,
+      4,
+      5,
+      1,
+      0
+    ],
+    "idx_users": [
+      95,
+      64,
+      7,
+      86,
+      56,
+      60,
+      87,
+      48,
+      33,
+      48
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 129,
+    "ration_users": [
+      3,
+      5,
+      3,
+      6,
+      5,
+      2,
+      3,
+      0,
+      1,
+      4
+    ],
+    "idx_users": [
+      91,
+      47,
+      94,
+      86,
+      59,
+      12,
+      67,
+      31,
+      64,
+      75
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      86
+    ]
+  },
+  {
+    "round": 130,
+    "ration_users": [
+      4,
+      5,
+      0,
+      3,
+      1,
+      5,
+      4,
+      6,
+      4,
+      1
+    ],
+    "idx_users": [
+      53,
+      61,
+      43,
+      72,
+      50,
+      97,
+      77,
+      61,
+      46,
+      16
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      61
+    ]
+  },
+  {
+    "round": 131,
+    "ration_users": [
+      6,
+      1,
+      3,
+      6,
+      4,
+      3,
+      3,
+      4,
+      5,
+      4
+    ],
+    "idx_users": [
+      83,
+      57,
+      73,
+      71,
+      86,
+      94,
+      93,
+      77,
+      84,
+      73
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      83,
+      71
+    ]
+  },
+  {
+    "round": 132,
+    "ration_users": [
+      0,
+      2,
+      3,
+      4,
+      3,
+      4,
+      4,
+      4,
+      2,
+      6
+    ],
+    "idx_users": [
+      68,
+      3,
+      97,
+      93,
+      58,
+      87,
+      50,
+      52,
+      47,
+      49
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      49
+    ]
+  },
+  {
+    "round": 133,
+    "ration_users": [
+      3,
+      0,
+      4,
+      2,
+      6,
+      2,
+      4,
+      1,
+      6,
+      3
+    ],
+    "idx_users": [
+      73,
+      41,
+      46,
+      52,
+      44,
+      16,
+      76,
+      8,
+      5,
+      59
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      44,
+      5
+    ]
+  },
+  {
+    "round": 134,
+    "ration_users": [
+      0,
+      6,
+      2,
+      1,
+      2,
+      1,
+      0,
+      2,
+      1,
+      2
+    ],
+    "idx_users": [
+      83,
+      68,
+      40,
+      53,
+      38,
+      40,
+      45,
+      34,
+      41,
+      95
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      68
+    ]
+  },
+  {
+    "round": 135,
+    "ration_users": [
+      4,
+      6,
+      0,
+      6,
+      5,
+      4,
+      5,
+      0,
+      3,
+      0
+    ],
+    "idx_users": [
+      87,
+      66,
+      64,
+      1,
+      73,
+      47,
+      49,
+      40,
+      98,
+      93
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      66,
+      1
+    ]
+  },
+  {
+    "round": 136,
+    "ration_users": [
+      2,
+      2,
+      6,
+      4,
+      2,
+      2,
+      1,
+      5,
+      5,
+      0
+    ],
+    "idx_users": [
+      41,
+      41,
+      73,
+      44,
+      57,
+      35,
+      61,
+      69,
+      98,
+      46
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      73
+    ]
+  },
+  {
+    "round": 137,
+    "ration_users": [
+      2,
+      4,
+      5,
+      2,
+      6,
+      3,
+      5,
+      1,
+      6,
+      2
+    ],
+    "idx_users": [
+      94,
+      64,
+      92,
+      10,
+      74,
+      77,
+      91,
+      7,
+      17,
+      6
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      74,
+      17
+    ]
+  },
+  {
+    "round": 138,
+    "ration_users": [
+      6,
+      4,
+      5,
+      5,
+      2,
+      3,
+      4,
+      1,
+      5,
+      5
+    ],
+    "idx_users": [
+      67,
+      71,
+      76,
+      94,
+      32,
+      90,
+      55,
+      89,
+      76,
+      87
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      67
+    ]
+  },
+  {
+    "round": 139,
+    "ration_users": [
+      2,
+      0,
+      3,
+      2,
+      1,
+      0,
+      0,
+      0,
+      4,
+      6
+    ],
+    "idx_users": [
+      43,
+      46,
+      91,
+      82,
+      47,
+      51,
+      39,
+      59,
+      78,
+      43
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      43
+    ]
+  },
+  {
+    "round": 140,
+    "ration_users": [
+      4,
+      2,
+      6,
+      0,
+      5,
+      5,
+      2,
+      1,
+      6,
+      2
+    ],
+    "idx_users": [
+      74,
+      64,
+      21,
+      3,
+      49,
+      56,
+      87,
+      28,
+      72,
+      17
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      21,
+      72
+    ]
+  },
+  {
+    "round": 141,
+    "ration_users": [
+      5,
+      6,
+      3,
+      2,
+      2,
+      0,
+      0,
+      1,
+      4,
+      3
+    ],
+    "idx_users": [
+      98,
+      14,
+      51,
+      98,
+      52,
+      93,
+      79,
+      6,
+      91,
+      46
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      14
+    ]
+  },
+  {
+    "round": 142,
+    "ration_users": [
+      3,
+      1,
+      5,
+      6,
+      2,
+      3,
+      5,
+      2,
+      4,
+      4
+    ],
+    "idx_users": [
+      74,
+      87,
+      57,
+      91,
+      13,
+      53,
+      56,
+      8,
+      80,
+      76
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      91
+    ]
+  },
+  {
+    "round": 143,
+    "ration_users": [
+      3,
+      5,
+      2,
+      6,
+      5,
+      6,
+      6,
+      1,
+      6,
+      3
+    ],
+    "idx_users": [
+      73,
+      81,
+      10,
+      9,
+      44,
+      27,
+      27,
+      27,
+      82,
+      93
+    ],
+    "full_occurrence_count": 4,
+    "full_selected_client_ids": [
+      9,
+      27,
+      27,
+      82
+    ]
+  },
+  {
+    "round": 144,
+    "ration_users": [
+      0,
+      4,
+      3,
+      6,
+      5,
+      0,
+      2,
+      2,
+      1,
+      1
+    ],
+    "idx_users": [
+      22,
+      72,
+      95,
+      55,
+      41,
+      75,
+      47,
+      62,
+      90,
+      36
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      55
+    ]
+  },
+  {
+    "round": 145,
+    "ration_users": [
+      4,
+      3,
+      2,
+      5,
+      1,
+      1,
+      0,
+      3,
+      1,
+      6
+    ],
+    "idx_users": [
+      54,
+      97,
+      25,
+      78,
+      63,
+      30,
+      54,
+      68,
+      86,
+      46
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      46
+    ]
+  },
+  {
+    "round": 146,
+    "ration_users": [
+      3,
+      5,
+      5,
+      3,
+      1,
+      3,
+      3,
+      0,
+      2,
+      4
+    ],
+    "idx_users": [
+      74,
+      98,
+      52,
+      91,
+      61,
+      86,
+      44,
+      32,
+      52,
+      52
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 147,
+    "ration_users": [
+      5,
+      6,
+      1,
+      0,
+      6,
+      1,
+      2,
+      5,
+      6,
+      0
+    ],
+    "idx_users": [
+      40,
+      95,
+      68,
+      98,
+      48,
+      65,
+      62,
+      44,
+      51,
+      78
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      95,
+      48,
+      51
+    ]
+  },
+  {
+    "round": 148,
+    "ration_users": [
+      3,
+      3,
+      5,
+      3,
+      1,
+      0,
+      6,
+      2,
+      5,
+      6
+    ],
+    "idx_users": [
+      96,
+      72,
+      90,
+      77,
+      74,
+      54,
+      5,
+      45,
+      94,
+      58
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      5,
+      58
+    ]
+  },
+  {
+    "round": 149,
+    "ration_users": [
+      2,
+      3,
+      2,
+      3,
+      5,
+      6,
+      0,
+      2,
+      2,
+      0
+    ],
+    "idx_users": [
+      0,
+      52,
+      38,
+      84,
+      84,
+      82,
+      0,
+      69,
+      15,
+      38
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      82
+    ]
+  },
+  {
+    "round": 150,
+    "ration_users": [
+      4,
+      2,
+      0,
+      5,
+      6,
+      2,
+      6,
+      3,
+      3,
+      0
+    ],
+    "idx_users": [
+      72,
+      95,
+      40,
+      89,
+      69,
+      82,
+      73,
+      75,
+      58,
+      67
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      69,
+      73
+    ]
+  },
+  {
+    "round": 151,
+    "ration_users": [
+      2,
+      4,
+      0,
+      0,
+      6,
+      6,
+      2,
+      1,
+      2,
+      4
+    ],
+    "idx_users": [
+      52,
+      74,
+      66,
+      52,
+      77,
+      80,
+      74,
+      39,
+      57,
+      59
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      77,
+      80
+    ]
+  },
+  {
+    "round": 152,
+    "ration_users": [
+      2,
+      5,
+      0,
+      3,
+      4,
+      0,
+      2,
+      6,
+      1,
+      0
+    ],
+    "idx_users": [
+      16,
+      72,
+      56,
+      77,
+      48,
+      70,
+      98,
+      20,
+      32,
+      81
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      20
+    ]
+  },
+  {
+    "round": 153,
+    "ration_users": [
+      1,
+      4,
+      0,
+      3,
+      1,
+      6,
+      4,
+      2,
+      6,
+      4
+    ],
+    "idx_users": [
+      1,
+      67,
+      94,
+      82,
+      72,
+      4,
+      63,
+      53,
+      51,
+      58
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      4,
+      51
+    ]
+  },
+  {
+    "round": 154,
+    "ration_users": [
+      1,
+      0,
+      1,
+      2,
+      5,
+      3,
+      2,
+      0,
+      3,
+      6
+    ],
+    "idx_users": [
+      84,
+      96,
+      85,
+      2,
+      97,
+      45,
+      11,
+      0,
+      64,
+      34
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      34
+    ]
+  },
+  {
+    "round": 155,
+    "ration_users": [
+      3,
+      4,
+      1,
+      5,
+      0,
+      3,
+      6,
+      1,
+      1,
+      1
+    ],
+    "idx_users": [
+      69,
+      57,
+      47,
+      80,
+      95,
+      94,
+      61,
+      98,
+      43,
+      49
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      61
+    ]
+  },
+  {
+    "round": 156,
+    "ration_users": [
+      6,
+      0,
+      2,
+      1,
+      6,
+      4,
+      3,
+      4,
+      6,
+      1
+    ],
+    "idx_users": [
+      58,
+      14,
+      61,
+      45,
+      18,
+      66,
+      49,
+      41,
+      22,
+      33
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      58,
+      18,
+      22
+    ]
+  },
+  {
+    "round": 157,
+    "ration_users": [
+      2,
+      3,
+      1,
+      3,
+      6,
+      6,
+      2,
+      5,
+      4,
+      1
+    ],
+    "idx_users": [
+      47,
+      94,
+      16,
+      77,
+      36,
+      36,
+      52,
+      56,
+      72,
+      36
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      36,
+      36
+    ]
+  },
+  {
+    "round": 158,
+    "ration_users": [
+      3,
+      6,
+      5,
+      0,
+      2,
+      6,
+      4,
+      0,
+      2,
+      3
+    ],
+    "idx_users": [
+      87,
+      53,
+      84,
+      35,
+      55,
+      42,
+      89,
+      62,
+      27,
+      85
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      53,
+      42
+    ]
+  },
+  {
+    "round": 159,
+    "ration_users": [
+      1,
+      3,
+      0,
+      2,
+      0,
+      4,
+      6,
+      6,
+      4,
+      3
+    ],
+    "idx_users": [
+      62,
+      65,
+      91,
+      54,
+      11,
+      44,
+      16,
+      26,
+      49,
+      54
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      16,
+      26
+    ]
+  },
+  {
+    "round": 160,
+    "ration_users": [
+      5,
+      5,
+      4,
+      6,
+      2,
+      5,
+      2,
+      2,
+      0,
+      1
+    ],
+    "idx_users": [
+      86,
+      41,
+      46,
+      32,
+      19,
+      70,
+      99,
+      12,
+      51,
+      83
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      32
+    ]
+  },
+  {
+    "round": 161,
+    "ration_users": [
+      1,
+      5,
+      2,
+      5,
+      1,
+      0,
+      1,
+      3,
+      3,
+      2
+    ],
+    "idx_users": [
+      92,
+      51,
+      0,
+      45,
+      54,
+      78,
+      6,
+      75,
+      53,
+      68
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 162,
+    "ration_users": [
+      2,
+      0,
+      2,
+      3,
+      2,
+      2,
+      3,
+      4,
+      6,
+      3
+    ],
+    "idx_users": [
+      54,
+      44,
+      6,
+      81,
+      13,
+      94,
+      75,
+      83,
+      53,
+      93
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      53
+    ]
+  },
+  {
+    "round": 163,
+    "ration_users": [
+      4,
+      4,
+      6,
+      6,
+      5,
+      4,
+      2,
+      5,
+      2,
+      5
+    ],
+    "idx_users": [
+      82,
+      87,
+      15,
+      33,
+      83,
+      57,
+      22,
+      70,
+      90,
+      94
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      15,
+      33
+    ]
+  },
+  {
+    "round": 164,
+    "ration_users": [
+      6,
+      0,
+      1,
+      4,
+      3,
+      4,
+      2,
+      2,
+      6,
+      5
+    ],
+    "idx_users": [
+      6,
+      27,
+      86,
+      81,
+      45,
+      95,
+      49,
+      15,
+      85,
+      68
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      6,
+      85
+    ]
+  },
+  {
+    "round": 165,
+    "ration_users": [
+      1,
+      4,
+      4,
+      6,
+      4,
+      1,
+      3,
+      6,
+      3,
+      6
+    ],
+    "idx_users": [
+      37,
+      83,
+      72,
+      63,
+      97,
+      50,
+      47,
+      77,
+      94,
+      61
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      63,
+      77,
+      61
+    ]
+  },
+  {
+    "round": 166,
+    "ration_users": [
+      0,
+      6,
+      1,
+      4,
+      4,
+      0,
+      0,
+      5,
+      5,
+      3
+    ],
+    "idx_users": [
+      13,
+      19,
+      49,
+      79,
+      97,
+      89,
+      25,
+      50,
+      73,
+      56
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      19
+    ]
+  },
+  {
+    "round": 167,
+    "ration_users": [
+      6,
+      2,
+      4,
+      2,
+      5,
+      0,
+      6,
+      3,
+      3,
+      1
+    ],
+    "idx_users": [
+      53,
+      95,
+      96,
+      68,
+      58,
+      63,
+      81,
+      97,
+      91,
+      69
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      53,
+      81
+    ]
+  },
+  {
+    "round": 168,
+    "ration_users": [
+      2,
+      0,
+      5,
+      2,
+      4,
+      1,
+      2,
+      4,
+      6,
+      0
+    ],
+    "idx_users": [
+      27,
+      97,
+      79,
+      43,
+      95,
+      62,
+      13,
+      40,
+      96,
+      93
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      96
+    ]
+  },
+  {
+    "round": 169,
+    "ration_users": [
+      4,
+      2,
+      4,
+      1,
+      3,
+      1,
+      5,
+      4,
+      0,
+      2
+    ],
+    "idx_users": [
+      82,
+      44,
+      99,
+      90,
+      57,
+      7,
+      74,
+      80,
+      56,
+      38
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 170,
+    "ration_users": [
+      2,
+      3,
+      4,
+      0,
+      5,
+      4,
+      6,
+      4,
+      4,
+      4
+    ],
+    "idx_users": [
+      97,
+      97,
+      93,
+      12,
+      54,
+      72,
+      35,
+      57,
+      85,
+      55
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      35
+    ]
+  },
+  {
+    "round": 171,
+    "ration_users": [
+      2,
+      3,
+      2,
+      4,
+      4,
+      3,
+      0,
+      2,
+      3,
+      5
+    ],
+    "idx_users": [
+      52,
+      49,
+      16,
+      56,
+      52,
+      66,
+      71,
+      80,
+      78,
+      97
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 172,
+    "ration_users": [
+      1,
+      0,
+      1,
+      3,
+      0,
+      4,
+      6,
+      3,
+      4,
+      3
+    ],
+    "idx_users": [
+      7,
+      68,
+      77,
+      72,
+      19,
+      66,
+      34,
+      57,
+      70,
+      84
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      34
+    ]
+  },
+  {
+    "round": 173,
+    "ration_users": [
+      6,
+      0,
+      0,
+      0,
+      5,
+      4,
+      0,
+      0,
+      3,
+      3
+    ],
+    "idx_users": [
+      39,
+      34,
+      62,
+      27,
+      71,
+      63,
+      76,
+      60,
+      55,
+      61
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      39
+    ]
+  },
+  {
+    "round": 174,
+    "ration_users": [
+      2,
+      6,
+      1,
+      2,
+      4,
+      2,
+      5,
+      6,
+      4,
+      3
+    ],
+    "idx_users": [
+      22,
+      77,
+      97,
+      23,
+      87,
+      74,
+      84,
+      57,
+      74,
+      49
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      77,
+      57
+    ]
+  },
+  {
+    "round": 175,
+    "ration_users": [
+      0,
+      3,
+      3,
+      3,
+      1,
+      3,
+      2,
+      5,
+      0,
+      3
+    ],
+    "idx_users": [
+      7,
+      72,
+      60,
+      73,
+      88,
+      48,
+      82,
+      88,
+      27,
+      60
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 176,
+    "ration_users": [
+      4,
+      5,
+      5,
+      0,
+      0,
+      6,
+      4,
+      1,
+      5,
+      4
+    ],
+    "idx_users": [
+      79,
+      71,
+      70,
+      42,
+      15,
+      16,
+      96,
+      17,
+      84,
+      56
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      16
+    ]
+  },
+  {
+    "round": 177,
+    "ration_users": [
+      2,
+      4,
+      4,
+      6,
+      6,
+      0,
+      6,
+      4,
+      3,
+      0
+    ],
+    "idx_users": [
+      28,
+      45,
+      80,
+      68,
+      89,
+      89,
+      6,
+      76,
+      51,
+      87
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      68,
+      89,
+      6
+    ]
+  },
+  {
+    "round": 178,
+    "ration_users": [
+      0,
+      0,
+      6,
+      6,
+      0,
+      5,
+      1,
+      3,
+      1,
+      2
+    ],
+    "idx_users": [
+      14,
+      28,
+      72,
+      25,
+      64,
+      76,
+      84,
+      96,
+      39,
+      54
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      72,
+      25
+    ]
+  },
+  {
+    "round": 179,
+    "ration_users": [
+      6,
+      1,
+      5,
+      0,
+      6,
+      5,
+      3,
+      1,
+      1,
+      3
+    ],
+    "idx_users": [
+      41,
+      0,
+      89,
+      2,
+      39,
+      59,
+      92,
+      78,
+      28,
+      45
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      41,
+      39
+    ]
+  },
+  {
+    "round": 180,
+    "ration_users": [
+      1,
+      5,
+      3,
+      2,
+      6,
+      1,
+      3,
+      5,
+      6,
+      0
+    ],
+    "idx_users": [
+      95,
+      54,
+      57,
+      87,
+      80,
+      43,
+      57,
+      78,
+      92,
+      66
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      80,
+      92
+    ]
+  },
+  {
+    "round": 181,
+    "ration_users": [
+      3,
+      3,
+      0,
+      1,
+      0,
+      6,
+      1,
+      5,
+      4,
+      3
+    ],
+    "idx_users": [
+      64,
+      41,
+      15,
+      42,
+      44,
+      17,
+      14,
+      56,
+      97,
+      89
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      17
+    ]
+  },
+  {
+    "round": 182,
+    "ration_users": [
+      4,
+      4,
+      2,
+      0,
+      0,
+      6,
+      6,
+      0,
+      6,
+      6
+    ],
+    "idx_users": [
+      49,
+      83,
+      73,
+      5,
+      44,
+      9,
+      11,
+      92,
+      13,
+      38
+    ],
+    "full_occurrence_count": 4,
+    "full_selected_client_ids": [
+      9,
+      11,
+      13,
+      38
+    ]
+  },
+  {
+    "round": 183,
+    "ration_users": [
+      3,
+      0,
+      2,
+      6,
+      5,
+      3,
+      2,
+      6,
+      2,
+      3
+    ],
+    "idx_users": [
+      60,
+      31,
+      34,
+      67,
+      43,
+      63,
+      3,
+      10,
+      17,
+      99
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      67,
+      10
+    ]
+  },
+  {
+    "round": 184,
+    "ration_users": [
+      1,
+      5,
+      1,
+      1,
+      4,
+      5,
+      1,
+      4,
+      0,
+      6
+    ],
+    "idx_users": [
+      51,
+      63,
+      92,
+      81,
+      84,
+      55,
+      12,
+      83,
+      42,
+      35
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      35
+    ]
+  },
+  {
+    "round": 185,
+    "ration_users": [
+      5,
+      3,
+      5,
+      0,
+      0,
+      5,
+      6,
+      6,
+      6,
+      0
+    ],
+    "idx_users": [
+      40,
+      72,
+      96,
+      41,
+      14,
+      62,
+      82,
+      82,
+      82,
+      82
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      82,
+      82,
+      82
+    ]
+  },
+  {
+    "round": 186,
+    "ration_users": [
+      6,
+      2,
+      4,
+      0,
+      4,
+      4,
+      5,
+      4,
+      1,
+      2
+    ],
+    "idx_users": [
+      92,
+      16,
+      78,
+      34,
+      65,
+      45,
+      83,
+      76,
+      79,
+      92
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      92
+    ]
+  },
+  {
+    "round": 187,
+    "ration_users": [
+      0,
+      2,
+      3,
+      6,
+      0,
+      2,
+      1,
+      3,
+      1,
+      6
+    ],
+    "idx_users": [
+      67,
+      60,
+      76,
+      53,
+      68,
+      50,
+      38,
+      97,
+      28,
+      80
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      53,
+      80
+    ]
+  },
+  {
+    "round": 188,
+    "ration_users": [
+      2,
+      2,
+      3,
+      1,
+      5,
+      2,
+      6,
+      2,
+      4,
+      2
+    ],
+    "idx_users": [
+      38,
+      70,
+      48,
+      6,
+      78,
+      65,
+      14,
+      22,
+      55,
+      27
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      14
+    ]
+  },
+  {
+    "round": 189,
+    "ration_users": [
+      1,
+      1,
+      1,
+      5,
+      4,
+      0,
+      4,
+      6,
+      2,
+      3
+    ],
+    "idx_users": [
+      55,
+      35,
+      69,
+      41,
+      56,
+      68,
+      57,
+      67,
+      33,
+      70
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      67
+    ]
+  },
+  {
+    "round": 190,
+    "ration_users": [
+      0,
+      5,
+      6,
+      0,
+      2,
+      1,
+      4,
+      6,
+      0,
+      0
+    ],
+    "idx_users": [
+      16,
+      65,
+      90,
+      13,
+      95,
+      47,
+      44,
+      83,
+      69,
+      46
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      90,
+      83
+    ]
+  },
+  {
+    "round": 191,
+    "ration_users": [
+      3,
+      3,
+      4,
+      1,
+      6,
+      6,
+      0,
+      0,
+      0,
+      6
+    ],
+    "idx_users": [
+      74,
+      75,
+      94,
+      92,
+      64,
+      87,
+      74,
+      3,
+      79,
+      39
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      64,
+      87,
+      39
+    ]
+  },
+  {
+    "round": 192,
+    "ration_users": [
+      0,
+      5,
+      2,
+      0,
+      4,
+      0,
+      6,
+      1,
+      1,
+      5
+    ],
+    "idx_users": [
+      57,
+      83,
+      16,
+      19,
+      44,
+      74,
+      18,
+      86,
+      27,
+      70
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      18
+    ]
+  },
+  {
+    "round": 193,
+    "ration_users": [
+      0,
+      4,
+      0,
+      0,
+      1,
+      3,
+      6,
+      5,
+      1,
+      2
+    ],
+    "idx_users": [
+      98,
+      61,
+      46,
+      37,
+      20,
+      49,
+      48,
+      90,
+      48,
+      56
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      48
+    ]
+  },
+  {
+    "round": 194,
+    "ration_users": [
+      6,
+      6,
+      3,
+      2,
+      1,
+      0,
+      6,
+      5,
+      2,
+      1
+    ],
+    "idx_users": [
+      51,
+      15,
+      78,
+      18,
+      34,
+      37,
+      85,
+      83,
+      81,
+      77
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      51,
+      15,
+      85
+    ]
+  },
+  {
+    "round": 195,
+    "ration_users": [
+      1,
+      4,
+      5,
+      1,
+      2,
+      6,
+      4,
+      3,
+      4,
+      0
+    ],
+    "idx_users": [
+      1,
+      74,
+      40,
+      82,
+      16,
+      48,
+      87,
+      75,
+      96,
+      12
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      48
+    ]
+  },
+  {
+    "round": 196,
+    "ration_users": [
+      5,
+      4,
+      5,
+      6,
+      3,
+      2,
+      4,
+      4,
+      1,
+      4
+    ],
+    "idx_users": [
+      69,
+      41,
+      89,
+      55,
+      78,
+      86,
+      67,
+      57,
+      47,
+      66
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      55
+    ]
+  },
+  {
+    "round": 197,
+    "ration_users": [
+      3,
+      6,
+      5,
+      4,
+      4,
+      1,
+      1,
+      1,
+      4,
+      3
+    ],
+    "idx_users": [
+      65,
+      77,
+      69,
+      43,
+      46,
+      60,
+      99,
+      4,
+      81,
+      85
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      77
+    ]
+  },
+  {
+    "round": 198,
+    "ration_users": [
+      6,
+      0,
+      1,
+      5,
+      6,
+      6,
+      5,
+      6,
+      2,
+      4
+    ],
+    "idx_users": [
+      89,
+      0,
+      5,
+      93,
+      14,
+      75,
+      48,
+      67,
+      65,
+      88
+    ],
+    "full_occurrence_count": 4,
+    "full_selected_client_ids": [
+      89,
+      14,
+      75,
+      67
+    ]
+  },
+  {
+    "round": 199,
+    "ration_users": [
+      5,
+      3,
+      4,
+      1,
+      5,
+      6,
+      1,
+      4,
+      6,
+      2
+    ],
+    "idx_users": [
+      62,
+      75,
+      57,
+      72,
+      98,
+      83,
+      45,
+      91,
+      60,
+      89
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      83,
+      60
+    ]
+  },
+  {
+    "round": 200,
+    "ration_users": [
+      0,
+      4,
+      0,
+      4,
+      1,
+      1,
+      0,
+      4,
+      6,
+      5
+    ],
+    "idx_users": [
+      31,
+      99,
+      79,
+      55,
+      13,
+      71,
+      45,
+      95,
+      20,
+      47
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      20
+    ]
+  },
+  {
+    "round": 201,
+    "ration_users": [
+      1,
+      1,
+      0,
+      3,
+      4,
+      3,
+      3,
+      2,
+      2,
+      6
+    ],
+    "idx_users": [
+      99,
+      5,
+      90,
+      60,
+      67,
+      96,
+      86,
+      44,
+      32,
+      84
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      84
+    ]
+  },
+  {
+    "round": 202,
+    "ration_users": [
+      1,
+      2,
+      2,
+      1,
+      5,
+      3,
+      5,
+      5,
+      3,
+      2
+    ],
+    "idx_users": [
+      80,
+      98,
+      7,
+      78,
+      67,
+      66,
+      64,
+      62,
+      58,
+      96
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 203,
+    "ration_users": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      0,
+      5,
+      5,
+      3,
+      3
+    ],
+    "idx_users": [
+      92,
+      61,
+      68,
+      91,
+      84,
+      30,
+      80,
+      79,
+      73,
+      49
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 204,
+    "ration_users": [
+      1,
+      0,
+      6,
+      6,
+      4,
+      3,
+      1,
+      2,
+      5,
+      3
+    ],
+    "idx_users": [
+      7,
+      43,
+      86,
+      14,
+      97,
+      72,
+      22,
+      69,
+      81,
+      80
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      86,
+      14
+    ]
+  },
+  {
+    "round": 205,
+    "ration_users": [
+      5,
+      1,
+      6,
+      2,
+      5,
+      0,
+      6,
+      2,
+      2,
+      0
+    ],
+    "idx_users": [
+      71,
+      43,
+      96,
+      90,
+      47,
+      74,
+      2,
+      61,
+      26,
+      49
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      96,
+      2
+    ]
+  },
+  {
+    "round": 206,
+    "ration_users": [
+      2,
+      0,
+      5,
+      0,
+      4,
+      0,
+      2,
+      2,
+      2,
+      0
+    ],
+    "idx_users": [
+      80,
+      22,
+      65,
+      91,
+      54,
+      12,
+      31,
+      42,
+      42,
+      84
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 207,
+    "ration_users": [
+      1,
+      4,
+      1,
+      2,
+      1,
+      6,
+      6,
+      5,
+      5,
+      0
+    ],
+    "idx_users": [
+      31,
+      90,
+      86,
+      59,
+      95,
+      60,
+      47,
+      71,
+      81,
+      98
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      60,
+      47
+    ]
+  },
+  {
+    "round": 208,
+    "ration_users": [
+      6,
+      1,
+      6,
+      0,
+      1,
+      3,
+      6,
+      6,
+      2,
+      5
+    ],
+    "idx_users": [
+      84,
+      92,
+      24,
+      24,
+      55,
+      68,
+      51,
+      69,
+      15,
+      76
+    ],
+    "full_occurrence_count": 4,
+    "full_selected_client_ids": [
+      84,
+      24,
+      51,
+      69
+    ]
+  },
+  {
+    "round": 209,
+    "ration_users": [
+      4,
+      6,
+      3,
+      4,
+      2,
+      1,
+      3,
+      2,
+      0,
+      6
+    ],
+    "idx_users": [
+      71,
+      34,
+      57,
+      93,
+      16,
+      19,
+      40,
+      48,
+      53,
+      13
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      34,
+      13
+    ]
+  },
+  {
+    "round": 210,
+    "ration_users": [
+      5,
+      2,
+      3,
+      4,
+      5,
+      2,
+      5,
+      1,
+      2,
+      6
+    ],
+    "idx_users": [
+      91,
+      3,
+      81,
+      44,
+      51,
+      58,
+      89,
+      48,
+      85,
+      64
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      64
+    ]
+  },
+  {
+    "round": 211,
+    "ration_users": [
+      6,
+      2,
+      5,
+      3,
+      5,
+      3,
+      4,
+      3,
+      3,
+      4
+    ],
+    "idx_users": [
+      36,
+      36,
+      98,
+      49,
+      49,
+      73,
+      92,
+      46,
+      56,
+      41
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      36
+    ]
+  },
+  {
+    "round": 212,
+    "ration_users": [
+      2,
+      3,
+      2,
+      0,
+      3,
+      1,
+      3,
+      1,
+      6,
+      4
+    ],
+    "idx_users": [
+      59,
+      65,
+      81,
+      90,
+      87,
+      29,
+      74,
+      89,
+      50,
+      40
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      50
+    ]
+  },
+  {
+    "round": 213,
+    "ration_users": [
+      6,
+      3,
+      4,
+      4,
+      0,
+      3,
+      3,
+      0,
+      1,
+      3
+    ],
+    "idx_users": [
+      69,
+      91,
+      55,
+      67,
+      20,
+      82,
+      51,
+      43,
+      84,
+      55
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      69
+    ]
+  },
+  {
+    "round": 214,
+    "ration_users": [
+      6,
+      4,
+      4,
+      0,
+      2,
+      3,
+      3,
+      4,
+      2,
+      0
+    ],
+    "idx_users": [
+      9,
+      89,
+      74,
+      71,
+      20,
+      51,
+      64,
+      77,
+      2,
+      65
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      9
+    ]
+  },
+  {
+    "round": 215,
+    "ration_users": [
+      3,
+      2,
+      4,
+      6,
+      2,
+      5,
+      0,
+      0,
+      0,
+      4
+    ],
+    "idx_users": [
+      53,
+      54,
+      55,
+      5,
+      5,
+      99,
+      66,
+      92,
+      24,
+      84
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      5
+    ]
+  },
+  {
+    "round": 216,
+    "ration_users": [
+      6,
+      3,
+      4,
+      4,
+      5,
+      1,
+      4,
+      4,
+      5,
+      2
+    ],
+    "idx_users": [
+      64,
+      84,
+      79,
+      81,
+      74,
+      9,
+      55,
+      65,
+      89,
+      59
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      64
+    ]
+  },
+  {
+    "round": 217,
+    "ration_users": [
+      4,
+      0,
+      5,
+      6,
+      3,
+      0,
+      4,
+      3,
+      6,
+      6
+    ],
+    "idx_users": [
+      47,
+      72,
+      81,
+      6,
+      64,
+      11,
+      75,
+      46,
+      82,
+      61
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      6,
+      82,
+      61
+    ]
+  },
+  {
+    "round": 218,
+    "ration_users": [
+      5,
+      0,
+      3,
+      5,
+      6,
+      3,
+      5,
+      0,
+      2,
+      1
+    ],
+    "idx_users": [
+      70,
+      5,
+      73,
+      55,
+      99,
+      40,
+      41,
+      39,
+      59,
+      35
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      99
+    ]
+  },
+  {
+    "round": 219,
+    "ration_users": [
+      6,
+      4,
+      1,
+      3,
+      1,
+      2,
+      0,
+      1,
+      3,
+      6
+    ],
+    "idx_users": [
+      92,
+      66,
+      21,
+      78,
+      17,
+      71,
+      90,
+      40,
+      89,
+      68
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      92,
+      68
+    ]
+  },
+  {
+    "round": 220,
+    "ration_users": [
+      1,
+      5,
+      1,
+      4,
+      5,
+      2,
+      5,
+      0,
+      2,
+      4
+    ],
+    "idx_users": [
+      81,
+      68,
+      64,
+      91,
+      66,
+      70,
+      50,
+      89,
+      50,
+      84
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 221,
+    "ration_users": [
+      1,
+      0,
+      6,
+      3,
+      1,
+      0,
+      6,
+      2,
+      3,
+      3
+    ],
+    "idx_users": [
+      49,
+      25,
+      63,
+      92,
+      35,
+      46,
+      19,
+      19,
+      56,
+      76
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      63,
+      19
+    ]
+  },
+  {
+    "round": 222,
+    "ration_users": [
+      6,
+      5,
+      2,
+      2,
+      5,
+      1,
+      4,
+      1,
+      4,
+      6
+    ],
+    "idx_users": [
+      35,
+      94,
+      22,
+      99,
+      86,
+      79,
+      45,
+      93,
+      63,
+      43
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      35,
+      43
+    ]
+  },
+  {
+    "round": 223,
+    "ration_users": [
+      0,
+      3,
+      5,
+      5,
+      2,
+      4,
+      3,
+      5,
+      5,
+      0
+    ],
+    "idx_users": [
+      18,
+      56,
+      56,
+      56,
+      44,
+      64,
+      57,
+      76,
+      69,
+      1
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 224,
+    "ration_users": [
+      1,
+      3,
+      3,
+      6,
+      3,
+      0,
+      0,
+      6,
+      4,
+      6
+    ],
+    "idx_users": [
+      19,
+      48,
+      56,
+      28,
+      52,
+      9,
+      74,
+      68,
+      79,
+      25
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      28,
+      68,
+      25
+    ]
+  },
+  {
+    "round": 225,
+    "ration_users": [
+      1,
+      6,
+      5,
+      4,
+      4,
+      0,
+      6,
+      6,
+      4,
+      2
+    ],
+    "idx_users": [
+      69,
+      54,
+      85,
+      95,
+      55,
+      73,
+      17,
+      70,
+      69,
+      50
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      54,
+      17,
+      70
+    ]
+  },
+  {
+    "round": 226,
+    "ration_users": [
+      3,
+      0,
+      2,
+      5,
+      5,
+      6,
+      2,
+      2,
+      3,
+      6
+    ],
+    "idx_users": [
+      85,
+      25,
+      10,
+      80,
+      99,
+      9,
+      19,
+      85,
+      43,
+      3
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      9,
+      3
+    ]
+  },
+  {
+    "round": 227,
+    "ration_users": [
+      0,
+      5,
+      4,
+      5,
+      3,
+      6,
+      1,
+      2,
+      6,
+      2
+    ],
+    "idx_users": [
+      95,
+      65,
+      64,
+      66,
+      83,
+      17,
+      75,
+      76,
+      16,
+      86
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      17,
+      16
+    ]
+  },
+  {
+    "round": 228,
+    "ration_users": [
+      5,
+      2,
+      5,
+      3,
+      4,
+      6,
+      0,
+      4,
+      6,
+      6
+    ],
+    "idx_users": [
+      74,
+      69,
+      44,
+      99,
+      55,
+      48,
+      48,
+      48,
+      36,
+      25
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      48,
+      36,
+      25
+    ]
+  },
+  {
+    "round": 229,
+    "ration_users": [
+      2,
+      5,
+      4,
+      2,
+      1,
+      6,
+      6,
+      4,
+      1,
+      0
+    ],
+    "idx_users": [
+      84,
+      86,
+      65,
+      45,
+      95,
+      22,
+      22,
+      54,
+      38,
+      90
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      22,
+      22
+    ]
+  },
+  {
+    "round": 230,
+    "ration_users": [
+      1,
+      4,
+      1,
+      5,
+      4,
+      6,
+      5,
+      6,
+      3,
+      2
+    ],
+    "idx_users": [
+      18,
+      62,
+      62,
+      74,
+      58,
+      11,
+      72,
+      38,
+      59,
+      26
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      11,
+      38
+    ]
+  },
+  {
+    "round": 231,
+    "ration_users": [
+      6,
+      1,
+      3,
+      5,
+      2,
+      0,
+      5,
+      0,
+      2,
+      5
+    ],
+    "idx_users": [
+      90,
+      59,
+      41,
+      58,
+      79,
+      75,
+      46,
+      78,
+      47,
+      88
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      90
+    ]
+  },
+  {
+    "round": 232,
+    "ration_users": [
+      0,
+      3,
+      4,
+      6,
+      1,
+      0,
+      2,
+      0,
+      1,
+      0
+    ],
+    "idx_users": [
+      56,
+      56,
+      79,
+      7,
+      6,
+      40,
+      20,
+      16,
+      80,
+      13
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      7
+    ]
+  },
+  {
+    "round": 233,
+    "ration_users": [
+      6,
+      0,
+      4,
+      6,
+      1,
+      3,
+      5,
+      2,
+      6,
+      3
+    ],
+    "idx_users": [
+      14,
+      55,
+      80,
+      75,
+      31,
+      87,
+      53,
+      64,
+      64,
+      65
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      14,
+      75,
+      64
+    ]
+  },
+  {
+    "round": 234,
+    "ration_users": [
+      2,
+      2,
+      3,
+      0,
+      5,
+      1,
+      1,
+      3,
+      6,
+      2
+    ],
+    "idx_users": [
+      15,
+      90,
+      53,
+      49,
+      82,
+      66,
+      17,
+      92,
+      91,
+      74
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      91
+    ]
+  },
+  {
+    "round": 235,
+    "ration_users": [
+      6,
+      0,
+      1,
+      2,
+      6,
+      1,
+      6,
+      1,
+      0,
+      4
+    ],
+    "idx_users": [
+      32,
+      92,
+      0,
+      91,
+      15,
+      25,
+      97,
+      72,
+      48,
+      82
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      32,
+      15,
+      97
+    ]
+  },
+  {
+    "round": 236,
+    "ration_users": [
+      6,
+      5,
+      4,
+      5,
+      6,
+      0,
+      6,
+      4,
+      6,
+      0
+    ],
+    "idx_users": [
+      61,
+      74,
+      79,
+      54,
+      34,
+      4,
+      81,
+      50,
+      85,
+      85
+    ],
+    "full_occurrence_count": 4,
+    "full_selected_client_ids": [
+      61,
+      34,
+      81,
+      85
+    ]
+  },
+  {
+    "round": 237,
+    "ration_users": [
+      5,
+      6,
+      3,
+      5,
+      1,
+      0,
+      4,
+      0,
+      5,
+      6
+    ],
+    "idx_users": [
+      98,
+      70,
+      72,
+      54,
+      52,
+      35,
+      89,
+      84,
+      66,
+      51
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      70,
+      51
+    ]
+  },
+  {
+    "round": 238,
+    "ration_users": [
+      1,
+      4,
+      4,
+      0,
+      5,
+      5,
+      1,
+      0,
+      5,
+      5
+    ],
+    "idx_users": [
+      34,
+      71,
+      46,
+      85,
+      93,
+      93,
+      16,
+      23,
+      75,
+      41
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 239,
+    "ration_users": [
+      5,
+      4,
+      6,
+      0,
+      6,
+      0,
+      1,
+      3,
+      6,
+      0
+    ],
+    "idx_users": [
+      69,
+      88,
+      5,
+      62,
+      27,
+      50,
+      93,
+      74,
+      43,
+      43
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      5,
+      27,
+      43
+    ]
+  },
+  {
+    "round": 240,
+    "ration_users": [
+      6,
+      1,
+      4,
+      5,
+      2,
+      1,
+      3,
+      6,
+      6,
+      4
+    ],
+    "idx_users": [
+      31,
+      31,
+      46,
+      44,
+      86,
+      95,
+      42,
+      54,
+      54,
+      93
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      31,
+      54,
+      54
+    ]
+  },
+  {
+    "round": 241,
+    "ration_users": [
+      5,
+      4,
+      6,
+      2,
+      6,
+      0,
+      2,
+      4,
+      5,
+      4
+    ],
+    "idx_users": [
+      68,
+      52,
+      22,
+      76,
+      64,
+      24,
+      65,
+      64,
+      73,
+      63
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      22,
+      64
+    ]
+  },
+  {
+    "round": 242,
+    "ration_users": [
+      3,
+      0,
+      5,
+      2,
+      6,
+      3,
+      6,
+      0,
+      2,
+      1
+    ],
+    "idx_users": [
+      52,
+      29,
+      63,
+      84,
+      75,
+      77,
+      96,
+      99,
+      8,
+      43
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      75,
+      96
+    ]
+  },
+  {
+    "round": 243,
+    "ration_users": [
+      0,
+      3,
+      3,
+      1,
+      6,
+      6,
+      5,
+      6,
+      1,
+      0
+    ],
+    "idx_users": [
+      6,
+      69,
+      42,
+      78,
+      22,
+      18,
+      49,
+      36,
+      36,
+      60
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      22,
+      18,
+      36
+    ]
+  },
+  {
+    "round": 244,
+    "ration_users": [
+      3,
+      3,
+      2,
+      1,
+      6,
+      4,
+      4,
+      6,
+      3,
+      6
+    ],
+    "idx_users": [
+      42,
+      77,
+      64,
+      8,
+      72,
+      93,
+      76,
+      50,
+      45,
+      51
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      72,
+      50,
+      51
+    ]
+  },
+  {
+    "round": 245,
+    "ration_users": [
+      5,
+      0,
+      2,
+      6,
+      1,
+      6,
+      2,
+      2,
+      4,
+      1
+    ],
+    "idx_users": [
+      90,
+      65,
+      73,
+      82,
+      38,
+      50,
+      34,
+      45,
+      70,
+      6
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      82,
+      50
+    ]
+  },
+  {
+    "round": 246,
+    "ration_users": [
+      2,
+      2,
+      6,
+      2,
+      1,
+      0,
+      4,
+      5,
+      0,
+      4
+    ],
+    "idx_users": [
+      70,
+      61,
+      2,
+      54,
+      38,
+      75,
+      87,
+      60,
+      19,
+      78
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      2
+    ]
+  },
+  {
+    "round": 247,
+    "ration_users": [
+      1,
+      6,
+      1,
+      3,
+      2,
+      0,
+      3,
+      4,
+      3,
+      5
+    ],
+    "idx_users": [
+      75,
+      71,
+      35,
+      44,
+      77,
+      99,
+      63,
+      66,
+      65,
+      73
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      71
+    ]
+  },
+  {
+    "round": 248,
+    "ration_users": [
+      0,
+      2,
+      6,
+      2,
+      5,
+      1,
+      2,
+      5,
+      2,
+      2
+    ],
+    "idx_users": [
+      3,
+      73,
+      74,
+      14,
+      42,
+      73,
+      67,
+      40,
+      12,
+      42
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      74
+    ]
+  },
+  {
+    "round": 249,
+    "ration_users": [
+      0,
+      1,
+      1,
+      3,
+      1,
+      4,
+      4,
+      1,
+      0,
+      3
+    ],
+    "idx_users": [
+      43,
+      47,
+      96,
+      75,
+      4,
+      80,
+      63,
+      74,
+      9,
+      71
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 250,
+    "ration_users": [
+      5,
+      6,
+      3,
+      6,
+      4,
+      0,
+      4,
+      1,
+      6,
+      1
+    ],
+    "idx_users": [
+      97,
+      81,
+      45,
+      69,
+      74,
+      57,
+      61,
+      64,
+      69,
+      69
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      81,
+      69,
+      69
+    ]
+  },
+  {
+    "round": 251,
+    "ration_users": [
+      5,
+      3,
+      0,
+      0,
+      6,
+      0,
+      0,
+      5,
+      0,
+      4
+    ],
+    "idx_users": [
+      40,
+      99,
+      20,
+      41,
+      46,
+      27,
+      18,
+      97,
+      74,
+      49
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      46
+    ]
+  },
+  {
+    "round": 252,
+    "ration_users": [
+      4,
+      4,
+      2,
+      6,
+      4,
+      1,
+      2,
+      2,
+      5,
+      4
+    ],
+    "idx_users": [
+      77,
+      46,
+      51,
+      40,
+      95,
+      65,
+      53,
+      46,
+      61,
+      94
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      40
+    ]
+  },
+  {
+    "round": 253,
+    "ration_users": [
+      1,
+      5,
+      2,
+      3,
+      3,
+      0,
+      2,
+      6,
+      0,
+      5
+    ],
+    "idx_users": [
+      33,
+      78,
+      47,
+      42,
+      85,
+      8,
+      98,
+      80,
+      31,
+      92
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      80
+    ]
+  },
+  {
+    "round": 254,
+    "ration_users": [
+      1,
+      6,
+      2,
+      6,
+      5,
+      6,
+      0,
+      3,
+      1,
+      1
+    ],
+    "idx_users": [
+      33,
+      96,
+      50,
+      70,
+      58,
+      73,
+      79,
+      45,
+      9,
+      90
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      96,
+      70,
+      73
+    ]
+  },
+  {
+    "round": 255,
+    "ration_users": [
+      1,
+      5,
+      3,
+      1,
+      2,
+      4,
+      1,
+      4,
+      4,
+      4
+    ],
+    "idx_users": [
+      21,
+      97,
+      99,
+      34,
+      52,
+      45,
+      16,
+      58,
+      75,
+      86
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 256,
+    "ration_users": [
+      5,
+      2,
+      6,
+      5,
+      1,
+      6,
+      3,
+      5,
+      3,
+      3
+    ],
+    "idx_users": [
+      81,
+      33,
+      30,
+      53,
+      12,
+      35,
+      86,
+      70,
+      43,
+      87
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      30,
+      35
+    ]
+  },
+  {
+    "round": 257,
+    "ration_users": [
+      6,
+      6,
+      6,
+      6,
+      5,
+      2,
+      3,
+      1,
+      1,
+      0
+    ],
+    "idx_users": [
+      65,
+      38,
+      26,
+      26,
+      91,
+      26,
+      92,
+      69,
+      9,
+      70
+    ],
+    "full_occurrence_count": 4,
+    "full_selected_client_ids": [
+      65,
+      38,
+      26,
+      26
+    ]
+  },
+  {
+    "round": 258,
+    "ration_users": [
+      5,
+      6,
+      4,
+      4,
+      3,
+      1,
+      6,
+      1,
+      4,
+      5
+    ],
+    "idx_users": [
+      60,
+      43,
+      99,
+      58,
+      95,
+      66,
+      17,
+      4,
+      68,
+      92
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      43,
+      17
+    ]
+  },
+  {
+    "round": 259,
+    "ration_users": [
+      1,
+      5,
+      1,
+      1,
+      2,
+      6,
+      2,
+      6,
+      5,
+      6
+    ],
+    "idx_users": [
+      46,
+      91,
+      95,
+      4,
+      3,
+      40,
+      53,
+      95,
+      50,
+      71
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      40,
+      95,
+      71
+    ]
+  },
+  {
+    "round": 260,
+    "ration_users": [
+      3,
+      0,
+      2,
+      2,
+      3,
+      1,
+      0,
+      0,
+      2,
+      4
+    ],
+    "idx_users": [
+      75,
+      5,
+      90,
+      75,
+      84,
+      84,
+      80,
+      67,
+      54,
+      51
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 261,
+    "ration_users": [
+      3,
+      0,
+      2,
+      6,
+      4,
+      6,
+      4,
+      4,
+      5,
+      6
+    ],
+    "idx_users": [
+      97,
+      25,
+      29,
+      14,
+      77,
+      16,
+      77,
+      72,
+      47,
+      92
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      14,
+      16,
+      92
+    ]
+  },
+  {
+    "round": 262,
+    "ration_users": [
+      0,
+      6,
+      5,
+      3,
+      5,
+      3,
+      0,
+      2,
+      6,
+      0
+    ],
+    "idx_users": [
+      34,
+      58,
+      52,
+      90,
+      43,
+      63,
+      58,
+      42,
+      78,
+      78
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      58,
+      78
+    ]
+  },
+  {
+    "round": 263,
+    "ration_users": [
+      4,
+      5,
+      3,
+      4,
+      6,
+      0,
+      4,
+      2,
+      0,
+      3
+    ],
+    "idx_users": [
+      86,
+      62,
+      54,
+      99,
+      81,
+      81,
+      40,
+      1,
+      62,
+      42
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      81
+    ]
+  },
+  {
+    "round": 264,
+    "ration_users": [
+      5,
+      4,
+      0,
+      4,
+      4,
+      4,
+      1,
+      5,
+      5,
+      0
+    ],
+    "idx_users": [
+      50,
+      56,
+      70,
+      42,
+      40,
+      54,
+      97,
+      96,
+      45,
+      67
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 265,
+    "ration_users": [
+      1,
+      4,
+      4,
+      5,
+      0,
+      5,
+      2,
+      4,
+      2,
+      3
+    ],
+    "idx_users": [
+      22,
+      42,
+      73,
+      52,
+      26,
+      68,
+      36,
+      55,
+      62,
+      72
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 266,
+    "ration_users": [
+      6,
+      4,
+      1,
+      4,
+      5,
+      3,
+      0,
+      4,
+      0,
+      4
+    ],
+    "idx_users": [
+      47,
+      60,
+      50,
+      81,
+      44,
+      52,
+      76,
+      51,
+      24,
+      83
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      47
+    ]
+  },
+  {
+    "round": 267,
+    "ration_users": [
+      4,
+      4,
+      0,
+      2,
+      5,
+      1,
+      6,
+      2,
+      6,
+      5
+    ],
+    "idx_users": [
+      79,
+      59,
+      74,
+      54,
+      79,
+      60,
+      46,
+      2,
+      62,
+      41
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      46,
+      62
+    ]
+  },
+  {
+    "round": 268,
+    "ration_users": [
+      2,
+      6,
+      1,
+      5,
+      4,
+      1,
+      2,
+      5,
+      5,
+      4
+    ],
+    "idx_users": [
+      13,
+      84,
+      80,
+      76,
+      82,
+      79,
+      55,
+      92,
+      85,
+      77
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      84
+    ]
+  },
+  {
+    "round": 269,
+    "ration_users": [
+      4,
+      4,
+      1,
+      2,
+      6,
+      3,
+      4,
+      2,
+      1,
+      4
+    ],
+    "idx_users": [
+      61,
+      61,
+      9,
+      82,
+      53,
+      52,
+      84,
+      65,
+      63,
+      93
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      53
+    ]
+  },
+  {
+    "round": 270,
+    "ration_users": [
+      0,
+      5,
+      3,
+      1,
+      4,
+      6,
+      0,
+      0,
+      4,
+      1
+    ],
+    "idx_users": [
+      77,
+      76,
+      82,
+      70,
+      72,
+      61,
+      61,
+      76,
+      83,
+      94
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      61
+    ]
+  },
+  {
+    "round": 271,
+    "ration_users": [
+      6,
+      3,
+      4,
+      1,
+      6,
+      3,
+      6,
+      4,
+      2,
+      4
+    ],
+    "idx_users": [
+      73,
+      97,
+      94,
+      98,
+      57,
+      78,
+      60,
+      50,
+      34,
+      83
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      73,
+      57,
+      60
+    ]
+  },
+  {
+    "round": 272,
+    "ration_users": [
+      6,
+      2,
+      2,
+      6,
+      1,
+      0,
+      0,
+      4,
+      0,
+      2
+    ],
+    "idx_users": [
+      67,
+      67,
+      38,
+      72,
+      97,
+      50,
+      77,
+      74,
+      33,
+      32
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      67,
+      72
+    ]
+  },
+  {
+    "round": 273,
+    "ration_users": [
+      3,
+      5,
+      2,
+      1,
+      5,
+      5,
+      6,
+      2,
+      3,
+      0
+    ],
+    "idx_users": [
+      59,
+      40,
+      77,
+      96,
+      42,
+      90,
+      58,
+      58,
+      97,
+      45
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      58
+    ]
+  },
+  {
+    "round": 274,
+    "ration_users": [
+      0,
+      3,
+      2,
+      2,
+      0,
+      3,
+      5,
+      6,
+      5,
+      5
+    ],
+    "idx_users": [
+      29,
+      72,
+      56,
+      26,
+      89,
+      70,
+      99,
+      42,
+      84,
+      80
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      42
+    ]
+  },
+  {
+    "round": 275,
+    "ration_users": [
+      0,
+      6,
+      0,
+      3,
+      0,
+      1,
+      1,
+      6,
+      3,
+      4
+    ],
+    "idx_users": [
+      18,
+      49,
+      55,
+      43,
+      82,
+      14,
+      45,
+      1,
+      90,
+      98
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      49,
+      1
+    ]
+  },
+  {
+    "round": 276,
+    "ration_users": [
+      0,
+      3,
+      5,
+      1,
+      5,
+      2,
+      0,
+      6,
+      0,
+      6
+    ],
+    "idx_users": [
+      1,
+      56,
+      88,
+      69,
+      87,
+      6,
+      39,
+      48,
+      1,
+      41
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      48,
+      41
+    ]
+  },
+  {
+    "round": 277,
+    "ration_users": [
+      4,
+      5,
+      1,
+      5,
+      6,
+      2,
+      6,
+      0,
+      6,
+      1
+    ],
+    "idx_users": [
+      61,
+      59,
+      75,
+      96,
+      6,
+      6,
+      26,
+      91,
+      10,
+      42
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      6,
+      26,
+      10
+    ]
+  },
+  {
+    "round": 278,
+    "ration_users": [
+      6,
+      5,
+      2,
+      0,
+      2,
+      1,
+      0,
+      1,
+      5,
+      4
+    ],
+    "idx_users": [
+      15,
+      82,
+      82,
+      8,
+      16,
+      99,
+      88,
+      37,
+      66,
+      78
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      15
+    ]
+  },
+  {
+    "round": 279,
+    "ration_users": [
+      2,
+      1,
+      1,
+      3,
+      3,
+      2,
+      4,
+      3,
+      5,
+      4
+    ],
+    "idx_users": [
+      43,
+      29,
+      3,
+      81,
+      84,
+      88,
+      51,
+      88,
+      89,
+      88
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 280,
+    "ration_users": [
+      3,
+      4,
+      1,
+      4,
+      6,
+      5,
+      1,
+      6,
+      1,
+      3
+    ],
+    "idx_users": [
+      72,
+      87,
+      73,
+      81,
+      46,
+      59,
+      37,
+      48,
+      53,
+      99
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      46,
+      48
+    ]
+  },
+  {
+    "round": 281,
+    "ration_users": [
+      0,
+      4,
+      5,
+      2,
+      1,
+      4,
+      4,
+      4,
+      3,
+      5
+    ],
+    "idx_users": [
+      67,
+      69,
+      91,
+      9,
+      25,
+      66,
+      54,
+      78,
+      42,
+      79
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 282,
+    "ration_users": [
+      1,
+      3,
+      5,
+      6,
+      2,
+      0,
+      4,
+      1,
+      2,
+      0
+    ],
+    "idx_users": [
+      30,
+      80,
+      54,
+      31,
+      91,
+      50,
+      64,
+      26,
+      79,
+      19
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      31
+    ]
+  },
+  {
+    "round": 283,
+    "ration_users": [
+      3,
+      3,
+      2,
+      6,
+      1,
+      0,
+      6,
+      3,
+      5,
+      6
+    ],
+    "idx_users": [
+      86,
+      59,
+      95,
+      92,
+      46,
+      0,
+      91,
+      85,
+      83,
+      39
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      92,
+      91,
+      39
+    ]
+  },
+  {
+    "round": 284,
+    "ration_users": [
+      3,
+      5,
+      4,
+      2,
+      4,
+      3,
+      3,
+      4,
+      1,
+      3
+    ],
+    "idx_users": [
+      68,
+      71,
+      50,
+      86,
+      49,
+      41,
+      63,
+      67,
+      70,
+      61
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 285,
+    "ration_users": [
+      1,
+      4,
+      1,
+      0,
+      1,
+      2,
+      6,
+      3,
+      5,
+      6
+    ],
+    "idx_users": [
+      65,
+      71,
+      40,
+      77,
+      14,
+      74,
+      82,
+      58,
+      91,
+      70
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      82,
+      70
+    ]
+  },
+  {
+    "round": 286,
+    "ration_users": [
+      0,
+      3,
+      4,
+      3,
+      5,
+      6,
+      3,
+      4,
+      5,
+      1
+    ],
+    "idx_users": [
+      84,
+      57,
+      67,
+      40,
+      93,
+      39,
+      88,
+      45,
+      80,
+      62
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      39
+    ]
+  },
+  {
+    "round": 287,
+    "ration_users": [
+      4,
+      5,
+      6,
+      2,
+      1,
+      1,
+      2,
+      0,
+      5,
+      6
+    ],
+    "idx_users": [
+      47,
+      72,
+      28,
+      77,
+      95,
+      82,
+      95,
+      33,
+      67,
+      47
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      28,
+      47
+    ]
+  },
+  {
+    "round": 288,
+    "ration_users": [
+      0,
+      2,
+      1,
+      4,
+      5,
+      0,
+      1,
+      3,
+      6,
+      4
+    ],
+    "idx_users": [
+      29,
+      6,
+      13,
+      78,
+      72,
+      65,
+      65,
+      50,
+      16,
+      58
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      16
+    ]
+  },
+  {
+    "round": 289,
+    "ration_users": [
+      4,
+      3,
+      4,
+      0,
+      6,
+      2,
+      4,
+      1,
+      6,
+      6
+    ],
+    "idx_users": [
+      99,
+      43,
+      96,
+      8,
+      27,
+      0,
+      83,
+      7,
+      54,
+      93
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      27,
+      54,
+      93
+    ]
+  },
+  {
+    "round": 290,
+    "ration_users": [
+      0,
+      0,
+      0,
+      3,
+      6,
+      1,
+      3,
+      3,
+      4,
+      1
+    ],
+    "idx_users": [
+      91,
+      2,
+      8,
+      43,
+      1,
+      4,
+      74,
+      61,
+      61,
+      2
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      1
+    ]
+  },
+  {
+    "round": 291,
+    "ration_users": [
+      3,
+      1,
+      3,
+      4,
+      1,
+      1,
+      6,
+      0,
+      1,
+      1
+    ],
+    "idx_users": [
+      79,
+      1,
+      75,
+      53,
+      60,
+      25,
+      34,
+      37,
+      74,
+      70
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      34
+    ]
+  },
+  {
+    "round": 292,
+    "ration_users": [
+      0,
+      3,
+      5,
+      2,
+      0,
+      2,
+      4,
+      2,
+      0,
+      6
+    ],
+    "idx_users": [
+      66,
+      56,
+      96,
+      29,
+      23,
+      26,
+      65,
+      7,
+      30,
+      71
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      71
+    ]
+  },
+  {
+    "round": 293,
+    "ration_users": [
+      2,
+      1,
+      5,
+      0,
+      3,
+      1,
+      3,
+      2,
+      2,
+      3
+    ],
+    "idx_users": [
+      89,
+      57,
+      42,
+      42,
+      60,
+      52,
+      47,
+      2,
+      72,
+      51
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 294,
+    "ration_users": [
+      5,
+      2,
+      2,
+      3,
+      3,
+      0,
+      4,
+      1,
+      4,
+      5
+    ],
+    "idx_users": [
+      72,
+      81,
+      11,
+      88,
+      51,
+      27,
+      54,
+      22,
+      59,
+      97
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 295,
+    "ration_users": [
+      5,
+      1,
+      3,
+      1,
+      1,
+      4,
+      1,
+      5,
+      1,
+      0
+    ],
+    "idx_users": [
+      91,
+      12,
+      43,
+      40,
+      92,
+      49,
+      8,
+      93,
+      56,
+      19
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 296,
+    "ration_users": [
+      3,
+      6,
+      0,
+      3,
+      4,
+      0,
+      2,
+      0,
+      6,
+      5
+    ],
+    "idx_users": [
+      54,
+      5,
+      95,
+      58,
+      62,
+      7,
+      75,
+      11,
+      56,
+      52
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      5,
+      56
+    ]
+  },
+  {
+    "round": 297,
+    "ration_users": [
+      4,
+      6,
+      0,
+      3,
+      6,
+      4,
+      2,
+      3,
+      1,
+      3
+    ],
+    "idx_users": [
+      90,
+      29,
+      85,
+      51,
+      15,
+      43,
+      25,
+      43,
+      95,
+      86
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      29,
+      15
+    ]
+  },
+  {
+    "round": 298,
+    "ration_users": [
+      6,
+      5,
+      5,
+      3,
+      5,
+      4,
+      2,
+      2,
+      1,
+      0
+    ],
+    "idx_users": [
+      14,
+      45,
+      90,
+      91,
+      87,
+      54,
+      36,
+      91,
+      32,
+      67
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      14
+    ]
+  },
+  {
+    "round": 299,
+    "ration_users": [
+      5,
+      5,
+      2,
+      0,
+      0,
+      2,
+      3,
+      2,
+      1,
+      6
+    ],
+    "idx_users": [
+      67,
+      95,
+      31,
+      92,
+      4,
+      92,
+      56,
+      97,
+      24,
+      41
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      41
+    ]
+  },
+  {
+    "round": 300,
+    "ration_users": [
+      5,
+      3,
+      0,
+      6,
+      1,
+      5,
+      6,
+      4,
+      0,
+      3
+    ],
+    "idx_users": [
+      62,
+      62,
+      58,
+      97,
+      84,
+      95,
+      78,
+      64,
+      86,
+      64
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      97,
+      78
+    ]
+  },
+  {
+    "round": 301,
+    "ration_users": [
+      0,
+      5,
+      4,
+      4,
+      4,
+      2,
+      4,
+      3,
+      0,
+      0
+    ],
+    "idx_users": [
+      11,
+      67,
+      99,
+      55,
+      93,
+      62,
+      96,
+      61,
+      22,
+      77
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 302,
+    "ration_users": [
+      5,
+      1,
+      2,
+      6,
+      4,
+      0,
+      4,
+      4,
+      0,
+      2
+    ],
+    "idx_users": [
+      81,
+      14,
+      30,
+      9,
+      89,
+      55,
+      96,
+      57,
+      68,
+      38
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      9
+    ]
+  },
+  {
+    "round": 303,
+    "ration_users": [
+      0,
+      5,
+      4,
+      1,
+      6,
+      5,
+      5,
+      0,
+      1,
+      2
+    ],
+    "idx_users": [
+      42,
+      88,
+      93,
+      47,
+      52,
+      69,
+      63,
+      45,
+      40,
+      50
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      52
+    ]
+  },
+  {
+    "round": 304,
+    "ration_users": [
+      4,
+      3,
+      0,
+      1,
+      1,
+      2,
+      6,
+      6,
+      6,
+      6
+    ],
+    "idx_users": [
+      70,
+      72,
+      2,
+      47,
+      16,
+      38,
+      21,
+      38,
+      72,
+      16
+    ],
+    "full_occurrence_count": 4,
+    "full_selected_client_ids": [
+      21,
+      38,
+      72,
+      16
+    ]
+  },
+  {
+    "round": 305,
+    "ration_users": [
+      3,
+      4,
+      5,
+      0,
+      6,
+      1,
+      6,
+      6,
+      4,
+      1
+    ],
+    "idx_users": [
+      95,
+      75,
+      85,
+      93,
+      19,
+      21,
+      58,
+      82,
+      80,
+      19
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      19,
+      58,
+      82
+    ]
+  },
+  {
+    "round": 306,
+    "ration_users": [
+      5,
+      1,
+      1,
+      4,
+      5,
+      5,
+      0,
+      2,
+      1,
+      2
+    ],
+    "idx_users": [
+      48,
+      20,
+      10,
+      92,
+      79,
+      56,
+      30,
+      45,
+      82,
+      40
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 307,
+    "ration_users": [
+      5,
+      2,
+      5,
+      5,
+      1,
+      1,
+      0,
+      2,
+      6,
+      5
+    ],
+    "idx_users": [
+      50,
+      35,
+      94,
+      70,
+      39,
+      9,
+      54,
+      19,
+      70,
+      62
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      70
+    ]
+  },
+  {
+    "round": 308,
+    "ration_users": [
+      2,
+      0,
+      3,
+      6,
+      2,
+      4,
+      0,
+      6,
+      5,
+      3
+    ],
+    "idx_users": [
+      57,
+      13,
+      94,
+      19,
+      87,
+      60,
+      8,
+      87,
+      51,
+      70
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      19,
+      87
+    ]
+  },
+  {
+    "round": 309,
+    "ration_users": [
+      1,
+      4,
+      0,
+      0,
+      4,
+      6,
+      1,
+      2,
+      4,
+      0
+    ],
+    "idx_users": [
+      68,
+      42,
+      5,
+      92,
+      52,
+      83,
+      45,
+      94,
+      63,
+      64
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      83
+    ]
+  },
+  {
+    "round": 310,
+    "ration_users": [
+      4,
+      3,
+      5,
+      6,
+      3,
+      1,
+      1,
+      3,
+      4,
+      1
+    ],
+    "idx_users": [
+      99,
+      95,
+      62,
+      64,
+      94,
+      64,
+      80,
+      91,
+      82,
+      47
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      64
+    ]
+  },
+  {
+    "round": 311,
+    "ration_users": [
+      1,
+      5,
+      3,
+      3,
+      0,
+      4,
+      0,
+      2,
+      4,
+      0
+    ],
+    "idx_users": [
+      43,
+      81,
+      47,
+      51,
+      48,
+      42,
+      34,
+      78,
+      85,
+      26
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 312,
+    "ration_users": [
+      1,
+      6,
+      4,
+      1,
+      0,
+      5,
+      6,
+      5,
+      5,
+      6
+    ],
+    "idx_users": [
+      7,
+      31,
+      93,
+      38,
+      41,
+      76,
+      51,
+      55,
+      63,
+      98
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      31,
+      51,
+      98
+    ]
+  },
+  {
+    "round": 313,
+    "ration_users": [
+      3,
+      1,
+      1,
+      3,
+      0,
+      5,
+      0,
+      6,
+      5,
+      4
+    ],
+    "idx_users": [
+      43,
+      29,
+      37,
+      84,
+      72,
+      40,
+      25,
+      12,
+      48,
+      54
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      12
+    ]
+  },
+  {
+    "round": 314,
+    "ration_users": [
+      1,
+      0,
+      4,
+      3,
+      6,
+      4,
+      4,
+      1,
+      0,
+      5
+    ],
+    "idx_users": [
+      47,
+      64,
+      96,
+      57,
+      18,
+      50,
+      54,
+      9,
+      39,
+      76
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      18
+    ]
+  },
+  {
+    "round": 315,
+    "ration_users": [
+      1,
+      4,
+      2,
+      3,
+      2,
+      5,
+      1,
+      0,
+      6,
+      6
+    ],
+    "idx_users": [
+      65,
+      72,
+      69,
+      78,
+      69,
+      90,
+      55,
+      56,
+      74,
+      65
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      74,
+      65
+    ]
+  },
+  {
+    "round": 316,
+    "ration_users": [
+      2,
+      3,
+      3,
+      1,
+      3,
+      5,
+      0,
+      2,
+      3,
+      0
+    ],
+    "idx_users": [
+      60,
+      51,
+      72,
+      45,
+      52,
+      67,
+      9,
+      35,
+      53,
+      29
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 317,
+    "ration_users": [
+      2,
+      5,
+      5,
+      3,
+      6,
+      5,
+      1,
+      5,
+      2,
+      6
+    ],
+    "idx_users": [
+      97,
+      49,
+      48,
+      89,
+      26,
+      41,
+      20,
+      71,
+      46,
+      23
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      26,
+      23
+    ]
+  },
+  {
+    "round": 318,
+    "ration_users": [
+      5,
+      1,
+      1,
+      3,
+      4,
+      4,
+      4,
+      2,
+      3,
+      2
+    ],
+    "idx_users": [
+      43,
+      46,
+      10,
+      79,
+      55,
+      83,
+      84,
+      27,
+      45,
+      56
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 319,
+    "ration_users": [
+      5,
+      4,
+      3,
+      0,
+      6,
+      2,
+      5,
+      5,
+      1,
+      1
+    ],
+    "idx_users": [
+      81,
+      81,
+      52,
+      77,
+      43,
+      21,
+      76,
+      84,
+      85,
+      90
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      43
+    ]
+  },
+  {
+    "round": 320,
+    "ration_users": [
+      3,
+      1,
+      1,
+      1,
+      1,
+      5,
+      0,
+      5,
+      5,
+      0
+    ],
+    "idx_users": [
+      99,
+      2,
+      27,
+      40,
+      61,
+      75,
+      4,
+      97,
+      43,
+      46
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 321,
+    "ration_users": [
+      0,
+      6,
+      5,
+      5,
+      5,
+      0,
+      1,
+      2,
+      6,
+      4
+    ],
+    "idx_users": [
+      63,
+      71,
+      62,
+      48,
+      71,
+      8,
+      65,
+      40,
+      85,
+      87
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      71,
+      85
+    ]
+  },
+  {
+    "round": 322,
+    "ration_users": [
+      0,
+      0,
+      4,
+      0,
+      3,
+      0,
+      6,
+      3,
+      2,
+      0
+    ],
+    "idx_users": [
+      72,
+      85,
+      59,
+      77,
+      60,
+      73,
+      11,
+      70,
+      43,
+      53
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      11
+    ]
+  },
+  {
+    "round": 323,
+    "ration_users": [
+      3,
+      3,
+      4,
+      1,
+      0,
+      2,
+      2,
+      2,
+      6,
+      3
+    ],
+    "idx_users": [
+      94,
+      44,
+      56,
+      8,
+      84,
+      82,
+      41,
+      2,
+      23,
+      98
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      23
+    ]
+  },
+  {
+    "round": 324,
+    "ration_users": [
+      4,
+      1,
+      0,
+      5,
+      1,
+      2,
+      5,
+      4,
+      0,
+      2
+    ],
+    "idx_users": [
+      60,
+      28,
+      40,
+      56,
+      32,
+      39,
+      71,
+      66,
+      1,
+      37
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 325,
+    "ration_users": [
+      2,
+      4,
+      4,
+      3,
+      5,
+      3,
+      6,
+      5,
+      3,
+      6
+    ],
+    "idx_users": [
+      20,
+      80,
+      58,
+      43,
+      47,
+      67,
+      55,
+      99,
+      79,
+      27
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      55,
+      27
+    ]
+  },
+  {
+    "round": 326,
+    "ration_users": [
+      0,
+      0,
+      3,
+      3,
+      3,
+      5,
+      1,
+      4,
+      0,
+      2
+    ],
+    "idx_users": [
+      35,
+      45,
+      89,
+      81,
+      86,
+      76,
+      63,
+      76,
+      36,
+      77
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 327,
+    "ration_users": [
+      4,
+      2,
+      1,
+      4,
+      4,
+      5,
+      3,
+      6,
+      0,
+      1
+    ],
+    "idx_users": [
+      56,
+      86,
+      22,
+      60,
+      49,
+      62,
+      46,
+      50,
+      45,
+      66
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      50
+    ]
+  },
+  {
+    "round": 328,
+    "ration_users": [
+      6,
+      3,
+      0,
+      2,
+      2,
+      3,
+      5,
+      2,
+      6,
+      3
+    ],
+    "idx_users": [
+      95,
+      76,
+      89,
+      24,
+      50,
+      68,
+      49,
+      61,
+      89,
+      55
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      95,
+      89
+    ]
+  },
+  {
+    "round": 329,
+    "ration_users": [
+      2,
+      1,
+      0,
+      2,
+      4,
+      2,
+      2,
+      6,
+      3,
+      4
+    ],
+    "idx_users": [
+      4,
+      93,
+      81,
+      31,
+      45,
+      94,
+      9,
+      4,
+      73,
+      72
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      4
+    ]
+  },
+  {
+    "round": 330,
+    "ration_users": [
+      4,
+      3,
+      2,
+      6,
+      1,
+      4,
+      4,
+      1,
+      1,
+      0
+    ],
+    "idx_users": [
+      70,
+      76,
+      61,
+      89,
+      41,
+      98,
+      73,
+      21,
+      72,
+      90
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      89
+    ]
+  },
+  {
+    "round": 331,
+    "ration_users": [
+      2,
+      2,
+      3,
+      5,
+      2,
+      5,
+      1,
+      6,
+      3,
+      3
+    ],
+    "idx_users": [
+      63,
+      50,
+      40,
+      64,
+      70,
+      86,
+      71,
+      94,
+      87,
+      68
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      94
+    ]
+  },
+  {
+    "round": 332,
+    "ration_users": [
+      5,
+      2,
+      5,
+      4,
+      6,
+      1,
+      6,
+      1,
+      1,
+      6
+    ],
+    "idx_users": [
+      50,
+      75,
+      77,
+      63,
+      6,
+      92,
+      47,
+      45,
+      56,
+      30
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      6,
+      47,
+      30
+    ]
+  },
+  {
+    "round": 333,
+    "ration_users": [
+      4,
+      3,
+      1,
+      2,
+      1,
+      2,
+      5,
+      5,
+      4,
+      3
+    ],
+    "idx_users": [
+      84,
+      81,
+      84,
+      69,
+      38,
+      11,
+      68,
+      88,
+      95,
+      62
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 334,
+    "ration_users": [
+      6,
+      1,
+      1,
+      2,
+      4,
+      3,
+      5,
+      0,
+      6,
+      5
+    ],
+    "idx_users": [
+      24,
+      20,
+      17,
+      56,
+      99,
+      93,
+      42,
+      46,
+      72,
+      61
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      24,
+      72
+    ]
+  },
+  {
+    "round": 335,
+    "ration_users": [
+      1,
+      0,
+      6,
+      0,
+      5,
+      3,
+      2,
+      5,
+      0,
+      1
+    ],
+    "idx_users": [
+      22,
+      72,
+      62,
+      61,
+      40,
+      76,
+      29,
+      96,
+      78,
+      7
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      62
+    ]
+  },
+  {
+    "round": 336,
+    "ration_users": [
+      2,
+      6,
+      3,
+      0,
+      6,
+      2,
+      5,
+      6,
+      5,
+      1
+    ],
+    "idx_users": [
+      56,
+      83,
+      50,
+      65,
+      26,
+      51,
+      69,
+      15,
+      60,
+      33
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      83,
+      26,
+      15
+    ]
+  },
+  {
+    "round": 337,
+    "ration_users": [
+      5,
+      2,
+      3,
+      6,
+      5,
+      2,
+      5,
+      1,
+      4,
+      4
+    ],
+    "idx_users": [
+      48,
+      21,
+      61,
+      16,
+      51,
+      94,
+      79,
+      67,
+      59,
+      54
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      16
+    ]
+  },
+  {
+    "round": 338,
+    "ration_users": [
+      3,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      5,
+      6,
+      6
+    ],
+    "idx_users": [
+      75,
+      90,
+      54,
+      59,
+      58,
+      65,
+      70,
+      59,
+      21,
+      66
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      21,
+      66
+    ]
+  },
+  {
+    "round": 339,
+    "ration_users": [
+      6,
+      2,
+      0,
+      1,
+      0,
+      5,
+      2,
+      0,
+      2,
+      5
+    ],
+    "idx_users": [
+      78,
+      64,
+      39,
+      75,
+      26,
+      58,
+      86,
+      19,
+      87,
+      40
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      78
+    ]
+  },
+  {
+    "round": 340,
+    "ration_users": [
+      2,
+      0,
+      5,
+      2,
+      6,
+      6,
+      0,
+      1,
+      5,
+      0
+    ],
+    "idx_users": [
+      43,
+      15,
+      67,
+      48,
+      91,
+      83,
+      65,
+      94,
+      51,
+      79
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      91,
+      83
+    ]
+  },
+  {
+    "round": 341,
+    "ration_users": [
+      2,
+      0,
+      5,
+      0,
+      0,
+      4,
+      0,
+      4,
+      5,
+      3
+    ],
+    "idx_users": [
+      56,
+      57,
+      92,
+      68,
+      56,
+      63,
+      26,
+      43,
+      45,
+      86
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 342,
+    "ration_users": [
+      3,
+      0,
+      6,
+      0,
+      3,
+      4,
+      1,
+      0,
+      3,
+      5
+    ],
+    "idx_users": [
+      46,
+      12,
+      68,
+      49,
+      48,
+      68,
+      50,
+      23,
+      70,
+      68
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      68
+    ]
+  },
+  {
+    "round": 343,
+    "ration_users": [
+      3,
+      3,
+      3,
+      6,
+      1,
+      5,
+      0,
+      4,
+      3,
+      4
+    ],
+    "idx_users": [
+      73,
+      94,
+      77,
+      4,
+      75,
+      52,
+      75,
+      68,
+      71,
+      64
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      4
+    ]
+  },
+  {
+    "round": 344,
+    "ration_users": [
+      0,
+      6,
+      0,
+      0,
+      2,
+      1,
+      3,
+      2,
+      0,
+      5
+    ],
+    "idx_users": [
+      37,
+      44,
+      44,
+      99,
+      96,
+      22,
+      93,
+      76,
+      34,
+      51
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      44
+    ]
+  },
+  {
+    "round": 345,
+    "ration_users": [
+      0,
+      3,
+      1,
+      3,
+      6,
+      2,
+      6,
+      1,
+      2,
+      0
+    ],
+    "idx_users": [
+      99,
+      41,
+      71,
+      43,
+      85,
+      85,
+      8,
+      70,
+      29,
+      57
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      85,
+      8
+    ]
+  },
+  {
+    "round": 346,
+    "ration_users": [
+      4,
+      6,
+      0,
+      3,
+      2,
+      4,
+      5,
+      5,
+      0,
+      1
+    ],
+    "idx_users": [
+      94,
+      40,
+      56,
+      61,
+      95,
+      46,
+      64,
+      43,
+      95,
+      59
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      40
+    ]
+  },
+  {
+    "round": 347,
+    "ration_users": [
+      6,
+      3,
+      0,
+      6,
+      4,
+      2,
+      3,
+      5,
+      2,
+      3
+    ],
+    "idx_users": [
+      35,
+      99,
+      52,
+      59,
+      61,
+      64,
+      46,
+      50,
+      51,
+      74
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      35,
+      59
+    ]
+  },
+  {
+    "round": 348,
+    "ration_users": [
+      6,
+      3,
+      4,
+      6,
+      6,
+      2,
+      0,
+      5,
+      3,
+      6
+    ],
+    "idx_users": [
+      54,
+      67,
+      96,
+      78,
+      78,
+      94,
+      61,
+      72,
+      49,
+      40
+    ],
+    "full_occurrence_count": 4,
+    "full_selected_client_ids": [
+      54,
+      78,
+      78,
+      40
+    ]
+  },
+  {
+    "round": 349,
+    "ration_users": [
+      2,
+      5,
+      5,
+      5,
+      1,
+      4,
+      0,
+      3,
+      3,
+      5
+    ],
+    "idx_users": [
+      18,
+      62,
+      48,
+      79,
+      24,
+      54,
+      27,
+      96,
+      69,
+      81
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 350,
+    "ration_users": [
+      3,
+      4,
+      3,
+      0,
+      3,
+      0,
+      1,
+      0,
+      6,
+      5
+    ],
+    "idx_users": [
+      96,
+      49,
+      46,
+      89,
+      46,
+      54,
+      6,
+      58,
+      19,
+      63
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      19
+    ]
+  },
+  {
+    "round": 351,
+    "ration_users": [
+      0,
+      1,
+      6,
+      4,
+      6,
+      5,
+      5,
+      6,
+      3,
+      5
+    ],
+    "idx_users": [
+      71,
+      41,
+      35,
+      65,
+      1,
+      64,
+      71,
+      91,
+      68,
+      59
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      35,
+      1,
+      91
+    ]
+  },
+  {
+    "round": 352,
+    "ration_users": [
+      4,
+      4,
+      4,
+      0,
+      6,
+      0,
+      6,
+      1,
+      5,
+      6
+    ],
+    "idx_users": [
+      87,
+      85,
+      59,
+      82,
+      74,
+      49,
+      40,
+      96,
+      58,
+      22
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      74,
+      40,
+      22
+    ]
+  },
+  {
+    "round": 353,
+    "ration_users": [
+      5,
+      3,
+      2,
+      3,
+      6,
+      0,
+      6,
+      0,
+      0,
+      4
+    ],
+    "idx_users": [
+      46,
+      71,
+      23,
+      68,
+      19,
+      58,
+      13,
+      68,
+      15,
+      74
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      19,
+      13
+    ]
+  },
+  {
+    "round": 354,
+    "ration_users": [
+      6,
+      6,
+      3,
+      3,
+      2,
+      3,
+      4,
+      1,
+      6,
+      0
+    ],
+    "idx_users": [
+      40,
+      40,
+      92,
+      71,
+      86,
+      75,
+      99,
+      81,
+      43,
+      92
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      40,
+      40,
+      43
+    ]
+  },
+  {
+    "round": 355,
+    "ration_users": [
+      3,
+      3,
+      1,
+      5,
+      2,
+      2,
+      3,
+      5,
+      0,
+      1
+    ],
+    "idx_users": [
+      77,
+      60,
+      71,
+      77,
+      59,
+      41,
+      71,
+      84,
+      50,
+      68
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 356,
+    "ration_users": [
+      5,
+      5,
+      4,
+      1,
+      4,
+      2,
+      0,
+      6,
+      2,
+      5
+    ],
+    "idx_users": [
+      98,
+      53,
+      50,
+      30,
+      74,
+      25,
+      76,
+      31,
+      31,
+      43
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      31
+    ]
+  },
+  {
+    "round": 357,
+    "ration_users": [
+      3,
+      3,
+      3,
+      2,
+      6,
+      5,
+      1,
+      2,
+      2,
+      6
+    ],
+    "idx_users": [
+      89,
+      60,
+      97,
+      79,
+      97,
+      43,
+      42,
+      53,
+      3,
+      44
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      97,
+      44
+    ]
+  },
+  {
+    "round": 358,
+    "ration_users": [
+      5,
+      5,
+      5,
+      5,
+      4,
+      6,
+      6,
+      3,
+      1,
+      6
+    ],
+    "idx_users": [
+      63,
+      63,
+      78,
+      78,
+      96,
+      84,
+      52,
+      66,
+      26,
+      36
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      84,
+      52,
+      36
+    ]
+  },
+  {
+    "round": 359,
+    "ration_users": [
+      3,
+      5,
+      0,
+      1,
+      5,
+      3,
+      1,
+      0,
+      0,
+      5
+    ],
+    "idx_users": [
+      97,
+      94,
+      36,
+      28,
+      60,
+      65,
+      89,
+      49,
+      85,
+      89
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 360,
+    "ration_users": [
+      4,
+      6,
+      3,
+      2,
+      3,
+      0,
+      0,
+      4,
+      1,
+      1
+    ],
+    "idx_users": [
+      51,
+      1,
+      64,
+      83,
+      97,
+      44,
+      77,
+      90,
+      99,
+      78
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      1
+    ]
+  },
+  {
+    "round": 361,
+    "ration_users": [
+      0,
+      1,
+      2,
+      4,
+      6,
+      6,
+      1,
+      5,
+      2,
+      5
+    ],
+    "idx_users": [
+      28,
+      29,
+      8,
+      92,
+      78,
+      40,
+      49,
+      53,
+      90,
+      95
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      78,
+      40
+    ]
+  },
+  {
+    "round": 362,
+    "ration_users": [
+      3,
+      4,
+      1,
+      6,
+      1,
+      1,
+      1,
+      3,
+      5,
+      5
+    ],
+    "idx_users": [
+      58,
+      46,
+      55,
+      0,
+      44,
+      11,
+      52,
+      49,
+      47,
+      74
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      0
+    ]
+  },
+  {
+    "round": 363,
+    "ration_users": [
+      1,
+      5,
+      0,
+      5,
+      2,
+      6,
+      4,
+      4,
+      0,
+      2
+    ],
+    "idx_users": [
+      93,
+      92,
+      22,
+      88,
+      43,
+      18,
+      64,
+      67,
+      41,
+      69
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      18
+    ]
+  },
+  {
+    "round": 364,
+    "ration_users": [
+      1,
+      6,
+      6,
+      2,
+      6,
+      5,
+      0,
+      2,
+      0,
+      5
+    ],
+    "idx_users": [
+      81,
+      89,
+      66,
+      35,
+      26,
+      52,
+      20,
+      21,
+      68,
+      50
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      89,
+      66,
+      26
+    ]
+  },
+  {
+    "round": 365,
+    "ration_users": [
+      1,
+      0,
+      3,
+      6,
+      1,
+      2,
+      0,
+      3,
+      3,
+      4
+    ],
+    "idx_users": [
+      18,
+      15,
+      68,
+      74,
+      66,
+      16,
+      55,
+      48,
+      94,
+      61
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      74
+    ]
+  },
+  {
+    "round": 366,
+    "ration_users": [
+      0,
+      4,
+      1,
+      1,
+      3,
+      5,
+      2,
+      6,
+      0,
+      0
+    ],
+    "idx_users": [
+      77,
+      90,
+      93,
+      89,
+      83,
+      60,
+      76,
+      17,
+      2,
+      45
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      17
+    ]
+  },
+  {
+    "round": 367,
+    "ration_users": [
+      1,
+      6,
+      1,
+      0,
+      6,
+      2,
+      2,
+      2,
+      0,
+      3
+    ],
+    "idx_users": [
+      99,
+      22,
+      28,
+      30,
+      88,
+      63,
+      75,
+      62,
+      4,
+      99
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      22,
+      88
+    ]
+  },
+  {
+    "round": 368,
+    "ration_users": [
+      2,
+      2,
+      3,
+      2,
+      2,
+      1,
+      3,
+      4,
+      4,
+      6
+    ],
+    "idx_users": [
+      83,
+      11,
+      48,
+      68,
+      60,
+      72,
+      49,
+      53,
+      63,
+      90
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      90
+    ]
+  },
+  {
+    "round": 369,
+    "ration_users": [
+      6,
+      2,
+      4,
+      2,
+      4,
+      0,
+      2,
+      4,
+      0,
+      5
+    ],
+    "idx_users": [
+      17,
+      35,
+      97,
+      94,
+      62,
+      8,
+      49,
+      70,
+      3,
+      73
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      17
+    ]
+  },
+  {
+    "round": 370,
+    "ration_users": [
+      2,
+      3,
+      3,
+      3,
+      5,
+      5,
+      2,
+      6,
+      1,
+      4
+    ],
+    "idx_users": [
+      59,
+      96,
+      52,
+      86,
+      55,
+      53,
+      88,
+      0,
+      0,
+      86
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      0
+    ]
+  },
+  {
+    "round": 371,
+    "ration_users": [
+      0,
+      5,
+      3,
+      2,
+      5,
+      5,
+      4,
+      6,
+      3,
+      2
+    ],
+    "idx_users": [
+      89,
+      59,
+      42,
+      34,
+      92,
+      73,
+      52,
+      9,
+      91,
+      13
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      9
+    ]
+  },
+  {
+    "round": 372,
+    "ration_users": [
+      5,
+      3,
+      3,
+      4,
+      3,
+      3,
+      3,
+      4,
+      1,
+      5
+    ],
+    "idx_users": [
+      92,
+      91,
+      89,
+      94,
+      47,
+      95,
+      65,
+      61,
+      13,
+      68
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 373,
+    "ration_users": [
+      4,
+      3,
+      0,
+      1,
+      4,
+      1,
+      2,
+      0,
+      5,
+      0
+    ],
+    "idx_users": [
+      85,
+      99,
+      73,
+      66,
+      85,
+      83,
+      61,
+      85,
+      57,
+      18
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 374,
+    "ration_users": [
+      3,
+      3,
+      3,
+      4,
+      6,
+      2,
+      5,
+      2,
+      4,
+      4
+    ],
+    "idx_users": [
+      67,
+      63,
+      81,
+      62,
+      96,
+      96,
+      64,
+      52,
+      67,
+      63
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      96
+    ]
+  },
+  {
+    "round": 375,
+    "ration_users": [
+      3,
+      0,
+      2,
+      2,
+      2,
+      2,
+      6,
+      2,
+      2,
+      5
+    ],
+    "idx_users": [
+      75,
+      26,
+      25,
+      8,
+      18,
+      30,
+      30,
+      2,
+      30,
+      82
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      30
+    ]
+  },
+  {
+    "round": 376,
+    "ration_users": [
+      0,
+      1,
+      3,
+      1,
+      0,
+      1,
+      4,
+      4,
+      4,
+      6
+    ],
+    "idx_users": [
+      50,
+      58,
+      90,
+      78,
+      56,
+      72,
+      46,
+      43,
+      51,
+      67
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      67
+    ]
+  },
+  {
+    "round": 377,
+    "ration_users": [
+      2,
+      1,
+      6,
+      1,
+      6,
+      6,
+      3,
+      5,
+      5,
+      0
+    ],
+    "idx_users": [
+      67,
+      0,
+      5,
+      55,
+      35,
+      35,
+      57,
+      66,
+      48,
+      30
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      5,
+      35,
+      35
+    ]
+  },
+  {
+    "round": 378,
+    "ration_users": [
+      2,
+      2,
+      4,
+      0,
+      2,
+      2,
+      5,
+      5,
+      4,
+      4
+    ],
+    "idx_users": [
+      88,
+      98,
+      82,
+      47,
+      53,
+      99,
+      61,
+      77,
+      87,
+      43
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 379,
+    "ration_users": [
+      0,
+      1,
+      0,
+      2,
+      2,
+      0,
+      1,
+      5,
+      1,
+      1
+    ],
+    "idx_users": [
+      64,
+      58,
+      16,
+      88,
+      66,
+      46,
+      74,
+      43,
+      44,
+      15
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 380,
+    "ration_users": [
+      6,
+      2,
+      3,
+      3,
+      2,
+      0,
+      0,
+      1,
+      2,
+      5
+    ],
+    "idx_users": [
+      31,
+      31,
+      80,
+      80,
+      15,
+      55,
+      19,
+      2,
+      46,
+      48
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      31
+    ]
+  },
+  {
+    "round": 381,
+    "ration_users": [
+      0,
+      5,
+      5,
+      3,
+      4,
+      4,
+      3,
+      3,
+      5,
+      3
+    ],
+    "idx_users": [
+      19,
+      58,
+      41,
+      70,
+      80,
+      41,
+      70,
+      44,
+      88,
+      90
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 382,
+    "ration_users": [
+      6,
+      6,
+      0,
+      0,
+      2,
+      1,
+      5,
+      0,
+      3,
+      6
+    ],
+    "idx_users": [
+      75,
+      55,
+      11,
+      60,
+      69,
+      77,
+      72,
+      12,
+      48,
+      68
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      75,
+      55,
+      68
+    ]
+  },
+  {
+    "round": 383,
+    "ration_users": [
+      2,
+      2,
+      6,
+      5,
+      6,
+      6,
+      5,
+      1,
+      6,
+      4
+    ],
+    "idx_users": [
+      86,
+      90,
+      50,
+      81,
+      77,
+      69,
+      66,
+      30,
+      66,
+      73
+    ],
+    "full_occurrence_count": 4,
+    "full_selected_client_ids": [
+      50,
+      77,
+      69,
+      66
+    ]
+  },
+  {
+    "round": 384,
+    "ration_users": [
+      0,
+      5,
+      4,
+      1,
+      4,
+      4,
+      2,
+      3,
+      0,
+      2
+    ],
+    "idx_users": [
+      48,
+      70,
+      93,
+      93,
+      60,
+      68,
+      14,
+      44,
+      26,
+      75
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 385,
+    "ration_users": [
+      0,
+      3,
+      2,
+      5,
+      5,
+      1,
+      2,
+      4,
+      0,
+      3
+    ],
+    "idx_users": [
+      78,
+      95,
+      89,
+      63,
+      46,
+      12,
+      45,
+      46,
+      25,
+      47
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 386,
+    "ration_users": [
+      6,
+      0,
+      5,
+      1,
+      1,
+      6,
+      2,
+      1,
+      5,
+      1
+    ],
+    "idx_users": [
+      88,
+      83,
+      77,
+      11,
+      0,
+      65,
+      55,
+      30,
+      45,
+      39
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      88,
+      65
+    ]
+  },
+  {
+    "round": 387,
+    "ration_users": [
+      2,
+      0,
+      3,
+      5,
+      5,
+      4,
+      5,
+      0,
+      1,
+      5
+    ],
+    "idx_users": [
+      62,
+      78,
+      43,
+      76,
+      67,
+      75,
+      59,
+      50,
+      80,
+      42
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 388,
+    "ration_users": [
+      4,
+      2,
+      1,
+      0,
+      0,
+      1,
+      5,
+      0,
+      5,
+      2
+    ],
+    "idx_users": [
+      82,
+      76,
+      3,
+      35,
+      79,
+      61,
+      68,
+      28,
+      57,
+      41
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 389,
+    "ration_users": [
+      3,
+      0,
+      2,
+      3,
+      5,
+      4,
+      3,
+      2,
+      3,
+      2
+    ],
+    "idx_users": [
+      89,
+      61,
+      56,
+      74,
+      43,
+      57,
+      72,
+      22,
+      87,
+      90
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 390,
+    "ration_users": [
+      5,
+      1,
+      1,
+      4,
+      1,
+      2,
+      0,
+      6,
+      4,
+      2
+    ],
+    "idx_users": [
+      68,
+      58,
+      37,
+      77,
+      75,
+      23,
+      41,
+      65,
+      82,
+      50
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      65
+    ]
+  },
+  {
+    "round": 391,
+    "ration_users": [
+      0,
+      6,
+      6,
+      2,
+      6,
+      5,
+      0,
+      2,
+      0,
+      6
+    ],
+    "idx_users": [
+      97,
+      85,
+      88,
+      52,
+      87,
+      75,
+      76,
+      50,
+      61,
+      96
+    ],
+    "full_occurrence_count": 4,
+    "full_selected_client_ids": [
+      85,
+      88,
+      87,
+      96
+    ]
+  },
+  {
+    "round": 392,
+    "ration_users": [
+      5,
+      5,
+      6,
+      1,
+      0,
+      1,
+      6,
+      0,
+      5,
+      1
+    ],
+    "idx_users": [
+      80,
+      54,
+      39,
+      2,
+      8,
+      18,
+      63,
+      14,
+      92,
+      46
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      39,
+      63
+    ]
+  },
+  {
+    "round": 393,
+    "ration_users": [
+      5,
+      6,
+      3,
+      4,
+      6,
+      1,
+      4,
+      0,
+      6,
+      1
+    ],
+    "idx_users": [
+      56,
+      39,
+      93,
+      59,
+      69,
+      69,
+      96,
+      38,
+      17,
+      13
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      39,
+      69,
+      17
+    ]
+  },
+  {
+    "round": 394,
+    "ration_users": [
+      2,
+      5,
+      3,
+      6,
+      5,
+      4,
+      3,
+      3,
+      2,
+      6
+    ],
+    "idx_users": [
+      64,
+      48,
+      69,
+      4,
+      42,
+      68,
+      70,
+      86,
+      72,
+      41
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      4,
+      41
+    ]
+  },
+  {
+    "round": 395,
+    "ration_users": [
+      4,
+      2,
+      6,
+      3,
+      4,
+      6,
+      2,
+      5,
+      1,
+      5
+    ],
+    "idx_users": [
+      60,
+      69,
+      47,
+      48,
+      85,
+      1,
+      68,
+      52,
+      98,
+      57
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      47,
+      1
+    ]
+  },
+  {
+    "round": 396,
+    "ration_users": [
+      4,
+      6,
+      3,
+      2,
+      0,
+      5,
+      0,
+      6,
+      2,
+      2
+    ],
+    "idx_users": [
+      79,
+      8,
+      44,
+      59,
+      36,
+      40,
+      82,
+      34,
+      92,
+      64
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      8,
+      34
+    ]
+  },
+  {
+    "round": 397,
+    "ration_users": [
+      4,
+      0,
+      1,
+      5,
+      2,
+      5,
+      5,
+      3,
+      5,
+      6
+    ],
+    "idx_users": [
+      84,
+      2,
+      72,
+      65,
+      14,
+      46,
+      83,
+      60,
+      78,
+      79
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      79
+    ]
+  },
+  {
+    "round": 398,
+    "ration_users": [
+      4,
+      1,
+      6,
+      1,
+      4,
+      4,
+      6,
+      4,
+      4,
+      3
+    ],
+    "idx_users": [
+      80,
+      89,
+      88,
+      73,
+      99,
+      96,
+      57,
+      45,
+      79,
+      71
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      88,
+      57
+    ]
+  },
+  {
+    "round": 399,
+    "ration_users": [
+      0,
+      5,
+      5,
+      4,
+      2,
+      2,
+      4,
+      0,
+      3,
+      4
+    ],
+    "idx_users": [
+      67,
+      61,
+      77,
+      95,
+      86,
+      5,
+      52,
+      21,
+      43,
+      79
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 400,
+    "ration_users": [
+      1,
+      4,
+      6,
+      0,
+      0,
+      5,
+      1,
+      4,
+      1,
+      1
+    ],
+    "idx_users": [
+      14,
+      91,
+      5,
+      15,
+      71,
+      73,
+      39,
+      88,
+      25,
+      20
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      5
+    ]
+  },
+  {
+    "round": 401,
+    "ration_users": [
+      6,
+      0,
+      3,
+      0,
+      1,
+      2,
+      4,
+      0,
+      1,
+      4
+    ],
+    "idx_users": [
+      68,
+      19,
+      54,
+      27,
+      11,
+      64,
+      62,
+      88,
+      72,
+      67
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      68
+    ]
+  },
+  {
+    "round": 402,
+    "ration_users": [
+      3,
+      3,
+      0,
+      0,
+      0,
+      6,
+      5,
+      2,
+      5,
+      2
+    ],
+    "idx_users": [
+      57,
+      79,
+      17,
+      36,
+      73,
+      31,
+      55,
+      8,
+      94,
+      76
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      31
+    ]
+  },
+  {
+    "round": 403,
+    "ration_users": [
+      1,
+      3,
+      2,
+      3,
+      3,
+      2,
+      4,
+      5,
+      2,
+      2
+    ],
+    "idx_users": [
+      33,
+      43,
+      2,
+      67,
+      79,
+      36,
+      93,
+      70,
+      54,
+      55
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 404,
+    "ration_users": [
+      5,
+      4,
+      4,
+      1,
+      4,
+      4,
+      5,
+      2,
+      5,
+      4
+    ],
+    "idx_users": [
+      93,
+      91,
+      44,
+      23,
+      53,
+      89,
+      83,
+      4,
+      99,
+      80
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 405,
+    "ration_users": [
+      0,
+      2,
+      3,
+      3,
+      1,
+      0,
+      1,
+      4,
+      1,
+      5
+    ],
+    "idx_users": [
+      96,
+      54,
+      94,
+      66,
+      45,
+      45,
+      65,
+      98,
+      18,
+      51
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 406,
+    "ration_users": [
+      1,
+      6,
+      6,
+      2,
+      2,
+      6,
+      0,
+      2,
+      6,
+      5
+    ],
+    "idx_users": [
+      28,
+      29,
+      7,
+      7,
+      46,
+      8,
+      57,
+      41,
+      27,
+      53
+    ],
+    "full_occurrence_count": 4,
+    "full_selected_client_ids": [
+      29,
+      7,
+      8,
+      27
+    ]
+  },
+  {
+    "round": 407,
+    "ration_users": [
+      6,
+      4,
+      2,
+      2,
+      2,
+      2,
+      5,
+      5,
+      2,
+      4
+    ],
+    "idx_users": [
+      28,
+      56,
+      19,
+      88,
+      90,
+      66,
+      64,
+      46,
+      61,
+      83
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      28
+    ]
+  },
+  {
+    "round": 408,
+    "ration_users": [
+      4,
+      2,
+      3,
+      5,
+      1,
+      2,
+      1,
+      1,
+      0,
+      0
+    ],
+    "idx_users": [
+      86,
+      78,
+      40,
+      70,
+      39,
+      33,
+      99,
+      89,
+      37,
+      26
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 409,
+    "ration_users": [
+      5,
+      5,
+      5,
+      4,
+      0,
+      5,
+      3,
+      4,
+      3,
+      6
+    ],
+    "idx_users": [
+      91,
+      48,
+      84,
+      80,
+      48,
+      82,
+      42,
+      90,
+      89,
+      48
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      48
+    ]
+  },
+  {
+    "round": 410,
+    "ration_users": [
+      3,
+      6,
+      2,
+      0,
+      5,
+      2,
+      1,
+      4,
+      4,
+      0
+    ],
+    "idx_users": [
+      69,
+      68,
+      3,
+      16,
+      54,
+      63,
+      82,
+      46,
+      96,
+      37
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      68
+    ]
+  },
+  {
+    "round": 411,
+    "ration_users": [
+      2,
+      2,
+      1,
+      3,
+      0,
+      2,
+      1,
+      1,
+      0,
+      1
+    ],
+    "idx_users": [
+      89,
+      79,
+      55,
+      52,
+      66,
+      42,
+      12,
+      31,
+      31,
+      62
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 412,
+    "ration_users": [
+      4,
+      1,
+      0,
+      6,
+      6,
+      2,
+      1,
+      5,
+      2,
+      0
+    ],
+    "idx_users": [
+      76,
+      14,
+      22,
+      63,
+      45,
+      90,
+      82,
+      78,
+      81,
+      79
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      63,
+      45
+    ]
+  },
+  {
+    "round": 413,
+    "ration_users": [
+      3,
+      6,
+      1,
+      1,
+      0,
+      3,
+      6,
+      6,
+      2,
+      1
+    ],
+    "idx_users": [
+      67,
+      51,
+      70,
+      53,
+      96,
+      41,
+      80,
+      51,
+      18,
+      54
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      51,
+      80,
+      51
+    ]
+  },
+  {
+    "round": 414,
+    "ration_users": [
+      6,
+      5,
+      4,
+      4,
+      2,
+      1,
+      0,
+      0,
+      3,
+      1
+    ],
+    "idx_users": [
+      16,
+      43,
+      58,
+      64,
+      78,
+      55,
+      81,
+      12,
+      52,
+      76
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      16
+    ]
+  },
+  {
+    "round": 415,
+    "ration_users": [
+      2,
+      4,
+      4,
+      5,
+      5,
+      5,
+      6,
+      5,
+      0,
+      3
+    ],
+    "idx_users": [
+      34,
+      70,
+      78,
+      67,
+      56,
+      72,
+      98,
+      89,
+      13,
+      60
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      98
+    ]
+  },
+  {
+    "round": 416,
+    "ration_users": [
+      2,
+      1,
+      1,
+      0,
+      2,
+      0,
+      3,
+      0,
+      5,
+      6
+    ],
+    "idx_users": [
+      19,
+      71,
+      91,
+      68,
+      33,
+      86,
+      97,
+      86,
+      41,
+      71
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      71
+    ]
+  },
+  {
+    "round": 417,
+    "ration_users": [
+      5,
+      0,
+      2,
+      4,
+      6,
+      6,
+      1,
+      0,
+      5,
+      2
+    ],
+    "idx_users": [
+      82,
+      93,
+      12,
+      89,
+      47,
+      58,
+      33,
+      96,
+      46,
+      36
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      47,
+      58
+    ]
+  },
+  {
+    "round": 418,
+    "ration_users": [
+      6,
+      6,
+      3,
+      5,
+      1,
+      2,
+      6,
+      2,
+      2,
+      3
+    ],
+    "idx_users": [
+      17,
+      10,
+      45,
+      66,
+      90,
+      48,
+      3,
+      61,
+      74,
+      86
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      17,
+      10,
+      3
+    ]
+  },
+  {
+    "round": 419,
+    "ration_users": [
+      2,
+      2,
+      3,
+      3,
+      4,
+      4,
+      5,
+      5,
+      1,
+      0
+    ],
+    "idx_users": [
+      16,
+      99,
+      89,
+      75,
+      65,
+      71,
+      91,
+      93,
+      98,
+      29
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 420,
+    "ration_users": [
+      6,
+      6,
+      4,
+      0,
+      1,
+      6,
+      6,
+      3,
+      3,
+      4
+    ],
+    "idx_users": [
+      65,
+      3,
+      64,
+      7,
+      52,
+      76,
+      10,
+      55,
+      83,
+      42
+    ],
+    "full_occurrence_count": 4,
+    "full_selected_client_ids": [
+      65,
+      3,
+      76,
+      10
+    ]
+  },
+  {
+    "round": 421,
+    "ration_users": [
+      6,
+      6,
+      0,
+      2,
+      2,
+      3,
+      2,
+      2,
+      0,
+      3
+    ],
+    "idx_users": [
+      58,
+      58,
+      10,
+      37,
+      78,
+      42,
+      44,
+      98,
+      5,
+      44
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      58,
+      58
+    ]
+  },
+  {
+    "round": 422,
+    "ration_users": [
+      3,
+      6,
+      6,
+      2,
+      0,
+      3,
+      4,
+      5,
+      2,
+      0
+    ],
+    "idx_users": [
+      44,
+      5,
+      5,
+      74,
+      39,
+      62,
+      59,
+      45,
+      68,
+      60
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      5,
+      5
+    ]
+  },
+  {
+    "round": 423,
+    "ration_users": [
+      5,
+      3,
+      5,
+      3,
+      5,
+      0,
+      4,
+      2,
+      3,
+      6
+    ],
+    "idx_users": [
+      79,
+      62,
+      94,
+      60,
+      94,
+      98,
+      50,
+      80,
+      62,
+      67
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      67
+    ]
+  },
+  {
+    "round": 424,
+    "ration_users": [
+      6,
+      2,
+      5,
+      4,
+      4,
+      6,
+      1,
+      2,
+      2,
+      5
+    ],
+    "idx_users": [
+      67,
+      31,
+      60,
+      78,
+      54,
+      31,
+      81,
+      98,
+      89,
+      53
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      67,
+      31
+    ]
+  },
+  {
+    "round": 425,
+    "ration_users": [
+      3,
+      0,
+      3,
+      1,
+      2,
+      0,
+      1,
+      5,
+      6,
+      6
+    ],
+    "idx_users": [
+      59,
+      39,
+      93,
+      68,
+      41,
+      91,
+      38,
+      77,
+      0,
+      84
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      0,
+      84
+    ]
+  },
+  {
+    "round": 426,
+    "ration_users": [
+      2,
+      2,
+      0,
+      0,
+      0,
+      2,
+      3,
+      3,
+      4,
+      2
+    ],
+    "idx_users": [
+      61,
+      32,
+      84,
+      29,
+      18,
+      30,
+      95,
+      50,
+      45,
+      33
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 427,
+    "ration_users": [
+      6,
+      0,
+      2,
+      3,
+      6,
+      6,
+      3,
+      1,
+      3,
+      4
+    ],
+    "idx_users": [
+      51,
+      25,
+      17,
+      50,
+      70,
+      70,
+      98,
+      79,
+      44,
+      60
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      51,
+      70,
+      70
+    ]
+  },
+  {
+    "round": 428,
+    "ration_users": [
+      6,
+      1,
+      0,
+      4,
+      4,
+      2,
+      6,
+      6,
+      3,
+      1
+    ],
+    "idx_users": [
+      49,
+      90,
+      27,
+      50,
+      42,
+      57,
+      27,
+      51,
+      90,
+      14
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      49,
+      27,
+      51
+    ]
+  },
+  {
+    "round": 429,
+    "ration_users": [
+      3,
+      6,
+      1,
+      0,
+      6,
+      6,
+      6,
+      0,
+      2,
+      5
+    ],
+    "idx_users": [
+      84,
+      39,
+      39,
+      98,
+      28,
+      92,
+      81,
+      37,
+      65,
+      90
+    ],
+    "full_occurrence_count": 4,
+    "full_selected_client_ids": [
+      39,
+      28,
+      92,
+      81
+    ]
+  },
+  {
+    "round": 430,
+    "ration_users": [
+      4,
+      2,
+      2,
+      5,
+      3,
+      5,
+      6,
+      2,
+      3,
+      2
+    ],
+    "idx_users": [
+      81,
+      57,
+      43,
+      45,
+      44,
+      44,
+      29,
+      29,
+      47,
+      67
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      29
+    ]
+  },
+  {
+    "round": 431,
+    "ration_users": [
+      1,
+      6,
+      3,
+      6,
+      5,
+      6,
+      3,
+      0,
+      4,
+      4
+    ],
+    "idx_users": [
+      59,
+      91,
+      92,
+      71,
+      69,
+      1,
+      78,
+      21,
+      69,
+      67
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      91,
+      71,
+      1
+    ]
+  },
+  {
+    "round": 432,
+    "ration_users": [
+      0,
+      4,
+      2,
+      1,
+      6,
+      3,
+      0,
+      3,
+      3,
+      1
+    ],
+    "idx_users": [
+      69,
+      47,
+      24,
+      1,
+      31,
+      59,
+      27,
+      73,
+      78,
+      37
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      31
+    ]
+  },
+  {
+    "round": 433,
+    "ration_users": [
+      5,
+      3,
+      5,
+      2,
+      3,
+      6,
+      6,
+      2,
+      2,
+      2
+    ],
+    "idx_users": [
+      98,
+      59,
+      56,
+      44,
+      57,
+      36,
+      6,
+      3,
+      1,
+      80
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      36,
+      6
+    ]
+  },
+  {
+    "round": 434,
+    "ration_users": [
+      0,
+      1,
+      2,
+      2,
+      5,
+      1,
+      0,
+      3,
+      0,
+      3
+    ],
+    "idx_users": [
+      99,
+      56,
+      5,
+      26,
+      44,
+      40,
+      57,
+      82,
+      38,
+      47
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 435,
+    "ration_users": [
+      2,
+      0,
+      4,
+      0,
+      3,
+      4,
+      3,
+      2,
+      2,
+      4
+    ],
+    "idx_users": [
+      31,
+      86,
+      95,
+      14,
+      52,
+      41,
+      52,
+      81,
+      17,
+      79
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 436,
+    "ration_users": [
+      6,
+      5,
+      0,
+      0,
+      1,
+      6,
+      4,
+      6,
+      2,
+      1
+    ],
+    "idx_users": [
+      76,
+      83,
+      85,
+      3,
+      56,
+      93,
+      41,
+      71,
+      29,
+      60
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      76,
+      93,
+      71
+    ]
+  },
+  {
+    "round": 437,
+    "ration_users": [
+      1,
+      5,
+      1,
+      2,
+      6,
+      1,
+      0,
+      6,
+      5,
+      0
+    ],
+    "idx_users": [
+      22,
+      93,
+      68,
+      1,
+      28,
+      17,
+      8,
+      2,
+      95,
+      17
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      28,
+      2
+    ]
+  },
+  {
+    "round": 438,
+    "ration_users": [
+      3,
+      6,
+      3,
+      2,
+      2,
+      1,
+      1,
+      0,
+      4,
+      6
+    ],
+    "idx_users": [
+      60,
+      73,
+      76,
+      10,
+      66,
+      69,
+      33,
+      24,
+      65,
+      1
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      73,
+      1
+    ]
+  },
+  {
+    "round": 439,
+    "ration_users": [
+      5,
+      5,
+      5,
+      4,
+      0,
+      2,
+      2,
+      0,
+      1,
+      6
+    ],
+    "idx_users": [
+      74,
+      57,
+      62,
+      56,
+      69,
+      49,
+      51,
+      67,
+      67,
+      68
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      68
+    ]
+  },
+  {
+    "round": 440,
+    "ration_users": [
+      5,
+      3,
+      1,
+      6,
+      2,
+      4,
+      2,
+      5,
+      0,
+      6
+    ],
+    "idx_users": [
+      69,
+      57,
+      11,
+      23,
+      97,
+      70,
+      72,
+      65,
+      17,
+      79
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      23,
+      79
+    ]
+  },
+  {
+    "round": 441,
+    "ration_users": [
+      5,
+      5,
+      3,
+      5,
+      4,
+      6,
+      4,
+      5,
+      4,
+      5
+    ],
+    "idx_users": [
+      79,
+      53,
+      73,
+      41,
+      73,
+      6,
+      94,
+      60,
+      49,
+      54
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      6
+    ]
+  },
+  {
+    "round": 442,
+    "ration_users": [
+      5,
+      6,
+      0,
+      1,
+      2,
+      5,
+      5,
+      2,
+      3,
+      5
+    ],
+    "idx_users": [
+      60,
+      50,
+      5,
+      52,
+      93,
+      93,
+      77,
+      60,
+      93,
+      72
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      50
+    ]
+  },
+  {
+    "round": 443,
+    "ration_users": [
+      6,
+      1,
+      0,
+      2,
+      2,
+      4,
+      4,
+      4,
+      3,
+      2
+    ],
+    "idx_users": [
+      8,
+      8,
+      88,
+      4,
+      16,
+      75,
+      66,
+      74,
+      64,
+      69
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      8
+    ]
+  },
+  {
+    "round": 444,
+    "ration_users": [
+      3,
+      0,
+      4,
+      2,
+      2,
+      6,
+      3,
+      1,
+      2,
+      6
+    ],
+    "idx_users": [
+      57,
+      75,
+      42,
+      27,
+      24,
+      38,
+      85,
+      48,
+      38,
+      66
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      38,
+      66
+    ]
+  },
+  {
+    "round": 445,
+    "ration_users": [
+      5,
+      3,
+      3,
+      4,
+      4,
+      5,
+      6,
+      5,
+      0,
+      5
+    ],
+    "idx_users": [
+      73,
+      41,
+      99,
+      76,
+      57,
+      52,
+      68,
+      73,
+      94,
+      74
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      68
+    ]
+  },
+  {
+    "round": 446,
+    "ration_users": [
+      4,
+      5,
+      5,
+      0,
+      2,
+      2,
+      1,
+      5,
+      1,
+      5
+    ],
+    "idx_users": [
+      96,
+      50,
+      54,
+      11,
+      26,
+      61,
+      21,
+      43,
+      84,
+      93
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 447,
+    "ration_users": [
+      5,
+      4,
+      5,
+      3,
+      2,
+      6,
+      6,
+      3,
+      1,
+      1
+    ],
+    "idx_users": [
+      65,
+      96,
+      58,
+      40,
+      19,
+      12,
+      12,
+      93,
+      5,
+      90
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      12,
+      12
+    ]
+  },
+  {
+    "round": 448,
+    "ration_users": [
+      3,
+      6,
+      0,
+      2,
+      1,
+      5,
+      4,
+      6,
+      4,
+      6
+    ],
+    "idx_users": [
+      77,
+      55,
+      60,
+      22,
+      27,
+      76,
+      69,
+      84,
+      82,
+      13
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      55,
+      84,
+      13
+    ]
+  },
+  {
+    "round": 449,
+    "ration_users": [
+      5,
+      5,
+      6,
+      6,
+      2,
+      5,
+      4,
+      1,
+      2,
+      0
+    ],
+    "idx_users": [
+      46,
+      95,
+      84,
+      51,
+      28,
+      44,
+      48,
+      43,
+      64,
+      60
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      84,
+      51
+    ]
+  },
+  {
+    "round": 450,
+    "ration_users": [
+      3,
+      3,
+      6,
+      4,
+      1,
+      1,
+      2,
+      0,
+      2,
+      5
+    ],
+    "idx_users": [
+      71,
+      72,
+      84,
+      63,
+      55,
+      74,
+      31,
+      56,
+      33,
+      65
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      84
+    ]
+  },
+  {
+    "round": 451,
+    "ration_users": [
+      4,
+      4,
+      5,
+      0,
+      4,
+      5,
+      4,
+      5,
+      4,
+      3
+    ],
+    "idx_users": [
+      62,
+      64,
+      91,
+      72,
+      54,
+      64,
+      97,
+      79,
+      95,
+      46
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 452,
+    "ration_users": [
+      1,
+      2,
+      0,
+      3,
+      5,
+      1,
+      5,
+      3,
+      5,
+      3
+    ],
+    "idx_users": [
+      23,
+      87,
+      76,
+      80,
+      91,
+      44,
+      44,
+      41,
+      66,
+      96
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 453,
+    "ration_users": [
+      3,
+      2,
+      1,
+      2,
+      5,
+      1,
+      1,
+      5,
+      4,
+      0
+    ],
+    "idx_users": [
+      77,
+      63,
+      7,
+      97,
+      69,
+      14,
+      80,
+      81,
+      88,
+      29
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 454,
+    "ration_users": [
+      5,
+      4,
+      5,
+      4,
+      1,
+      6,
+      5,
+      3,
+      6,
+      3
+    ],
+    "idx_users": [
+      69,
+      62,
+      72,
+      45,
+      42,
+      86,
+      42,
+      57,
+      75,
+      77
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      86,
+      75
+    ]
+  },
+  {
+    "round": 455,
+    "ration_users": [
+      4,
+      5,
+      2,
+      3,
+      2,
+      0,
+      0,
+      3,
+      5,
+      6
+    ],
+    "idx_users": [
+      73,
+      89,
+      78,
+      94,
+      42,
+      16,
+      73,
+      50,
+      67,
+      87
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      87
+    ]
+  },
+  {
+    "round": 456,
+    "ration_users": [
+      1,
+      0,
+      2,
+      5,
+      2,
+      0,
+      6,
+      6,
+      1,
+      5
+    ],
+    "idx_users": [
+      39,
+      91,
+      56,
+      86,
+      31,
+      62,
+      95,
+      49,
+      3,
+      72
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      95,
+      49
+    ]
+  },
+  {
+    "round": 457,
+    "ration_users": [
+      2,
+      5,
+      5,
+      1,
+      1,
+      3,
+      4,
+      6,
+      1,
+      5
+    ],
+    "idx_users": [
+      32,
+      47,
+      58,
+      33,
+      3,
+      76,
+      45,
+      41,
+      80,
+      72
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      41
+    ]
+  },
+  {
+    "round": 458,
+    "ration_users": [
+      0,
+      2,
+      4,
+      1,
+      1,
+      0,
+      5,
+      6,
+      0,
+      2
+    ],
+    "idx_users": [
+      84,
+      23,
+      54,
+      37,
+      94,
+      10,
+      50,
+      58,
+      47,
+      51
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      58
+    ]
+  },
+  {
+    "round": 459,
+    "ration_users": [
+      5,
+      1,
+      1,
+      5,
+      5,
+      1,
+      5,
+      4,
+      5,
+      2
+    ],
+    "idx_users": [
+      80,
+      99,
+      57,
+      95,
+      91,
+      86,
+      70,
+      82,
+      82,
+      13
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 460,
+    "ration_users": [
+      5,
+      6,
+      0,
+      1,
+      1,
+      3,
+      6,
+      2,
+      3,
+      3
+    ],
+    "idx_users": [
+      76,
+      62,
+      72,
+      10,
+      85,
+      42,
+      7,
+      2,
+      57,
+      42
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      62,
+      7
+    ]
+  },
+  {
+    "round": 461,
+    "ration_users": [
+      5,
+      4,
+      2,
+      5,
+      0,
+      4,
+      5,
+      5,
+      0,
+      1
+    ],
+    "idx_users": [
+      57,
+      59,
+      22,
+      74,
+      61,
+      79,
+      85,
+      83,
+      43,
+      2
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 462,
+    "ration_users": [
+      4,
+      4,
+      2,
+      0,
+      6,
+      3,
+      2,
+      6,
+      1,
+      4
+    ],
+    "idx_users": [
+      69,
+      95,
+      43,
+      30,
+      28,
+      54,
+      44,
+      94,
+      91,
+      43
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      28,
+      94
+    ]
+  },
+  {
+    "round": 463,
+    "ration_users": [
+      4,
+      0,
+      2,
+      0,
+      2,
+      6,
+      4,
+      2,
+      6,
+      2
+    ],
+    "idx_users": [
+      41,
+      56,
+      65,
+      25,
+      50,
+      19,
+      51,
+      29,
+      10,
+      50
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      19,
+      10
+    ]
+  },
+  {
+    "round": 464,
+    "ration_users": [
+      1,
+      1,
+      1,
+      0,
+      5,
+      5,
+      5,
+      2,
+      3,
+      6
+    ],
+    "idx_users": [
+      5,
+      22,
+      40,
+      0,
+      69,
+      74,
+      92,
+      79,
+      73,
+      20
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      20
+    ]
+  },
+  {
+    "round": 465,
+    "ration_users": [
+      1,
+      4,
+      4,
+      1,
+      6,
+      1,
+      4,
+      2,
+      3,
+      5
+    ],
+    "idx_users": [
+      4,
+      93,
+      67,
+      28,
+      32,
+      32,
+      83,
+      66,
+      68,
+      52
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      32
+    ]
+  },
+  {
+    "round": 466,
+    "ration_users": [
+      5,
+      6,
+      4,
+      5,
+      3,
+      3,
+      4,
+      4,
+      6,
+      2
+    ],
+    "idx_users": [
+      93,
+      5,
+      78,
+      93,
+      85,
+      64,
+      66,
+      65,
+      65,
+      54
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      5,
+      65
+    ]
+  },
+  {
+    "round": 467,
+    "ration_users": [
+      3,
+      5,
+      0,
+      4,
+      0,
+      5,
+      3,
+      4,
+      5,
+      6
+    ],
+    "idx_users": [
+      57,
+      68,
+      43,
+      76,
+      3,
+      45,
+      70,
+      93,
+      86,
+      95
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      95
+    ]
+  },
+  {
+    "round": 468,
+    "ration_users": [
+      3,
+      0,
+      3,
+      0,
+      3,
+      6,
+      0,
+      4,
+      2,
+      4
+    ],
+    "idx_users": [
+      66,
+      20,
+      97,
+      55,
+      50,
+      69,
+      69,
+      72,
+      99,
+      72
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      69
+    ]
+  },
+  {
+    "round": 469,
+    "ration_users": [
+      2,
+      4,
+      0,
+      5,
+      0,
+      2,
+      2,
+      2,
+      6,
+      5
+    ],
+    "idx_users": [
+      93,
+      72,
+      79,
+      51,
+      34,
+      52,
+      95,
+      61,
+      36,
+      62
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      36
+    ]
+  },
+  {
+    "round": 470,
+    "ration_users": [
+      5,
+      5,
+      2,
+      0,
+      1,
+      2,
+      1,
+      6,
+      3,
+      5
+    ],
+    "idx_users": [
+      99,
+      85,
+      58,
+      50,
+      70,
+      48,
+      36,
+      30,
+      62,
+      74
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      30
+    ]
+  },
+  {
+    "round": 471,
+    "ration_users": [
+      3,
+      0,
+      4,
+      3,
+      4,
+      5,
+      3,
+      0,
+      2,
+      1
+    ],
+    "idx_users": [
+      74,
+      91,
+      85,
+      73,
+      54,
+      56,
+      41,
+      84,
+      9,
+      33
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 472,
+    "ration_users": [
+      6,
+      6,
+      4,
+      0,
+      0,
+      2,
+      2,
+      4,
+      3,
+      5
+    ],
+    "idx_users": [
+      90,
+      49,
+      64,
+      20,
+      33,
+      98,
+      75,
+      56,
+      71,
+      41
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      90,
+      49
+    ]
+  },
+  {
+    "round": 473,
+    "ration_users": [
+      5,
+      5,
+      2,
+      6,
+      0,
+      4,
+      6,
+      5,
+      3,
+      3
+    ],
+    "idx_users": [
+      50,
+      92,
+      61,
+      14,
+      28,
+      49,
+      14,
+      64,
+      43,
+      51
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      14,
+      14
+    ]
+  },
+  {
+    "round": 474,
+    "ration_users": [
+      3,
+      4,
+      6,
+      1,
+      2,
+      0,
+      1,
+      3,
+      6,
+      0
+    ],
+    "idx_users": [
+      44,
+      46,
+      59,
+      70,
+      93,
+      83,
+      59,
+      90,
+      3,
+      7
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      59,
+      3
+    ]
+  },
+  {
+    "round": 475,
+    "ration_users": [
+      1,
+      5,
+      3,
+      5,
+      0,
+      5,
+      2,
+      4,
+      1,
+      4
+    ],
+    "idx_users": [
+      34,
+      43,
+      73,
+      70,
+      94,
+      81,
+      26,
+      62,
+      76,
+      68
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 476,
+    "ration_users": [
+      4,
+      1,
+      5,
+      1,
+      5,
+      3,
+      2,
+      5,
+      4,
+      4
+    ],
+    "idx_users": [
+      47,
+      43,
+      97,
+      40,
+      95,
+      64,
+      83,
+      64,
+      58,
+      45
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 477,
+    "ration_users": [
+      5,
+      3,
+      6,
+      5,
+      5,
+      2,
+      4,
+      3,
+      1,
+      3
+    ],
+    "idx_users": [
+      54,
+      92,
+      92,
+      68,
+      75,
+      44,
+      67,
+      67,
+      90,
+      97
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      92
+    ]
+  },
+  {
+    "round": 478,
+    "ration_users": [
+      4,
+      2,
+      1,
+      0,
+      3,
+      5,
+      5,
+      2,
+      1,
+      1
+    ],
+    "idx_users": [
+      86,
+      95,
+      55,
+      75,
+      57,
+      51,
+      49,
+      6,
+      42,
+      45
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 479,
+    "ration_users": [
+      0,
+      0,
+      1,
+      4,
+      0,
+      3,
+      5,
+      6,
+      1,
+      1
+    ],
+    "idx_users": [
+      48,
+      8,
+      80,
+      77,
+      40,
+      76,
+      97,
+      22,
+      18,
+      97
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      22
+    ]
+  },
+  {
+    "round": 480,
+    "ration_users": [
+      0,
+      5,
+      6,
+      3,
+      5,
+      5,
+      3,
+      0,
+      3,
+      6
+    ],
+    "idx_users": [
+      92,
+      98,
+      80,
+      80,
+      47,
+      74,
+      53,
+      61,
+      85,
+      29
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      80,
+      29
+    ]
+  },
+  {
+    "round": 481,
+    "ration_users": [
+      0,
+      3,
+      5,
+      6,
+      4,
+      5,
+      3,
+      6,
+      1,
+      4
+    ],
+    "idx_users": [
+      45,
+      79,
+      73,
+      80,
+      80,
+      85,
+      50,
+      98,
+      26,
+      59
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      80,
+      98
+    ]
+  },
+  {
+    "round": 482,
+    "ration_users": [
+      1,
+      1,
+      1,
+      2,
+      4,
+      5,
+      1,
+      0,
+      3,
+      3
+    ],
+    "idx_users": [
+      21,
+      95,
+      17,
+      82,
+      65,
+      67,
+      62,
+      44,
+      85,
+      89
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 483,
+    "ration_users": [
+      6,
+      5,
+      6,
+      1,
+      1,
+      4,
+      3,
+      2,
+      3,
+      5
+    ],
+    "idx_users": [
+      4,
+      74,
+      9,
+      3,
+      47,
+      55,
+      49,
+      27,
+      98,
+      65
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      4,
+      9
+    ]
+  },
+  {
+    "round": 484,
+    "ration_users": [
+      3,
+      1,
+      2,
+      0,
+      5,
+      1,
+      5,
+      5,
+      5,
+      2
+    ],
+    "idx_users": [
+      68,
+      65,
+      75,
+      34,
+      67,
+      76,
+      94,
+      61,
+      99,
+      61
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 485,
+    "ration_users": [
+      1,
+      4,
+      5,
+      5,
+      6,
+      6,
+      1,
+      4,
+      5,
+      2
+    ],
+    "idx_users": [
+      43,
+      45,
+      77,
+      79,
+      7,
+      99,
+      17,
+      98,
+      94,
+      71
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      7,
+      99
+    ]
+  },
+  {
+    "round": 486,
+    "ration_users": [
+      0,
+      6,
+      2,
+      4,
+      0,
+      0,
+      3,
+      0,
+      2,
+      4
+    ],
+    "idx_users": [
+      95,
+      60,
+      22,
+      45,
+      1,
+      8,
+      41,
+      23,
+      35,
+      52
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      60
+    ]
+  },
+  {
+    "round": 487,
+    "ration_users": [
+      1,
+      3,
+      2,
+      0,
+      0,
+      5,
+      4,
+      6,
+      5,
+      6
+    ],
+    "idx_users": [
+      92,
+      69,
+      51,
+      91,
+      69,
+      72,
+      57,
+      89,
+      95,
+      87
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      89,
+      87
+    ]
+  },
+  {
+    "round": 488,
+    "ration_users": [
+      4,
+      5,
+      4,
+      1,
+      1,
+      6,
+      6,
+      2,
+      2,
+      4
+    ],
+    "idx_users": [
+      83,
+      56,
+      75,
+      49,
+      13,
+      90,
+      50,
+      59,
+      30,
+      44
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      90,
+      50
+    ]
+  },
+  {
+    "round": 489,
+    "ration_users": [
+      1,
+      5,
+      2,
+      3,
+      5,
+      2,
+      0,
+      1,
+      3,
+      5
+    ],
+    "idx_users": [
+      93,
+      86,
+      40,
+      48,
+      83,
+      77,
+      3,
+      80,
+      85,
+      64
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  },
+  {
+    "round": 490,
+    "ration_users": [
+      3,
+      2,
+      4,
+      6,
+      0,
+      2,
+      6,
+      2,
+      5,
+      2
+    ],
+    "idx_users": [
+      80,
+      7,
+      58,
+      44,
+      98,
+      84,
+      2,
+      2,
+      84,
+      79
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      44,
+      2
+    ]
+  },
+  {
+    "round": 491,
+    "ration_users": [
+      5,
+      6,
+      4,
+      3,
+      6,
+      3,
+      2,
+      3,
+      6,
+      2
+    ],
+    "idx_users": [
+      68,
+      40,
+      77,
+      40,
+      97,
+      74,
+      40,
+      98,
+      93,
+      93
+    ],
+    "full_occurrence_count": 3,
+    "full_selected_client_ids": [
+      40,
+      97,
+      93
+    ]
+  },
+  {
+    "round": 492,
+    "ration_users": [
+      3,
+      1,
+      5,
+      6,
+      3,
+      4,
+      6,
+      3,
+      0,
+      5
+    ],
+    "idx_users": [
+      90,
+      50,
+      84,
+      97,
+      86,
+      43,
+      74,
+      92,
+      87,
+      68
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      97,
+      74
+    ]
+  },
+  {
+    "round": 493,
+    "ration_users": [
+      5,
+      1,
+      6,
+      2,
+      3,
+      5,
+      1,
+      4,
+      3,
+      2
+    ],
+    "idx_users": [
+      94,
+      87,
+      88,
+      83,
+      46,
+      67,
+      51,
+      87,
+      47,
+      72
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      88
+    ]
+  },
+  {
+    "round": 494,
+    "ration_users": [
+      2,
+      3,
+      6,
+      5,
+      3,
+      2,
+      5,
+      2,
+      1,
+      4
+    ],
+    "idx_users": [
+      2,
+      40,
+      99,
+      99,
+      89,
+      71,
+      78,
+      52,
+      97,
+      62
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      99
+    ]
+  },
+  {
+    "round": 495,
+    "ration_users": [
+      5,
+      5,
+      3,
+      3,
+      3,
+      4,
+      6,
+      6,
+      1,
+      1
+    ],
+    "idx_users": [
+      51,
+      65,
+      87,
+      42,
+      49,
+      99,
+      36,
+      36,
+      66,
+      89
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      36,
+      36
+    ]
+  },
+  {
+    "round": 496,
+    "ration_users": [
+      0,
+      2,
+      5,
+      0,
+      6,
+      6,
+      3,
+      4,
+      1,
+      4
+    ],
+    "idx_users": [
+      78,
+      52,
+      92,
+      82,
+      21,
+      72,
+      76,
+      70,
+      92,
+      58
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      21,
+      72
+    ]
+  },
+  {
+    "round": 497,
+    "ration_users": [
+      0,
+      0,
+      2,
+      3,
+      1,
+      0,
+      6,
+      3,
+      4,
+      1
+    ],
+    "idx_users": [
+      74,
+      76,
+      32,
+      87,
+      86,
+      4,
+      99,
+      96,
+      65,
+      69
+    ],
+    "full_occurrence_count": 1,
+    "full_selected_client_ids": [
+      99
+    ]
+  },
+  {
+    "round": 498,
+    "ration_users": [
+      3,
+      6,
+      6,
+      5,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1
+    ],
+    "idx_users": [
+      77,
+      52,
+      18,
+      49,
+      41,
+      21,
+      58,
+      50,
+      73,
+      71
+    ],
+    "full_occurrence_count": 2,
+    "full_selected_client_ids": [
+      52,
+      18
+    ]
+  },
+  {
+    "round": 499,
+    "ration_users": [
+      0,
+      0,
+      2,
+      1,
+      3,
+      3,
+      0,
+      1,
+      2,
+      3
+    ],
+    "idx_users": [
+      84,
+      16,
+      64,
+      82,
+      45,
+      78,
+      75,
+      78,
+      50,
+      56
+    ],
+    "full_occurrence_count": 0,
+    "full_selected_client_ids": []
+  }
+]
