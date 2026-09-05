@@ -143,6 +143,30 @@ def get_model_list(args):
     return net_glob_list, net_slim_info
 
 
+def sample_profile_slots(args, net_glob_list_len, m):
+    """Sample model-profile slots, optionally using the diagnostic 4:3:3 quota.
+
+    The default branch deliberately retains the original AdaptiveFL expression.
+    The oracle changes profile exposure only; client eligibility remains in
+    ``select_clients`` below.
+    """
+    if not getattr(args, 'fixed_profile_quota_oracle', False):
+        return np.random.choice(range(net_glob_list_len), m)
+
+    if net_glob_list_len != 7 or m != 10:
+        raise ValueError(
+            'fixed_profile_quota_oracle requires the seven-profile model set '
+            'and exactly 10 slots per round')
+
+    ration_users = np.concatenate((
+        np.random.choice([0, 1, 2], 4, replace=True),
+        np.random.choice([3, 4, 5], 3, replace=True),
+        np.full(3, 6, dtype=int),
+    ))
+    np.random.shuffle(ration_users)
+    return ration_users
+
+
 def select_clients(args, ration_users, net_glob_list_len):
     my_list = list(map(float, args.client_hetero_ration.split(':')))
     hetero_proportion = [round(x / sum(my_list), 2) for x in my_list]

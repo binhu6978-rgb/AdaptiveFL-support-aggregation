@@ -12,7 +12,7 @@ import copy
 import numpy as np
 from tqdm import tqdm
 
-from models.Fed import get_model_list, Aggregation_AdaptiveFL, split_model, select_clients
+from models.Fed import get_model_list, Aggregation_AdaptiveFL, split_model, select_clients, sample_profile_slots
 from models.vgg import vgg_16_bn
 from models.resnet import ResNet18_cifar
 from models.resnet import ResNet18_widar
@@ -52,7 +52,7 @@ def AdaptiveFL(args, dataset_train, dataset_test, dict_users):
             ration_users = np.random.choice([len(net_glob_list)-1], m)  # 模型选择
             idx_users = random.sample(range(args.num_users), len(ration_users))  # 基于强化学习的客户端选择
         else:
-            ration_users = np.random.choice(range(len(net_glob_list)), m)  # 模型选择
+            ration_users = sample_profile_slots(args, len(net_glob_list), m)  # 模型选择
             idx_users = select_clients(args, ration_users, len(net_glob_list))  # 基于规则的客户端选择
 
         feedback_list = []
