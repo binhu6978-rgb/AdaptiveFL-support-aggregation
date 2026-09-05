@@ -1,0 +1,356 @@
+{
+  "analysis": "Width-Group Consensus Geometry Analysis: Full occurrence count >= 2",
+  "input_files": [
+    "results/cross_scale_consistency_50/pairwise_consistency.json",
+    "results/cross_scale_consistency_50/client_loo_consistency.json"
+  ],
+  "method": "Exact Gram reconstruction from saved norms and pairwise cosines; no vector reconstruction.",
+  "alignment": {
+    "rounds_checked": 49,
+    "all_passed": true,
+    "duplicate_client_occurrences": 28,
+    "rounds_with_duplicate_client_ids": 25
+  },
+  "filter": {
+    "original_diagnostic_rounds": 49,
+    "full_present_rounds": 40,
+    "full_count_equal_one_rounds": 18,
+    "valid_rounds": 22,
+    "valid_round_ids": [
+      1,
+      3,
+      5,
+      8,
+      9,
+      16,
+      19,
+      22,
+      26,
+      27,
+      28,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      39,
+      40,
+      46,
+      48,
+      49
+    ],
+    "definition": "All three width groups present and Full occurrence count >= 2; duplicates retained."
+  },
+  "group_cosines": {
+    "0.4_vs_0.66": {
+      "valid_rounds": 22,
+      "mean": 0.05537622751714786,
+      "std": 0.057701674827052386,
+      "median": 0.037476695078204746,
+      "p10": 0.005032297637878342,
+      "p25": 0.02048369828885943,
+      "p75": 0.06706291621724766,
+      "p90": 0.12761650908366043,
+      "min": -0.030365961115535196,
+      "max": 0.22759986216826864,
+      "negative_ratio": 0.045454545454545456
+    },
+    "0.4_vs_1.0": {
+      "valid_rounds": 22,
+      "mean": 0.04726852895517415,
+      "std": 0.0466901284293916,
+      "median": 0.03075410587277483,
+      "p10": 0.008330868414377638,
+      "p25": 0.012468179018557356,
+      "p75": 0.067581600513974,
+      "p90": 0.11560129808091056,
+      "min": 0.0028220730702847785,
+      "max": 0.17501505804566095,
+      "negative_ratio": 0.0
+    },
+    "0.66_vs_1.0": {
+      "valid_rounds": 22,
+      "mean": 0.07176926382838972,
+      "std": 0.05473604789162788,
+      "median": 0.04000865332966222,
+      "p10": 0.02100874469440706,
+      "p25": 0.031413748130256644,
+      "p75": 0.10498025358725604,
+      "p90": 0.16356914321257743,
+      "min": 0.012773414519556672,
+      "max": 0.1795494108100792,
+      "negative_ratio": 0.0
+    }
+  },
+  "internal_concentration": {
+    "0.4": {
+      "valid_rounds": 22,
+      "mean": 0.617864828011183,
+      "std": 0.11577195092077337,
+      "median": 0.6067538098291505,
+      "p10": 0.5068769219575859,
+      "p25": 0.5222690242516462,
+      "p75": 0.6652605107645524,
+      "p90": 0.7399011155831643,
+      "min": 0.4630203054776558,
+      "max": 1.0,
+      "negative_ratio": 0.0
+    },
+    "0.66": {
+      "valid_rounds": 22,
+      "mean": 0.5501933351662079,
+      "std": 0.09798382270670665,
+      "median": 0.5261763494580214,
+      "p10": 0.45275210950354045,
+      "p25": 0.4812783989040548,
+      "p75": 0.5936944865516682,
+      "p90": 0.7145606558729319,
+      "min": 0.3963455753160939,
+      "max": 0.7538141931055464,
+      "negative_ratio": 0.0
+    },
+    "1.0": {
+      "valid_rounds": 22,
+      "mean": 0.6785366046777583,
+      "std": 0.08019147019938151,
+      "median": 0.7174225983950171,
+      "p10": 0.5861164113851279,
+      "p25": 0.5996826160787891,
+      "p75": 0.7304116189654167,
+      "p90": 0.7466605229426269,
+      "min": 0.557088915982048,
+      "max": 0.8762966056843066,
+      "negative_ratio": 0.0
+    }
+  },
+  "natural_sample_shares": {
+    "0.4": {
+      "valid_rounds": 22,
+      "mean": 0.3480545555194791,
+      "std": 0.118727176738334,
+      "median": 0.3184331845260653,
+      "p10": 0.2043763954194232,
+      "p25": 0.29144807494749214,
+      "p75": 0.4088545520126696,
+      "p90": 0.5108504661189036,
+      "min": 0.10587310940876056,
+      "max": 0.5860900757273815,
+      "negative_ratio": 0.0
+    },
+    "0.66": {
+      "valid_rounds": 22,
+      "mean": 0.41434604673447484,
+      "std": 0.13225136863042072,
+      "median": 0.4283163999792864,
+      "p10": 0.22889422807783935,
+      "p25": 0.30833758429767627,
+      "p75": 0.49389682200143337,
+      "p90": 0.5793429250915249,
+      "min": 0.19447246318337705,
+      "max": 0.6957375761147122,
+      "negative_ratio": 0.0
+    },
+    "1.0": {
+      "valid_rounds": 22,
+      "mean": 0.2375993977460461,
+      "std": 0.063018489697852,
+      "median": 0.21054269658782954,
+      "p10": 0.17163148617155866,
+      "p25": 0.19001423836526962,
+      "p75": 0.2878709485377659,
+      "p90": 0.30045285912390896,
+      "min": 0.15568862275449102,
+      "max": 0.4131531168045189,
+      "negative_ratio": 0.0
+    }
+  },
+  "counterfactuals": {
+    "equal_width": {
+      "overall": {
+        "valid_rounds": 22,
+        "median_cosine_to_natural": 0.9534823009255018,
+        "mean_cosine_to_natural": 0.9471639158146807,
+        "median_angle_degrees": 17.542559733687213,
+        "mean_angle_degrees": 17.1388089549249,
+        "angle_p25_degrees": 11.56342407948784,
+        "angle_p75_degrees": 20.11581411202317,
+        "median_norm_ratio_to_natural": 1.0011841180406869,
+        "mean_norm_ratio_to_natural": 1.0054859491502686
+      },
+      "phases": {
+        "early": {
+          "valid_rounds": 5,
+          "median_cosine_to_natural": 0.9520331502805232,
+          "mean_cosine_to_natural": 0.9499775413476375,
+          "median_angle_degrees": 17.81802967169226,
+          "mean_angle_degrees": 17.928156607958215,
+          "angle_p25_degrees": 17.26708979568217,
+          "angle_p75_degrees": 18.752516487201635,
+          "median_norm_ratio_to_natural": 0.9613221675874386,
+          "mean_norm_ratio_to_natural": 0.9762295664513042
+        },
+        "middle": {
+          "valid_rounds": 9,
+          "median_cosine_to_natural": 0.9444911724268439,
+          "mean_cosine_to_natural": 0.9209862181807256,
+          "median_angle_degrees": 19.179988906501265,
+          "mean_angle_degrees": 21.594634122303557,
+          "angle_p25_degrees": 16.907299226532913,
+          "angle_p75_degrees": 24.05874401094562,
+          "median_norm_ratio_to_natural": 0.9993489664213169,
+          "mean_norm_ratio_to_natural": 1.036238110252668
+        },
+        "late": {
+          "valid_rounds": 8,
+          "median_cosine_to_natural": 0.986193074331649,
+          "mean_cosine_to_natural": 0.9748553096947823,
+          "median_angle_degrees": 9.526616966677079,
+          "mean_angle_degrees": 11.632663358478093,
+          "angle_p25_degrees": 7.687816748438806,
+          "angle_p75_degrees": 15.815295015620563,
+          "median_norm_ratio_to_natural": 1.0073304515942498,
+          "mean_norm_ratio_to_natural": 0.9891750070969217
+        }
+      }
+    },
+    "full_20_percent": {
+      "overall": {
+        "valid_rounds": 22,
+        "median_cosine_to_natural": 0.9981344528882324,
+        "mean_cosine_to_natural": 0.99243443023703,
+        "median_angle_degrees": 3.439707865109992,
+        "mean_angle_degrees": 4.997013203640059,
+        "angle_p25_degrees": 1.2754382626917529,
+        "angle_p75_degrees": 7.6972323569433865,
+        "median_norm_ratio_to_natural": 1.0032569417374702,
+        "mean_norm_ratio_to_natural": 1.020174926035459
+      },
+      "phases": {
+        "early": {
+          "valid_rounds": 5,
+          "median_cosine_to_natural": 0.9991758507199697,
+          "mean_cosine_to_natural": 0.9972291141376747,
+          "median_angle_degrees": 2.32632508359057,
+          "mean_angle_degrees": 3.114707338530922,
+          "angle_p25_degrees": 0.8156805309790858,
+          "angle_p75_degrees": 4.0886962936099955,
+          "median_norm_ratio_to_natural": 0.9990709063889937,
+          "mean_norm_ratio_to_natural": 1.0009207540510867
+        },
+        "middle": {
+          "valid_rounds": 9,
+          "median_cosine_to_natural": 0.9995922152776914,
+          "mean_cosine_to_natural": 0.9911455271192818,
+          "median_angle_degrees": 1.6363185923401022,
+          "mean_angle_degrees": 4.333806756879657,
+          "angle_p25_degrees": 0.49219295725053464,
+          "angle_p75_degrees": 5.763955434877203,
+          "median_norm_ratio_to_natural": 0.9996956174726529,
+          "mean_norm_ratio_to_natural": 1.0186889190502324
+        },
+        "late": {
+          "valid_rounds": 8,
+          "median_cosine_to_natural": 0.9922496373127412,
+          "mean_cosine_to_natural": 0.9908877688065939,
+          "median_angle_degrees": 7.047601163391455,
+          "mean_angle_degrees": 6.919561621938721,
+          "angle_p25_degrees": 3.895377009422885,
+          "angle_p75_degrees": 9.977947944820706,
+          "median_norm_ratio_to_natural": 1.0481209378890992,
+          "mean_norm_ratio_to_natural": 1.0338805413840715
+        }
+      }
+    }
+  },
+  "comparison_to_all_full_present": {
+    "full_vs_0_4_median_cosine": {
+      "all_full_present": 0.02788164944328428,
+      "full_count_ge2": 0.03075410587277483,
+      "delta": 0.0028724564294905497
+    },
+    "full_vs_0_66_median_cosine": {
+      "all_full_present": 0.035374308801352713,
+      "full_count_ge2": 0.04000865332966222,
+      "delta": 0.004634344528309506
+    },
+    "full_concentration_median": {
+      "all_full_present": 0.7512218346682532,
+      "full_count_ge2": 0.7174225983950171,
+      "delta": -0.03379923627323611
+    },
+    "full_natural_share_median": {
+      "all_full_present": 0.16684782344535282,
+      "full_count_ge2": 0.21054269658782954,
+      "delta": 0.04369487314247672
+    },
+    "full_20_percent_median_angle_degrees": {
+      "all_full_present": 9.968147753513101,
+      "full_count_ge2": 3.439707865109992,
+      "delta": -6.528439888403109
+    },
+    "full_20_percent_median_norm_ratio": {
+      "all_full_present": 0.9971973087588091,
+      "full_count_ge2": 1.0032569417374702,
+      "delta": 0.006059632978661078
+    },
+    "late_full_20_percent_median_angle_degrees": {
+      "all_full_present": 11.31655851188637,
+      "full_count_ge2": 7.047601163391455,
+      "delta": -4.268957348494915
+    }
+  },
+  "phases": {
+    "early": {
+      "valid_rounds": 5,
+      "full_vs_0_4_median_cosine": 0.09439856749948673,
+      "full_vs_0_66_median_cosine": 0.13262542380630726,
+      "full_natural_share_median": 0.19258707394300614,
+      "full_20_percent": {
+        "valid_rounds": 5,
+        "median_cosine_to_natural": 0.9991758507199697,
+        "mean_cosine_to_natural": 0.9972291141376747,
+        "median_angle_degrees": 2.32632508359057,
+        "mean_angle_degrees": 3.114707338530922,
+        "angle_p25_degrees": 0.8156805309790858,
+        "angle_p75_degrees": 4.0886962936099955,
+        "median_norm_ratio_to_natural": 0.9990709063889937,
+        "mean_norm_ratio_to_natural": 1.0009207540510867
+      }
+    },
+    "middle": {
+      "valid_rounds": 9,
+      "full_vs_0_4_median_cosine": 0.025689387984022715,
+      "full_vs_0_66_median_cosine": 0.033042886738687334,
+      "full_natural_share_median": 0.19838931447652722,
+      "full_20_percent": {
+        "valid_rounds": 9,
+        "median_cosine_to_natural": 0.9995922152776914,
+        "mean_cosine_to_natural": 0.9911455271192818,
+        "median_angle_degrees": 1.6363185923401022,
+        "mean_angle_degrees": 4.333806756879657,
+        "angle_p25_degrees": 0.49219295725053464,
+        "angle_p75_degrees": 5.763955434877203,
+        "median_norm_ratio_to_natural": 0.9996956174726529,
+        "mean_norm_ratio_to_natural": 1.0186889190502324
+      }
+    },
+    "late": {
+      "valid_rounds": 8,
+      "full_vs_0_4_median_cosine": 0.016488383926938084,
+      "full_vs_0_66_median_cosine": 0.06090219901111632,
+      "full_natural_share_median": 0.28465088217204815,
+      "full_20_percent": {
+        "valid_rounds": 8,
+        "median_cosine_to_natural": 0.9922496373127412,
+        "mean_cosine_to_natural": 0.9908877688065939,
+        "median_angle_degrees": 7.047601163391455,
+        "mean_angle_degrees": 6.919561621938721,
+        "angle_p25_degrees": 3.895377009422885,
+        "angle_p75_degrees": 9.977947944820706,
+        "median_norm_ratio_to_natural": 1.0481209378890992,
+        "mean_norm_ratio_to_natural": 1.0338805413840715
+      }
+    }
+  }
+}

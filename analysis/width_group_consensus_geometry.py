@@ -116,9 +116,11 @@ def phase_counterfactual(values):
     cosines = [value['cosine_to_natural'] for value in values]
     return {
         'valid_rounds': len(values), 'median_cosine_to_natural': percentile(cosines, 0.5),
+        'mean_cosine_to_natural': sum(cosines) / len(cosines),
         'median_angle_degrees': percentile(angles, 0.5), 'mean_angle_degrees': sum(angles) / len(angles),
         'angle_p25_degrees': percentile(angles, 0.25), 'angle_p75_degrees': percentile(angles, 0.75),
         'median_norm_ratio_to_natural': percentile(ratios, 0.5),
+        'mean_norm_ratio_to_natural': sum(ratios) / len(ratios),
     }
 
 
@@ -162,6 +164,11 @@ def main():
     shares = {width: [] for width in WIDTHS}
     client_counts = {width: [] for width in WIDTHS}
     counterfactuals = {'equal_width': [], 'full_20_percent': []}
+    filtered_round_ids = []
+    filtered_pair_cosines = {name: [] for name in PAIR_NAMES}
+    filtered_concentrations = {width: [] for width in WIDTHS}
+    filtered_shares = {width: [] for width in WIDTHS}
+    filtered_counterfactuals = {'equal_width': [], 'full_20_percent': []}
 
     for round_value in rounds:
         clients = clients_by_round[round_value]
@@ -251,6 +258,19 @@ def main():
                     result['round'] = round_value
                     counterfactuals[name].append(result)
                     round_result['counterfactuals'][name] = result
+
+        if (all(len(group_indices[width]) > 0 for width in WIDTHS)
+                and len(group_indices[1.0]) >= 2):
+            filtered_round_ids.append(round_value)
+            for pair in PAIR_NAMES:
+                name = '{}_vs_{}'.format(*pair)
+                filtered_pair_cosines[pair].append((round_value, round_result['pair_cosines'][name]))
+            for width in WIDTHS:
+                filtered_concentrations[width].append(round_result['groups'][str(width)]['concentration'])
+                filtered_shares[width].append((round_value,
+                                               round_result['groups'][str(width)]['sample_mass_share']))
+            for name in filtered_counterfactuals:
+                filtered_counterfactuals[name].append(round_result['counterfactuals'][name])
         per_round.append(round_result)
 
     result = {
@@ -304,9 +324,98 @@ def main():
         }
 
     output_path = os.path.join(root, 'width_group_consensus_geometry.json')
-    with open(output_path, 'w', encoding='utf-8') as handle:
-        json.dump(result, handle, indent=2)
-    print(output_path)
+    if os.path.exists(output_path):
+        print('Preserved existing {}'.format(output_path))
+    else:
+        with open(output_path, 'w', encoding='utf-8') as handle:
+            json.dump(result, handle, indent=2)
+        print(output_path)
+
+    full_present = [round_result for round_result in per_round
+                    if all(round_result['groups'][str(width)]['client_count'] > 0 for width in WIDTHS)]
+    def _phase_values(values, phase_rounds):
+        return [value for value in values if value['round'] in phase_rounds]
+
+    filtered = {
+        'analysis': 'Width-Group Consensus Geometry Analysis: Full occurrence count >= 2',
+        'input_files': result['input_files'],
+        'method': result['method'], 'alignment': alignment,
+        'filter': {
+            'original_diagnostic_rounds': len(rounds), 'full_present_rounds': len(full_present),
+            'full_count_equal_one_rounds': sum(
+                round_result['groups']['1.0']['client_count'] == 1 for round_result in full_present),
+            'valid_rounds': len(filtered_round_ids), 'valid_round_ids': filtered_round_ids,
+            'definition': 'All three width groups present and Full occurrence count >= 2; duplicates retained.',
+        },
+        'group_cosines': {},
+        'internal_concentration': {str(width): describe(filtered_concentrations[width]) for width in WIDTHS},
+        'natural_sample_shares': {str(width): describe(value for _, value in filtered_shares[width])
+                                  for width in WIDTHS},
+        'counterfactuals': {}, 'comparison_to_all_full_present': {},
+    }
+    for pair, values in filtered_pair_cosines.items():
+        name = '{}_vs_{}'.format(*pair)
+        filtered['group_cosines'][name] = describe(value for _, value in values)
+    for name, values in filtered_counterfactuals.items():
+        filtered['counterfactuals'][name] = {
+            'overall': phase_counterfactual(values),
+            'phases': {phase: phase_counterfactual(_phase_values(values, phase_rounds))
+                       for phase, phase_rounds in PHASES.items()},
+        }
+    filtered['phases'] = {
+        phase: {
+            'valid_rounds': len([round_value for round_value in filtered_round_ids
+                                 if round_value in phase_rounds]),
+            'full_vs_0_4_median_cosine': percentile(
+                [value for round_value, value in filtered_pair_cosines[(0.4, 1.0)]
+                 if round_value in phase_rounds], 0.5),
+            'full_vs_0_66_median_cosine': percentile(
+                [value for round_value, value in filtered_pair_cosines[(0.66, 1.0)]
+                 if round_value in phase_rounds], 0.5),
+            'full_natural_share_median': percentile(
+                [value for round_value, value in filtered_shares[1.0]
+                 if round_value in phase_rounds], 0.5),
+            'full_20_percent': phase_counterfactual(_phase_values(
+                filtered_counterfactuals['full_20_percent'], phase_rounds)),
+        }
+        for phase, phase_rounds in PHASES.items()
+    }
+    all_full_pair_values = {
+        pair: [round_result['pair_cosines']['{}_vs_{}'.format(*pair)]
+               for round_result in full_present]
+        for pair in PAIR_NAMES
+    }
+    all_full_20 = counterfactuals['full_20_percent']
+    filtered_20 = filtered_counterfactuals['full_20_percent']
+    comparison = {
+        'full_vs_0_4_median_cosine': (percentile(all_full_pair_values[(0.4, 1.0)], 0.5),
+                                      percentile([value for _, value in filtered_pair_cosines[(0.4, 1.0)]], 0.5)),
+        'full_vs_0_66_median_cosine': (percentile(all_full_pair_values[(0.66, 1.0)], 0.5),
+                                       percentile([value for _, value in filtered_pair_cosines[(0.66, 1.0)]], 0.5)),
+        'full_concentration_median': (percentile(
+            [round_result['groups']['1.0']['concentration'] for round_result in full_present], 0.5),
+            percentile(filtered_concentrations[1.0], 0.5)),
+        'full_natural_share_median': (percentile(
+            [round_result['groups']['1.0']['sample_mass_share'] for round_result in full_present], 0.5),
+            percentile([value for _, value in filtered_shares[1.0]], 0.5)),
+        'full_20_percent_median_angle_degrees': (
+            phase_counterfactual(all_full_20)['median_angle_degrees'],
+            phase_counterfactual(filtered_20)['median_angle_degrees']),
+        'full_20_percent_median_norm_ratio': (
+            phase_counterfactual(all_full_20)['median_norm_ratio_to_natural'],
+            phase_counterfactual(filtered_20)['median_norm_ratio_to_natural']),
+        'late_full_20_percent_median_angle_degrees': (
+            phase_counterfactual(_phase_values(all_full_20, PHASES['late']))['median_angle_degrees'],
+            phase_counterfactual(_phase_values(filtered_20, PHASES['late']))['median_angle_degrees']),
+    }
+    filtered['comparison_to_all_full_present'] = {
+        name: {'all_full_present': before, 'full_count_ge2': after, 'delta': after - before}
+        for name, (before, after) in comparison.items()
+    }
+    filtered_path = os.path.join(root, 'width_group_consensus_geometry_full_ge2.json')
+    with open(filtered_path, 'w', encoding='utf-8') as handle:
+        json.dump(filtered, handle, indent=2)
+    print(filtered_path)
 
 
 if __name__ == '__main__':
